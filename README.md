@@ -14,7 +14,7 @@
 ## Analizar continuamente el rendimiento y ajustar según sea necesario.
 
 ## INTEGRANTES:
-# Ian Buatista Salinas / Edad: 18  / Cuidad: San Miguel;
+# Ian Bautista Salinas / Edad: 18  / Cuidad: San Miguel;
 
 # Nahuel Mendez / Edad : 22  / Cuidad: San Mguel;
 
