@@ -18,9 +18,9 @@
 
 # Nahuel Mendez / Edad : 22  / Cuidad: San Mguel;
 
-# nicole Colmenarez / Edad : 21 / Cuidad: Caballito;
+# Nicole Colmenarez / Edad : 21 / Cuidad: Caballito;
 
-# julian saucedo / Edad : 34 / Cuidad: Berazategui;
+# Julian Saucedo / Edad : 34 / Cuidad: Berazategui;
  
 # Gisele Otiz / Edad : 39 / Cuidad: San Miguel.
 
