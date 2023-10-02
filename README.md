@@ -22,6 +22,6 @@
 
 # Julian Saucedo / Edad : 34 / Cuidad: Berazategui;
  
-# Gisele Otiz / Edad : 39 / Cuidad: San Miguel.
+# Gisele Ortiz / Edad : 39 / Cuidad: San Miguel.
 
 
