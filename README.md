@@ -3,6 +3,7 @@
 ###  Introduccion: 
 Nuestro sitio brindara  productos de indumentaria a la audiencia al Estilo Urbano.
 
+
  
 ### ¿Cómo ajustaremos nuestra oferta a ese público? Necesitaremos ajustar ofertas de indumentaria al estilo urbano bajo la marca One To One y a nuestro publico que implica: 
  *Investigar y entender a nuestra  audiencia.
