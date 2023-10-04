@@ -18,7 +18,8 @@ Nuestro sitio brindara  productos de indumentaria a la audiencia al Estilo Urban
 ## INTEGRANTES:
  Ian Bautista Salinas / Edad: 18  / Cuidad: San Miguel;
 
- Nahuel Mendez / Edad : 22  / Cuidad: San Mguel;
+ Nahuel Mendez / Edad : 22  / Cuidad: San Mguel; 
+ Estudiante de Licenciatura en sistemas (UNGS)
 
  Nicole Colmenarez / Edad : 21 / Cuidad: Caballito;
 
@@ -30,6 +31,7 @@ Nuestro sitio brindara  productos de indumentaria a la audiencia al Estilo Urban
 ### REFERENTES DE MERCADO  
 https://mitosestilourbano.com.ar/
 https://urbanamar.com.ar/ 
+ambos elegidos por la estetica que presentan
 
 ### REFERENTES DE MERCADO
 https://www.rockthatbody.com.ar/
