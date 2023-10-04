@@ -30,6 +30,7 @@ Es una moda diseñada para soportar el ritmo de la vida cotadina.
  Estudiante de Digital House 
 
  Julian Saucedo / Edad : 34 / Cuidad: Berazategui;
+ Developer 
  
  Gisele Ortiz / Edad : 39 / Cuidad: San Miguel.
  Estudiante de digital House y Introduccion en Ciberseguridad Cisco.
