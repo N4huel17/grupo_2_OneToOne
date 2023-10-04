@@ -2,6 +2,10 @@
 
 ###  Introduccion: 
 Nuestro sitio brindara  productos de indumentaria a la audiencia al Estilo Urbano.
+Se trata de una forma de vestir que es capaz de expresar la personalidad de cada individuo y
+además es cómoda.
+Es un estilo juvenil que te permite combinar diferentes marcas, colores y todo tipo de accesorios.
+Es una moda diseñada para soportar el ritmo de la vida cotadina.
 
  
 ### ¿Cómo ajustaremos nuestra oferta a ese público? Necesitaremos ajustar ofertas de indumentaria al estilo urbano bajo la marca One To One y a nuestro publico que implica: 
@@ -28,6 +32,7 @@ Nuestro sitio brindara  productos de indumentaria a la audiencia al Estilo Urban
  Julian Saucedo / Edad : 34 / Cuidad: Berazategui;
  
  Gisele Ortiz / Edad : 39 / Cuidad: San Miguel.
+ Estudiante de digital House y Introduccion en Ciberseguridad Cisco.
 
 
 ### REFERENTES DE MERCADO  
@@ -44,4 +49,8 @@ Ambos elegidos por el rango de cliente a los que apuntan
 ### REFERENTES DE MERCADO
 https://www.urbanosalto.com
 https://www.ropaurbana.ar
-Elegidos por el funcionalidades implementadas
+Elegidos por LAS funcionalidades implementadas
+
+### REFERENTE DE MERCADO
+https://www.pda.com.ar/?gclid=CjwKCAjw69moBhBgEiwAUFCx2MF_KoPM-2qLb3_EC883ByEgR3l5zlEOP-9VFtznPy6w62XpaXuGUBoC8iMQAvD_BwE
+Elegidos por producto y servicios.
