@@ -22,6 +22,7 @@ Nuestro sitio brindara  productos de indumentaria a la audiencia al Estilo Urban
  Estudiante de Licenciatura en sistemas (UNGS)
 
  Nicole Colmenarez / Edad : 21 / Cuidad: Caballito;
+ Estudiante de Digital House 
 
  Julian Saucedo / Edad : 34 / Cuidad: Berazategui;
  
@@ -36,6 +37,8 @@ ambos elegidos por la estetica que presentan
 ### REFERENTES DE MERCADO
 https://www.rockthatbody.com.ar/
 https://anexoclothing.empretienda.com.ar/
+Ambos elegidos por el rango de cliente a los que apuntan 
+
 
 ### REFERENTES DE MERCADO
 https://www.urbanosalto.com
