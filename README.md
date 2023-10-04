@@ -17,11 +17,13 @@ Nuestro sitio brindara  productos de indumentaria a la audiencia al Estilo Urban
 
 ## INTEGRANTES:
  Ian Bautista Salinas / Edad: 18  / Cuidad: San Miguel;
+ Estudiante de Digital House 
 
  Nahuel Mendez / Edad : 22  / Cuidad: San Mguel; 
  Estudiante de Licenciatura en sistemas (UNGS)
 
  Nicole Colmenarez / Edad : 21 / Cuidad: Caballito;
+ Estudiante de Digital House 
 
  Julian Saucedo / Edad : 34 / Cuidad: Berazategui;
  Developer 
@@ -31,12 +33,15 @@ Nuestro sitio brindara  productos de indumentaria a la audiencia al Estilo Urban
 ### REFERENTES DE MERCADO  
 https://mitosestilourbano.com.ar/
 https://urbanamar.com.ar/ 
-ambos elegidos por la estetica que presentan
+Ambos elegidos por la estetica que presentan
 
 ### REFERENTES DE MERCADO
 https://www.rockthatbody.com.ar/
 https://anexoclothing.empretienda.com.ar/
+Ambos elegidos por el rango de cliente a los que apuntan 
+
 
 ### REFERENTES DE MERCADO
 https://www.urbanosalto.com
 https://www.ropaurbana.ar
+Elegidos por el funcionalidades implementadas
