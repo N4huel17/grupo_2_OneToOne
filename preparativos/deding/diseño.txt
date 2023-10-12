@@ -1,0 +1,6 @@
+Tipografia: Blod intel
+Gama de colores:
+negro : OOOOO0 100%
+blanco: FFFFFF 100%
+fuccia : FF00B8 93%
+
