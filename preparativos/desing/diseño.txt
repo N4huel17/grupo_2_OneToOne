@@ -1,4 +1,8 @@
-Tipografia: Blod intel
+Tipografia: Playfair Display 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&family=Roboto&family=Work+Sans&display=swap" rel="stylesheet">
+
 Gama de colores:
 negro : OOOOO0 100%
 blanco: FFFFFF 100%
