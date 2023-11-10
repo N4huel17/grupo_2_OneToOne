@@ -18,7 +18,7 @@ Iconos a usar para el proyecto
 <i class="fa-brands fa-square-facebook"></i> (faceboock)
 <i class="fa-brands fa-square-instagram"></i> (Instagram)
 <i class="fa-brands fa-x-twitter"></i> (x-twitter)
-<i class="fa-brands fa-tiktok"></i>   (ticktock  (si quieren hacer un contenedor)
+<i class="fa-brands fa-tiktok"></i>   (ticktock)  (si quieren hacer un contenedor)
 <i class="fa-sharp fa-light fa-eye-slash"></i> (ojitos de seguridad)
 
 Gama de colores:
