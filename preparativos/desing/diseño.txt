@@ -1,7 +1,9 @@
-Tipografia: Playfair Display 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&family=Roboto&family=Work+Sans&display=swap" rel="stylesheet">
+Tipografia LINCK :
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;1,200&family=Poppins:wght@300;400;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap');
+tipografia CSS:
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
 
 Gama de colores:
 negro : OOOOO0 100%
