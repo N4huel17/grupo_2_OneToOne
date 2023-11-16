@@ -4,6 +4,29 @@ tipografia CSS:
 font-family: 'Josefin Sans', sans-serif;
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif;
+  tipografia CSS:
+  
+  font-family: 'Josefin Sans', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+Iconos a usar para el proyecto
+<i class="fa-solid fa-circle-user"></i>       (el user)
+<i class="fa-solid fa-cart-shopping"></i> (carrito)
+<i class="fa-solid fa-magnifying-glass"></i> (lupa)
+<i class="fa-solid fa-phone"></i> (teléfono)
+<i class="fa-solid fa-location-dot"></i> (localizador gota)
+<i class="fa-solid fa-paper-plane"></i> (avión de papel)
+      Son similares no son los del bosquejo.
+<i class="fa-regular fa-credit-card"></i> (logo tarjeta)
+<i class="fa-thin fa-truck"></i> (camión de envió)
+
+<i class="fa-regular fa-arrows-rotate"></i> (flecha circular)
+<i class="fa-brands fa-square-facebook"></i> (faceboock)
+<i class="fa-brands fa-square-instagram"></i> (Instagram)
+<i class="fa-brands fa-x-twitter"></i> (x-twitter)
+<i class="fa-brands fa-tiktok"></i>   (ticktock)  (si quieren hacer un contenedor)
+<i class="fa-sharp fa-light fa-eye-slash"></i> (ojitos de seguridad)
 
 Gama de colores:
 negro : OOOOO0 100%
