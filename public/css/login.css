@@ -25,7 +25,7 @@
 }
 
 .form__box--remember a{
-    margin-left: 120px;
+    margin-left: 70px;
     color: black;
     text-decoration: none;
 }
@@ -151,5 +151,11 @@
 
     .item p i{
         margin-left: 60px
+    }
+
+    .form__box--remember a{
+        margin-left: 120px;
+        color: black;
+        text-decoration: none;
     }
 }
