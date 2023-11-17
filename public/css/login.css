@@ -1,11 +1,37 @@
+.box__card {
+    max-width: 400px;
+    width: 100%;
+    margin: 50px auto;
+}
+
 .form {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+}
+
+.article--login {
+    text-align: center;
 }
 
 .form__box {
-    margin-bottom: 20px;
     width: 100%;
+    padding-left: 30px;
+    padding-right: 30px
+}
+
+.form__box--fill {
+    margin-bottom: 30px
+}
+
+.form__box--remember a{
+    margin-left: 110px;
+    color: black;
+    text-decoration: none;
+}
+
+.form__box--remember {
+    margin-bottom: 70px;
 }
 
 .form__box--position {
@@ -15,10 +41,7 @@
 .form__box--position span {
     position: absolute;
     right: 10px;
-    top:20px;
-    cursor: pointer;
-    color: var(--colorGris);
-    
+    top: 20px;
 }
 
 .form__label {
@@ -27,8 +50,44 @@
 
 .form__input {
     width: 100%;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #c0c0c0;
+    padding: 10px;
+    border: 1px solid black;
     margin-top: 10px;
+    background-color: #f7f5f5;
+}
+
+.form__redes {
+    font-size: 50px;
+    margin-bottom: 140px;
+    margin-left: 85px;
+    color: black;
+}
+
+.form__redes a i {
+    color: black
+}
+
+.form__buttom {
+    position: relative;
+    bottom: 120px;
+    left: 70px;
+    text-align: center;
+}
+
+.form__buttom p a {
+    color: black
+}
+
+.buttom__login {
+    background-color: #ff12bc;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    width: 250px;
+    font-size: 25px
+}
+
+.box__article {
+    text-align:center
 }

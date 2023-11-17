@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,47 +9,58 @@
     <link rel="stylesheet" href="/css/styles.css">
     <title>Login</title>
 </head>
+
 <body class="body__login">
-    <main>
+    <main class="box__main">
         <h4>inicio / mi cuenta / <strong>Login</strong></h4>
-        <br>
-        <article class="article--login">
-        <h5>Comprá más rápido y llevá el control de tus pedidos, ¡en un solo lugar!</h5>
-        <img src="/img/home/logoHome.png" alt="" width="200">
-        </article>
-        <form action="/profile" class="form">
-            <div class="form__box">
-                <label class="form__label" for="email">EMAIL</label>
-                <input class="form__input" type="email" id="email" name="email" placeholder="Ej: NoahBenjamin@gmail.com"><i class="fa-solid fa-magnifying-glass"></i>
-            </div>
-            <div class="form__box">
-                <label class="form__label" for="password">CONTRASEÑA</label>
-                <div class="form__box--position">
-                    <input class="form__input" id="password" type="password" placeholder="tu contraseña" name="password"><span><i class="fa-regular fa-eye-slash"></i></span>
+        <div class="box__card">
+            <article class="article--login">
+                <h5>Comprá más rápido y llevá el control de tus pedidos, ¡en un solo lugar!</h5>
+                <img src="/img/login/logo_login.png" alt="" width="200">
+            </article>
+            <form action="/profile" class="form">
+                <div class="form__box">
+                    <div class="form__box--fill">
+                        <label class="form__label" for="email">EMAIL</label>
+                        <div class="form__box--position">
+                            <input class="form__input" type="email" id="email" name="email"
+                                placeholder="Ej: NoahBenjamin@gmail.com"><span><i
+                                    class="fa-regular fa-envelope"></i></span>
+                        </div>
+                    </div>
+                    <div class="form__box--password">
+                        <label class="form__label" for="password">CONTRASEÑA</label>
+                        <div class="form__box--position">
+                            <input class="form__input" id="password" type="password" placeholder="tu contraseña"
+                                name="password"><span><i class="fa-regular fa-eye-slash"></i></span>
+                        </div>
+                    </div>
+                    <div class="form__box--remember">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Remember me</label>
+                        <a href="/">forgot password?</a>
+                    </div>
                 </div>
-            </div>
-            <div class="form__box"> 
-                <input type="checkbox" id="remember" name="remember">
-                <label for="remember">Remember me</label>
-                <a href="/">forgot password?</a>
-            </div>
-            <div class="form__redes">
-                <i class="fa-brands fa-square-facebook"></i>
-                <i class="fa-brands fa-square-instagram"></i> 
-                <i class="fa-brands fa-x-twitter"></i> 
-                <i class="fa-brands fa-tiktok"></i>
-            </div>
-            <div class="for__buttom">
-                <button class="buttom__login" type="submit">login</button>
-            </div>
-        </form>
-        <p>¿No tenes cuenta?<a href="/register">Crear cuenta</a></p>
-        <article>
-            <h3>Compartir</h3>
-            <i class="fa-thin fa-truck"></i>
-            <h3>envios a todo el pais</h3>
-            <h4>sin cargo a partir de $80000</h4>
-        </article>
+                <div class="form__redes">
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.tiktok.com/es/"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <div class="form__buttom">
+                    <button class="buttom__login" type="submit">login</button>
+                    <p>¿No tenes cuenta?<a href="/register">Crear cuenta</a></p>
+                </div>
+            </form>
+            <article class="box__article">
+                <hr>
+                <h3>Compartir</h3>
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>envios a todo el pais</h3>
+                <h4>sin cargo a partir de $80000</h4>
+            </article>
+        </div>
     </main>
 </body>
+
 </html>
