@@ -44,11 +44,52 @@ p {
     padding: 5px;
 
 }
-@media(min-width:430px){
-nav ul li{
-    display: none;
- }
+nav {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+  }
+  
+  nav li {
+    margin: 0 5px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: white;
+   
+  }
+
+@media(max-width:430px){
+
+    nav{
+        display: none;
+    }
+    
 }
 @media(min-width:768px){
-
+    nav{
+        display: flex;
+        justify-content: center;
+        
+    }
+    .menu {
+        display: none;
+    }
+    nav li{
+        margin:0 10px;
+    }
+    
+}
+@media(min-width:1200px){
+    
 }
