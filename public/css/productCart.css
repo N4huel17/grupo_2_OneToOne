@@ -1,0 +1,429 @@
+
+
+.costo-envio{
+
+    text-align: right;
+    margin-left: auto;
+     padding-left: 2px;
+  }
+   
+      .cantidad2{
+        padding-left: 70%;
+        margin: 20px 0;
+       }
+      
+       .precio2{
+        padding-left: 50%; 
+        color: #e0e0e0;
+       }
+      
+  
+  
+     .nombre-ropa2{
+      color:fuchsia;
+      padding-left: 40%;
+     
+     }
+    
+   .imagen-campera{
+    width: 40%; 
+    height: 5%;
+    display: block; 
+  }
+  .precio-descuento2{
+    text-decoration: line-through; 
+    position: relative; 
+    top: -10px;
+    /*transform: rotate(90deg);averiguar como se hace la rayitas del cero*/
+  }
+  .precio-original2 {
+    font-size: 24px;
+  }
+  .cantidad2 button {
+    border: none;
+    border-radius: 50%;
+    background-color:white; 
+    padding-left: 1px; 
+    font-size: 16px; 
+    margin: 0; /* Elimina el margen para evitar espacios innecesarios */
+    cursor: pointer;
+  }
+  
+     .comprar-eliminar2{
+      padding-left: 25%; 
+     margin: 2px;
+     border-radius: 5%;
+      
+     }
+     .comprar2{
+     background-color:rgb(183, 176, 176) ;
+     color:#e0e0e0;
+     }
+  .eliminar2{
+    background-color:fuchsia ;
+   
+  }
+   .producto2{
+    width: 90%;
+    height: 30%;
+    border: 1px  solid #000;
+    padding: 10px; /* Margen interior entre el contenido y el borde */
+    margin: 15px;
+    border-radius: 10px;
+    background-color:black; 
+   }
+      
+  .menu-inicio ul li {
+    display: inline-block;
+   color: black; 
+   margin-right: 10px;
+   margin-top: 2px; /*ajustan el margen entre los elementos*/
+  padding-left: 1%;
+  text-decoration: none;
+  }
+  
+  .titulo{
+  padding-left: 40%;
+  }
+  .precio1 {
+  padding-left: 50%; 
+  color: #e0e0e0;
+  }
+  .descuento1{
+  padding-left: 50%; 
+  color: #e0e0e0;
+  }
+  .precio1{
+  text-decoration: line-through; 
+  position: relative; 
+  top: -10px;
+  }
+  
+  
+  
+  
+  
+  @media (min-width: 430px ) {
+    .comprar1{
+      border-radius: 0px ;
+    
+    }
+    .producto1{
+      width: 90%;
+      height: 30%;
+      border: 1px  solid #000;
+      padding: 10px; /* Margen interior entre el contenido y el borde */
+      margin: 15px;
+      border-radius: 10px;
+      background-color:black; 
+     }
+    .costo-envio{
+  
+      text-align: right;
+      margin-left: auto;
+       padding-left: 2px;
+    }
+     
+        .cantidad2{
+          padding-left: 70%;
+          margin: 20px 0;
+         }
+        
+         .precio2{
+          padding-left: 50%; 
+          color: #e0e0e0;
+         }
+        
+   
+  
+       .nombre-ropa2{
+        color:fuchsia;
+        padding-left: 40%;
+       
+       }
+      
+     .imagen-campera{
+      width: 40%; 
+      height: 5%;
+      display: block; 
+    }
+    .precio-descuento2{
+      text-decoration: line-through; 
+      position: relative; 
+      top: -10px;
+      /*transform: rotate(90deg);averiguar como se hace la rayitas del cero*/
+    }
+    .precio-original2 {
+      font-size: 24px;
+    }
+    .precio1 {
+      font-size: 24px;
+    }
+  
+    .cantidad2 button {
+      border: none;
+      border-radius: 50%;
+      background-color:white; 
+      padding-left: 1px; 
+      font-size: 16px; 
+      margin: 0; /* Elimina el margen para evitar espacios innecesarios */
+      cursor: pointer;
+  }
+    
+       .comprar-eliminar2{
+        padding-left: 25%; 
+       margin: 2px;
+       border-radius: 5%;
+        
+       }
+       .comprar2{
+       background-color:rgb(183, 176, 176) ;
+       color:#e0e0e0;
+       }
+    .eliminar2{
+      background-color:fuchsia ;
+     
+    }
+    /*producto2 */
+     .producto2{
+      width: 90%;
+      height: 30%;
+      border: 1px  solid #000;
+      padding: 10px; /* Margen interior entre el contenido y el borde */
+      margin: 15px;
+      border-radius: 10px;
+      background-color:black; 
+     }
+        
+    .menu-inicio ul li {
+      display: inline-block;
+     color: black; 
+     display: inline-block;
+    
+   }
+  
+  
+  
+  .costo-gratis1{
+  
+    text-align: right;
+    margin-left: auto;
+     padding-left: 2px;
+  }
+   
+      .cantidad1{
+        padding-left: 70%;
+        margin: 20px 0;
+       }
+      
+       .precio1{
+        padding-left: 50%; 
+        color: #e0e0e0;
+       }
+      
+     
+      
+     .nombre-ropa1{
+      color:fuchsia;
+      padding-left: 50%;
+      text-align: center;
+      align-items: flex-end;
+     
+     }
+    
+   .imagen-pantalon{
+    width: 40%; 
+    height: 5%;
+    display: block; 
+  }
+  .precio-descuento1{
+    text-decoration: line-through; 
+    position: relative; 
+    top: -10px;
+    border-radius: 1%
+    /*transform: rotate(90deg);averiguar como se hace la rayitas del cero*/
+  }
+  .precio-original2 {
+    font-size: 24px;
+  }
+  .cantidad1 button {
+    border: none;
+    border-radius: 50%;
+    background-color:white; 
+    padding-left: 1px; 
+    font-size: 16px; 
+    margin: 0; /* Elimina el margen para evitar espacios innecesarios */
+    cursor: pointer;
+  }
+  
+     .comprar-eliminar{
+      padding-left: 25%; 
+     margin: 2px;
+     border-radius: 5%;
+  
+      
+     }
+     .comprar1{
+     background-color:rgb(135, 129, 129) ;
+     color:#908e8e;
+  
+  
+     }
+  
+     
+  .eliminar1{
+    background-color:fuchsia ;
+   
+  }
+   .producto1{
+    width: 90%;
+    height: 30%;
+    border: 1px  solid #000;
+    padding: 10px; /* Margen interior entre el contenido y el borde */
+    margin: 15px;
+    border-radius: 10px;
+    background-color:black; 
+   }
+      
+   .numero{
+    color: #e0e0e0;
+   }
+  .titulo{
+  padding-left: 40%;
+  }
+  .descuento1{
+     font-size: 24px;
+     
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /* Tablet : 768 x 1024*/
+  @media (min-width:768px) {
+  .costo-envio{
+    background-color: blue;
+  
+  
+  }
+  
+  /*Celular: 430x 932*/
+  /*432 x 768 [ Microsoft Lumia 1520 */
+  
+  
+  
+  .comprar1{
+    border-radius: 15px;
+  
+  }
+  
+    .costo-envio{
+  
+      text-align: right;
+      margin-left: auto;
+       padding-left: 2px;
+    }
+     
+        .cantidad2{
+          margin: 20px ;
+          margin: 20px ;
+          border-radius: 50% 50%;
+          
+  
+         }
+         .numero{
+          color: #e0e0e0;
+         }
+        
+         .precio2{
+          padding-left: 50%; 
+          color: #e0e0e0;
+          border-radius: 50%
+         }
+        
+   
+  
+       .nombre-ropa2{
+        color:fuchsia;
+        padding-left: 40%;
+       
+       }
+      
+     .imagen-campera{
+      width: 40%; 
+      height: 5%;
+      display: block; 
+    }
+    .precio-descuento2{
+      text-decoration: line-through; 
+      position: relative; 
+      top: -10px;
+      /*transform: rotate(90deg);averiguar como se hace la rayitas del cero*/
+    }
+    .precio-original2 {
+      font-size: 24px;
+    }
+    .cantidad2 button {
+      border: none;
+      border-radius: 50%;
+      background-color:white; 
+      padding-left: 1px; 
+      font-size: 16px; 
+      margin: 0; /* Elimina el margen para evitar espacios innecesarios */
+      cursor: pointer;
+  }
+    
+       .comprar-eliminar2{
+        padding-left: 25%; 
+       margin: 2px;
+       border-radius: 5%;
+        
+       }
+       .comprar2{
+       background-color:rgb(183, 176, 176) ;
+       color:#e0e0e0;
+       }
+    .eliminar2{
+      background-color:fuchsia ;
+     
+    }
+     .producto2{
+      width: 90%;
+      height: 30%;
+      border: 1px  solid #000;
+      padding: 10px; /* Margen interior entre el contenido y el borde */
+      margin: 15px;
+      border-radius: 10px;
+      background-color:black; 
+     }
+        
+    .menu-inicio ul li {
+      display: inline-block;
+     color: black; /* Puedes ajustar el margen entre los elementos según tus necesidades */
+  }
+    
+  .titulo{
+    padding-left: 40%;
+  }
+  .precio1 {
+    padding-left: 50%; 
+    color: #e0e0e0;
+   }
+   .descuento1{
+    padding-left: 50%; 
+    color: #e0e0e0;
+   }
+   .precio1{
+    text-decoration: line-through; 
+    position: relative; 
+    top: -10px;
+  }
+  
+}
+  }
+  
