@@ -44,11 +44,11 @@ span{
     flex-direction: row;
 }
 
-ul {
+.listas__del__footer_navegacion {
      list-style: none;
 }
 
-li a{
+.listas__del__footer_navegacion a{
     color: white;
     font-size: 20px;
     text-decoration: none
@@ -87,7 +87,7 @@ li a{
         font-size: 17px;
      }
 
-     li a{
+     .listas__del__footer_navegacion a{
         font-size: 31px;
         text-decoration: none;
     }
