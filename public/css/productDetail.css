@@ -7,7 +7,7 @@
 .imagenes__productos{
 	display: none;
 }
-main{
+.main__detalles_del_producto{
 	margin: auto;
 font-family:'Roboto', sans-serif ;
 font-size:14px ;	
@@ -135,11 +135,11 @@ font-size:14px ;
 	margin: 20px;
 }
 
-.compartir{
+.compartit_detalles_del_producto{
 	justify-content: center;
 	text-align: center;
 }
-.carrusel-contenedor-padre-info {
+.contenedor_informacion_detalle {
     border-top: 1px solid rgb(34, 34, 34);
     height: 206px;
     width: 80%;
@@ -151,19 +151,19 @@ font-size:14px ;
 
 }
 
-.detalle-carrusel-info-con {
+.detalle__informacion {
     position: relative;
     height: 100%;
 }
 
-.detalle-carrusel-info {
+.detalle2__informacion {
     width: 100%;
     height: auto;
     margin-top: -15px;
 }
 
 
-.detalle-carrusel-info i {
+.detalle2__informacion i {
     margin-top: 25px;
     font-size: 50px;
 
@@ -171,7 +171,7 @@ font-size:14px ;
 
 }
 
-.detalle-carrusel-info h3 {
+.detalle2__informacion h3 {
     margin-top: 25px;
     font-size: 20px;
     font-weight: 800;
@@ -179,7 +179,7 @@ font-size:14px ;
     margin-bottom: 20px;
 }
 
-.detalle-carrusel-info h5 {
+.detalle2__informacion h5 {
     font-family: 'Roboto', sans-serif;
      font-size: 20px;
     font-weight: 10;
@@ -219,6 +219,67 @@ font-size:14px ;
     margin-left: 20px;
 }
 
+.footer {
+    background-color: #1B1B1B;
+    color: #fff;  
+    padding: 5px;font-family:'Roboto', sans-serif ;
+
+}
+
+.footer__contacto {
+    display: flex;
+    margin-bottom: 10px;  
+}
+    
+.footer__contacto i {
+   margin-bottom :20px ;  
+}
+
+span{
+    font-size: 23px;
+}
+.footer__links{
+    display: flex;
+    flex-direction: column;
+}
+
+.separacion_links{
+    display: flex;
+    flex-direction: column;
+}
+.container__footer{
+    display: flex;
+    justify-content: space-between;
+    margin:20px;
+    
+}
+.footer__ubicacion{
+    display: flex;
+    flex-direction: row;
+}
+
+.listas__del__footer_navegacion {
+     list-style: none;
+}
+
+.listas__del__footer_navegacion a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none
+}
+
+.avioncito_recomendaciones,.footer_ubicacion{
+    display: flex;
+}
+.footer__redes i {
+    margin:5px ;  
+ }
+ .footer__redes{
+    position: relative;
+    left: 12px; ;
+ }
+ 
+
 
 
 @media (min-width:768px) {
@@ -237,7 +298,7 @@ font-size:14px ;
 .container-img{
 	border:none;
 }
-.img__remeras{
+.img__remeras_detalle{
 	width: 270px ;
 }
 .detalle_2{
@@ -245,7 +306,7 @@ font-size:14px ;
 	flex-direction: column;
 }
  
-.articulo__precio, .medios_De_pago{
+.articulo__precio_detalle, .medios_De_pago{
 	 margin: 0 20px
 }
 .container-info-cuotas{
@@ -282,11 +343,11 @@ font-size:14px ;
 	margin-left: 5px;
 	width: 300px;
 }
-.carrusel-contenedor{
+.contenedor_informacion_detalle{
 	display: flex;
 	flex-direction: row;
 }
-.carrusel-contenedor-padre-info {
+.contenedor_informacion_detalle {
 	border-top: none;
 	height: 250px;
 	width: 100%;
@@ -296,12 +357,12 @@ font-size:14px ;
 	margin-left: 0;
 }
 
-.detalle-carrusel-info-con {
+.detalle__informacion {
 	position: relative;
 	margin-top: -10px;
 }
 
-.detalle-carrusel-info {
+.detalle2__informacion {
 	width: 100%;
 	height: 90%;
 	margin-top: 10px;
@@ -309,7 +370,41 @@ font-size:14px ;
 	padding: 0 5px;
 
 }
+.carrusel-punto-info-detalle{
+	display:none;
+
 }
+.footer{
+	font-size: 24px;
+}
+
+.footer_movil{
+	display: flex;
+	flex-direction: row ;
+}
+.contacto_ubicacion{
+	margin-inline :45px;
+	display: flex;
+	flex-direction: column;
+ } 
+ .contacto_ubicacion br{
+	display: none;
+ }
+ .av{
+	font-size: 17px;
+ }
+ .listas__del__footer_navegacion a{
+	font-size: 31px;
+	text-decoration: none;
+}
+
+ .footer__redes{
+	position: relative;
+	margin-top: 0;
+	left: 18px; ;
+ }
+}
+ 
 @media (min-width: 1440px){
 main{
 	margin: 0 280px;
