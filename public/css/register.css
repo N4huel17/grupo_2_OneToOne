@@ -1,17 +1,18 @@
-p {
+.register-parrafo {
     font-family: 'roboto';
     font-size: 15px;
     padding: 5px;
 }
 
-form {
+.register-formulario {
 
     display: flex;
     flex-direction: column;
-    align-content: center;
+    justify-content: center;
+    margin: auto;
 }
 
-label {
+.register-formulario-label {
     text-transform: uppercase;
 
 
@@ -20,7 +21,7 @@ label {
 
 }
 
-input {
+.register-formulario-label-input {
     width: 80%;
     height: 20px;
     border-radius: none;
@@ -48,7 +49,7 @@ input {
     margin-bottom: 15px;
 }
 
-button {
+.register-btn {
     width: 80%;
     height: 30px;
     background: fuchsia;
@@ -60,14 +61,14 @@ button {
     padding: 4px;
 }
 
-h3 {
+.register-h3 {
     font-family: 'roboto';
     font-size: 15px;
     text-align: center;
 }
 
 @media (min-width:768px) {
-    form {
+    .register-formulario {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -75,7 +76,7 @@ h3 {
 }
 
 @media (min-width:1200) {
-    form {
+    .register-formulario {
         display: flex;
         flex-direction: column;
         justify-content: center;
