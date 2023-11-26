@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/c65f2f1cc8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&family=Work+Sans&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Login</title>
+</head>
+
+<body class="body__login">
+    <main class="box__main">
+        <h4>inicio / mi cuenta / <strong>Login</strong></h4>
+        <div class="box__card">
+            <article class="article--login">
+                <h5>Comprá más rápido y llevá el control de tus pedidos, ¡en un solo lugar!</h5>
+                <img src="/img/login/logo_login.png" alt="" width="200">
+            </article>
+            <form action="/profile" class="form">
+                <div class="form__box">
+                    <div class="form__box--fill">
+                        <label class="form__label" for="email">EMAIL</label>
+                        <div class="form__box--position">
+                            <input class="form__input" type="email" id="email" name="email"
+                                placeholder="Ej: NoahBenjamin@gmail.com"><span><i
+                                    class="fa-regular fa-envelope"></i></span>
+                        </div>
+                    </div>
+                    <div class="form__box--password">
+                        <label class="form__label" for="password">CONTRASEÑA</label>
+                        <div class="form__box--position">
+                            <input class="form__input" id="password" type="password" placeholder="tu contraseña"
+                                name="password"><span><i class="fa-regular fa-eye-slash"></i></span>
+                        </div>
+                    </div>
+                    <div class="form__box--remember">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember">Remember me</label>
+                        <a href="/">forgot password?</a>
+                    </div>
+                </div>
+                <div class="form__redes">
+                    <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.tiktok.com/es/"><i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <div class="form__buttom">
+                    <button class="buttom__login" type="submit">login</button>
+                    <p>¿No tenes cuenta?<a href="/register">Crear cuenta</a></p>
+                </div>
+            </form>
+            <hr>
+        </div>
+        <h3 class="main__h3--end">Compartir</h3>
+        <article class="box__article">
+            <div class="item">
+                <p class="item"><i class="fa-solid fa-truck-fast"></i></p>
+                <h3>envios a todo el pais</h3>
+                <h4>sin cargo a partir de $80000</h4>
+            </div>
+            <div class="item">
+                <p><i class="fa-regular fa-credit-card"></i></p>
+                <h3>paga como quieras</h3>
+                <h4>aceptamos todos los tipos de pago</h4>
+            </div>
+            <div class="item">
+                <p><i class="fa-solid fa-arrows-rotate"></i></p>
+                <h3>cambios y devoluciones</h3>
+            </div>
+        </article>        
+    </main>
+</body>
+
+</html>
