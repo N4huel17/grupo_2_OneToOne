@@ -103,7 +103,7 @@
     display: none;
     padding: 0;
     list-style: none;
-
+   
 
 }
 
@@ -341,7 +341,7 @@
 }
 
 /*---------TABLEET-----------------*/
-@media (min-width: 480px) {
+@media (min-width: 768px) {
 
     /*---portada---*/
     .home_mian-portada-pie {
@@ -424,7 +424,7 @@
         display: list-item;
         padding: 0;
         list-style: none;
-        margin-left: 60px;
+        margin-left: 0px;
 
     }
 
@@ -638,7 +638,7 @@
 
 }
 
-@media(min-width:1024px) {
+@media(min-width:1440px) {
 /*---portada---*/
 .home_mian-portada-pie {
 
