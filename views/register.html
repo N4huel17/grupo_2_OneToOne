@@ -10,33 +10,40 @@
 </head>
 
 <body>
-    <p>Inicio/ Mi cuenta / <b>Crear cuenta</b></p>
+    <p class="register-parrafo one"><a href="">Inicio / </a><a href="">Mi cuenta / </a><a href=""><b>Crear cuenta</b></a>  </p>
 
-    <p>Comprá mas rápido y llevá el control de tus pedidos,¡en un solo lugar!</p>
-    <form action="#" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
+    <p class="register-parrafo" >Comprá mas rápido y llevá el control de tus pedidos, ¡en un solo lugar!</p>
+   
+   
+    <form class="register-formulario" action="#" method="post">
+        <label class="register-formulario-label" for="nombre">Nombre:</label>
+        <input class="register-formulario-label-input" type="text" id="nombre" name="nombre" required placeholder="Ej: Noah Benjamin Silva">
 
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email" required>
+        <label class="register-formulario-label" for="email">Email:</label>
+        <input class="register-formulario-label-input" type="text" id="email" name="email" required placeholder="Ej: NoahBenjaminSilva@gmail.com">
 
-        <label for="telefono">Telefono(Opcional):</label>
-        <input type="text" id="telefono" name="telefono" required>
+        <label class="register-formulario-label" for="telefono">Telefono(Opcional):</label>
+        <input class="register-formulario-label-input" type="text" id="telefono" name="telefono" required placeholder="Ej: 1123454324">
 
-        <label for="contrasena">Contraseña:</label>
-        <div class="contrasena-eyes">
-            <input type="password" id="contrasena" name="contrasena" required>
-            <i class="fa-regular fa-eye-slash"></i>
+       
+        
+            <label class="register-formulario-label" for="contrasena">Contraseña:</label>
+            <div class="input-eyes">
+            <input class="register-formulario-label-contrasena" type="password" id="contrasena" name="contrasena" required placeholder="Ej: JWE1234">
+            <i class="fa-regular fa-eye-slash ojo"></i>
         </div>
-        <label for="confirmarContrasena">Confirmar Contraseña:</label>
-        <div class="contrasena-eyes">
-            <input type="password" id="confirmarContrasena" name="confirmarContrasena" required>
-            <i class="fa-regular fa-eye-slash"></i>
+        
+        
+            <label class="register-formulario-label" for="confirmarContrasena">Confirmar Contraseña:</label>
+            <div class="input-eyes">
+            <input class="register-formulario-label-contrasena" type="password" id="confirmarContrasena" name="confirmarContrasena" required required placeholder="Ej: JWE1234">
+            <i class="fa-regular fa-eye-slash ojo"></i>
         </div>
-        <input type="submit" value="Enviar" class="enviar">
+      
     </form>
-    <button>CREAR CUENTA</button>
-    <h3>¿Ya tienes una cuenta?<b>Iniciar Sesion</b></h3>
+    <input type="submit" value="Enviar" class="enviar">
+    <button class="register-btn">CREAR CUENTA</button>
+    <h4 class="register-h4">¿Ya tienes una cuenta? <a href=""><b>Iniciar Sesion</b></h4></a>
 </body>
 
 </html>
