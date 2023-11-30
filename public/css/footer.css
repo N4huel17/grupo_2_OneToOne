@@ -28,6 +28,10 @@ span{
     display: flex;
     flex-direction: column;
 }
+.links_footer-movil{
+    display: none;
+   
+}
 
 .separacion_links{
     display: flex;
@@ -65,6 +69,23 @@ span{
     left: 12px; ;
  }
 
+ .redes_sociales_del_footer{
+    margin-top: 45% ;
+ }
+
+ .listas_nuevas_del_footer{
+    list-style: none;
+    margin-top: 25%; 
+    margin-left: 15%;
+ }
+
+ .listas_nuevas_del_footer a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    
+ }
+
  @media (min-width:768px) {
     .footer{
         font-size: 24px;
@@ -74,8 +95,13 @@ span{
         display: flex;
         flex-direction: row ;
     }
+
+    .links_footer-movil{
+        display: flex;
+        flex-direction: column;
+    }
     .contacto_ubicacion{
-        margin-inline :45px;
+        margin-left :65px;
         display: flex;
         flex-direction: column;
      } 
@@ -96,6 +122,14 @@ span{
         margin-top: 0;
         left: 18px; ;
      }
+     .listas_nuevas_del_footer{
+         display: none;
+     }
+     .redes_sociales_del_footer{
+        margin-top: 0;
+        margin-right: 8%;
+     }
+
      
     }
     @media (min-width: 1440px){
