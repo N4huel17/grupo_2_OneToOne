@@ -49,6 +49,8 @@ span{
 }
 
 .listas__del__footer_navegacion {
+    display:flex;
+    flex-direction: column;
      list-style: none;
 }
 
@@ -74,6 +76,8 @@ span{
  }
 
  .listas_nuevas_del_footer{
+    display:flex;
+    flex-direction: column;
     list-style: none;
     margin-top: 25%; 
     margin-left: 15%;
@@ -84,6 +88,27 @@ span{
     font-size: 20px;
     text-decoration: none;
     
+ }
+
+ .facebook {
+    font-family: 'Font Awesome 5 Brands'; 
+    font-size: 36px;
+    color: #1877f2;
+ }
+ .twitter{
+    font-family: 'Font Awesome 5 Brands'; 
+    font-size: 36px;
+    color:  #1da1f2;
+ }
+ .instagram{
+    font-family: 'Font Awesome 5 Brands'; 
+    font-size: 36px;
+    color: #e4405f;
+ }
+ .tiktok{
+    font-family: 'Font Awesome 5 Brands'; 
+    font-size: 36px;
+    color: #ffffff;
  }
 
  @media (min-width:768px) {
