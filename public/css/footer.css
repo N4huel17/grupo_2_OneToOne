@@ -66,6 +66,7 @@ span{
  }
 
  @media (min-width:768px) {
+    
     .footer{
         font-size: 24px;
     }

@@ -1,22 +1,15 @@
-:root{
-  background-color: rgba(218, 202, 202, 0.534);
-  color: rgb(255, 28, 193);
-}
+
 * {
-
-  box-sizing: border-box;
+ 
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
-/*.titulo{
-  color:#000000;
-  font-family:' roboto', sans-serif;
-
-}
-*/
-
 .producto2{
-
   display: flex;
-
+  justify-content: center;
+  
+  
 
   }
   .producto-imagen-precio_cantidad_comprar_costo{
@@ -31,18 +24,21 @@
   }
   .precio_cantidad_comprar_costo {
   
-  margin-top: 28%;
-  height: 100px;
-  
-  }
+    margin-top: 20%;
+    height: 50px;
+    
+    }
   
   .imagen1{
   background-color: #000000;
-  width: 150px;
+  width: 120px;
   margin-right:5px ;
+  border-radius: 10px 10px 10px 10px;
+  position: relative;
+  top: 35px;
+  left: 5%;
   }
   .precio_cantidad_comprar_costo{
-   
   position: relative;
   top: -100px; 
   
@@ -55,83 +51,85 @@
     letter-spacing: 1px;
     display: inline-block; /* o display: inline; */
     margin-right: 10px;
-    margin-top: -20px
-
+    margin-top: 45px;
+    font-family:'Roboto', sans-serif ;
   }
   
   .precio-original2, .precio-descuento2 {
     display: block;
     text-align: center;
     color: white; 
-  }
-  .precio-original2{
-    font-size: 10px;
-    margin-bottom:5%
-  }
-  
-  .precio-original2 {
-    text-decoration: line-through;
-  color: white;
-  margin-left: 45px; 
 
   }
-  
+
   .precio-descuento2{
-    margin: auto;
     font-size: 20px; 
+    position:relative ;
+left: -2%;
+top: 4%;
   } 
-  
-  
+
+.precio-original2{
+  font-size: 15px;
+  margin-bottom:2%;
+  text-decoration: line-through;
+  color: white;
+  position:relative ;
+ left: 25%;
+top: 10%;
+}
   .cantidad2 {
+
+    width: 30px; 
+    height: 30px;
     border-radius: 50%;
     background-color: white;
     color: #000000;
     font-size: 25px;
-    margin-left: 25px; 
+   
     display: inline-block;
     margin-bottom: 10px;
+    position: relative;
+      left: 25%;
+
   }
-  
+  .numero2{
+    position: relative;
+left: 21%;
+top: -10%;
+  }
   .eliminar2, .comprar2 {
-    background-color:white;
-    color:black;
-    border-radius:10px 10px 10px 10px;
-    left: 2%;
-    
-    margin-bottom: 1px;
+    border-radius:15px 15px 15px 15px;
+    display: inline-block;
+    margin-right: 10px; 
+    width: 90px;   
+  font-size: 13px; 
+    border: 2px solid black
 
-     /* o display: inline; */
-
-    
   }
-  .comprar2{
+
+
+  .eliminar2{
+    background-color: rgb(60, 59, 59); 
+    border-radius: 10px;
+    border-radius:15px 15px 15px 15px;
+   }
+ 
+  .comprar2 {
+   
     background-color: rgb(255, 28, 193);
     color: #000000;
   }
-  .comprar1 {
-    border-radius:10px 10px 10px 10px;
 
-    background-color: rgb(255, 28, 193);
-    color: #000000;
-  }
-  .eliminar1{
-    border-radius:10px 10px 10px 10px;
-   background-color:  rgba(218, 202, 202, 0.534);
-   color:white ;
-
-  }
- .eliminar2{
-  background-color:  rgba(218, 202, 202, 0.534);
-  color:white 
- }
   .costo {
   padding: 4%;
   align-items:center;
     color:white;
     display: inline-block;
     margin-top: 10px;
-    font-size: 13px; 
-  
+    font-size: 15px; 
+  position: relative;
+  top: -9%;
   }
   
   
@@ -145,14 +143,14 @@
 
     
     /* Estilos para los elementos de la lista */
-    ul {
+   .inicio_carrito-ul {
      
       display: flex;
       justify-content: flex-start;
       text-decoration: none  /* Ajusta según desees la alineación de los elementos */
     }
     
-    li {
+    .inicio_carrito-li {
       margin: 0 10px;
       list-style: none; 
       font-size: 18px ;
@@ -160,51 +158,64 @@
     }
     
     /* Estilos para los enlaces */
-    li a {
+    .inicio_carrito-li .inicio_carrito-a {
       text-decoration: none; /* Quitar la línea de decoración por defecto */
-      color: #000000;
+     
       border-bottom: none;
     
   }
   .titulo{ 
-    color: #000000;
-    text-align: center;
-    margin-top: 15px;
-  
-    }
-  
 
-  
+    text-align: center;
+
+
+
+    }
+    /*nuevo*/
+
 
   
   
 
 
 @media (min-width:1440px ) {
+*{
+
+  width: 100%;
+
+}
+
+
+
+
+
 
   .imagen1{
-    background-color: #000000;
-    width: 150px;
+
+    width: 200px;
     margin-right:5px ;
     }
+
+
     .titulo{
       display: none;
      }
+
  .nombre-ropa2{
-font-family:'robot' sans-serif ;
+font-family:'roboto' sans-serif ;
 text-align: center;
 position: relative;
 font-size: 24px;
 bottom: 100px;
 left: 120px; ;
-top: -90px;
+top: -20%;
  }
-.precio_cantidad_comprar_costo{
+.precio_cantidad_comprar_costo  {
  display: flex;
  flex-direction: row;
 justify-content: flex-end;
 position: relative;
-
+top: auto;
 
 
 
@@ -217,8 +228,8 @@ position: relative;
   top: -90%;
   bottom: -50%;
 transform: translate(-2%, -110%);
-font-size: -30px;
-letter-spacing: 5px;
+font-size: -30px ;
+letter-spacing : 5px,
 }
 
  .precio-descuento2{
@@ -235,10 +246,10 @@ top: 5%;
   bottom:5px;
   left: -25%; 
   bottom:-70%;
-top: -15px;
+   top: -15px;
 }
 
-.precio-original2{
+.precio-original2 {
   font-size: -45px;
 }
 
@@ -257,16 +268,15 @@ top: -50%;
 position: absolute;
 top: 10%;
 left: 106%;
-
 margin-right: 10%; /* Ajusta el margen derecho según tus necesidades */
 
 
 }
 
 .numero2{
-
   font-size: 46;
   margin: 0 5px  ;
+  color:white
 }
 
 .eliminar2{
@@ -278,7 +288,6 @@ top: -5px;
 
 }
 .comprar2 {
-
   margin-left: 150%;
   position: relative;
   top:25px; 
@@ -291,7 +300,7 @@ margin-bottom: 5%;
   margin-top: 30%;
   margin-left: 200%;
   position: relative;
-
+  color: rgb(60, 59, 59);
 
 
 }
@@ -300,15 +309,21 @@ margin-bottom: 5%;
   margin-top: -20%;
   margin-left: 200%;
   position: relative;
-
-
  }
 }
-   
-  
-  
 
 
+
+
+
+
+
+
+
+
+
+/*----------tablet
+-----------------*/
 @media (min-width:768px){ 
 
   
@@ -319,7 +334,8 @@ margin-bottom: 5%;
     }
     
     .precio_cantidad_comprar_costo {
-    left: 20%;
+
+    left: 10%;
     margin-top: 14%;
     height: 100px;
    
@@ -327,8 +343,10 @@ margin-bottom: 5%;
     
     .imagen1{
     background-color: #000000;
-    width: 150px;
+    width: 130px;
     margin-right:5px ;
+
+
     }
     .precio_cantidad_comprar_costo{
     
@@ -352,21 +370,28 @@ margin-top: 5%;
     }
     .precio-original2{
       font-size: 10px;
-      margin-bottom:5%
+    
     }
     
     .precio-original2 {
       text-decoration: line-through;
     color:white;
-    margin-left: 45px; 
-    font-size: 10px; 
+    font-size: 18px; 
+    position: relative; 
+    left: 5%;
+ top:20px;
+
+
     }
     
     .precio-descuento2{
       margin: auto;
       font-size: 27px; 
-      margin-left: -1cm
-
+left: -20%;
+position: relative; 
+top: 5px;
+letter-spacing: 2px;
+ 
     } 
     
     
@@ -378,13 +403,20 @@ margin-top: 5%;
       margin-left: 25px; 
       display: inline-block;
       margin-bottom: 10px;
+      position: relative; 
+top: 8px;
+
+
+
     }
     
     .eliminar2, .comprar2 {
       border-radius:10px 10px 10px 10px;
       margin-bottom: 5px;
       margin-right: 4px;
-      margin-top: -5px;
+      position: relative; 
+      top: - 10px;
+
     }
     
     .comprar1{
@@ -397,19 +429,16 @@ color:black;
       color: #000000;  
     }
 
-
-
-    .eliminar1{
+   /* .eliminar1{
       color:white ;
       border-radius:10px 10px 10px 10px;
       background-color:  rgba(218, 202, 202, 0.534);
-   color: #000000; 
-
-    }
+   color: #000000; no eliminar por las dudas
+    }*/
 .eliminar2{
   color:white ;
   background-color:  rgba(218, 202, 202, 0.534);
-  color: #000000;
+
  
 }
 
@@ -419,39 +448,43 @@ color:black;
     align-items:center;
       color:white;
       display: inline-block;
-  top: -1px;
       font-size: 16px; 
       position: absolute;
-      top:37px; 
-    /*  letter-spacing: 0px; da espacio entre letras   */
+      top:27px; 
+      letter-spacing: 2px; /*da espacio entre letras */
+      font-family:'roboto' sans-serif ;
     }
     
     /*numero del medio de los circulos*/
     .numero2{
       font-size: 28px;
       text-align: center;
-      bottom: 10px;
+      bottom: -10px;
+      position: relative;
+      left: -4%;
+     top:15%;
     }
     
       /* Estilos para los elementos de la lista */
  
       
-      li {
+      .inicio_carrito-li {
         margin: 0 10px;
         list-style: none; 
         font-size: 25px 
       }
       /* Estilos para los enlaces */
-      li a {
+    .inicio_carrito-li .inicio_carrito-a {
         text-decoration: none; /* Quitar la línea de decoración por defecto */
-        color:black; /* Cambiar el color del texto, ajusta según sea necesario */
         border-bottom: none;
      
     }
     .titulo{ 
-   
+      position: relative;
+      left: 2%;
+
       text-align: center;
-      margin-top: 10px;
+      margin-top: 20px;
       font-size: 200%;
       font-family: "roboto" sans-serif;
       }
