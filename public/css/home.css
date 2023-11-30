@@ -28,22 +28,22 @@
 
 
 .seccion_pantalones {
-    width: 70%;
+    width: 75%;
     height: 350px;
-    margin-left: 60px;
+    margin-left: 50px;
 
 }
 
 .seccion_remeras {
-    width: 70%;
+    width: 75%;
     height: 350px;
-    margin-left: 60px;
+    margin-left: 50px;
 }
 
 .seccion_new {
-    width: 70%;
+    width: 75%;
     height: 350px;
-    margin-left: 60px;
+    margin-left: 50px;
 }
 
 .home_main-secciones-article {
@@ -56,7 +56,7 @@
     background-color: rgba(218, 202, 202, 0.534);
     padding: 8px 0;
     text-align: center;
-    width: 70%;
+    width: 75%;
     position: absolute;
     margin: 0;
     top: 50%;
