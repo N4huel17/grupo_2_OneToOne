@@ -384,10 +384,10 @@ margin-top: -17%;
 
   .producto-imagen-precio_cantidad_comprar_costo{
    
-    width: 1440px; /* Puedes ajustar el ancho según tus necesidades */
+    width: 1430px; /* Puedes ajustar el ancho según tus necesidades */
     height: 135px; 
     margin-top: -1%;
-    margin-left: -5%;
+    margin-left: -6%;
   }
   
   .titulo{ 
@@ -461,6 +461,12 @@ margin-top: -17%;
 .precio1{
 margin-left: -10%;
 
+}
+
+.inicio_carrito-li {
+position: relative;
+
+left: 10%;
 }
  
 }
