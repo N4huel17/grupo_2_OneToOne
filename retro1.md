@@ -19,12 +19,6 @@ Mantenernos  mas animados y con un buen espíritu es fundamental para disfrutar 
 Además, la innovación y la creatividad nos ayudan a hacer nuestro trabajo más interesante y efectivo. Anímense a pensar de manera creativa y aportar nuevas ideas. ¡Juntos, podemos pensar fuera de la caja y hacer cosas asombrosas!"
 
 
-
-
-
-
-
-
 **Lecciones aprendidas:
 "Aprendimos la importancia de la comunicación efectiva, especialmente cuando nos enfrentamos a situaciones en las que no todos entendían lo mismo. La comunicación clara y la disposición para escuchar a los demás resultaron ser fundamentales para trabajar juntos de manera armoniosa.
 
@@ -43,12 +37,6 @@ Evaluación y retroalimentación: Establecer un proceso de evaluación regular y
 Gestión de recursos: Optimizar el uso de recursos y alinearlos con los objetivos del equipo.
 Innovación y creatividad: Fomentar la generación de nuevas ideas, diversidad de pensamiento y sesiones de lluvia de ideas.
 
-
-
-
-
-
-
 **Agradecimientos:
 Quiero expresar mi sincero agradecimiento a todo el equipo por su constante disposición y colaboración. Su compromiso y voluntad para trabajar juntos han sido fundamentales para alcanzar nuestros objetivos. Estoy realmente agradecido/a  por el esfuerzo y la dedicación de cada uno de ustedes. ¡Sigamos trabajando juntos de esta manera excepcional. !!
 
@@ -62,3 +50,11 @@ Usar una herramienta para llevar un registro de lo que necesitamos hacer y divid
 Trabajar juntos:
 Hacer cosas juntos para conocernos mejor y ser más amigables en el trabajo.
 Estos compromisos son más simples y fáciles de entender, lo que facilitará que el equipo los siga y mejore en el próximo sprint.
+
+
+
+
+
+
+
+
