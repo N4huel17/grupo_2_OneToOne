@@ -1,0 +1,9 @@
+RUTAAAAAAS
+
+
+HOME :                / 
+CARRITO:              /carrito
+DETALLE DE PRODUCTOS: /productos/detalle
+LOGIN :               /usuarios/ingreso
+REGISTRO:             /usuarios/REGISTRO
+

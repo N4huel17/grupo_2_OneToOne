@@ -1,16 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito de Compras</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="https://kit.fontawesome.com/d70e7c2386.js" crossorigin="anonymous"></script>
-</head>
+   <!-- //HEAD PARTIALS-->
+   <%- include('./partials/head',{
+    title:'Carrito'
+})  %>
 <body>
-<header>
-        
-</header>
+  <!-- //HEADER PARTIALS-->
+    
+    <%- include('./partials/header') %>
+
 
  <main class= "nav_carrito">
         <section class="menu-inicio">      
@@ -106,7 +104,7 @@
         </section>
     </main>
 
-    <footer>
-</footer>
+    <!-- //FOOTER PARTIALS-->
+    <%- include('./partials/footer') %>
 </body>
 </html>

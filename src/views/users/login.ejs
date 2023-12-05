@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/c65f2f1cc8.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Raleway:wght@400;700&family=Work+Sans&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/css/styles.css">
-    <title>Login</title>
-</head>
+    <!-- //HEAD PARTIALS-->
+    <%- include('../partials/head',{
+        title:'Login'
+    })  %>
 
 <body class="body__login">
+    <!-- //HEADER PARTIALS-->
+    
+    <%- include('../partials/header') %>
+
     <main class="box__main">
         <h4>inicio / mi cuenta / <strong>Login</strong></h4>
         <div class="box__card">
@@ -76,6 +72,8 @@
             </div>
         </article>        
     </main>
+    <!-- //FOOTER PARTIALS-->
+    <%- include('../partials/footer') %>
 </body>
 
 </html>
