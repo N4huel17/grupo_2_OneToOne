@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+   <!-- //HEAD PARTIALS-->
+   <%- include('./partials/head',{
+    title:'Dashboard'
+})  %>
+<body>
+    <%- include('./partials/header-admin') %>
+
+    <main class="container">
+        <section class="row my-5">
+            <div class="col-12 col-md-10 mx-auto">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <h4 class="cart-title">Productos</h4>
+                        <a class="btn btn-dark" href="/productos/agregar">Nuevo</a>
+                    </div>
+                    <div class="card-body table-responsive">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Descripcion</th>
+                                <th scope="col">Categoría</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Acciones</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <% products.forEach(({id,name,category, mainImage,images, description, precio}) => { %>
+                                    <tr>
+                                        <th scope="row"><%= id %></th>
+                                        <td><%= name %></td>
+                                        <td><%= description %></td>
+                                        <td><%= category %></td>
+                                        <td><%= precio %></td>
+                                        
+                                    </tr>
+                                   
+                                      
+                                <% }) %>
+                              
+        
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+  <%- include('./partials/scripts') %>
+</body>
+</html>
