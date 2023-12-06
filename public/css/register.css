@@ -9,22 +9,8 @@
     width: 80%;
 }
 
-.register-parrafo {
-    font-family: 'Roboto';
-    font-size: 12px;
-    padding: 5px;
-    font-weight: 200;
-    letter-spacing: 1px;
-}
-::placeholder{
-    background-color: rgb(210, 203, 203, 0.5);
-}
-
-
-.register-formulario-label {
+label {
     text-transform: uppercase;
-    display: inline-block;
-
     position: relative;
     padding: 3px;
 
@@ -204,6 +190,7 @@ a {
            margin-bottom: 20px;
         }
 
+    
  
         
     }

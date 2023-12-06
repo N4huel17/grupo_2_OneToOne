@@ -136,9 +136,10 @@
     }
 }
 
+
 /*****DESKTOP*******/
 
-@media(min-width:1440px){
+@media(min-width:1024px){
 .header{
     width: 100%;
     display: flex;

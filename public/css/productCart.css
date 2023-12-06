@@ -1,21 +1,58 @@
-
+/*------phone--------📲------------*/
 * {
-
-  box-sizing: border-box;
+ 
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
 }
-/*.titulo{
-  color:#000000;
-  font-family:' roboto', sans-serif;
 
+/* -------inicio / carrito-------------------*/
+
+
+.menu-inicio .inicio_carrito-ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px;
+  display: flex;
+  align-items: center; 
+  margin-left: 5%;
 }
-*/
+
+.menu-inicio .inicio_li,
+.menu-inicio .carrito-li {
+  margin-right: 10px; 
+}
+
+.menu-inicio .carrito-li {
+  margin-right: 0; 
+}
+
+.menu-inicio .barra {
+  margin-right: 5px; 
+}
+
+.menu-inicio .inicio_a,
+.menu-inicio .carrito_a {
+  color: black;
+  text-decoration: none;
+}
+  /*-------mi carrito el titulo--------------*/
+  
+  .titulo{ 
+
+    text-align: center;
+    font-family:'Roboto', sans-serif ;
+    font-weight: 400;
+
+    }
+  /* ----------producto--------------------------*/
 
 .producto2{
-
   display: flex;
-
-
+  justify-content: center;
+  
   }
+
   .producto-imagen-precio_cantidad_comprar_costo{
  color:white ;
     display: flex;
@@ -27,429 +64,626 @@
     margin: 5%;
   }
   .precio_cantidad_comprar_costo {
-  
-  margin-top: 28%;
-  height: 100px;
-  
-  }
-  
-  .imagen1{
-  background-color: #000000;
-  width: 150px;
+    margin-top: 20%;
+    height: 50px;
+    }
+    .precio_cantidad_comprar_costo{
+      position: relative;
+      top: -100px; 
+      }
+/*--------imagen-de la camisa------------------------*/
+  .imagen1  .imagen2   {
   margin-right:5px ;
-  }
-  .precio_cantidad_comprar_costo{
-   
   position: relative;
-  top: -100px; 
-  
   }
+  .imagen1{
+    position: relative;
+    top: 25px;
+    left:10%; 
+  }
+.imagen2{
+  width: 100px;
+  position: relative;
+  top: 45px;
+  left: 10%; 
+}
+
+  /*----pantalon-------------*/
   .nombre-ropa2 {
- 
+ position: relative;
     color: rgb(255, 28, 193);
     font-size: 20px;
-    left:20px;
+    left:10px;
+    top:-10%;
     letter-spacing: 1px;
-    display: inline-block; /* o display: inline; */
+ /* o display: inline; */
     margin-right: 10px;
-    margin-top: -20px
-
+    margin-top: 45px;
+    font-family:'insolata' ;
+    display: inline-block;
   }
-  
-  .precio-original2, .precio-descuento2 {
-    display: block;
-    text-align: center;
+
+  /*---------precios y el descuento-----------------*/
+  .precio1.descuento2  .descuento1 .precio2     {
+    font-family:'inconsolata';
     color: white; 
   }
-  .precio-original2{
-    font-size: 10px;
-    margin-bottom:5%
-  }
-  
-  .precio-original2 {
-    text-decoration: line-through;
-  color: white;
-  margin-left: 45px; 
+
+/*----contenedor 1--------*/
+.precio-original1{
+margin-top: -3%;
 
   }
   
-  .precio-descuento2{
-    margin: auto;
-    font-size: 20px; 
-  } 
-  
-  
-  .cantidad2 {
-    border-radius: 50%;
-    background-color: white;
-    color: #000000;
-    font-size: 25px;
-    margin-left: 25px; 
+
+.descuento1 {
+  position: relative;
+  font-size: 24px; 
+  left: 45%;
+  top: -9%;
+}
+
+.precio1 {
+  font-size: 15px; 
+  text-decoration: line-through;
+  position: absolute;
+  left: 70%;
+
+}
+
+/*-----contenedor 2------*/
+.precio {
+  font-size: 24px; 
+  position: relative;
+  top: 15%; 
+  left: 45%;
+}
+
+.descuento{
+  font-size: 15px; 
+  text-decoration: line-through;
+  position: relative;
+ top: -15px;
+  left: 45%;
+}
+
+/*-------circulos----------------*/
+.cantidad2{
+  width: 30px; 
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  color: #000000;
+  font-size: 20PX; ;
+  display: inline;
+  margin-bottom: 10px;
+  margin-top:2PX ;
+}
+  .cantidad2{
+    position: relative;
+      left: 35%;
+      top: 5px
+  }
+/*-------contenedor de circulos 2------------------------*/
+.cantenedor_mas1{
+  width: 30px; 
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  color: #000000;
+  font-size: 20PX; ;
+  display: inline;
+  margin-bottom: 10px;
+  margin-top:2PX ;
+}
+ .contenedor_menos1  {
+  width: 30px; 
+  height: 30px;
+  border-radius: 50%;
+  background-color: white;
+  color: #000000;
+  font-size: 20PX; ;
+  display: inline;
+  margin-bottom: 10px;
+  margin-top:2PX ;
+  font-family:'Inconsolata' ;
+}
+.contenedor_circulos{
+  position: relative;
+  left: 38%;
+  top: 25%;
+}
+ /*------el numero del medio de los circulos---------------*/ 
+ .numero2 .numero{
+  font-family: sans-serif ;
+  color:white;
+  font-size: 25px;
+  margin-bottom: 20px; 
+
+ }    
+ .numero2{
+  margin-left: 15px; 
+  position: relative;
+  left: 31%;
+  top: -13%;
+}
+
+.numero{
+  margin-left: 15px; 
+  position: relative;
+  left:-3%;
+  top: 13%;
+
+}
+  /*---1er contenedor ----botones comprar eliminar----------------*/
+  .eliminar1, .comprar1       {
+    border-radius:15px 15px 15px 15px;
+    margin-right: 15px; 
+    width: 90px;   
+    margin-top:2PX ;
+  font-size: 13px; 
+    border: 2px solid black;
     display: inline-block;
-    margin-bottom: 10px;
+ 
   }
-  
-  .eliminar2, .comprar2 {
-    background-color:white;
-    color:black;
-    border-radius:10px 10px 10px 10px;
-    left: 2%;
-    
-    margin-bottom: 1px;
-
-     /* o display: inline; */
-
-    
+  .eliminar1, .comprar1   {
+    position: relative;
+    left: 35px;
+    top: -25%;
   }
-  .comprar2{
-    background-color: rgb(255, 28, 193);
-    color: #000000;
-  }
+  .eliminar1 {
+    background-color: rgb(60, 59, 59); 
+    border-radius: 10px;
+    border-radius:15px 15px 15px 15px;
+   }
   .comprar1 {
-    border-radius:10px 10px 10px 10px;
-
     background-color: rgb(255, 28, 193);
     color: #000000;
   }
-  .eliminar1{
-    border-radius:10px 10px 10px 10px;
-   background-color:  rgba(218, 202, 202, 0.534);
-   color:white ;
-
-  }
- .eliminar2{
-  background-color:  rgba(218, 202, 202, 0.534);
-  color:white 
- }
-  .costo {
-  padding: 4%;
-  align-items:center;
-    color:white;
+  /*--------2contenedor de comprar-eliminar ---------------------*/
+  .eliminar, .comprar{
+    border-radius:15px 15px 15px 15px;
+    margin-right: 15px; 
+    width: 90px;   
+    margin-top:2PX ;
+  font-size: 13px; 
+    border: 2px solid black;
     display: inline-block;
-    margin-top: 10px;
-    font-size: 13px; 
-  
   }
-  
-  
-  
-  .numero2{
-    color:white;
-    font-size: 25px;
-    margin-left: 15px; 
-  }
-  
-
-    
-    /* Estilos para los elementos de la lista */
-    ul {
-     
-      display: flex;
-      justify-content: flex-start;
-      text-decoration: none  /* Ajusta según desees la alineación de los elementos */
-    }
-    
-    li {
-      margin: 0 10px;
-      list-style: none; 
-      font-size: 18px ;
-     
-    }
-    
-    /* Estilos para los enlaces */
-    li a {
-      text-decoration: none; /* Quitar la línea de decoración por defecto */
-      color: #000000;
-      border-bottom: none;
-    
-  }
-  .titulo{ 
+  .eliminar, .comprar{
+    position: relative;
+    top: -25%;
+     left: 26px;
+   }
+   .eliminar {
+    background-color: rgb(60, 59, 59); 
+   }
+  .comprar {
+    background-color: rgb(255, 28, 193);
     color: #000000;
-    text-align: center;
-    margin-top: 15px;
-  
+  }
+.comprar-eliminar{
+position: relative;
+left: 5px;
+top: 65%;
+}
+
+/*----------costo de envio-costo gratis-------*/
+  .costo {
+  align-items:center;
+  color:white;
+  margin-top: 10px;
+  font-size: 14px; 
+  position: relative;   
+  top: 350%;
+  left: 8%;
     }
-  
+    
+  /*----------costo de envio-costo gratis-------*/
+  .costo1{
+    align-items:center;
+    color:white;
+    margin-top: 17px;
+    font-size: 14px; 
+    position: relative;   
+    left: 15%;
+   
+  }
+/*---------💪🏽----💪🏽---------------*/
 
-  
 
-  
-  
 
+
+@media (min-width:1024px ) {
+  .producto-imagen-precio_cantidad_comprar_costo{
+    overflow: hidden;
+    width: 1010px; /* Puedes ajustar el ancho según tus necesidades */
+    height: 135px; 
+    margin-top: -1%;
+  }
+  
+  .titulo{ 
+    display:none;
+}
+.producto_carrito2{
+  display:none;
+}
+
+.nombre-ropa2 {
+  position: relative;
+     color: rgb(255, 28, 193);
+     font-size: 20px;
+     top:-79%;
+     letter-spacing: 1px;
+    margin-left: 25px; ;
+   }
+   .costo {
+   
+    text-align:center;
+    color:white;
+    margin-top:4px;
+   margin-left: 8%;
+   zoom: 0.8;
+      }
+      .imagen1 {
+margin-top: 10%;
+   margin-left: 8%;
+   zoom: 0.6;
+        }
+
+/*--------------elementos eliminar comporar-----*/
+
+        .eliminar1 {
+          display: block; 
+          position: relative;
+          top: -92px;
+        left:330%;
+       color: white;
+        }
+
+       .comprar1{
+        position: absolute;
+        top: -145px;
+      left: 330% ;
+
+       }
+
+       .eliminar1, .comprar1       {
+        border-radius:10px 10px 10px 10px;
+        margin-right: 15px; 
+        width: 140px;   
+        margin-top:-3px;
+      font-size: 12px; 
+        border: 2px solid black;
+        display: inline-block;
+}
+.cantidad_circulos{
+  display: block;
+   display: flex;
+margin-left: 65%;
+margin-top: -17%;
+
+}
+
+
+.precio-original1{
+  margin-top:-29px;
+  margin-left:-65px; ;
+}
+
+
+
+
+
+
+
+}
+/*------🖥️-COMPU----------------*/
 
 @media (min-width:1440px ) {
 
-  .imagen1{
-    background-color: #000000;
-    width: 150px;
-    margin-right:5px ;
-    }
-    .titulo{
-      display: none;
-     }
- .nombre-ropa2{
-font-family:'robot' sans-serif ;
-text-align: center;
-position: relative;
-font-size: 24px;
-bottom: 100px;
-left: 120px; ;
-top: -90px;
- }
-.precio_cantidad_comprar_costo{
- display: flex;
- flex-direction: row;
-justify-content: flex-end;
-position: relative;
-
-
-
-
-}
-
-
-.costo {
-  position: absolute;
-  left: -1%; /*lo hace ir para la izquieda*/
-  top: -90%;
-  bottom: -50%;
-transform: translate(-2%, -110%);
-font-size: -30px;
-letter-spacing: 5px;
-}
-
- .precio-descuento2{
-  position: relative;
-  right: 150px;
-  left: -31%; 
-  bottom:-50%;
-  font-size: 30px;
-top: 5%;
-
- }
- .precio-original2{
-  position: relative;
-  bottom:5px;
-  left: -25%; 
-  bottom:-70%;
-top: -15px;
-}
-
-.precio-original2{
-  font-size: -45px;
-}
-
- .cantidad2{
-  position: relative;
-margin-top: 5%;
-top: -25px;
-margin-top: 10%;
-left: 45% ;
-position: relative;
-top: -50%;
-
- }
-
-.numero2{
-position: absolute;
-top: 10%;
-left: 106%;
-
-margin-right: 10%; /* Ajusta el margen derecho según tus necesidades */
-
-
-}
-
-.numero2{
-
-  font-size: 46;
-  margin: 0 5px  ;
-}
-
-.eliminar2{
-  color:white; 
-margin-left: 150%;
-position: relative;
-top: -5px; 
-
-
-}
-.comprar2 {
-
-  margin-left: 150%;
-  position: relative;
-  top:25px; 
-margin-bottom: 5%;
-
- }
-
-.eliminar1{
-  color:white; 
-  margin-top: 30%;
-  margin-left: 200%;
-  position: relative;
-
-
-
-}
-.comprar1{
- 
-  margin-top: -20%;
-  margin-left: 200%;
-  position: relative;
-
-
- }
-}
+  .producto-imagen-precio_cantidad_comprar_costo{
    
+    width: 1430px; /* Puedes ajustar el ancho según tus necesidades */
+    height: 145px; 
+margin-top: 0%;
   
+  }
   
+  .precio_cantidad_comprar_costo{
+    position: absolute;
+top: -15%;
+left: 10%;
+  }
 
+  .titulo{ 
+    display:none;
+}
+.producto_carrito2{
+  display:none;
+}
 
-@media (min-width:768px){ 
-
-  
-
-  .producto2{
-    display: flex;
-
-    }
-    
-    .precio_cantidad_comprar_costo {
-    left: 20%;
-    margin-top: 14%;
-    height: 100px;
+.nombre-ropa2 {
+  position: relative;
+     color: rgb(255, 28, 193);
+     font-size: 20px;
+     top:-79%;
+     letter-spacing: 1px;
+    margin-left: 25px; ;
+   }
+   .costo {
    
-    }
-    
-    .imagen1{
-    background-color: #000000;
-    width: 150px;
-    margin-right:5px ;
-    }
-    .precio_cantidad_comprar_costo{
-    
-    position: relative;
-    top: -100px; 
-    
-    }
-    .nombre-ropa2 {
-      color:rgb(255, 28, 193);
-      font-size: 25px;
-      left:10px;
-      letter-spacing: 1px;
-margin-top: 5%;
-    }
-    
-    .precio-original2, .precio-descuento2 {
-      display: block;
-      text-align: center;
-      color:white; 
-      margin-top: 6%;
-    }
-    .precio-original2{
-      font-size: 10px;
-      margin-bottom:5%
-    }
-    
-    .precio-original2 {
-      text-decoration: line-through;
+    text-align:center;
     color:white;
-    margin-left: 45px; 
-    font-size: 10px; 
-    }
-    
-    .precio-descuento2{
-      margin: auto;
-      font-size: 27px; 
-      margin-left: -1cm
+    margin-top:4px;
+   margin-left: 8%;
+   zoom: 0.8;
+      }
+      .imagen1 {
+margin-top: 10%;
+   margin-left: 8%;
+   zoom: 0.6;
+        }
 
-    } 
-    
-    
-    .cantidad2 {
-      border-radius: 50%;
-      background-color: white;
-      color: #000000;
-      font-size: 25px;
-      margin-left: 25px; 
-      display: inline-block;
-      margin-bottom: 10px;
-    }
-    
-    .eliminar2, .comprar2 {
-      border-radius:10px 10px 10px 10px;
-      margin-bottom: 5px;
-      margin-right: 4px;
-      margin-top: -5px;
-    }
-    
-    .comprar1{
-      border-radius:10px 10px 10px 10px;
-     background-color: rgb(255, 28, 193);
-color:black;
-    }
-    .comprar2{
-      background-color: rgb(255, 28, 193);
-      color: #000000;  
-    }
+/*--------------elementos eliminar comporar-----*/
+
+        .eliminar1 {
+          display: block; 
+          position: relative;
+          top: -92px;
+        left:330%;
+       
+        }
+
+       .comprar1{
+        position: absolute;
+        top: -145px;
+      left: 330% ;
+
+       }
+       .eliminar1, .comprar1  {
+        margin-left: 250%;
+
+       }
 
 
+       .eliminar1, .comprar1       {
+        border-radius:15px 15px 15px 15px;
+        margin-right: 15px; 
+        width: 140px;   
+        margin-top:-3px;
+      font-size: 12px; 
+        border: 2px solid black;
+        display: inline-block;
+}
+.cantidad_circulos{
+  display: block;
+   display: flex;
+margin-left: 150%;
+margin-top: -17%;
 
-    .eliminar1{
-      color:white ;
-      border-radius:10px 10px 10px 10px;
-      background-color:  rgba(218, 202, 202, 0.534);
-   color: #000000; 
-
-    }
-.eliminar2{
-  color:white ;
-  background-color:  rgba(218, 202, 202, 0.534);
-  color: #000000;
- 
 }
 
-   /* es el texto costo de envio*/
-    .costo {
-    padding: 4%;
-    align-items:center;
-      color:white;
-      display: inline-block;
-  top: -1px;
-      font-size: 16px; 
-      position: absolute;
-      top:37px; 
-    /*  letter-spacing: 0px; da espacio entre letras   */
-    }
-    
-    /*numero del medio de los circulos*/
-    .numero2{
-      font-size: 28px;
-      text-align: center;
-      bottom: 10px;
-    }
-    
-      /* Estilos para los elementos de la lista */
+
+.precio-original1{
+  margin-top:-23px;
+  margin-left:-65px; ;
+}
+.precio1{
+margin-left: -10%;
+
+}
+
+.inicio_carrito-li {
+position: relative;
+
+left: 10%;
+}
  
-      
-      li {
+}
+  
+
+
+
+
+
+
+
+
+/*----------tablet---📱-------------*/
+@media (min-width:768px){ 
+    .precio_cantidad_comprar_costo {
+  margin-left: 45px;
+  margin-top: 14%;   
+
+}
+      /* Estilos para los elementos de la lista */
+
+      .inicio_carrito-li {
         margin: 0 10px;
         list-style: none; 
-        font-size: 25px 
+        font-size: 30px ;
+    
       }
       /* Estilos para los enlaces */
-      li a {
+    .inicio_carrito-li .inicio_carrito-a {
         text-decoration: none; /* Quitar la línea de decoración por defecto */
-        color:black; /* Cambiar el color del texto, ajusta según sea necesario */
         border-bottom: none;
      
     }
+  
+
+
+    /*-----TITULO_MI CARRITO----*/
     .titulo{ 
-   
+      position: relative;
+      left: 2%;
       text-align: center;
-      margin-top: 10px;
+      margin-top: 20px;
       font-size: 200%;
-      font-family: "roboto" sans-serif;
+      font-family: "roboto" ;
       }
+
+
+
+/* ----IMAGEN DE LA ROPA----*/
+   
+.imagen1{
+  width: 120px;
+  position: relative;
+ top: 5%;
+  left: 8%;
+}
+
+.imagen2{
+  width: 150px;
+  position: relative;
+ top: 15%;
+  left: 8%;
+}
+
+ /*------nombre de roPA*/
+    .nombre-ropa2 {
+      font-family:'roboto' ;
+      color:rgb(255, 28, 193);
+      font-size: 26px;
+      position: relative;
+      left:-39px;
+      letter-spacing: 2px;
+      margin-top: 4%;
+
+    }
+
+ 
+
+ /*------titulo-2--envio y costo----------------*/   
+  .costo{
+color:azure;
+position: absolute;
+top: 10px;
+left: 2px; ;
+text-align: right; ;
+white-space: nowrap;
+font-size: 25px;
+letter-spacing: 5px;
+
+  }
+     
+  .costo1{
+    color:azure;
+    position: absolute;
+    top: 10px;
+    left: 2px; ;
+    text-align: right; ;
+    white-space: nowrap;
+    font-size: 28px;
+    letter-spacing: 5px;
+    
+      }
+/*--------precio y descuento-------------------*/
+.precio1{
+  font-size: 18px;
+  margin-top: 7%;
+position:absolute;
+left:60% ;
+
+
+}
+.descuento1{
+  position: relative;
+  top:35px;
+  left: 40%; 
+  font-size: 33px;
+}
+/*-----preciode contenedor 2------------------*/
+
+
+
+.precio{
+position: relative;
+top:35px;
+left: 62%; 
+font-size: 33px;
+}
+.descuento{
+  position: relative;
+  top:20px;
+  left: 65%; 
+  font-size: 18px; 
+}
+
+
+/*---------------circulos--------------------*/
+
+
+
+    /*numero del medio de los circulos*/
+    .numero2{
+      color: white;
+      font-family:sans-serif ;
+      font-size: 25px;
+      text-align: center;
+      position: relative;
+    left:26%;
+bottom:-4px; ;
+    }
+
+/*----numero de contenedor 2-----------*/
+.numero{
+  font-family:sans-serif ;
+  font-size: 25px;
+      text-align: center;
+      bottom: -2px;
+      position: relative;
+    left:-6%;
+     top:27%;
+
+}
+
+
+
+/*--------eliminar-👻-comprar------*/
+
+.comprar-eliminar1{
+  position: absolute;
+  left: 80px; 
+  top: 310%;
+  font-size: 25px;
+}
+
+ /*-------contenedor 2 de eliminar comprar ----*/
+.comprar-eliminar{
+ /*padding-left: 26%;
+  margin-top: 20px;
+  font-size: 25px;*/
+  position: absolute;
+  left: 75px; 
+  top: 320%;
+  font-size: 25px;
+  display: flex;
+  text-align: center;
+
+}
+/*----------las bolitassss--1------------------*/
+.cantidad_circulos{
+  font-size: 28px;
+  position: absolute;
+  left:29%; 
+  top: 112px;
+  
+}
+
+/* --------boliyas dos-------*/
+
+.contenedor_circulos    {
+  font-size: 25px;
+  position: absolute;
+  display: flex; /* Utilizar flexbox para alinear los contenedores */
+  position: absolute;
+  left: 59%;
+  top: 250%;
+}
+  /*--------😱--------*/
+
+  
 }
