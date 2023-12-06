@@ -6,4 +6,7 @@ CARRITO:              /carrito
 DETALLE DE PRODUCTOS: /productos/detalle
 LOGIN :               /usuarios/ingreso
 REGISTRO:             /usuarios/REGISTRO
+DASHBOARD:            /admin
+AGREGAR PRODUCTO:     /productos/agregar
+EDITAR PRODUCTO:      /productos/editar
 
