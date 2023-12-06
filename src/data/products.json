@@ -10,7 +10,7 @@
     },
     {
         "id": 2,
-        "name": "Remera oversized Butterfly ",
+        "name": "pantalones para tiendas ",
         "description": " oversize, estampado espalda, frente liso, tela algodon, apto para lavarropas con agua fria sin centrifugado",
         "mainImage": "img__remera1",
         "images": [],
@@ -44,7 +44,8 @@
         "category": "remeras",
         "precio":"$13.800,00"
 
-    },  {
+    },  
+    {
         "id": 6,
         "name": "Remera oversized Butterfly ",
         "description": " oversize, estampado espalda, frente liso, tela algodon, apto para lavarropas con agua fria sin centrifugado",
