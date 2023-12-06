@@ -9,27 +9,8 @@
     width: 80%;
 }
 
-<<<<<<< HEAD
-.register-parrafo {
-    font-family: 'Roboto';
-    font-size: 12px;
-    padding: 5px;
-    font-weight: 200;
-    letter-spacing: 1px;
-}
-::placeholder{
-    background-color: rgb(210, 203, 203, 0.5);
-}
-
-
-.register-formulario-label {
-    text-transform: uppercase;
-    display: inline-block;
-
-=======
 label {
     text-transform: uppercase;
->>>>>>> G2O-23-Crear-la-pagina-del-carrito-de-compras-productsCart.html-o-similar-junto-con-todos-los-recursos-necesarios-estilos-de-css-e-imagenes
     position: relative;
     padding: 3px;
 
@@ -209,7 +190,5 @@ a {
            margin-bottom: 20px;
         }
 
-        .register-btn {
-           
-        }
+    
     }
