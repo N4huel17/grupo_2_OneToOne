@@ -15,13 +15,13 @@
                         <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
                             <ol class="breadcrumb">
                               <li class="breadcrumb-item"><a href="/admin" class="text-primary">Home</a></li>
-                              <li class="breadcrumb-item active" aria-current="page">EDITAR producto </li>
+                              <li class="breadcrumb-item active" aria-current="page"> Editar : Detalles Del Producto </li>
                             </ol>
                           </nav>
                     </div>
                     <div class="card-body ">
                         <form action="" class="row">
-                            <h3>Exitar</h3>
+                            <h3>Editar: "Producto"</h3>
                             <hr>
                             <div class="col-12 col-md-6 mb-3">
                                 <div class="form-floating ">
@@ -36,16 +36,43 @@
                               </div>
                             </div>
                             <div class="col-12 col-md-6 mb-3">
-                                <div class="form-floating">
-                                    <select name="category" class="form-select" id="category" aria-label="Floating label select example">
-                                      <option value="" selected hidden></option>
-                                      <option value="barato">Barato</option>
-                                      <option value="romantico">Romantico</option>
-                                      <option value="sofisticado">Sofisticado</option>
-                                    </select>
-                                    <label for="category">Categoría</label>
-                                  </div>
-                              </div>
+                              <div class="form-floating">
+                                  <select name="category" class="form-select" id="category" aria-label="Floating label select example">
+                                    <option value="" selected hidden></option>
+                                    <option value="NEW">NEW</option>
+                                    <option value="PANTALONES">PANTALONES</option>
+                                    <option value="CAMISAS">CAMISAS</option>
+                                    <option value="REMERAS">REMERAS</option>
+                                    <option value="ACCESORIOS">ACCESORIOS</option>
+                                      <option value="CREAR">CREAR</option>
+                                  </select>
+                                  <label for="category">Categoría</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                              <div class="form-floating">
+                                  <select name="sizes" class="form-select" id="sizes" aria-label="Floating label select example">
+                                    <option value="" selected hidden></option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                  </select>
+                                  <label for="sizes">Talla</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                              <div class="form-floating">
+                                  <select name="colors" class="form-select" id="colors" aria-label="Floating label select example">
+                                    <option value="" selected hidden></option>
+                                    <option value="Morado">Morado</option>
+                                    <option value="Azul">Azul</option>
+                                    <option value="Fucsia">Fucsia</option>
+                                    <option value="Fucsia">Marron</option>
+                                  </select>
+                                  <label for="colors">Colores</label>
+                                </div>
+                            </div>
                               <div class="col-12 col-md-3 mb-3">
                                   <input name="mainImage" type="file" class="form-control" id="mainImage" hidden>
                                   <label class="btn btn-lg btn-outline-dark w-100" for="mainImage">Imagen principal</label>
