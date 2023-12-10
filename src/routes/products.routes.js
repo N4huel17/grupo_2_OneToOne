@@ -5,7 +5,7 @@ const router = express.Router();
 /* /productos  */
 router.get('/detalle/:id?',detail );
 router.get('/agregar',add );
-router.get('/editar/id?',edit );
+router.get('/editar/',edit );
 
 module.exports = router;
 
