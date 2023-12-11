@@ -1,9 +1,4 @@
-/*------phone--------📲------------*/
-* {
-margin:0%;
-padding: 0%;
-box-sizing: border-box;
-}
+
 /* -------inicio / carrito-------------------*/
 .menu-inicio .inicio_carrito-ul {
 list-style: none;
@@ -471,11 +466,10 @@ margin-left:-65px; ;
 }
 /*----------------------------*/
 
-
-
-
-
 }
+
+
+
 /*------🖥️-COMPU----------------*/
 
 
