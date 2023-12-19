@@ -1,0 +1,33 @@
+[
+    {
+        "id": 1,
+        "name": " Lionel",
+        "lastName": " Messi",
+        "age": "36",
+        "gmail": "messiarg@gmail.com",
+        "password": "antonella123",
+        "ConfirmPassword": "antonella123"
+        
+    },
+    {
+        "id": 2,
+        "name": " Bob",
+        "lastName": " Esponja",
+        "age": "20",
+        "gmail": "atlantico123@gmail.com",
+        "password": "789456",
+        "ConfirmPassword": "789789"
+        
+    }, 
+    {
+        "id": 3,
+        "name": " Kidd",
+        "lastName": " Keo",
+        "age": "26",
+        "gmail": "dracukeo@gmail.com",
+        "password": "tuki123456789",
+        "ConfirmPassword": "tuki123456789"
+        
+    }
+
+]
