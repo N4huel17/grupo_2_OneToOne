@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/register.css">
+    <script src="https://kit.fontawesome.com/6e4ed31c51.js" crossorigin="anonymous"></script>
+    <title>Register</title>
+</head>
+
+<body>
+    <p>Inicio/ Mi cuenta / <b>Crear cuenta</b></p>
+
+    <p>Comprá mas rápido y llevá el control de tus pedidos,¡en un solo lugar!</p>
+    <form action="#" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="telefono">Telefono(Opcional):</label>
+        <input type="text" id="telefono" name="telefono" required>
+
+        <label for="contrasena">Contraseña:</label>
+        <div class="contrasena-eyes">
+            <input type="password" id="contrasena" name="contrasena" required>
+            <i class="fa-regular fa-eye-slash"></i>
+        </div>
+        <label for="confirmarContrasena">Confirmar Contraseña:</label>
+        <div class="contrasena-eyes">
+            <input type="password" id="confirmarContrasena" name="confirmarContrasena" required>
+            <i class="fa-regular fa-eye-slash"></i>
+        </div>
+        <input type="submit" value="Enviar" class="enviar">
+    </form>
+    <button>CREAR CUENTA</button>
+    <h3>¿Ya tienes una cuenta?<b>Iniciar Sesion</b></h3>
+</body>
+
+</html>

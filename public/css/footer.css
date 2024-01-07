@@ -1,0 +1,110 @@
+*{
+    margin:0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+.footer {
+    background-color: #1B1B1B;
+    color: #fff;  
+    padding: 5px;font-family:'Roboto', sans-serif ;
+
+}
+
+.footer__contacto {
+    display: flex;
+    margin-bottom: 10px;  
+}
+    
+.footer__contacto i {
+   margin-bottom :20px ;  
+}
+
+span{
+    font-size: 23px;
+}
+.footer__links{
+    display: flex;
+    flex-direction: column;
+}
+
+.separacion_links{
+    display: flex;
+    flex-direction: column;
+}
+.container__footer{
+    display: flex;
+    justify-content: space-between;
+    margin:20px;
+    
+}
+.footer__ubicacion{
+    display: flex;
+    flex-direction: row;
+}
+
+.listas__del__footer_navegacion {
+     list-style: none;
+}
+
+.listas__del__footer_navegacion a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none
+}
+
+.avioncito_recomendaciones,.footer_ubicacion{
+    display: flex;
+}
+.footer__redes i {
+    margin:5px ;  
+ }
+ .footer__redes{
+    position: relative;
+    left: 12px; ;
+ }
+
+ @media (min-width:768px) {
+    
+    .footer{
+        font-size: 24px;
+    }
+
+    .footer_movil{
+        display: flex;
+        flex-direction: row ;
+    }
+    .contacto_ubicacion{
+        margin-inline :45px;
+        display: flex;
+        flex-direction: column;
+     } 
+     .contacto_ubicacion br{
+        display: none;
+     }
+     .av{
+        font-size: 17px;
+     }
+
+     .listas__del__footer_navegacion a{
+        font-size: 31px;
+        text-decoration: none;
+    }
+    
+     .footer__redes{
+        position: relative;
+        margin-top: 0;
+        left: 18px; ;
+     }
+     
+    }
+    @media (min-width: 1440px){
+     .contacto_ubicacion{
+        display: flex;
+        margin-inline: 200px;
+       }
+    }
+
+
+
