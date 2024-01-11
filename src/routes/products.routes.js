@@ -7,5 +7,10 @@ router.get('/detalle/:id?',detail );
 router.get('/agregar',add );
 router.get('/editar/',edit );
 
+
+
+
+
+
 module.exports = router;
 
