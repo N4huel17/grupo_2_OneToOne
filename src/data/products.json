@@ -9,5 +9,16 @@
       "sizes": "M",
       "colors": "morado",
       "precio": "$13.800,00"
+   },
+   {
+      "id": "30e6b9f9-0276-42ed-aa3a-4b45e3b6ed55",
+      "name": "hhhhh",
+      "description": "hhh",
+      "mainImage": "1705063503387_products.jpg",
+      "images": [],
+      "category": "NEW",
+      "sizes": "hh",
+      "colors": "",
+      "precio": ""
    }
 ]
