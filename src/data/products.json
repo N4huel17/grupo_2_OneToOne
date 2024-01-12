@@ -20,5 +20,16 @@
       "sizes": "XL",
       "colors": "Marron",
       "precio": "$7.000,00"
+   },
+   {
+      "id": "6e1ca196-47b6-4238-8f4c-6ee0f7e7833d",
+      "name": "Cafetera Moulinex Dolce Gusto Edite",
+      "description": "fefsdfsd",
+      "mainImage": "1705021258055_products.jpg",
+      "images": [],
+      "category": "NEW",
+      "sizes": "M",
+      "colors": "Negro",
+      "precio": "15.0050$"
    }
 ]
