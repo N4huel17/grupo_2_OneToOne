@@ -3,6 +3,7 @@ const add= require('./add');
 const detail= require('./detail');
 const edit =require('./edit');
 const remove= require('./remove');
+const create= require('./create')
 
 
 
@@ -10,6 +11,7 @@ const remove= require('./remove');
 
 module.exports={
     add,
+    create,
     detail,
     edit ,
     remove,
