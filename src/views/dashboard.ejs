@@ -28,9 +28,11 @@
                               </tr>
                             </thead>
                             <tbody>
-                                <% products.forEach(({id,name,category, mainImage,images, description, precio}) => { %>
+                                <% products.forEach(({id,name,category, mainImage,images, description, precio}, index) => { %>
                                     <tr>
-                                        <th scope="row"><%= id %></th>
+                                        <th scope="row">
+                                          <%= index + 1 %>
+                                        </th>
                                         <td><%= name %></td>
                                         <td><%= description %></td>
                                         <td><%= category %></td>

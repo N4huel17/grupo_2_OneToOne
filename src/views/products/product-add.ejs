@@ -20,7 +20,7 @@
                           </nav>
                     </div>
                     <div class="card-body ">
-                        <form action="" class="row">
+                        <form action="/productos/crear" method="POST" class="row" enctype="multipart/form-data">
                             <h3>Nuevo producto</h3>
                             <hr>
                             <div class="col-12 col-md-6 mb-3">
@@ -29,9 +29,24 @@
                                     <label for="name">Nombre</label>
                                   </div>
                             </div>
+
+                            <div class="col-12 col-md-6 mb-3">
+                              <div class="form-floating ">
+                                  <input name="colors" type="text" class="form-control" id="colors" >
+                                  <label for="name">Color</label>
+                                </div>
+                          </div>
+
+                          <div class="col-12 col-md-6 mb-3">
+                            <div class="form-floating ">
+                                <input name="sizes" type="text" class="form-control" id="sizes" >
+                                <label for="name">Talle</label>
+                              </div>
+                        </div>
+
                             <div class="col-12 col-md-6 mb-3">
                               <div class="form-floating">
-                                <input name="address" type="text" class="form-control" id="precio">
+                                <input name="precio" type="text" class="form-control" id="precio">
                                 <label for="address">precio</label>
                               </div>
                             </div>
