@@ -390,7 +390,14 @@ overflow: hidden;
  width: 1010px; /* Puedes ajustar el ancho según tus necesidades */
 height: 135px; 
 margin-top: -1%;
+
 }
+.precio_cantidad_comprar_costo{
+position: relative;
+top: 45px;
+}
+
+
 .titulo{ 
 display:none;
 }
@@ -486,8 +493,8 @@ margin-left:-65px; ;
            }
           .precio_cantidad_comprar_costo{
           position: absolute;
-          top: 165px;
-          left: 10%;
+          left:15%;
+          top: 25px;
           }
           .titulo{ 
             display:none;
