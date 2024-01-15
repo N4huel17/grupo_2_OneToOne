@@ -17,35 +17,120 @@
     <p class="register-parrafo" >Comprá mas rápido y llevá el control de tus pedidos, ¡en un solo lugar!</p>
    
    
-    <form class="register-formulario" action="#" method="post">
-        <label class="register-formulario-label" for="nombre">Nombre:</label>
-        <input class="register-formulario-label-input" type="text" id="nombre" name="nombre" required placeholder="Ej: Noah Benjamin Silva">
+    <section class="row">
+        <div class="col-12 col-md-10 col-lg-6 mx-auto my-5">
+            <div class="card shadow">
+                <div class="card-header">
+                    <h4 class="card-title">Registro de usuario</h4>
+                </div>
+                <div class="card-body">
+                    <form action="" class="row" method="POST">
+                        <div class="col-12 col-md-6 mb-3">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" name="name" class="form-control <%= locals.errors && errors.name ? 'is-invalid' : null %>"    id="name"
+                            value="<%= locals.old && old.name ? old.name : null %>" 
+                             placeholder="ej : Noah Benjamin">
+                        
+                          <small class="text-danger ms-2">
+                            <%= locals.errors && errors.name ? errors.name.msg : null %>
+                          </small>
+                          </div>
 
-        <label class="register-formulario-label" for="email">Email:</label>
-        <input class="register-formulario-label-input" type="text" id="email" name="email" required placeholder="Ej: NoahBenjaminSilva@gmail.com">
 
-        <label class="register-formulario-label" for="telefono">Telefono(Opcional):</label>
-        <input class="register-formulario-label-input" type="text" id="telefono" name="telefono" required placeholder="Ej: 1123454324">
+                          <div class="col-12 col-md-6 mb-3">
+                            <label for="surname" class="form-label">Apellido</label>
+                            <input type="text" name="surname" class="form-control <%= locals.errors && errors.surname ? 'is-invalid' : null %>" id="surname"
+                            value="<%= locals.old && old.name ? old.name : null %>"
+                             placeholder="ej : Mendez">
+                             <small class="text-danger ms-2">
+                              <%= locals.errors && errors.surname ? errors.surname.msg : null %>
+                            </small>
+                          </div>
 
-       
-        
-            <label class="register-formulario-label" for="contrasena">Contraseña:</label>
-            <div class="input-eyes">
-            <input class="register-formulario-label-contrasena" type="password" id="contrasena" name="contrasena" required placeholder="Ej: JWE1234">
-            <i class="fa-regular fa-eye-slash ojo"></i>
+
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Correo electrónico</label>
+                            <input type="text" name="email" class="form-control <%= locals.errors && errors.email ? 'is-invalid' : null %>" id="email"
+                            value="<%= locals.old && old.email ? old.email : null %>"
+                             placeholder="***@gmail.com">
+                             <small class="text-danger ms-2">
+                              <%= locals.errors && errors.email ? errors.email.msg : null %>
+                            </small>
+                          </div>
+
+
+
+
+                          <div class="col-12 col-md-6 mb-3">
+                            <label for="password" class="form-label">Contraseña</label>
+                            <input type="password" name="password"  class="form-control <%= locals.errors && errors.password ? 'is-invalid' : null %>" id="password">
+                            <small class="text-danger ms-2">
+                              <%= locals.errors && errors.password ? errors.password.msg : null %>
+                            </small>
+                          </div>
+                          <div class="col-12 col-md-6 mb-3">
+                            <label for="password2" class="form-label">Confirmar contraseña</label>
+                            <input type="password" name="password2" class="form-control <%= locals.errors && errors.password2 ? 'is-invalid' : null %>" id="password2">
+                            <small class="text-danger ms-2">
+                              <%= locals.errors && errors.password2 ? errors.password2.msg : null %>
+                            </small>
+                          </div>
+
+
+                          <div class="col-12 col-md-6 mb-3">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" value="1" id="remember" name="remember" />
+                              <label class="form-check-label" for="remember">
+                                Acepto <a href="" class="link-dark" data-bs-toggle="modal"
+                                  data-bs-target="#exampleModal"> términos y condiciones</a> </label>
+                            </div>
+                            <small class="text-danger ms-2">
+                              <%= locals.errors && errors.remember ? errors.remember.msg : null %>
+                            </small>
+                          </div>
+                          <div class="col-12 col-md-6 mb-3">
+                            <button class="btn btn-dark w-100">Registrate</button>
+                          </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        
-        
-            <label class="register-formulario-label" for="confirmarContrasena">Confirmar Contraseña:</label>
-            <div class="input-eyes">
-            <input class="register-formulario-label-contrasena" type="password" id="confirmarContrasena" name="confirmarContrasena" required required placeholder="Ej: JWE1234">
-            <i class="fa-regular fa-eye-slash ojo"></i>
+    </section>
+     <!-- Modal -->
+     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Términos y condiciones</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ol class="small">
+              <li>
+                Utilizamos cookies propias y de terceros 
+                durante la navegación por el sitio web,
+                 con la finalidad de permitir el acceso 
+                 a las funcionalidades de la página web,
+                  extraer estadísticas de tráfico 
+                  y mejorar la experiencia del usuario. 
+                  Puedes aceptar todas las cookies,
+                   así como seleccionar cuáles deseas 
+                   habilitar o configurar sus preferencias.
+                    Para más información, puede consultar nuestra Política de cookies
+              </li>
+              
+            </ol>
+          </div>
+
         </div>
-      
-    </form>
-    <input type="submit" value="Enviar" class="enviar">
-    <button class="register-btn">CREAR CUENTA</button>
-    <h4 class="register-h4">¿Ya tienes una cuenta? <a href=""><b>Iniciar Sesion</b></h4></a>
+      </div>
+    </div>
+
+
+
+
+    <h4 class="register-h4">¿Ya tienes una cuenta? <a href="ingreso"><b>Iniciar Sesion</b></h4></a>
 </main>
 
     <!-- //FOOTER PARTIALS-->
