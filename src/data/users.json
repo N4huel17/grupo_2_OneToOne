@@ -23,7 +23,6 @@
       "password": "tuki123456789",
       "ConfirmPassword": "tuki123456789"
    },
-   
    {
       "id": "7606423f-0663-4c86-b1d5-054b73563936",
       "name": "Aldi",
@@ -38,6 +37,14 @@
       "surname": "Mendez",
       "email": "jesus_dsm@hotmail.com.ar",
       "password": "$2a$10$WqWPWkr731dLjZjDowW5y.sLF4n/PVoZs/KmnD/luvSkWAakqnWWy",
+      "role": "user"
+   },
+   {
+      "id": "747d10f0-b06a-4376-852a-939d7b7cd68b",
+      "name": "sasha",
+      "surname": "gorda",
+      "email": "sasha@gmail.com",
+      "password": "$2a$10$VJeXuVX.S8y9xi/wzFQvpuSAP6QHE6lslssATN5tYtZax0pkYo1Uy",
       "role": "user"
    }
 ]
