@@ -23,7 +23,6 @@
       "password": "tuki123456789",
       "ConfirmPassword": "tuki123456789"
    },
-   
    {
       "id": "7606423f-0663-4c86-b1d5-054b73563936",
       "name": "Aldi",
@@ -40,4 +39,5 @@
       "password": "$2a$10$WqWPWkr731dLjZjDowW5y.sLF4n/PVoZs/KmnD/luvSkWAakqnWWy",
       "role": "user"
    }
+ 
 ]
