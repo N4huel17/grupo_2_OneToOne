@@ -11,14 +11,168 @@
       "precio": "$13.800,00"
    },
    {
-      "id": "30e6b9f9-0276-42ed-aa3a-4b45e3b6ed55",
-      "name": "hhhhh",
-      "description": "hhh",
-      "mainImage": "1705063503387_products.jpg",
+      "id": "d81b81da-9746-4ac2-82b3-fa90d75a2baa",
+      "name": "Buzo Smile",
+      "description": "Buzo canguro, corte over-size, con estampa - tela algodon rustico.",
+      "mainImage": "1705448218165_products.jpg",
       "images": [],
       "category": "NEW",
-      "sizes": "hh",
+      "sizes": "M,L,XL",
+      "colors": "Blanco",
+      "precio": "$25.999"
+   },
+   {
+      "id": "e047e7e1-c6c5-40bd-851a-25ddf2ac89e1",
+      "name": "Buzo Vintage",
+      "description": "Buzo canguro, corte over-size, con estampa - tela algodon friza.",
+      "mainImage": "1705448560206_products.jpg",
+      "images": [],
+      "category": "NEW",
+      "sizes": "M,L,XL",
+      "colors": "Marron",
+      "precio": "$23.000"
+   },
+   {
+      "id": "a8d7a799-b826-4fb0-8015-2c77bb4d38ce",
+      "name": "Jogging Flypy",
+      "description": "Jogging de gabardina (media estación). Con bolsillos tipo CARGO.",
+      "mainImage": "1705449142686_products.webp",
+      "images": [],
+      "category": "PANTALONES",
+      "sizes": "S,M,L,XL",
+      "colors": "celeste",
+      "precio": "$20.000"
+   },
+   {
+      "id": "5e6579b5-b19c-45dd-9b47-8bb74fb0c29b",
+      "name": "Pantalon Stroffy",
+      "description": "Pantalon Jeans Corte Over. con bolsillos cargo.",
+      "mainImage": "1705449389101_products.webp",
+      "images": [],
+      "category": "PANTALONES",
+      "sizes": "S,M,L,XL",
+      "colors": "celeste",
+      "precio": "$17.800"
+   },
+   {
+      "id": "b578de49-94e7-48c5-abc5-81ee95e150a1",
+      "name": "Jogging Canys",
+      "description": "Oversize, Tiro alto, Primavera/Verano, tela de Microfibra",
+      "mainImage": "1705449852708_products.webp",
+      "images": [],
+      "category": "PANTALONES",
+      "sizes": "S,M,L,XL",
+      "colors": "Negro",
+      "precio": "$19.999"
+   },
+   {
+      "id": "dbcca7fb-ccaa-4f36-87fc-2182c1bfc146",
+      "name": "Pantalon Flow",
+      "description": "Pantalon Oversize, Estilo Cargo, Tela de jeans celeste y Tela jeans negro, \r\n",
+      "mainImage": "1705450071028_products.webp",
+      "images": [],
+      "category": "PANTALONES",
+      "sizes": "S,M,L,XL",
+      "colors": "JEANS",
+      "precio": "$22.999"
+   },
+   {
+      "id": "49ae299a-93af-4128-b731-69de7cf96a72",
+      "name": "Camisa Summer",
+      "description": "Camisa corta de Dama, Tela Lino, Con Estampa",
+      "mainImage": "1705450330869_products.png",
+      "images": [],
+      "category": "CAMISAS",
+      "sizes": "S,M,L,XL",
+      "colors": "Cesleste",
+      "precio": "$11.800"
+   },
+   {
+      "id": "8fddf018-2358-4103-ac96-a511c8a8b46c",
+      "name": "Camisa Nite",
+      "description": "Camisa de Rayas Blancas con Azul, Primavera/Verano, Tela Lino",
+      "mainImage": "1705450556958_products.jpg",
+      "images": [],
+      "category": "CAMISAS",
+      "sizes": "M,L,XL",
+      "colors": "Azul",
+      "precio": "$16.500"
+   },
+   {
+      "id": "37ee8124-a46d-4242-aeed-1b524907f7f9",
+      "name": "Camisa Painting",
+      "description": "Camisa Manga Larga, Tela De Algodon, Estampado De Cuadros",
+      "mainImage": "1705450679941_products.jpg",
+      "images": [],
+      "category": "CAMISAS",
+      "sizes": "M,L,XL",
+      "colors": "Negro",
+      "precio": "$20.350"
+   },
+   {
+      "id": "2df629bf-8917-4081-927d-4f5e0b648bd9",
+      "name": "REMERA LIGHT",
+      "description": "Oversize, Estampado Espalda, Frente liso Con Estampa Pequeña, Tela Algodon, Apto Para Lavarropas Con Agua Fria Sin Centrifugado\"",
+      "mainImage": "1705451108616_products.webp",
+      "images": [],
+      "category": "REMERAS",
+      "sizes": "S,M,L,XL",
+      "colors": "Blanco",
+      "precio": "$13.500"
+   },
+   {
+      "id": "f560a2c0-c205-4aea-823a-d76b6832862b",
+      "name": "REMERA CLASS",
+      "description": "Oversize, Estampado Espalda, Frente liso Con Estampa Pequeña, Tela Algodon, Apto Para Lavarropas Con Agua Fria Sin Centrifugado",
+      "mainImage": "1705451394299_products.webp",
+      "images": [],
+      "category": "REMERAS",
+      "sizes": "S,M,L,XL",
+      "colors": "Blanco",
+      "precio": "$12.000"
+   },
+   {
+      "id": "b0b81861-0b1b-4229-a875-f9309b7cbbeb",
+      "name": "REMERA BOMB",
+      "description": "Oversize, Estampado Espalda, Frente liso Con Estampa Pequeña, Tela Algodon, Apto Para Lavarropas Con Agua Fria Sin Centrifugado",
+      "mainImage": "1705451580635_products.webp",
+      "images": [],
+      "category": "REMERAS",
+      "sizes": "S,M,L,XL",
+      "colors": "Gris",
+      "precio": "$9.999"
+   },
+   {
+      "id": "2c5ae9b3-4ba9-4ba4-98d9-379abf2f0186",
+      "name": "Cadenita Love",
+      "description": "Cadena con accesorios rosados para pantalones ",
+      "mainImage": "1705451727303_products.jpg",
+      "images": [],
+      "category": "ACCESORIOS",
+      "sizes": "",
+      "colors": "Rosado",
+      "precio": "$10.00"
+   },
+   {
+      "id": "0cf4f4f5-4c1b-4408-9d1f-e1583c11921e",
+      "name": "Cinto De Cuero",
+      "description": "Explora la elegancia auténtica con los Cinturones para hombre, elaborados artesanalmente con cuero 100% vacuno. Con un ancho de 35 mm, estos cintos no solo mantienen tu estilo en su lugar, sino que también son un testimonio de calidad y distinción.",
+      "mainImage": "1705451941472_products.jpg",
+      "images": [],
+      "category": "ACCESORIOS",
+      "sizes": "S,M,L,XL",
+      "colors": "Marron",
+      "precio": "$15.500"
+   },
+   {
+      "id": "c0843094-4e02-4d3b-89c7-ae5a99a98f1a",
+      "name": "Arnes de Metal",
+      "description": "Arnes De Metal, hermoso para lucir un buen outfits",
+      "mainImage": "1705452109398_products.webp",
+      "images": [],
+      "category": "ACCESORIOS",
+      "sizes": "S,M,L",
       "colors": "",
-      "precio": ""
+      "precio": "$6.500"
    }
 ]
