@@ -13,6 +13,9 @@ const indexRouter = require('./routes/index.routes');
 const usersRouter = require('./routes/users.routes');
 const productsRouter = require('./routes/products.routes');
 
+const checkLoginUserLocal = require('./middlewares/checkLoginUserLocal');
+
+
 const app = express();
 
 
@@ -29,6 +32,12 @@ app.use(cookieParser());
 app.use(methodOverride('_method'))
 /* recurso Estatico*/
 app.use(express.static(path.join(__dirname,'..', 'public')));
+
+
+app.use(checkLoginUserLocal);
+
+
+
 //RUTAAAAS
 app.use('/', indexRouter);
 app.use('/usuarios', usersRouter);

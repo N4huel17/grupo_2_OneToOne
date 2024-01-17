@@ -59,8 +59,9 @@
 
 .form__redes {
     font-size: 50px;
-    margin-bottom: 140px;
-    margin-left: 85px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-left: -10px;
     color: black;
 }
 
@@ -70,8 +71,8 @@
 
 .form__buttom {
     position: relative;
-    bottom: 120px;
-    left: 70px;
+    bottom: 100px;
+    margin-left: -70px;
     text-align: center;
 }
 

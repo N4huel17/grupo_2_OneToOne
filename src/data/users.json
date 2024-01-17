@@ -38,6 +38,13 @@
       "email": "jesus_dsm@hotmail.com.ar",
       "password": "$2a$10$WqWPWkr731dLjZjDowW5y.sLF4n/PVoZs/KmnD/luvSkWAakqnWWy",
       "role": "user"
+   },
+   {
+      "id": "99feba95-c1e7-4fa1-8d2c-561900413f39",
+      "name": "Lionel",
+      "surname": "Lionel",
+      "email": "jesusdsm17@gmail.com",
+      "password": "$2a$10$5a3N1uv.To3pDoaoWHG9aOe9L0OPdle5r5dfl9APwx75UBcCUexoG",
+      "role": "admin"
    }
- 
 ]

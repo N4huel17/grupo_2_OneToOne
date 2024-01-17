@@ -35,5 +35,30 @@ module.exports={
     },
     processLogin: (req,res)=>{
 
+        const errors =  validationResult(req)
+        const {email}=req.body
+        if(errors.isEmpty()){
+            const {id, name, role} = leerJSON('users').find(user => user.email === email)
+
+
+          req.session.userLogin = {
+            id,
+            role,
+            name,
+            
+          }
+          return res.redirect('/')
+       
+       }else{
+           return res.render('users/login',{
+               
+               errors: errors.mapped()
+           })  
+        }
     },
+
+    logout : (req,res)=>{
+        req.session.destroy();
+        return res.redirect('/');
+    }
 }
