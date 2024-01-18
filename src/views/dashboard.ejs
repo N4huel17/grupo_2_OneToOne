@@ -28,9 +28,11 @@
                               </tr>
                             </thead>
                             <tbody>
-                                <% products.forEach(({id,name,category, mainImage,images, description, precio}) => { %>
+                                <% products.forEach(({id,name,category, mainImage,images, description, precio}, index) => { %>
                                     <tr>
-                                        <th scope="row"><%= id %></th>
+                                        <th scope="row">
+                                          <%= index + 1 %>
+                                        </th>
                                         <td><%= name %></td>
                                         <td><%= description %></td>
                                         <td><%= category %></td>
@@ -47,9 +49,40 @@
                                                 <a class="btn btn-sm btn-outline-success border-none"
                                                     href="/productos/editar"><i
                                                         class="fa-solid fa-pencil"></i></a>
-                                                <a class="btn btn-sm btn-outline-danger border-none"
-                                                    href=""><i
-                                                        class="fa-solid fa-trash"></i></a>
+
+                                                        <button class="btn btn-sm btn-outline-danger border-none"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#warningRemoveModal<%= id %>">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+
+                                                    <div class="modal fade" id="warningRemoveModal<%= id %>" tabindex="-1" aria-labelledby="warningRemoveModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                                                          <div class="modal-content">
+                                                            <div class="modal-header">
+                                                              <h1 class="modal-title fs-5" id="warningRemoveModalLabel">EL PRODUCTO SE ELIMINARÁ</h1>
+                                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                               <h4><span class="text-danger fs-3"><i class="fa-solid fa-triangle-exclamation"></i></span> ¿Desea eliminar el producto:<%= name %>?</h4>
+                                                              <form action="/productos/eliminar/<%= id %>?_method=DELETE" method="POST">
+                                                                <div class="d-flex justify-content-end gap-3">
+                                                                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal" >Cancelar</button>
+                                                                  <button type="submit" class="btn btn-sm btn-outline-danger">
+                                                                    Sí, eliminar
+                                                                </button>
+                                                                </div> 
+                                                               
+                                                            </form>
+                                                              
+                                                            </div>
+                                                          
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      
+                                                        
+                                               
                                                 
                                             </div>
                                         </td>

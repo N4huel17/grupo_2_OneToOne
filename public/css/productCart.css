@@ -390,7 +390,14 @@ overflow: hidden;
  width: 1010px; /* Puedes ajustar el ancho según tus necesidades */
 height: 135px; 
 margin-top: -1%;
+
 }
+.precio_cantidad_comprar_costo{
+position: relative;
+top: 45px;
+}
+
+
 .titulo{ 
 display:none;
 }
@@ -486,8 +493,8 @@ margin-left:-65px; ;
            }
           .precio_cantidad_comprar_costo{
           position: absolute;
-          top: 165px;
-          left: 10%;
+          left:25%;
+          top: 15px;
           }
           .titulo{ 
             display:none;
@@ -526,7 +533,7 @@ margin-left:-65px; ;
          .eliminar1 {
            display: block; 
            position: relative;
-           top: -92px;
+           top: -106px;
            left:330%;
            }
           .comprar1{
@@ -536,21 +543,24 @@ margin-left:-65px; ;
            }
           .eliminar1, .comprar1{
            margin-left: 250%;
+  
           }
+
          .eliminar1, .comprar1{
           border-radius:15px 15px 15px 15px;
           margin-right: 15px; 
           width: 140px;   
-          margin-top:-3px;
+          margin-top:-9px;
           font-size: 20px; 
           border: 2px solid black;
           display: inline-block;
+
           }
          .cantidad_circulos{
           display: block;
           display: flex;
-          margin-left: 130%;
-          margin-top: -20%;
+          margin-left: 100%;
+          margin-top: -25%;
 
           }
           .cantidad_circulos{
@@ -560,7 +570,7 @@ margin-left:-65px; ;
 
          .precio-original1{
          position: absolute;
-         top: 96%;
+         top: 65%;
           left:175px; ;
           }
          .precio1{ 

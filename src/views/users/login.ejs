@@ -18,40 +18,55 @@
                 <h5>Comprá más rápido y llevá el control de tus pedidos, ¡en un solo lugar!</h5>
                 <img src="/img/login/logo_login.png" alt="" width="200">
             </article>
-            <form action="/profile" class="form">
-                <div class="form__box">
-                    <div class="form__box--fill">
-                        <label class="form__label" for="email">EMAIL</label>
-                        <div class="form__box--position">
-                            <input class="form__input" type="email" id="email" name="email"
-                                placeholder="Ej: NoahBenjamin@gmail.com"><span><i
-                                    class="fa-regular fa-envelope"></i></span>
+            <section class="row">
+                <div class="col-12 col-md-12 col-lg-12 mx-auto my-5">
+                    <div class="card shadow">
+                        <div class="card-header">
+                            <h4 class="card-title">INICIAR SECIÓN </h4>
+                        </div>
+                        <div class="card-body">
+                            <form action="" class="row" method="POST">
+                                <div class="col-12 mb-3">
+                                    <label for="email" class="form-label">Correo electrónico</label>
+                                    <input type="email" name="email" class="form-control" id="email" placeholder="lolo@gmail.com">
+                                    <small class="text-danger ms-2"> <%= locals.errors && errors.email ? errors.email.msg : null %></small>
+                                </div>
+                                  <div class="col-12 mb-3">
+                                    <label for="password" class="form-label">Contraseña</label>
+                                    <input type="password" name="password"class="form-control" id="password">
+                                    <small class="text-danger ms-2"> <%= locals.errors && errors.password ? errors.password.msg : null %></small>
+                                </div>
+                                  <div class="col-12 col-md-6 mb-3">
+    
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="remember" name="remember">
+                                    <label class="form-check-label" for="remember">
+                                      Recordame
+                                    </label>
+                                  </div>
+                                  
+                                </div>
+                                <div class="col-12 col-md-6 mb-3">
+                                    <button class="btn btn-dark w-100">Ingresá</button>
+    
+                            </div>
+                            <div class="form__redes">
+                                <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
+                                <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
+                                <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="https://www.tiktok.com/es/"><i class="fa-brands fa-tiktok"></i></a>
+                            </div>
+                            <div class="form__buttom">
+                                <button class="buttom__login" type="submit">login</button>
+                                <p>¿No tenes cuenta?<a href="registro">Crear cuenta</a></p>
+                            </div
+                                 
+                            
+                            </form>
                         </div>
                     </div>
-                    <div class="form__box--password">
-                        <label class="form__label" for="password">CONTRASEÑA</label>
-                        <div class="form__box--position">
-                            <input class="form__input" id="password" type="password" placeholder="tu contraseña"
-                                name="password"><span><i class="fa-regular fa-eye-slash"></i></span>
-                        </div>
-                    </div>
-                    <div class="form__box--remember">
-                        <input type="checkbox" id="remember" name="remember">
-                        <label for="remember">Remember me</label>
-                        <a href="/">forgot password?</a>
-                    </div>
                 </div>
-                <div class="form__redes">
-                    <a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a>
-                    <a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a>
-                    <a href="https://twitter.com/?lang=es"><i class="fa-brands fa-x-twitter"></i></a>
-                    <a href="https://www.tiktok.com/es/"><i class="fa-brands fa-tiktok"></i></a>
-                </div>
-                <div class="form__buttom">
-                    <button class="buttom__login" type="submit">login</button>
-                    <p>¿No tenes cuenta?<a href="/register">Crear cuenta</a></p>
-                </div>
-            </form>
+            </section>
             <hr>
         </div>
         <h3 class="main__h3--end">Compartir</h3>
