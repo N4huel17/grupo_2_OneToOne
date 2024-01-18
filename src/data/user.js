@@ -9,4 +9,5 @@ function user (name, surname, email, password){
     this.password= bcryptjs.hashSync(password.trim(),10);
     this.role= "user"   
 }
+
 module.exports = user;

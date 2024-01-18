@@ -32,9 +32,9 @@ module.exports =[
          .notEmpty().withMessage('Campo Obligatorio')
          .isLength({
             min: 6
-         }).withMessage('Minimo seis caracteres'),
+         }).withMessage('Minimo 6 y 10 caracteres'),
          body("password2")
-         .notEmpty().withMessage("Campo obligatorio")
+         .notEmpty().withMessage("verifica la contraseña")
          .custom((value, {req}) => {
             if(value != req.body.password){
                 return false

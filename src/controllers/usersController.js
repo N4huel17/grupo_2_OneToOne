@@ -24,11 +24,7 @@ module.exports={
             old : req.body,
             errors: errors.mapped()
         })
-
-        
      }},
-
-
 
     login: (req,res)=> {
         return res.render('users/login')
@@ -39,7 +35,6 @@ module.exports={
         const {email}=req.body
         if(errors.isEmpty()){
             const {id, name, role} = leerJSON('users').find(user => user.email === email)
-
 
           req.session.userLogin = {
             id,
