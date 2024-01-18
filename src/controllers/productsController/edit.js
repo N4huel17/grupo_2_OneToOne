@@ -1,10 +1,7 @@
-
 const { leerJSON } = require("../../data");
 const categories = require('../../data/products.json')
 
-
-
-module.exports= (req,res)=>{
+module.exports = (req,res) => {
 
     const {id} = req.params;
 
@@ -17,6 +14,3 @@ module.exports= (req,res)=>{
         categories
     })
 }
-
-
-
