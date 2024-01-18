@@ -46,5 +46,13 @@
       "email": "jesusdsm17@gmail.com",
       "password": "$2a$10$5a3N1uv.To3pDoaoWHG9aOe9L0OPdle5r5dfl9APwx75UBcCUexoG",
       "role": "admin"
+   },
+   {
+      "id": "ca7e7d80-c7f0-41c5-a376-e9ecf63219ad",
+      "name": "naruto",
+      "surname": "naruto",
+      "email": "michunaruto@gmail.com",
+      "password": "$2a$10$Wq0gEe4h1YKc30dzuTWCWe3VX6omRT5G8yiZ5PirQfQ.Wy92ODfJW",
+      "role": "admin"
    }
 ]

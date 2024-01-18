@@ -21,6 +21,11 @@ const app = express();
 
 //configuracion de session
 app.use(session({secret: 'onetone01'}));
+app.use(session({
+  resave: true,
+  saveUninitialized: true,
+  // ... otras opciones
+}));
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
