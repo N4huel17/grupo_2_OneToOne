@@ -54,5 +54,13 @@
       "email": "michunaruto@gmail.com",
       "password": "$2a$10$Wq0gEe4h1YKc30dzuTWCWe3VX6omRT5G8yiZ5PirQfQ.Wy92ODfJW",
       "role": "admin"
+   },
+   {
+      "id": "55c14d1d-a0b4-457b-9131-2adfe1ed2335",
+      "name": "nahuel",
+      "surname": "lolo",
+      "email": "nahuel@gmail.com",
+      "password": "$2a$10$Y0Jgm/IVpB44H1QQUHpNN./qY4T67378iMGF.liJ8C4UMF7VVZ7L2",
+      "role": "user"
    }
 ]

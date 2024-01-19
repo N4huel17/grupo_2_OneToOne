@@ -55,5 +55,8 @@ module.exports={
     logout : (req,res)=>{
         req.session.destroy();
         return res.redirect('/');
+    },
+    perfil: (req,res)=>{
+        return res.render('users/perfil')
     }
 }
