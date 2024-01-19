@@ -20,30 +20,31 @@
                           </nav>
                     </div>
                     <div class="card-body ">
-                        <form action="" class="row">
-                            <h3>Editar: "Producto"</h3>
+                      
+                        <form action="/productos/actualizar/<%= id %>?_method=PUT" class="row" method="POST" enctype="multipart/form-data">
+                            <h3>Editar: <%= name %> </h3>
                             <hr>
                             <div class="col-12 col-md-6 mb-3">
                                 <div class="form-floating ">
-                                    <input name="name" type="text" class="form-control" id="name" >
+                                    <input name="name" type="text" class="form-control" id="name" value="<%= name %>" >
                                     <label for="name">Nombre</label>
                                   </div>
                             </div>
                             <div class="col-12 col-md-6 mb-3">
                               <div class="form-floating">
-                                <input name="address" type="text" class="form-control" id="precio">
+                                <input name="address" type="text" class="form-control" id="precio" value="<%= precio %>" >
                                 <label for="address">Precio</label>
                               </div>
                             </div>
                             <div class="col-12 col-md-6 mb-3">
                               <div class="form-floating">
-                                <input name="discount" type="text" class="form-control" id="descuento">
+                                <input name="discount" type="text" class="form-control" id="descuento" value="<%= descuento %>" >
                                 <label for="discount">Descuento</label>
                               </div>
                             </div>
                             <div class="col-12 col-md-6 mb-3">
                               <div class="form-floating">
-                                <input name="color" type="text" class="form-control" id="color">
+                                <input name="color" type="text" class="form-control" id="color" value="<%= colors %>" >
                                 <label for="color">Color</label>
                               </div>
                             </div>
@@ -51,12 +52,12 @@
                               <div class="form-floating">
                                   <select name="category" class="form-select" id="category" aria-label="Floating label select example">
                                     <option value="" selected hidden></option>
-                                    <option value="NEW">NEW</option>
-                                    <option value="PANTALONES">PANTALONES</option>
-                                    <option value="CAMISAS">CAMISAS</option>
-                                    <option value="REMERAS">REMERAS</option>
-                                    <option value="ACCESORIOS">ACCESORIOS</option>
-                                      <option value="CREAR">CREAR</option>
+                                    <option value="new">NEW</option>
+                                    <option value="pantalones">PANTALONES</option>
+                                    <option value="pantalones">CAMISAS</option>
+                                    <option value="pantalones">REMERAS</option>
+                                    <option value="accesorios">ACCESORIOS</option>
+                                      
                       
                                   </select>
                                   <label for="category">Categoría</label>
@@ -76,16 +77,16 @@
                             </div>
 
                               <div class="col-12 col-md-3 mb-3">
-                                  <input name="mainImage" type="file" class="form-control" id="mainImage" hidden>
+                                  <input name="mainImage" type="file" class="form-control" id="mainImage" hidden value="<%= mainImage %>">
                                   <label class="btn btn-lg btn-outline-dark w-100" for="mainImage">Imagen principal</label>
                               </div>
                               <div class="col-12 col-md-3 mb-3">
-                                <input  name="images" type="file" class="form-control" id="images" hidden multiple>
+                                <input  name="images" type="file" class="form-control" id="images" hidden multiple value="<%= images %>">
                                 <label class="btn btn-lg btn-outline-dark w-100" for="images">Imágenes</label>
                             </div>
                             <div class="col-12 mb-3">
                                 <div class="form-floating">
-                                    <textarea name="description" class="form-control" id="description" style="height: 200px;"></textarea>
+                                    <textarea name="description" class="form-control" id="description" style="height: 200px;">"<%= description %>" </textarea>
                                     <label for="description">Descripción</label>
                                   </div>
                                 </div>
@@ -96,6 +97,7 @@
                                 <button class="btn btn-lg btn-dark">Guardar cambios</button>
                             </div>
                         </form>
+                        
 
                     </div>
                 </div>
