@@ -1,0 +1,77 @@
+:root{
+    --Fuccia : #FF00B8;
+    --Negro : #000 ; 
+    --Blanco: #FFF; 
+}
+*{
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin:15px;
+    max-width: 1200px;
+    color: #333;
+}
+
+
+.container_products_articulos img{
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+    transition: all .5s;
+}
+
+.container_products_articulos .imagenes_de_los_productos{
+    overflow: hidden;
+}
+
+.container_products_articulos:hover img{
+    transform: scale(1.2);
+}
+
+.info__product{
+    padding: 15px 30px;
+    line-height: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color:white;
+    background-color: black;
+    border-radius: 0 0 10px 10px;
+
+}
+
+.precio{
+    font-size: 18px;
+    font-weight: 900;
+}
+.descuentos{
+    flex-direction: row;
+    margin-left: 120px;
+    margin-top: -45px;
+    width: 30%;
+    color:#FF00B8
+}
+
+.info__product button{
+    border: none;
+    background: none;
+    background-color: #FF00B8;
+    color: #fff;
+    padding: 15px 10px;
+    cursor: pointer;
+}
+
+@media (min-width:768px) {
+.container__products__views{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    gap: 20px;
+}
+}
+

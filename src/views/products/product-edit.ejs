@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+   <!-- //HEAD PARTIALS-->
+   <%- include('../partials/head',{
+    title:'EDITAR'
+})  %>
+<body>
+    <%- include('../partials/header-admin') %>
+
+    <main class="container">
+        <section class="row my-5">
+            <div class="col-12 col-md-10 mx-auto">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="/admin" class="text-primary">Home</a></li>
+                              <li class="breadcrumb-item active" aria-current="page"> Editar Producto </li>
+                            </ol>
+                          </nav>
+                    </div>
+                    <div class="card-body ">
+                        <form action="" class="row">
+                            <h3>Editar Producto :  </h3>
+                            <hr>
+                            <div class="col-12 col-md-6 mb-3">
+                             
+                                <div class="form-floating ">
+                                    <input name="name" type="text" class="form-control" id="name" >
+                                    <label for="name">Nombre</label>
+                                  </div>
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                              <div class="form-floating">
+                                <input name="address" type="text" class="form-control" id="precio">
+                                <label for="address">Precio</label>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                              <div class="form-floating">
+                                <input name="discount" type="text" class="form-control" id="descuento">
+                                <label for="discount">Descuento</label>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                              <div class="form-floating">
+                                <input name="color" type="text" class="form-control" id="color">
+                                <label for="color">Color</label>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                              <div class="form-floating">
+                                  <select name="category" class="form-select" id="category" aria-label="Floating label select example">
+                                    <option value="" selected hidden></option>
+                                    <option value="NEW">NEW</option>
+                                    <option value="PANTALONES">PANTALONES</option>
+                                    <option value="CAMISAS">CAMISAS</option>
+                                    <option value="REMERAS">REMERAS</option>
+                                    <option value="ACCESORIOS">ACCESORIOS</option>
+                                      <option value="CREAR">CREAR</option>
+                      
+                                  </select>
+                                  <label for="category">Categoría</label>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 mb-3">
+                              <div class="form-floating">
+                                  <select name="sizes" class="form-select" id="sizes" aria-label="Floating label select example">
+                                    <option value="" selected hidden></option>
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                    <option value="XL">XL</option>
+                                  </select>
+                                  <label for="sizes">Talla</label>
+                                </div>
+                            </div>
+
+                              <div class="col-12 col-md-3 mb-3">
+                                  <input name="mainImage" type="file" class="form-control" id="mainImage" hidden>
+                                  <label class="btn btn-lg btn-outline-dark w-100" for="mainImage">Imagen principal</label>
+                              </div>
+                              <div class="col-12 col-md-3 mb-3">
+                                <input  name="images" type="file" class="form-control" id="images" hidden multiple>
+                                <label class="btn btn-lg btn-outline-dark w-100" for="images">Imágenes</label>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <div class="form-floating">
+                                    <textarea name="description" class="form-control" id="description" style="height: 200px;"></textarea>
+                                    <label for="description">Descripción</label>
+                                  </div>
+                            </div>
+                           
+                            <div class="col-12 d-flex justify-content-end">
+                                <button class="btn btn-lg btn-dark">Guardar cambios</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+  <%- include('../partials/scripts') %>
+</body>
+</html>

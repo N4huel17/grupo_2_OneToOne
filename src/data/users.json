@@ -1,0 +1,58 @@
+[
+   {
+      "id": 1,
+      "name": " Lionel",
+      "surname": " Messi",
+      "gmail": "messiarg@gmail.com",
+      "password": "antonella123",
+      "ConfirmPassword": "antonella123"
+   },
+   {
+      "id": 2,
+      "name": " Bob",
+      "surname": " Esponja",
+      "gmail": "atlantico123@gmail.com",
+      "password": "789456",
+      "ConfirmPassword": "789789"
+   },
+   {
+      "id": 3,
+      "name": " Kidd",
+      "surname": " Keo",
+      "gmail": "dracukeo@gmail.com",
+      "password": "tuki123456789",
+      "ConfirmPassword": "tuki123456789"
+   },
+   {
+      "id": "7606423f-0663-4c86-b1d5-054b73563936",
+      "name": "Aldi",
+      "surname": "Moyano",
+      "email": "jesusdsm17@gmail.com.ar",
+      "password": "$2a$10$GySXogrT28xDvbEFXcbQYeTmjFF4gg9SiohMDOGfjwEHyxvz6YUzW",
+      "role": "user"
+   },
+   {
+      "id": "8b7f540a-6129-4416-91c8-b2634dea870d",
+      "name": "Nahuel",
+      "surname": "Mendez",
+      "email": "jesus_dsm@hotmail.com.ar",
+      "password": "$2a$10$WqWPWkr731dLjZjDowW5y.sLF4n/PVoZs/KmnD/luvSkWAakqnWWy",
+      "role": "user"
+   },
+   {
+      "id": "99feba95-c1e7-4fa1-8d2c-561900413f39",
+      "name": "Lionel",
+      "surname": "Lionel",
+      "email": "jesusdsm17@gmail.com",
+      "password": "$2a$10$5a3N1uv.To3pDoaoWHG9aOe9L0OPdle5r5dfl9APwx75UBcCUexoG",
+      "role": "admin"
+   },
+   {
+      "id": "ca7e7d80-c7f0-41c5-a376-e9ecf63219ad",
+      "name": "naruto",
+      "surname": "naruto",
+      "email": "michunaruto@gmail.com",
+      "password": "$2a$10$Wq0gEe4h1YKc30dzuTWCWe3VX6omRT5G8yiZ5PirQfQ.Wy92ODfJW",
+      "role": "admin"
+   }
+]
