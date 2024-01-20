@@ -48,7 +48,7 @@
                                 <label for="color">Color</label>
                               </div>
                             </div>
-                            <div class="col-12 col-md-6 mb-3">
+                          <!--  <div class="col-12 col-md-6 mb-3">
                               <div class="form-floating">
                                   <select name="category" class="form-select" id="category" aria-label="Floating label select example">
                                     <option value="" selected hidden></option>
@@ -62,6 +62,16 @@
                                   </select>
                                   <label for="category">Categoría</label>
                                 </div>
+                            </div> -->
+                            <div class="col-12 col-md-6">
+                              <label for="category" class="form-label">Categoría:</label>
+                              <select name="category" id="category" class="form-input">
+                                <option value="NEW"<%= category === "NEW"  && 'selected'%>>New</option>
+                                <option value="PANTALONES"<%= category === "PANTALONES"  && 'selected'%>>PANTALONES</option>
+                                <option value="CAMISAS"<%= category === "CAMISAS"  && 'selected'%>>CAMISAS</option>
+                                <option value="REMERAS"<%= category === "REMERAS"  && 'selected'%>>REMERAS</option>
+                                <option value="ACCESORIOS"<%= category === "ACCESORIOS"  && 'selected'%>>ACCESORIOS</option>
+                              </select>
                             </div>
                             <div class="col-12 col-md-6 mb-3">
                               <div class="form-floating">
