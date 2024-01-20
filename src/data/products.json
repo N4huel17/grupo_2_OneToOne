@@ -62,37 +62,15 @@
    {
       "id": "2c5ae9b3-4ba9-4ba4-98d9-379abf2f0186",
       "name": "Cadenita Love",
-      "description": "Cadena con accesorios rosados para pantalones ",
-      "mainImage": "1705451727303_products.jpg",
-      "images": [],
-      "category": "accesorios",
-      "sizes": "",
+      "description": "\"\"Cadena con accesorios rosados para pantalones \"\"",
+      "mainImage": "1705767716737_products.jpg",
+      "images": [
+         "1705767716738_products.jpg"
+      ],
+      "category": "pantalones",
+      "sizes": "XL",
       "colors": "Rosado",
       "precio": "$10.00",
-      "descuento": "$0"
-   },
-   {
-      "id": "0cf4f4f5-4c1b-4408-9d1f-e1583c11921e",
-      "name": "Cinto De Cuero",
-      "description": "Explora la elegancia auténtica con los Cinturones para hombre, elaborados artesanalmente con cuero 100% vacuno. Con un ancho de 35 mm, estos cintos no solo mantienen tu estilo en su lugar, sino que también son un testimonio de calidad y distinción.",
-      "mainImage": "1705451941472_products.jpg",
-      "images": [],
-      "category": "accesorios",
-      "sizes": "S,M,L,XL",
-      "colors": "Marron",
-      "precio": "$15.500",
-      "descuento": "$0"
-   },
-   {
-      "id": "c0843094-4e02-4d3b-89c7-ae5a99a98f1a",
-      "name": "Arnes de Metal",
-      "description": "Arnes De Metal, hermoso para lucir un buen outfits",
-      "mainImage": "1705452109398_products.webp",
-      "images": [],
-      "category": "accesorios",
-      "sizes": "S,M,L",
-      "colors": "",
-      "precio": "$6.500",
-      "descuento": "$0"
+      "descuento": "$00"
    }
 ]

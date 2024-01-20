@@ -10,9 +10,11 @@ const router = express.Router();
 router.get('/detalle/:id?',detail );
 router.get('/agregar',add );
 router.get('/editar/:id',edit );
-router.post('/crear',upload.single('mainImage'),create);
+router.post('/crear',upload.fields([{name: "mainImage",},{name: "images",},]),create);
 router.delete('/eliminar/:id', remove );
-router.put('/actualizar/:id', update)
+router.put('/actualizar/:id',upload.fields([{name: "mainImage",},{name: "images",},]), update)
+
+
 
 
 
