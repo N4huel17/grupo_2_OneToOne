@@ -62,13 +62,13 @@
    {
       "id": "2c5ae9b3-4ba9-4ba4-98d9-379abf2f0186",
       "name": "Cadenita Love",
-      "description": "\"\"Cadena con accesorios rosados para pantalones \"\"",
-      "mainImage": "1705767716737_products.jpg",
+      "description": "\"\"\"Cadena con accesorios rosados para pantalones \"\"\"",
+      "mainImage": "1705768183015_products.jpg",
       "images": [
-         "1705767716738_products.jpg"
+         "1705768183016_products.jpg"
       ],
       "category": "pantalones",
-      "sizes": "XL",
+      "sizes": "",
       "colors": "Rosado",
       "precio": "$10.00",
       "descuento": "$00"
