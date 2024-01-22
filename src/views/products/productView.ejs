@@ -1,13 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
    <!-- //HEAD PARTIALS-->
-   <%- include('./partials/head',{
-    title:'Vista del Producto'
-})  %>
-<body>
-  <!-- //HEADER PARTIALS-->
-    
-    <%- include('./partials/header') %>
+   <%- include('../partials/head') %>
+<body class="detalles_del_producto">
+
+	<%- include('../partials/header',{ title:'View'}) %>
 
     <main class="container__products__views">
         <article class="container_products_articulos">
@@ -178,7 +175,7 @@
     </main>
     
     <!-- //FOOTER PARTIALS-->
-    <%- include('./partials/footer') %>
+    <%- include('../partials/footer') %>
     
 </body>
 </html>

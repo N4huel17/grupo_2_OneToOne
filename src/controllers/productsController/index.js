@@ -4,7 +4,8 @@ const detail= require('./detail');
 const edit =require('./edit');
 const remove= require('./remove');
 const create= require('./create');
-const update= require('./update')
+const update= require('./update');
+const view= require('./productView')
 
 
 
@@ -16,5 +17,7 @@ module.exports={
     detail,
     edit,
     remove,
-    update
+    update,
+    view
+    
 }
