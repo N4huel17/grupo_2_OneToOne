@@ -4,14 +4,14 @@
    <%- include('../partials/head') %>
 <body class="detalles_del_producto">
 
-	<%- include('../partials/header',{ title:'View'}) %>
+	<%- include('../partials/header',{ title:'Camisas'}) %>
 
     <main class="container__products__views">
         <% products.forEach(({id, name, category, mainImage, images, description, precio,descuento}) => { %>
             <% if (category === 'camisas') { %>
                 <article class="container_products_articulos">
                     <div class="imagenes_de_los_productos">
-                        <img src="<%= mainImage %>" alt="<%= name %>">
+                        <img src="/img/<%= mainImage %>" alt="">
                     </div>
                     <article class="info__product">
                         <h2><%= name %></h2>

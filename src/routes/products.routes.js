@@ -1,5 +1,5 @@
 const express = require('express');
-const { detail, add, edit, remove, create, update, view } = require('../controllers/productsController');
+const { detail, add, edit, remove, create, update, camisas, abrigos, pantalones, accesorios, remeras, } = require('../controllers/productsController');
 const upload = require('../middlewares/upload');
 
 
@@ -15,7 +15,11 @@ router.get('/editar/:id',edit );
 router.post('/crear',upload.fields([{name: "mainImage",},{name: "images",},]),create);
 router.delete('/eliminar/:id', remove );
 router.put('/actualizar/:id',upload.fields([{name: "mainImage",},{name: "images",},]), update)
-router.get('/listado',view);
+router.get('/camisas',camisas);
+router.get('/abrigos',abrigos);
+router.get('/pantalones',pantalones);
+router.get('/accesorios',accesorios);
+router.get('/remeras',remeras);
 
 
 

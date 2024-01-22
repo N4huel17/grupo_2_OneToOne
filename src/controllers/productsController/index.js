@@ -5,7 +5,11 @@ const edit =require('./edit');
 const remove= require('./remove');
 const create= require('./create');
 const update= require('./update');
-const view= require('./productView')
+const camisas= require('./camisas');
+const abrigos= require('./abrigos');
+const pantalones= require('./pantalones');
+const accesorios= require('./accesorios');
+const remeras= require('./remeras');
 
 
 
@@ -18,6 +22,11 @@ module.exports={
     edit,
     remove,
     update,
-    view
+    camisas,
+    abrigos,
+    pantalones,
+    accesorios,
+    remeras
+
     
 }
