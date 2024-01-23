@@ -1,113 +1,135 @@
 [
    {
-      "id": 1,
-      "name": "Remera oversized Butterfly ",
-      "description": " oversize, estampado espalda, frente liso, tela algodon, apto para lavarropas con agua fria sin centrifugado",
-      "mainImage": "img__remera1",
-      "images": [],
-      "category": "Remeras",
-      "sizes": "M",
-      "colors": "morado",
-      "precio": "$13.800,00"
-   },
-   {
-      "id": "d81b81da-9746-4ac2-82b3-fa90d75a2baa",
-      "name": "Buzo Smile",
-      "description": "Buzo canguro, corte over-size, con estampa - tela algodon rustico.",
-      "mainImage": "1705448218165_products.jpg",
-      "images": [],
-      "category": "NEW",
-      "sizes": "M,L,XL",
-      "colors": "Blanco",
-      "precio": "$25.999"
-   },
-   {
-      "id": "e047e7e1-c6c5-40bd-851a-25ddf2ac89e1",
-      "name": "Buzo Vintage",
-      "description": "Buzo canguro, corte over-size, con estampa - tela algodon friza.",
-      "mainImage": "1705448560206_products.jpg",
-      "images": [],
-      "category": "NEW",
-      "sizes": "M,L,XL",
-      "colors": "Marron",
-      "precio": "$23.000"
-   },
-   {
-      "id": "a8d7a799-b826-4fb0-8015-2c77bb4d38ce",
-      "name": "Jogging Flypy",
-      "description": "Jogging de gabardina (media estación). Con bolsillos tipo CARGO.",
-      "mainImage": "1705449142686_products.webp",
-      "images": [],
-      "category": "PANTALONES",
-      "sizes": "S,M,L,XL",
-      "colors": "celeste",
-      "precio": "$20.000"
-   },
-   {
-      "id": "5e6579b5-b19c-45dd-9b47-8bb74fb0c29b",
-      "name": "Pantalon Stroffy",
-      "description": "Pantalon Jeans Corte Over. con bolsillos cargo.",
-      "mainImage": "1705449389101_products.webp",
-      "images": [],
-      "category": "PANTALONES",
-      "sizes": "S,M,L,XL",
-      "colors": "celeste",
-      "precio": "$17.800"
-   },
-   {
-      "id": "b578de49-94e7-48c5-abc5-81ee95e150a1",
-      "name": "Jogging Canys",
-      "description": "Oversize, Tiro alto, Primavera/Verano, tela de Microfibra",
-      "mainImage": "1705449852708_products.webp",
-      "images": [],
-      "category": "PANTALONES",
-      "sizes": "S,M,L,XL",
-      "colors": "Negro",
-      "precio": "$19.999"
-   },
-   {
-      "id": "dbcca7fb-ccaa-4f36-87fc-2182c1bfc146",
-      "name": "Pantalon Flow",
-      "description": "Pantalon Oversize, Estilo Cargo, Tela de jeans celeste y Tela jeans negro, \r\n",
-      "mainImage": "1705450071028_products.webp",
-      "images": [],
-      "category": "PANTALONES",
-      "sizes": "S,M,L,XL",
-      "colors": "JEANS",
-      "precio": "$22.999"
+      "id": "49ae299a-93af-4128-b731-69de7cf96a72",
+      "name": "Camisa Summer",
+      "description": "\"Camisa corta de Dama, Tela Lino, Con Estampa\"",
+      "mainImage": "1705946487766_products.jpg",
+      "images": [
+         "1705946487768_products.jpg",
+         "1705946487770_products.jpg"
+      ],
+      "category": "CAMISAS",
+      "sizes": "XL",
+      "colors": "Cesleste",
+      "precio": "$11.800",
+      "descuento": "$0"
    },
    {
       "id": "49ae299a-93af-4128-b731-69de7cf96a72",
       "name": "Camisa Summer",
-      "description": "Camisa corta de Dama, Tela Lino, Con Estampa",
-      "mainImage": "1705450330869_products.png",
-      "images": [],
+      "description": "\"Camisa corta de Dama, Tela Lino, Con Estampa\"",
+      "mainImage": "1705946487766_products.jpg",
+      "images": [
+         "1705946487768_products.jpg",
+         "1705946487770_products.jpg"
+      ],
       "category": "CAMISAS",
-      "sizes": "S,M,L,XL",
+      "sizes": "XL",
       "colors": "Cesleste",
-      "precio": "$11.800"
+      "precio": "$11.800",
+      "descuento": "$0"
    },
    {
-      "id": "8fddf018-2358-4103-ac96-a511c8a8b46c",
-      "name": "Camisa Nite",
-      "description": "Camisa de Rayas Blancas con Azul, Primavera/Verano, Tela Lino",
-      "mainImage": "1705450556958_products.jpg",
-      "images": [],
+      "id": "49ae299a-93af-4128-b731-69de7cf96a72",
+      "name": "Camisa Summer",
+      "description": "\"Camisa corta de Dama, Tela Lino, Con Estampa\"",
+      "mainImage": "1705946487766_products.jpg",
+      "images": [
+         "1705946487768_products.jpg",
+         "1705946487770_products.jpg"
+      ],
       "category": "CAMISAS",
-      "sizes": "M,L,XL",
-      "colors": "Azul",
-      "precio": "$16.500"
+      "sizes": "XL",
+      "colors": "Cesleste",
+      "precio": "$11.800",
+      "descuento": "$0"
+   },
+   {
+      "id": "49ae299a-93af-4128-b731-69de7cf96a72",
+      "name": "Camisa Summer",
+      "description": "\"Camisa corta de Dama, Tela Lino, Con Estampa\"",
+      "mainImage": "1705946487766_products.jpg",
+      "images": [
+         "1705946487768_products.jpg",
+         "1705946487770_products.jpg"
+      ],
+      "category": "CAMISAS",
+      "sizes": "XL",
+      "colors": "Cesleste",
+      "precio": "$11.800",
+      "descuento": "$0"
+   },
+   {
+      "id": "49ae299a-93af-4128-b731-69de7cf96a72",
+      "name": "Camisa Summer",
+      "description": "\"Camisa corta de Dama, Tela Lino, Con Estampa\"",
+      "mainImage": "1705946487766_products.jpg",
+      "images": [
+         "1705946487768_products.jpg",
+         "1705946487770_products.jpg"
+      ],
+      "category": "CAMISAS",
+      "sizes": "XL",
+      "colors": "Cesleste",
+      "precio": "$11.800",
+      "descuento": "$0"
+   },
+   {
+      "id": "49ae299a-93af-4128-b731-69de7cf96a72",
+      "name": "Camisa Summer",
+      "description": "\"Camisa corta de Dama, Tela Lino, Con Estampa\"",
+      "mainImage": "1705946487766_products.jpg",
+      "images": [
+         "1705946487768_products.jpg",
+         "1705946487770_products.jpg"
+      ],
+      "category": "CAMISAS",
+      "sizes": "XL",
+      "colors": "Cesleste",
+      "precio": "$11.800",
+      "descuento": "$0"
+   },
+   {
+      "id": "49ae299a-93af-4128-b731-69de7cf96a72",
+      "name": "Camisa Summer",
+      "description": "\"Camisa corta de Dama, Tela Lino, Con Estampa\"",
+      "mainImage": "1705946487766_products.jpg",
+      "images": [
+         "1705946487768_products.jpg",
+         "1705946487770_products.jpg"
+      ],
+      "category": "CAMISAS",
+      "sizes": "XL",
+      "colors": "Cesleste",
+      "precio": "$11.800",
+      "descuento": "$0"
+   },
+   {
+      "id": "49ae299a-93af-4128-b731-69de7cf96a72",
+      "name": "Camisa Summer",
+      "description": "\"Camisa corta de Dama, Tela Lino, Con Estampa\"",
+      "mainImage": "1705946487766_products.jpg",
+      "images": [
+         "1705946487768_products.jpg",
+         "1705946487770_products.jpg"
+      ],
+      "category": "CAMISAS",
+      "sizes": "XL",
+      "colors": "Cesleste",
+      "precio": "$11.800",
+      "descuento": "$0"
    },
    {
       "id": "37ee8124-a46d-4242-aeed-1b524907f7f9",
       "name": "Camisa Painting",
-      "description": "Camisa Manga Larga, Tela De Algodon, Estampado De Cuadros",
-      "mainImage": "1705450679941_products.jpg",
+      "description": "\"Camisa Manga Larga, Tela De Algodon, Estampado De Cuadros\"",
+      "mainImage": "1705946497139_products.jpg",
       "images": [],
       "category": "CAMISAS",
-      "sizes": "M,L,XL",
+      "sizes": "M",
       "colors": "Negro",
-      "precio": "$20.350"
+      "precio": "$20.350",
+      "descuento": "$00"
    },
    {
       "id": "2df629bf-8917-4081-927d-4f5e0b648bd9",
@@ -118,7 +140,8 @@
       "category": "REMERAS",
       "sizes": "S,M,L,XL",
       "colors": "Blanco",
-      "precio": "$13.500"
+      "precio": "$13.500",
+      "descuento": "$0"
    },
    {
       "id": "f560a2c0-c205-4aea-823a-d76b6832862b",
@@ -129,7 +152,8 @@
       "category": "REMERAS",
       "sizes": "S,M,L,XL",
       "colors": "Blanco",
-      "precio": "$12.000"
+      "precio": "$12.000",
+      "descuento": "$0"
    },
    {
       "id": "b0b81861-0b1b-4229-a875-f9309b7cbbeb",
@@ -140,39 +164,107 @@
       "category": "REMERAS",
       "sizes": "S,M,L,XL",
       "colors": "Gris",
-      "precio": "$9.999"
+      "precio": "$9.999",
+      "descuento": "$0"
+   },
+   
+   {
+      "id": "5fb60eb2-f6a1-4906-91b6-ec94ebce2c54",
+      "name": "Pantalon para tienda",
+      "description": "dfsdfsdfd",
+      "category": "PANTALONES",
+      "sizes": "M",
+      "colors": "Negro",
+      "precio": "15.0050$",
+      "mainImage": "1705946158242_products.jpg",
+      "images": []
    },
    {
-      "id": "2c5ae9b3-4ba9-4ba4-98d9-379abf2f0186",
-      "name": "Cadenita Love",
-      "description": "Cadena con accesorios rosados para pantalones ",
-      "mainImage": "1705451727303_products.jpg",
-      "images": [],
-      "category": "ACCESORIOS",
-      "sizes": "",
-      "colors": "Rosado",
-      "precio": "$10.00"
+      "id": "e157dd09-408f-4e15-b6da-df142a6304d4",
+      "name": "Pantalon para tienda",
+      "description": "gfhgfd",
+      "category": "PANTALONES",
+      "sizes": "M",
+      "colors": "Negro",
+      "precio": "15.0050$",
+      "mainImage": "1705948766732_products.jpg",
+      "images": []
    },
    {
-      "id": "0cf4f4f5-4c1b-4408-9d1f-e1583c11921e",
-      "name": "Cinto De Cuero",
-      "description": "Explora la elegancia auténtica con los Cinturones para hombre, elaborados artesanalmente con cuero 100% vacuno. Con un ancho de 35 mm, estos cintos no solo mantienen tu estilo en su lugar, sino que también son un testimonio de calidad y distinción.",
-      "mainImage": "1705451941472_products.jpg",
-      "images": [],
-      "category": "ACCESORIOS",
-      "sizes": "S,M,L,XL",
-      "colors": "Marron",
-      "precio": "$15.500"
+      "id": "54b1e256-bcce-4a42-8ed7-6bdb12e87e7d",
+      "name": "Remera de messi",
+      "description": "ss",
+      "category": "REMERAS",
+      "sizes": "M",
+      "colors": "Blanquita",
+      "precio": "15.0050$",
+      "mainImage": "1705948786838_products.jpg",
+      "images": []
    },
    {
-      "id": "c0843094-4e02-4d3b-89c7-ae5a99a98f1a",
-      "name": "Arnes de Metal",
-      "description": "Arnes De Metal, hermoso para lucir un buen outfits",
-      "mainImage": "1705452109398_products.webp",
-      "images": [],
+      "id": "44bd9708-646b-4513-84ac-59fa2c2e2164",
+      "name": "Remera de messi",
+      "description": "ss",
+      "category": "REMERAS",
+      "sizes": "M",
+      "colors": "Blanquita",
+      "precio": "15.0050$",
+      "mainImage": "1705948800836_products.jpg",
+      "images": []
+   },
+   {
+      "id": "f92ef8d0-ff48-43f1-8617-ff2539705829",
+      "name": "Remera de messi",
+      "description": "ssadadad",
+      "category": "REMERAS",
+      "sizes": "M",
+      "colors": "Blanquita",
+      "precio": "15.0050$",
+      "mainImage": "1705948819460_products.jpg",
+      "images": []
+   },
+   {
+      "id": "65b873f0-90d2-46e7-b448-df6f67f7ab11",
+      "name": "Remera de messi",
+      "description": "asfdad",
+      "category": "REMERAS",
+      "sizes": "M",
+      "colors": "Blanquita",
+      "precio": "15.0050$",
+      "mainImage": "1705948852195_products.jpg",
+      "images": []
+   },
+   {
+      "id": "90d5ed16-fc43-4037-94a2-2f37a0d00112",
+      "name": "Buzo facherito",
+      "description": "adsf",
+      "category": "ABRIGOS",
+      "sizes": "M",
+      "colors": "Blanquita",
+      "precio": "15.0050$",
+      "mainImage": "1705948890708_products.jpg",
+      "images": []
+   },
+   {
+      "id": "5f2f1803-f8d7-4dd5-82ab-fb6271f568fa",
+      "name": "buzo facherito",
+      "description": "dfsafa",
+      "category": "ABRIGOS",
+      "sizes": "M",
+      "colors": "Negro",
+      "precio": "15000",
+      "mainImage": "1705949045227_products.jpg",
+      "images": []
+   },
+   {
+      "id": "01987fa0-4296-4fcb-a932-90368ade3a60",
+      "name": "fdaasdfasd",
+      "description": "dfgdgd",
       "category": "ACCESORIOS",
-      "sizes": "S,M,L",
-      "colors": "",
-      "precio": "$6.500"
+      "sizes": "M",
+      "colors": "adsfsdaf",
+      "precio": "15000",
+      "mainImage": "1705949072236_products.jpg",
+      "images": []
    }
 ]

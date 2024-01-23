@@ -62,5 +62,13 @@
       "email": "nahuel@gmail.com",
       "password": "$2a$10$Y0Jgm/IVpB44H1QQUHpNN./qY4T67378iMGF.liJ8C4UMF7VVZ7L2",
       "role": "user"
+   },
+   {
+      "id": "0d92774e-eb4e-439a-86bd-7688f7ecdd13",
+      "name": "Luca",
+      "surname": "Luca",
+      "email": "lucaoribe01@gmail.com",
+      "password": "$2a$10$RvzXVH1I008MXUwzHhTsVuGwGkaUEujrTWCSq/JQVAPUbpqipN5cW",
+      "role": "user"
    }
 ]

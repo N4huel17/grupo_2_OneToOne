@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swaP');
+
 * .body-header {
                 box-sizing: border-box;
                 margin: 0;
@@ -72,7 +74,7 @@
     
 }
 .section-right-a{
-   
+   color: aliceblue;
                 margin: 0;
                 height: 10px;
                 }
@@ -94,6 +96,34 @@
 .header-nav a {
     text-decoration: none;
     color: rgb(255, 255, 255);
+  /*-----------------------------------*/
+
+
+/*--------IMAGEN DE HEADER-------------------------*/
+
+.header-logo {
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+.header-logo img {
+    transition: filter 0.3s ease-in-out;
+
+}
+
+.header-logo:hover img {
+    filter: brightness(2.5);
+    animation: shine s infinite alternate; 
+  
+}
+
+/*---------------------------------*/
+
+
+
+
+  /*-----------------------------------*/
 
 }
 @media(min-width:768px){
@@ -154,9 +184,6 @@
 
     }
 
-
-
-
     .header-nav{
         margin-top: -60px;
         display: flex;
@@ -175,6 +202,28 @@
         margin: 0;
         padding: 3px;
     }
+
+/*--------IMAGEN DE HEADER-------------------------*/
+
+.header-logo {
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+.header-logo img {
+    transition: filter 0.3s ease-in-out;
+
+}
+
+.header-logo:hover img {
+    filter: brightness(2.5);
+    animation: shine s infinite alternate; 
+  
+}
+
+/*---------------------------------*/
+
 }
 
 
@@ -189,67 +238,132 @@
     }
 .header-logo{
     display:inline-block;
-    
     justify-content: start;
-    width: 170px;
+    width: 168px;
+    position: relative;
+    top:-3px;
+     left:65px;
     }
+
 .header-logo-image{
     width: 100%;
 }
+/*--------IMAGEN DE HEADER-------------------------*/
 
+.header-logo {
+    display: inline-block;
+    overflow: hidden;
+
+}
+
+.header-logo img {
+    transition: filter 0.3s ease-in-out;
+
+}
+
+.header-logo:hover img {
+    filter: brightness(2.5);
+    animation: shine s infinite alternate; 
+  
+}
+
+/*---------------------------------*/
 .section-right{
+color:fuchsia;
     position: relative;
     display: inline-block;
-   
     right: -10px;
-    top: -35px;
+    top: -45%;
+    left: 65%;
  }
-.buscadorH{
-   display:inline-flex;
-   
-    width: 130px;
-    height: 30px;
-    border : 1px white solid;
-    font-size: 13px;
-    
+ .buscadorH {
+   background-color: black;
+    display: inline-flex;
+    width: 250px;
+    height: 35px;
+    border: 1px rgb(172, 6, 184) solid;
+    font-size: 16px;
     border-radius: 15px;
-   
-   
-   
-   
+    transition: border-color 0.3s ease; 
+    position: relative;
 }
+
+
 #iconBuscar{
-    color: rgb(0, 0, 0);
-    margin-top: 0px;
-    margin-left:-40px;
-
     
+color:white;
+position: relative;
+top:1px;
+   left:-8px ; 
 }
-.section-right a {
-  padding: 5px;
-margin-left: 1px;
+
+.section-right-a {
+    font-size: 2rem ;
   }
+  .section-right-b  {
+    font-size: 25px ;
+
+}
 .section-right i {
+
   color: rgb(255, 255, 255);
-  margin-left: 5px;
+  margin-left: 6px;
 
 }
-
-
-  
-
-
-
-.header-nav{
-    width: 100%;   
-     height: 30px;
-    display: flex;
-    justify-content: center;
-    margin-top: 0%;
+.section-right-cart {
+    background-color:white;
    
-    
 }
-}
+
 .header-icon{
+
+    color:black;
     font-size: 30px;
+
+
 }
+
+.header-nav-ul{
+    position: relative;
+left: -5%;
+top:-20px;
+font-size: 30px; 
+}
+/*-------CAMBIAN DE COLOR LAS LETRAS--------------------------*/
+
+
+
+.header-nav-ul-li a {
+    color: white; /* Establece el color original del texto */
+    transition: color 0.3s; /* Agrega una transición suave para el cambio de color */
+  }
+
+  .header-nav-ul-li a:hover {
+    color: fuchsia; /* Cambia el color a fucsia cuando el cursor está sobre el enlace */
+  }
+
+
+/* Cambio de color al pasar el ratón ... POR EL BUSCADOR*/
+
+::placeholder{
+    background-color: black;
+    color:black
+}
+
+
+::placeholder {
+    background-color: black;
+    color:fuchsia;
+}
+input::placeholder {
+    background-color: transparent;
+}
+
+input {
+    color: white; /* Color del texto escrito */
+}
+
+
+
+}
+

@@ -1,7 +1,7 @@
 const { leerJSON } = require("../data")
 
 
-module.exports={
+module.exports ={
     index: (req,res)=> {
         
         const products=leerJSON('products')

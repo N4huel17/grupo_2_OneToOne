@@ -21,14 +21,16 @@
     </div>
     <div class="section-right">
 
-      <input class="buscadorH" type="text" placeholder=""> <i id="iconBuscar" class="fa-solid fa-magnifying-glass"></i>
+      <input class="buscadorH" type="text" placeholder=" Buscar Productos . . ."> <i id="iconBuscar" class="fa-solid fa-magnifying-glass"></i>
+      
       <% if ( locals.userLogin ) { %>
 
         <a class="section-right-a" href="/usuarios/perfil"> <i class="fa-solid fa-circle-user header-icon"></i></a>
-        <a class="section-right-a" href="/carrito"><i class="fa-solid fa-cart-shopping"></i></a>
+        <a class="section-right-b" href="/carrito"> <i class="fa-solid fa-cart-shopping" ></i></a>
+      
         <% }else{ %>
           <a class="section-right-a" href="/usuarios/ingreso"> <i class="fa-solid fa-circle-user header-icon"></i></a>
-
+ <a class="section-right-b" href="/carrito"> <i class="fa-solid fa-cart-shopping" ></i></a>
           <%}%>
 
 
@@ -44,8 +46,12 @@
           <ul class="header-nav-ul">
             <li class="header-nav-ul-li"><a href="/admin">ADMIN</a></li>
           </ul>
+          <ul class="header-nav-ul">
+            <li class="header-nav-ul-li"><a href="/usuarios/salir">CERRAR SESIÓN</a></li>
+          </ul>
           <% } else { %>
             <ul class="header-nav-ul">
+              <li class="header-nav-ul-li"><a href="/productos/detalle">ABRIGOS</a></li>
               <li class="header-nav-ul-li"><a href="/productos/productViews">NEW</a></li>
             </ul>
             <ul class="header-nav-ul">
@@ -67,19 +73,20 @@
             <% } %>
       <% } else { %>
         <ul class="header-nav-ul">
+          <li class="header-nav-ul-li"><a href="/productos/abrigos">ABRIGOS</a></li>
           <li class="header-nav-ul-li"><a href="/productos/vista">NEW</a></li>
         </ul>
         <ul class="header-nav-ul">
-          <li class="header-nav-ul-li"><a href="/productos/detalle">PANTALONES</a></li>
+          <li class="header-nav-ul-li"><a href="/productos/pantalones">PANTALONES</a></li>
         </ul>
         <ul class="header-nav-ul">
-          <li class="header-nav-ul-li"><a href="/productos/detalle">CAMISAS</a></li>
+          <li class="header-nav-ul-li"><a href="/productos/camisas">CAMISAS</a></li>
         </ul>
         <ul class="header-nav-ul">
-          <li class="header-nav-ul-li"><a href="/productos/detalle">REMERAS</a></li>
+          <li class="header-nav-ul-li"><a href="/productos/remeras">REMERAS</a></li>
         </ul>
         <ul class="header-nav-ul">
-          <li class="header-nav-ul-li"><a href="/productos/detalle">ACCESORIOS</a></li>
+          <li class="header-nav-ul-li"><a href="/productos/accesorios">ACCESORIOS</a></li>
         </ul>
         <% } %>
 
