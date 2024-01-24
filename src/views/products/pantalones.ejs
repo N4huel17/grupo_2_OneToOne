@@ -2,10 +2,10 @@
 <html lang="en">
    <!-- //HEAD PARTIALS-->
    <%- include('../partials/head') %>
-<body class="detalles_del_producto">
+<body class="vistas_productos">
 
 	<%- include('../partials/header',{ title:'Camisas'}) %>
-
+    <br>
     <main class="container__products__views">
         <% products.forEach(({id, name, category, mainImage, images, description, precio,descuento}) => { %>
             <% if (category === 'PANTALONES') { %>
@@ -14,16 +14,19 @@
                         <img src="/img/<%= mainImage %>" alt="">
                     </div>
                     <article class="info__product">
-                        <h2><%= name %></h2>
-                        <p class="precio"><%= precio %></p>
+                        <h2 class="name"><%= name %></h2>
+                        <p class="price"><%= precio %></p>
+                        <p class="descuentos">20% off</p>
                         <!-- Añade más detalles según tus necesidades -->
-                        <button>Ver Mas</button>
+                             <div class = " btn-vermas">
+                        <button >Ver Mas</button>
+                    </div>
                     </article>
                 </article>
             <% } %>
         <% }); %>
     </main>
-    
+    <br>
     <!-- //FOOTER PARTIALS-->
     <%- include('../partials/footer') %>
     
