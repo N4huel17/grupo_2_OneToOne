@@ -246,7 +246,7 @@
     }
 
 .header-logo-image{
-    width: 100%;
+    width: 95%;
 }
 /*--------IMAGEN DE HEADER-------------------------*/
 
@@ -325,9 +325,9 @@ top:1px;
 
 .header-nav-ul{
     position: relative;
-left: -5%;
-top:-20px;
-font-size: 30px; 
+left: 5%;
+top:5px;
+font-size: 25px; 
 }
 /*-------CAMBIAN DE COLOR LAS LETRAS--------------------------*/
 
