@@ -18,6 +18,9 @@
       "colors": "Azul Nevado",
       "precio": "$26.OOO",
       "mainImage": "1706130281364_products.png",
+      "images": []
+   },
+   {
       "id": "954e2874-8a12-4fe9-b49d-f0d9ec6fb805",
       "name": "REMERA BOMB",
       "description": "Remera color gris de algodon, estampado de frente y espalda lisa, apto para lavadoras con agua fria y sin centrifugar",
