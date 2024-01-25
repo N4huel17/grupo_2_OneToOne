@@ -10,17 +10,7 @@
       "images": []
    },
    {
-      "id": "a95bd435-24ec-484b-879a-a1bb665e40e6",
-      "name": "JEAN FLOKI",
-      "description": "\"Pantalon Jean Floki  con roturas\"",
-      "category": "PANTALONES",
-      "sizes": "S, M, L, XL",
-      "colors": "Azul Nevado",
-      "precio": "$26.OOO",
-      "mainImage": "1706130281364_products.png",
-      "images": []
-   },
-   {
+<<<<<<< HEAD
       "id": "954e2874-8a12-4fe9-b49d-f0d9ec6fb805",
       "name": "REMERA BOMB",
       "description": "Remera color gris de algodon, estampado de frente y espalda lisa, apto para lavadoras con agua fria y sin centrifugar",
@@ -40,6 +30,16 @@
       "colors": "Blanco",
       "precio": "$23.000",
       "mainImage": "1706131520548_products.webp",
+=======
+      "id": "a95bd435-24ec-484b-879a-a1bb665e40e6",
+      "name": "JEAN FLOKI",
+      "description": "\"Pantalon Jean Floki  con roturas\"",
+      "category": "PANTALONES",
+      "sizes": "S, M, L, XL",
+      "colors": "Azul Nevado",
+      "precio": "$26.OOO",
+      "mainImage": "1706130281364_products.png",
+>>>>>>> develop
       "images": []
    }
   
