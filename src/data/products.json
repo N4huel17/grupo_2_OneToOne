@@ -196,5 +196,16 @@
       "precio": "15.900",
       "mainImage": "1706173479702_products.png",
       "images": []
+   },
+   {
+      "id": "208bf711-70db-41c3-98cd-0a4719f83380",
+      "name": "Accesorio lindo",
+      "description": "a",
+      "category": "ACCESORIOS",
+      "sizes": "-",
+      "colors": "Negro",
+      "precio": "15000",
+      "mainImage": "1706193855451_products.jpg",
+      "images": []
    }
 ]
