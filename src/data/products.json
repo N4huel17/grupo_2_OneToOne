@@ -1,13 +1,26 @@
 [
+
+   {
+      "id": "b5a7333b-6024-47b4-a739-10b6313f475a",
+      "name": "JEAN THOMI",
+      "description": "Pantalón JEAN THOMI",
+      "category": "PANTALONES",
+      "sizes": "s",
+      "colors": "celeste",
+      "precio": "$45.000",
+      "mainImage": "1706131121333_products.webp",
+      "images": []
+   },
    {
       "id": "a95bd435-24ec-484b-879a-a1bb665e40e6",
       "name": "JEAN FLOKI",
       "description": "\"Pantalon Jean Floki  con roturas\"",
-      "category": "",
-      "sizes": "",
+      "category": "PANTALONES",
+      "sizes": "xl",
       "colors": "Azul Nevado",
-      "precio": "54.OOO",
+      "precio": "$26.OOO",
       "mainImage": "1706130281364_products.png",
       "images": []
    }
+
 ]
