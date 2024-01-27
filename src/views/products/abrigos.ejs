@@ -4,8 +4,9 @@
    <%- include('../partials/head') %>
 <body class="vistas_productos">
 
-	<%- include('../partials/header',{ title:'Camisas'}) %>
+	<%- include('../partials/header',{ title:'ABRIGOS'}) %>
     <br>
+    <div class="container-title">Inicio / Abrigos </div>
     <main class="container__products__views">
         <% products.forEach(({id, name, category, mainImage, images, description, precio,descuento}) => { %>
             <% if (category === 'ABRIGOS') { %>
@@ -18,7 +19,9 @@
                         <p class="price"><%= precio %></p>
                         <p class="descuentos">10% off</p>
                         <!-- Añade más detalles según tus necesidades -->
-                        <button>Ver Mas</button>
+                        <div class = " btn-vermas">
+                            <button><a href="/productos/detalle">Ver Mas</a></button>
+                        </div>
                     </article>
                 </article>
             <% } %>

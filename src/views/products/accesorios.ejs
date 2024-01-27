@@ -4,8 +4,9 @@
    <%- include('../partials/head') %>
 <body class="vistas_productos">
 
-	<%- include('../partials/header',{ title:'accesorios'}) %>
+	<%- include('../partials/header',{ title:'ACCESORIOS'}) %>
     <br>
+    <div class="container-title">Inicio / Accesorios  </div>
     <main class="container__products__views">
         <% products.forEach(({id, name, category, mainImage, images, description, precio,descuento}) => { %>
             <% if (category === 'ACCESORIOS') { %>
@@ -16,9 +17,11 @@
                     <article class="info__product">
                         <h2 class="name"><%= name %></h2>
                         <p class="price"><%= precio %></p>
-                        <p class="descuentos">20% off</p>
+                        <p class="descuentos">5% off</p>
                         <!-- Añade más detalles según tus necesidades -->
-                        <button>Ver Mas</button>
+                        <div class = " btn-vermas">
+                            <button><a href="/productos/detalle">Ver Mas</a></button>
+                        </div>
                     </article>
                 </article>
             <% } %>
