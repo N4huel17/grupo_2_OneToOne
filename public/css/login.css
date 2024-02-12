@@ -1,0 +1,162 @@
+.box__card {
+    max-width: 400px;
+    width: 100%;
+    margin: 50px auto;
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.article--login {
+    text-align: center;
+}
+
+.form__box {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px
+}
+
+.form__box--fill {
+    margin-bottom: 30px
+}
+
+.form__box--remember a{
+    margin-left: 70px;
+    color: black;
+    text-decoration: none;
+}
+
+.form__box--remember {
+    margin-bottom: 70px;
+    text-align: center;
+}
+
+.form__box--position {
+    position: relative;
+}
+
+.form__box--position span {
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+.form__label {
+    margin-bottom: 20px;
+}
+
+.form__input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid black;
+    margin-top: 10px;
+    background-color: #f7f5f5;
+}
+
+.form__redes {
+    font-size: 50px;
+    margin-bottom: 100px;
+    margin-top: 50px;
+    margin-left: -10px;
+    color: black;
+}
+
+.form__redes a i {
+    color: black
+}
+
+.form__buttom {
+    position: relative;
+    bottom: 100px;
+    margin-left: -70px;
+    text-align: center;
+}
+
+.form__buttom p a {
+    color: black
+}
+
+.buttom__login {
+    background-color: #ff12bc;
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    width: 250px;
+    font-size: 25px
+}
+
+.box__article {
+    text-align:center
+}
+
+.article__i {
+    font-size: 40px;
+}
+
+.box__article {
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px
+}
+
+.main__h3--end {
+    text-align: center
+}
+
+@media (min-width: 430px) {
+    .item {
+        display: flex;
+        flex-wrap: wrap;
+        width: 30%;
+        text-align: center
+    }
+
+    .item p i{
+        margin-left: 60px
+    }
+
+}
+
+@media (min-width: 480px) {
+    .box__card {
+        max-width: 440px;
+        width: 100%;
+        margin: 50px auto;
+    }
+
+    .form__redes {
+        font-size: 50px;
+        margin-bottom: 140px;
+        margin-left: 105px;
+        color: black;
+    }
+
+    .form__buttom {
+        position: relative;
+        bottom: 120px;
+        left: 90px;
+    }
+
+    .item {
+        display: flex;
+        flex-wrap: wrap;
+        width: 30%;
+        text-align: center
+    }
+
+    .item p i{
+        margin-left: 60px
+    }
+
+    .form__box--remember a{
+        margin-left: 120px;
+        color: black;
+        text-decoration: none;
+    }
+}

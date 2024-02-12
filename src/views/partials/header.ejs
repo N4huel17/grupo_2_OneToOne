@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/header.css">
+  <script src="https://kit.fontawesome.com/6e4ed31c51.js" crossorigin="anonymous"></script>
+  <title>Header</title>
+</head>
+
+<body class="body-header">
+  <header class="header">
+    <div class="menu">
+      <i class="fas fa-bars menu"></i>
+      <p class="header-parrafo">Menu</p>
+    </div>
+
+    <div class="header-logo">
+      <a href="/"> <img class="header-logo-image" src="/img/home/logoHome.png" class="img-logo" alt="" srcset=""> </a>
+    </div>
+    <div class="section-right">
+
+      <input class="buscadorH" type="text" placeholder=" Buscar Productos . . ."> <i id="iconBuscar" class="fa-solid fa-magnifying-glass"></i>
+      
+      <% if ( locals.userLogin ) { %>
+
+        <a class="section-right-a" href="/usuarios/perfil"> <i class="fa-solid fa-circle-user header-icon"></i></a>
+        <a class="section-right-b" href="/carrito"><i class="fa-solid fa-cart-shopping" ></i></a>
+       
+      
+        <% }else{ %>
+          <a class="section-right-a" href="/usuarios/ingreso"> <i class="fa-solid fa-circle-user header-icon"></i></a>
+          <a class="section-right-a" href="/carrito"> <i class="fa-solid fa-cart-shopping header-icon" ></i></a>
+
+          <%}%>
+
+
+
+
+    </div>
+
+
+    <nav class="header-nav">
+      <% if (locals.userLogin) { %>
+
+        <% if (userLogin.role ==='admin' ) { %>
+          <ul class="header-nav-ul">
+            <li class="header-nav-ul-li"><a href="/admin">ADMIN</a></li>
+          </ul>
+          <ul class="header-nav-ul">
+            <li class="header-nav-ul-li"><a href="/usuarios/salir">CERRAR SESIÓN</a></li>
+          </ul>
+          <% } else { %>
+            <ul class="header-nav-ul">
+              <li class="header-nav-ul-li"><a href="/productos/detalle">ABRIGOS</a></li>
+            </ul>
+            <ul class="header-nav-ul">
+              <li class="header-nav-ul-li"><a href="/productos/detalle">PANTALONES</a></li>
+            </ul>
+            <ul class="header-nav-ul">
+              <li class="header-nav-ul-li"><a href="/productos/detalle">CAMISAS</a></li>
+            </ul>
+            <ul class="header-nav-ul">
+              <li class="header-nav-ul-li"><a href="/productos/detalle">REMERAS</a></li>
+            </ul>
+            <ul class="header-nav-ul">
+              <li class="header-nav-ul-li"><a href="/productos/detalle">ACCESORIOS</a></li>
+            </ul>
+            <ul class="header-nav-ul">
+              <li class="header-nav-ul-li"><a href="/usuarios/salir">CERRAR SESIÓN</a></li>
+            </ul>
+           
+            <% } %>
+      <% } else { %>
+        <ul class="header-nav-ul">
+          <li class="header-nav-ul-li"><a href="/productos/abrigos">ABRIGOS</a></li>
+        </ul>
+        <ul class="header-nav-ul">
+          <li class="header-nav-ul-li"><a href="/productos/pantalones">PANTALONES</a></li>
+        </ul>
+        <ul class="header-nav-ul">
+          <li class="header-nav-ul-li"><a href="/productos/camisas">CAMISAS</a></li>
+        </ul>
+        <ul class="header-nav-ul">
+          <li class="header-nav-ul-li"><a href="/productos/remeras">REMERAS</a></li>
+        </ul>
+        <ul class="header-nav-ul">
+          <li class="header-nav-ul-li"><a href="/productos/accesorios">ACCESORIOS</a></li>
+        </ul>
+        <% } %>
+
+
+
+      
+    </nav>
+
+
+  </header>
+</body>
+
+</html>
