@@ -2,15 +2,15 @@
    {
       "id": "b5a7333b-6024-47b4-a739-10b6313f475a",
       "name": "JEAN THOMI",
-      "description": "\"Pantalón JEAN THOMI\"",
-      "category": "PANTALONES",
+      "description": "\"\"Pantalón JEAN THOMI\"\"",
+      "category": "pantalones",
       "sizes": "M",
       "colors": "celeste",
       "precio": "$25.000",
-      "mainImage": "1708006488400_products.jpg",
+      "mainImage": "1708482217996_products.jpg",
       "images": [
-         "1708006488401_products.jpg",
-         "1708006488401_products.jpg"
+         "1708482217996_products.jpg",
+         "1708482217999_products.jpg"
       ]
    },
    {
@@ -304,7 +304,8 @@
       "precio": "$27.900",
       "mainImage": "1706313788350_products.webp",
       "images": []
-   },{
+   },
+   {
       "id": "e2831edf-b273-4935-902f-ede8af095f96",
       "name": "PANTALON CIEL",
       "description": "Pantalon de hombre color celeste",
