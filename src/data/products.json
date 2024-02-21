@@ -2,35 +2,44 @@
    {
       "id": "b5a7333b-6024-47b4-a739-10b6313f475a",
       "name": "JEAN THOMI",
-      "description": "Pantalón JEAN THOMI",
+      "description": "\"Pantalón JEAN THOMI\"",
       "category": "PANTALONES",
-      "sizes": "S, M, L, XL",
+      "sizes": "M",
       "colors": "celeste",
       "precio": "$25.000",
-      "mainImage": "1706131121333_products.webp",
-      "images": []
+      "mainImage": "1708006488400_products.jpg",
+      "images": [
+         "1708006488401_products.jpg",
+         "1708006488401_products.jpg"
+      ]
    },
    {
       "id": "cf2b82e1-9483-4fe3-920c-319218d86fd5",
       "name": "REMERA CLASS",
-      "description": "Remera color Blanca de algodon, estampado de frente y espalda, apto para lavadoras con agua fria y sin centrifugar",
-      "category": "REMERAS",
-      "sizes": "S, M, L, XL",
+      "description": "\"Remera color Blanca de algodon, estampado de frente y espalda, apto para lavadoras con agua fria y sin centrifugar\"",
+      "category": "pantalones",
+      "sizes": "M",
       "colors": "Blanco",
       "precio": "$15.999",
       "mainImage": "1706131520548_products.webp",
-      "images": []
+      "images": [
+         "1708006410971_products.jpg",
+         "1708006410974_products.jpg"
+      ]
    },
    {
       "id": "a95bd435-24ec-484b-879a-a1bb665e40e6",
       "name": "JEAN FLOKI",
       "description": "\"Pantalon Jean Floki  con roturas\"",
-      "category": "",
-      "sizes": "",
+      "category": "pantalones",
+      "sizes": "m",
       "colors": "Azul Nevado",
       "precio": "$26.OOO",
       "mainImage": "1706130281364_products.png",
-      "images": []
+      "images": [
+         "1708006488401_products.jpg",
+         "1708006488401_products.jpg"
+      ]
    },
    {
       "id": "4c655e88-f063-4b4f-a0c7-75d1c500dc2b",
@@ -295,6 +304,18 @@
       "precio": "$27.900",
       "mainImage": "1706313788350_products.webp",
       "images": []
+   },{
+      "id": "e2831edf-b273-4935-902f-ede8af095f96",
+      "name": "PANTALON CIEL",
+      "description": "Pantalon de hombre color celeste",
+      "category": "PANTALONES",
+      "sizes": "S, M, L, XL",
+      "colors": "celeste",
+      "precio": "$27.900",
+      "mainImage": "1706313788350_products.webp",
+      "images": [
+         "1708006488401_products.jpg",
+         "1708006488401_products.jpg"
+      ]
    }
-
 ]
