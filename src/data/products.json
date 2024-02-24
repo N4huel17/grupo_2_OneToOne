@@ -6,7 +6,7 @@
       "category": "pantalones",
       "sizes": "M",
       "colors": "celeste",
-      "precio": "$25.000",
+      "precio": "$25000",
       "mainImage": "1708482217996_products.jpg",
       "images": [
          "1708482217996_products.jpg",
@@ -318,5 +318,16 @@
          "1708006488401_products.jpg",
          "1708006488401_products.jpg"
       ]
+   },
+   {
+      "id": "282e648d-ac52-4616-9e23-75d60c151b08",
+      "name": "dasasda",
+      "description": "dasda",
+      "category": "ABRIGOS",
+      "sizes": "m",
+      "colors": "asdada",
+      "precio": "55441",
+      "mainImage": "1708731397740_products.jpg",
+      "images": []
    }
 ]
