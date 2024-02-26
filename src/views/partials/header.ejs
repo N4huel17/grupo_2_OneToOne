@@ -26,7 +26,7 @@
       <% if ( locals.userLogin ) { %>
 
         <a class="section-right-a" href="/usuarios/perfil"> <i class="fa-solid fa-circle-user header-icon"></i></a>
-        <a class="section-right-b" href="/carrito"><i class="fa-solid fa-cart-shopping" ></i></a>
+        
        
       
         <% }else{ %>
@@ -44,7 +44,7 @@
     <nav class="header-nav">
       <% if (locals.userLogin) { %>
 
-        <% if (userLogin.role ==='admin' ) { %>
+        <% if (userLogin.role === 1 ) { %>
           <ul class="header-nav-ul">
             <li class="header-nav-ul-li"><a href="/admin">ADMIN</a></li>
           </ul>

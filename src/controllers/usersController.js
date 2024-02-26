@@ -1,7 +1,6 @@
 const { validationResult } = require("express-validator")
 const User = require("../data/user");
 const {hashSync} = require('bcryptjs')
-const { leerJSON, escribirJSON } = require("../data");
 const db= require('../database/models')
 module.exports={
     
@@ -10,7 +9,7 @@ module.exports={
     },
     processRegister: (req,res)=>{
      const errors =  validationResult(req)
-     const {name, surname,email,password}=req.body
+     const {name, surname,email,password,roleId}=req.body
      
      
      
@@ -41,7 +40,7 @@ module.exports={
     },
     processLogin : (req, res) => {
         const errors = validationResult(req);
-        const { email, remember } = req.body;
+        const { email, remember, } = req.body;
     
         if (errors.isEmpty()) {
             db.users.findOne({
@@ -51,7 +50,7 @@ module.exports={
                     req.session.userLogin = {
                         id,
                         name,
-                        role: +roleId
+                        role : +roleId
                     };
                     remember && res.cookie('kitchening4EV3R_user', req.session.userLogin, {
                         maxAge: 1000 * 60 * 2

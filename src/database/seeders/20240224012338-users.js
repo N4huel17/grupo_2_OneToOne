@@ -2,13 +2,13 @@
 
 const usersJSON = require('../../data/users.json')
 
-const usersDB = usersJSON.map( (users, index) => {
+const users = usersJSON.map( (users, index) => {
   return {
     name : users.name,
     surname : users.surname,
     email : users.email,
     password: users.password,
-    roleId:  users.role,
+    roleId: users.role === 'admin' ? 1 : users.role === 'user' ? 2 : null,
     createdAt: new Date(),
     updatedAt: new Date(),
   }
@@ -20,7 +20,7 @@ module.exports = {
   async up (queryInterface, Sequelize) {
    
       await queryInterface.bulkInsert('users', 
-      usersDB,
+      users,
        
         {});
     
