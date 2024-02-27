@@ -24,8 +24,12 @@ module.exports ={
         
     },
     admin: (req,res)=> {
-        db.products.findAll()
+        db.products.findAll({
+            include:['category'],
+          
+        })
         .then(products => {
+       
             return res.render('dashboard',{
                 products
             } )

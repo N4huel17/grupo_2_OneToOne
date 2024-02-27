@@ -1,5 +1,5 @@
 'use strict';
-const productJSON = require('../../data/products.json')
+const productJSON =require('../../data/products.json')
 
 const productDB = productJSON.map( (products, index) => {
   return {

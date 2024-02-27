@@ -7,6 +7,7 @@
       "sizes": "M",
       "colors": "celeste",
       "price": "25000",
+      "descount":0,
       "image": "1708482217996_productsjpg",
       "images": [
          "1708482217996_productsjpg",
@@ -21,6 +22,7 @@
       "sizes": "M",
       "colors": "Blanco",
       "price": "15999",
+      "descount":0,
       "image": "1706131520548_productswebp",
       "images": [
          "1708006410971_productsjpg",
@@ -35,6 +37,7 @@
       "sizes": "m",
       "colors": "Azul Nevado",
       "price": "26OOO",
+      "descount":0,
       "image": "1706130281364_productspng",
       "images": [
          "1708006488401_productsjpg",
@@ -49,6 +52,7 @@
       "sizes": "S, M, L, XL",
       "colors": "Marron",
       "price": "17500",
+      "descount":0,
       "image": "1706170173320_productswebp",
       "images": []
    },
@@ -60,6 +64,7 @@
       "sizes": "S, M, L, XL",
       "colors": "Gris",
       "price": "19000",
+      "descount":0,
       "image": "1706131330166_productswebp",
       "images": []
    },
@@ -71,6 +76,7 @@
       "sizes": "S, M, L, XL",
       "colors": "BLANCA",
       "price": "16900",
+      "descount":0,
       "image": "1706170198054_productswebp",
       "images": []
    },
@@ -82,6 +88,7 @@
       "sizes": "S, M, L, XL",
       "colors": "NEGRA",
       "price": "17300",
+      "descount":0,
       "image": "1706170632007_productsjpeg",
       "images": []
    },
@@ -93,6 +100,7 @@
       "sizes": "M, L, XL",
       "colors": "Rosado",
       "price": "18800",
+      "descount":0,
       "image": "1706170827287_productsjpg",
       "images": []
    },
@@ -104,6 +112,7 @@
       "sizes": "M, L, XL",
       "colors": "Gris",
       "price": "37900",
+      "descount":0,
       "image": "1706171383661_productsjpg",
       "images": []
    },
@@ -115,6 +124,7 @@
       "sizes": "S,M,L,XL",
       "colors": "Gris",
       "price": "9999",
+      "descount":0,
       "image": "1706172529149_productsjpg",
       "images": []
    },
@@ -126,6 +136,7 @@
       "sizes": "S, M, L, XL",
       "colors": "Negro",
       "price": "22500",
+      "descount":0,
       "image": "1706171589701_productsjpg",
       "images": []
    },
@@ -137,6 +148,7 @@
       "sizes": "M, L, XL",
       "colors": "celeste",
       "price": "25200",
+      "descount":0,
       "image": "1706171727083_productsjpg",
       "images": []
    },
@@ -148,6 +160,7 @@
       "sizes": "S, M, L, XL",
       "colors": "Hueso",
       "price": "17900",
+      "descount":0,
       "image": "1706172192689_productsjpg",
       "images": []
    },
@@ -159,6 +172,7 @@
       "sizes": "S,M,L,XL",
       "colors": "Negro",
       "price": "24999",
+      "descount":0,
       "image": "1706171932404_productsjpg",
       "images": []
    },
@@ -170,6 +184,7 @@
       "sizes": "S,M,L,XL",
       "colors": "Gris",
       "price": "9990",
+      "descount":0,
       "image": "1706172928840_productswebp",
       "images": []
    },
@@ -181,6 +196,7 @@
       "sizes": "S, M, L, XL",
       "colors": "celeste",
       "price": "13000",
+      "descount":0,
       "image": "1706173026868_productspng",
       "images": []
    },
@@ -192,6 +208,7 @@
       "sizes": "S, M, L",
       "colors": "Blanco Con Celeste",
       "price": "20600",
+      "descount":0,
       "image": "1706173273279_productsjpg",
       "images": []
    },
@@ -203,6 +220,7 @@
       "sizes": "S, M, L, XL",
       "colors": "Azul",
       "price": "15900",
+      "descount":0,
       "image": "1706173479702_productspng",
       "images": []
    },
@@ -214,6 +232,7 @@
       "sizes": "M",
       "colors": "Negro",
       "price": "15800",
+      "descount":0,
       "image": "1706310569968_productsjpg",
       "images": []
    },
@@ -225,6 +244,7 @@
       "sizes": "S,M,L",
       "colors": "Marron",
       "price": "11999",
+      "descount":0,
       "image": "1706310672725_productsjpg",
       "images": []
    },
@@ -236,6 +256,7 @@
       "sizes": "",
       "colors": "Azul",
       "price": "22600",
+      "descount":0,
       "image": "1706311081157_productsjpg",
       "images": []
    },
@@ -247,6 +268,7 @@
       "sizes": "",
       "colors": "Gris",
       "price": "11600",
+      "descount":0,
       "image": "1706311160474_productsjpg",
       "images": []
    },
@@ -258,6 +280,7 @@
       "sizes": "",
       "colors": "lila",
       "price": "7999",
+      "descount":0,
       "image": "1706311242588_productsjpg",
       "images": []
    },
@@ -269,6 +292,7 @@
       "sizes": "S, M, L, XL",
       "colors": "NEGRO",
       "price": "17800",
+      "descount":0,
       "image": "1706313496811_productswebp",
       "images": []
    },
@@ -280,6 +304,7 @@
       "sizes": "M,L,XL",
       "colors": "celeste",
       "price": "23900",
+      "descount":0,
       "image": "1706313613027_productswebp",
       "images": []
    },
@@ -291,6 +316,7 @@
       "sizes": "M, L, XL",
       "colors": "Negro",
       "price": "15800",
+      "descount":0,
       "image": "1706313703464_productswebp",
       "images": []
    },
@@ -302,6 +328,7 @@
       "sizes": "S, M, L, XL",
       "colors": "celeste",
       "price": "27900",
+      "descount":0,
       "image": "1706313788350_productswebp",
       "images": []
    },
@@ -313,6 +340,7 @@
       "sizes": "S, M, L, XL",
       "colors": "celeste",
       "price": "27900",
+      "descount":0,
       "image": "1706313788350_productswebp",
       "images": [
          "1708006488401_productsjpg",
@@ -327,6 +355,7 @@
       "sizes": "m",
       "colors": "asdada",
       "price": "55441",
+      "descount":0,
       "image": "1708731397740_productsjpg",
       "images": []
    },
@@ -338,6 +367,7 @@
       "sizes": "m",
       "colors": "azul",
       "price": "1",
+      "descount":0,
       "image": "1708973318664_productsjpg",
       "images": [],
       "categoryId": 4

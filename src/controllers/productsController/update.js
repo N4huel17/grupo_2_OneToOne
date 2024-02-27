@@ -10,7 +10,7 @@ const image = req.files.image;
 if ( product.id == id) {
     product.name = name.trim();
     product.description=description.trim();
-    product.image = iage ? image[0].filename : product.image;
+    product.image = image ? image[0].filename : product.image;
     product.images = images ? images.map(image => image.filename) : product.images;
     product.category=category;
     product.sizes=sizes;

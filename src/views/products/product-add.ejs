@@ -61,14 +61,11 @@
 
                             <div class="col-12 col-md-6 mb-3">
                                 <div class="form-floating">
-                                  <div class="form-floating">
-                                    <select name="category" class="form-select" id="category" aria-label="Floating label select example">
-                                      <option value="" selected hidden></option>
-                                      <option value="ABRIGOS">ABRIGOS</option>
-                                      <option value="PANTALONES">PANTALONES</option>
-                                      <option value="CAMISAS">CAMISAS</option>
-                                      <option value="REMERAS">REMERAS</option>
-                                      <option value="ACCESORIOS">ACCESORIOS</option>
+                                    <select name="categoryId" class="form-select" id="category" aria-label="Floating label select example">
+                                      <option value="" selected hidden>Selecione...</option>
+                                     <% categories.forEach(category=> { %>
+                                      <option value="<%= category.id %>" ><%= category.name %></option>
+                                     <% }) %>
                                         
                                     </select>
                                     <label for="category">Categoría</label>

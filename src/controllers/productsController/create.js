@@ -1,5 +1,3 @@
-
-
 const { validationResult } = require("express-validator");
 const fs = require("fs");
 const db = require('../../database/models')
@@ -69,11 +67,11 @@ if (errors.isEmpty()) {
 } else {
     if ( image) {
         fs.existsSync(`public/img/${image[0].filename}`) &&
-          fs.unlinkSync(`public/imag/${image[0].filename}`);
+          fs.unlinkSync(`public/img/${image[0].filename}`);
       }
       if(images){
         images.forEach(image => {
-            existsSync('public/img/' + image) && unlinkSync('public/images/' + image)
+            existsSync('public/img/' + image) && unlinkSync('public/img/' + image)
         });
     } 
     db.category.findAll({
@@ -92,4 +90,3 @@ if (errors.isEmpty()) {
 
 
 }
-

@@ -8,15 +8,15 @@
     <br>
     <div class="container-title">Inicio / Abrigos </div>
     <main class="container__products__views">
-        <% products.forEach(({id, name, category, mainImage, images, description, precio,descuento}) => { %>
+        <% products.forEach(({id, name, category, image, images, description, price,descount}) => { %>
             <% if (category === 'ABRIGOS') { %>
                 <article class="container_products_articulos">
                     <div class="imagenes_de_los_productos">
-                        <img src="/img/<%= mainImage %>" alt="">
+                        <img src="/img/<%= image %>" alt="">
                     </div>
                     <article class="info__product">
                         <h2 class="name"><%= name %></h2>
-                        <p class="price"><%= precio %></p>
+                        <p class="price"><%= price %></p>
                         <p class="descuentos">10% off</p>
                         <!-- Añade más detalles según tus necesidades -->
                         <div class = " btn-vermas">

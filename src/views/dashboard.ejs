@@ -22,23 +22,23 @@
                                 <th scope="col">#</th>
                                 <th scope="col">Nombre</th>
                                 <th scope="col">Descripcion</th>
-                                <th scope="col">Categoría</th>
+                                <th scope="col">Categoria</th>
                                 <th scope="col">Precio</th>
                                 
                                 
                               </tr>
                             </thead>
                             <tbody>
-                                <% products.forEach(({id,name,category, image,images, description, price,descount}, index) => { %>
+                                <% products.forEach(({id,name,category, image, description, price,descount}, index) => { %>
                                     <tr>
                                         <th scope="row">
                                           <%= index + 1 %>
                                         </th>
-                                        <td><%= name %></td>
+                                        <td><%= name%></td>
                                         <td><%= description %></td>
-                                        <td><%= category %></td>
+                                        <td><%=  category ? category.name :'-'%></td>
                                         <td><%= price %></td>
-                                        <td><%= descount %></td>
+                                        
 
 
                                         <td>
