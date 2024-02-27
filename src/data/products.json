@@ -6,11 +6,11 @@
       "category": "pantalones",
       "sizes": "M",
       "colors": "celeste",
-      "precio": "$25000",
-      "mainImage": "1708482217996_products.jpg",
+      "price": "25000",
+      "image": "1708482217996_productsjpg",
       "images": [
-         "1708482217996_products.jpg",
-         "1708482217999_products.jpg"
+         "1708482217996_productsjpg",
+         "1708482217999_productsjpg"
       ]
    },
    {
@@ -20,11 +20,11 @@
       "category": "pantalones",
       "sizes": "M",
       "colors": "Blanco",
-      "precio": "$15.999",
-      "mainImage": "1706131520548_products.webp",
+      "price": "15999",
+      "image": "1706131520548_productswebp",
       "images": [
-         "1708006410971_products.jpg",
-         "1708006410974_products.jpg"
+         "1708006410971_productsjpg",
+         "1708006410974_productsjpg"
       ]
    },
    {
@@ -34,11 +34,11 @@
       "category": "pantalones",
       "sizes": "m",
       "colors": "Azul Nevado",
-      "precio": "$26.OOO",
-      "mainImage": "1706130281364_products.png",
+      "price": "26OOO",
+      "image": "1706130281364_productspng",
       "images": [
-         "1708006488401_products.jpg",
-         "1708006488401_products.jpg"
+         "1708006488401_productsjpg",
+         "1708006488401_productsjpg"
       ]
    },
    {
@@ -48,8 +48,8 @@
       "category": "REMERAS",
       "sizes": "S, M, L, XL",
       "colors": "Marron",
-      "precio": "$17.500",
-      "mainImage": "1706170173320_products.webp",
+      "price": "17500",
+      "image": "1706170173320_productswebp",
       "images": []
    },
    {
@@ -59,8 +59,8 @@
       "category": "REMERAS",
       "sizes": "S, M, L, XL",
       "colors": "Gris",
-      "precio": "$19.000",
-      "mainImage": "1706131330166_products.webp",
+      "price": "19000",
+      "image": "1706131330166_productswebp",
       "images": []
    },
    {
@@ -70,8 +70,8 @@
       "category": "REMERAS",
       "sizes": "S, M, L, XL",
       "colors": "BLANCA",
-      "precio": "$16.900",
-      "mainImage": "1706170198054_products.webp",
+      "price": "16900",
+      "image": "1706170198054_productswebp",
       "images": []
    },
    {
@@ -81,8 +81,8 @@
       "category": "REMERAS",
       "sizes": "S, M, L, XL",
       "colors": "NEGRA",
-      "precio": "$17.300",
-      "mainImage": "1706170632007_products.jpeg",
+      "price": "17300",
+      "image": "1706170632007_productsjpeg",
       "images": []
    },
    {
@@ -92,8 +92,8 @@
       "category": "REMERAS",
       "sizes": "M, L, XL",
       "colors": "Rosado",
-      "precio": "$18.800",
-      "mainImage": "1706170827287_products.jpg",
+      "price": "18800",
+      "image": "1706170827287_productsjpg",
       "images": []
    },
    {
@@ -103,8 +103,8 @@
       "category": "ABRIGOS",
       "sizes": "M, L, XL",
       "colors": "Gris",
-      "precio": "$37.900",
-      "mainImage": "1706171383661_products.jpg",
+      "price": "37900",
+      "image": "1706171383661_productsjpg",
       "images": []
    },
    {
@@ -114,8 +114,8 @@
       "category": "ABRIGOS",
       "sizes": "S,M,L,XL",
       "colors": "Gris",
-      "precio": "$9.999",
-      "mainImage": "1706172529149_products.jpg",
+      "price": "9999",
+      "image": "1706172529149_productsjpg",
       "images": []
    },
    {
@@ -125,8 +125,8 @@
       "category": "ABRIGOS",
       "sizes": "S, M, L, XL",
       "colors": "Negro",
-      "precio": "$22.500",
-      "mainImage": "1706171589701_products.jpg",
+      "price": "22500",
+      "image": "1706171589701_productsjpg",
       "images": []
    },
    {
@@ -136,8 +136,8 @@
       "category": "ABRIGOS",
       "sizes": "M, L, XL",
       "colors": "celeste",
-      "precio": "$25.200",
-      "mainImage": "1706171727083_products.jpg",
+      "price": "25200",
+      "image": "1706171727083_productsjpg",
       "images": []
    },
    {
@@ -147,8 +147,8 @@
       "category": "ABRIGOS",
       "sizes": "S, M, L, XL",
       "colors": "Hueso",
-      "precio": "$17.900",
-      "mainImage": "1706172192689_products.jpg",
+      "price": "17900",
+      "image": "1706172192689_productsjpg",
       "images": []
    },
    {
@@ -158,8 +158,8 @@
       "category": "ABRIGOS",
       "sizes": "S,M,L,XL",
       "colors": "Negro",
-      "precio": "$24.999",
-      "mainImage": "1706171932404_products.jpg",
+      "price": "24999",
+      "image": "1706171932404_productsjpg",
       "images": []
    },
    {
@@ -169,8 +169,8 @@
       "category": "ACCESORIOS",
       "sizes": "S,M,L,XL",
       "colors": "Gris",
-      "precio": "$9.990",
-      "mainImage": "1706172928840_products.webp",
+      "price": "9990",
+      "image": "1706172928840_productswebp",
       "images": []
    },
    {
@@ -180,8 +180,8 @@
       "category": "CAMISAS",
       "sizes": "S, M, L, XL",
       "colors": "celeste",
-      "precio": "$13.000",
-      "mainImage": "1706173026868_products.png",
+      "price": "13000",
+      "image": "1706173026868_productspng",
       "images": []
    },
    {
@@ -191,8 +191,8 @@
       "category": "CAMISAS",
       "sizes": "S, M, L",
       "colors": "Blanco Con Celeste",
-      "precio": "$20.600",
-      "mainImage": "1706173273279_products.jpg",
+      "price": "20600",
+      "image": "1706173273279_productsjpg",
       "images": []
    },
    {
@@ -202,8 +202,8 @@
       "category": "CAMISAS",
       "sizes": "S, M, L, XL",
       "colors": "Azul",
-      "precio": "15.900",
-      "mainImage": "1706173479702_products.png",
+      "price": "15900",
+      "image": "1706173479702_productspng",
       "images": []
    },
    {
@@ -213,8 +213,8 @@
       "category": "ACCESORIOS",
       "sizes": "M",
       "colors": "Negro",
-      "precio": "15800",
-      "mainImage": "1706310569968_products.jpg",
+      "price": "15800",
+      "image": "1706310569968_productsjpg",
       "images": []
    },
    {
@@ -224,8 +224,8 @@
       "category": "ACCESORIOS",
       "sizes": "S,M,L",
       "colors": "Marron",
-      "precio": "$11.999",
-      "mainImage": "1706310672725_products.jpg",
+      "price": "11999",
+      "image": "1706310672725_productsjpg",
       "images": []
    },
    {
@@ -235,8 +235,8 @@
       "category": "ACCESORIOS",
       "sizes": "",
       "colors": "Azul",
-      "precio": "$22.600",
-      "mainImage": "1706311081157_products.jpg",
+      "price": "22600",
+      "image": "1706311081157_productsjpg",
       "images": []
    },
    {
@@ -246,8 +246,8 @@
       "category": "ACCESORIOS",
       "sizes": "",
       "colors": "Gris",
-      "precio": "$11.600",
-      "mainImage": "1706311160474_products.jpg",
+      "price": "11600",
+      "image": "1706311160474_productsjpg",
       "images": []
    },
    {
@@ -257,8 +257,8 @@
       "category": "ACCESORIOS",
       "sizes": "",
       "colors": "lila",
-      "precio": "$7.999",
-      "mainImage": "1706311242588_products.jpg",
+      "price": "7999",
+      "image": "1706311242588_productsjpg",
       "images": []
    },
    {
@@ -268,8 +268,8 @@
       "category": "PANTALONES",
       "sizes": "S, M, L, XL",
       "colors": "NEGRO",
-      "precio": "$17.800",
-      "mainImage": "1706313496811_products.webp",
+      "price": "17800",
+      "image": "1706313496811_productswebp",
       "images": []
    },
    {
@@ -279,8 +279,8 @@
       "category": "PANTALONES",
       "sizes": "M,L,XL",
       "colors": "celeste",
-      "precio": "$23.900",
-      "mainImage": "1706313613027_products.webp",
+      "price": "23900",
+      "image": "1706313613027_productswebp",
       "images": []
    },
    {
@@ -290,8 +290,8 @@
       "category": "PANTALONES",
       "sizes": "M, L, XL",
       "colors": "Negro",
-      "precio": "$15.800",
-      "mainImage": "1706313703464_products.webp",
+      "price": "15800",
+      "image": "1706313703464_productswebp",
       "images": []
    },
    {
@@ -301,8 +301,8 @@
       "category": "PANTALONES",
       "sizes": "S, M, L, XL",
       "colors": "celeste",
-      "precio": "$27.900",
-      "mainImage": "1706313788350_products.webp",
+      "price": "27900",
+      "image": "1706313788350_productswebp",
       "images": []
    },
    {
@@ -312,11 +312,11 @@
       "category": "PANTALONES",
       "sizes": "S, M, L, XL",
       "colors": "celeste",
-      "precio": "$27.900",
-      "mainImage": "1706313788350_products.webp",
+      "price": "27900",
+      "image": "1706313788350_productswebp",
       "images": [
-         "1708006488401_products.jpg",
-         "1708006488401_products.jpg"
+         "1708006488401_productsjpg",
+         "1708006488401_productsjpg"
       ]
    },
    {
@@ -326,8 +326,21 @@
       "category": "ABRIGOS",
       "sizes": "m",
       "colors": "asdada",
-      "precio": "55441",
-      "mainImage": "1708731397740_products.jpg",
+      "price": "55441",
+      "image": "1708731397740_productsjpg",
       "images": []
+   },
+   {
+      "id": "66730666-9f3c-4bd6-a197-2c5d8d862f18",
+      "name": "One to One",
+      "description": "fhgfg",
+      "category": "ABRIGOS",
+      "sizes": "m",
+      "colors": "azul",
+      "price": "1",
+      "image": "1708973318664_productsjpg",
+      "images": [],
+      "categoryId": 4
+      
    }
 ]

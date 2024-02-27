@@ -1,16 +1,17 @@
 'use strict';
-const productJSON = require ('../../data/products.json')
+const productJSON = require('../../data/products.json')
 
 const productDB = productJSON.map( (products, index) => {
   return {
     name : products.name,
     description : products.description,
-    price: products.price,
-    descount: products.descount,
-    image : products.mainImage,
+    price: parseInt(products.price),
+    descount:0,
+    image : products.image,
+    
 
-    categoryId:  products.category  == "REMERAS" ? 1 :  products.category == "pantalones" ? 2 :   products.category == "ABRIGOS" ? 3 :  products.category == "ACCESORIOS" ? 4 :  products.category == "CAMISAS" ? 5: 1 ,
-    setionId:  products.category == "REMERAS" ? 1 :  products.category == "pantalones" ? 2 :   products.category == "ABRIGOS" ? 3 :  products.category == "ACCESORIOS" ? 4 :  products.category == "CAMISAS" ? 5: 1 ,
+    categoryId:  products.category  == "REMERAS" ? 1 :  products.category == "PANTALONES" ? 2 :   products.category == "ABRIGOS" ? 3 :  products.category == "ACCESORIOS" ? 4 :  products.category == "CAMISAS" ? 5: 1 ,
+    setionId:  products.category == "REMERAS" ? 1 :  products.category == "PANTALONES" ? 2 :   products.category == "ABRIGOS" ? 3 :  products.category == "ACCESORIOS" ? 4 :  products.category == "CAMISAS" ? 5: 1 ,
 
     createdAt: new Date(),
     updatedAt: new Date(),
