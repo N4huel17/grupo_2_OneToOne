@@ -8,7 +8,7 @@ const users = usersJSON.map( (users, index) => {
     surname : users.surname,
     email : users.email,
     password: users.password,
-    roleId: users.role === 'admin' ? 1 : users.role === 'user' ? 2 : null,
+    roleId: users.role === 'admin' ? 1 : users.role === 'user' ? 2 : 2,
     createdAt: new Date(),
     updatedAt: new Date(),
   }

@@ -19,7 +19,7 @@ module.exports={
             surname,
             email,
             password:hashSync(password.trim(),5),
-            roleId:'user',
+            roleId:2,
 
         })
         .then(user => {
