@@ -1,18 +1,43 @@
-const { leerJSON, escribirJSON } = require("../../data");
+
 const {existsSync, unlinkSync} = require('fs')
+const db= require('../../database/models')
 
 module.exports = (req,res) => {
 
     const {id} = req.params;
-    const products = leerJSON('products');
-    const {mainImage} = products.find(product => product.id == id);
-    existsSync('public/img/product-img/' + mainImage) && unlinkSync('public/img/product-img/' + mainImage)
-   
-    const productsFiltered = products.filter(product => product.id != id);
+db.products.findByPk(id, {
+    include: ['images']
+})
+.then( ({image,images})=> {
+    existsSync("public/images/" + image) &&
+    unlinkSync("public/images/" + image);
 
-    escribirJSON(productsFiltered, 'products');
+  images.forEach((image) => {
+    existsSync("public/images/" + image.file) &&
+      unlinkSync("public/images/" + image.file);
+  });
+   
+
+    db.images.destroy({
+        where : {
+            productsId : id
+        }
+    }) .then(()=> {
+        db.products.destroy({
+            where : {
+                id
+                }
+        })
+    })
+.then(()=> {
 
     return res.redirect('/admin')
+})
+
+
+
+})
+.catch(error => console.log(error))
 
 
 }

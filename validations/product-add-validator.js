@@ -9,9 +9,9 @@ module.exports = [
         .isURL().withMessage('Debe ser un URL válida'),
     check('category')
         .notEmpty().withMessage('La categoría es requerida'),
-    body('mainImage')
+    body('image')
         .custom((value, {req}) => {
-            if(!req.files.mainImage){
+            if(!req.files.image){
                 return false
             }
             return true

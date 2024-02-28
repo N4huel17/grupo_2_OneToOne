@@ -8,7 +8,7 @@ function product( name,description,category,sizes,colors,price, image,images,des
     this.sizes=sizes;
     this.colors=colors;
     this.price=price;
-    this.image = image ? image[0].filename : null ;
+    this.image= image ? image[0].filename :null;
     this.descount=descount;
     this.images = images ? images.map(image => image.filename) : [];;
     

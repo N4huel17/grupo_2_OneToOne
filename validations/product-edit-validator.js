@@ -3,16 +3,18 @@ const {check} = require('express-validator');
 module.exports = [
     check('name')
         .notEmpty().withMessage('El nombre es obligatorio'),
-    check('address')
-        .notEmpty().withMessage('La dirección es requerida'),
-    check('url_map')
-        .isURL().withMessage('Debe ser un URL válida'),
-    check('category')
+    check('colors')
+        .notEmpty().withMessage('poné color '),
+    check('sizes')
+        .isURL().withMessage('Debe ser un talle'),
+        check('price')
+        .isURL().withMessage('debes poner precio'),
+    check('categoryId')
         .notEmpty().withMessage('La categoría es requerida'),
     check('description')
         .notEmpty().withMessage('La descripción es requerida').bail()
         .isLength({
-            min: 20,
+            min: 2,
             max: 500
         }).withMessage('La descripción debe tener entre 20 y 500 caracteres'),
 ]
