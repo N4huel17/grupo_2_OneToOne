@@ -146,6 +146,7 @@
 .stock{
 	display: flex;
 	margin-top: 14px;
+	color: black;
 }
 .btn-add-to-cart{
 	color:aliceblue;
@@ -256,11 +257,11 @@
 	flex-direction: row;
 }
 .imagenes__productos{
-	width: 90px;
+	width: 80px;
 	margin: 0 8px;
 }
 .container-img {
-	height: 400px;
+	height: 460px;
     overflow: hidden;
     margin-left: 0px;
     width: 100%;	
@@ -303,6 +304,7 @@
     margin-top: -10px;
 	margin: 0 20px;
 }
+
 .calcular_envios{
 	margin-top: -10px;
 	margin: 0 15%;
