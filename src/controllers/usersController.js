@@ -19,7 +19,7 @@ module.exports={
             surname,
             email,
             password:hashSync(password.trim(),5),
-            roleId:2,
+            roleId :2,
 
         })
         .then(user => {
@@ -76,6 +76,17 @@ module.exports={
         return res.redirect('/usuarios/ingreso');
     },
     perfil: (req,res)=>{
-        return res.render('users/perfil')
+        const userId = req.session.userLogin.id;
+        db.users.findByPk(userId)
+            .then(user => {
+                if (!user) {
+                    return res.status(404).send("Usuario no encontrado");
+                }
+                return res.render('users/perfil', { user });
+            })
+            .catch(error => {
+                console.error(error);
+                return res.status(500).send("Error interno del servidor");
+            });
     }
 }
