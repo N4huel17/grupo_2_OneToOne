@@ -256,8 +256,6 @@
 
 /*---------CARRUSEL INFO----------------*/
 .carrusel-contenedor-padre-info {
-
-
     border-top: 1px solid rgb(34, 34, 34);
     height: 206px;
     width: 80%;
@@ -307,9 +305,6 @@
 }
 
 .carrusel-punto-info {
-
-
-    background-color: #c9c8c8;
     display: flex;
     justify-content: space-around;
     border-radius: 60px;
@@ -548,10 +543,7 @@
         margin-top: 60px;
         margin-bottom: 10px;
         margin-left: 0;
-
-
     }
-
 
     .home_main-carrusel-info-con {
         position: relative;
@@ -605,10 +597,14 @@
         margin-top: 45px;
 
     }
+    #pago i  {
+        margin-left: 85px;
+        
+    }
 
-
-    #pago {
+    #pago  {
         margin-left: 15px;
+        
     }
 
     #pago h3 {
@@ -645,7 +641,7 @@
     height: 60px;
     display: flex;
     letter-spacing: 15px;
-margin-top: -5px;
+    margin-top: -5px;
 }
 
 .home_mian-portada-pie-tex {

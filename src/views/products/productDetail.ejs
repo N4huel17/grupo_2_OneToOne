@@ -11,6 +11,7 @@
 		
 
         <div class="container-title">Inicio / <%= product.category %> / <b><%= product.name %></b></div>
+<<<<<<< HEAD
 
         <div class="detalle"> 
             <div class="imagenes__productos">
@@ -18,27 +19,54 @@
                 <img class="img__remera1" src="/img/<%= product.image %>" alt="imagen de la remera">
                 <img class="img__remera2" src="/img/<%= product.image %>" alt="imagen de la remera">
                 <img class="img__remera3" src="/img/<%= product.image %>" alt="imagen de la remera">
+=======
+        <br>
+        <div class="div_padre_detalle_product">
+
+       
+        <div class="detalle">
+            <div class="imagenes__productos">
+                
+                <img class="img__remera1" src="/img/<%= product.mainImage %>" alt="imagen de la remera">
+                <img class="img__remera2" src="/img/<%= product.mainImage %>" alt="imagen de la remera">
+                <img class="img__remera3" src="/img/<%= product.mainImage %>" alt="imagen de la remera">
+>>>>>>> G2O-81-Refactorizar-la-edicion-de-productos-editar-y-actualizar
                 
             </div>
             <div class="container-img">
                 
                 <div class="detalles_main_contendedor_imagenes" id="contenedor-1">
                     <div class="contenedor_detalles_carrusel" id="foto1">
+<<<<<<< HEAD
                         <img src="/img/<%= product.image %>" alt="Imagen ">
                     </div>
 					<div class="contenedor_de_flechas">
 						<% if (product.images === product.images[0]) { %>
+=======
+                        <img src="/img/<%= product.mainImage %>" alt="Imagen ">
+                    </div>
+					<div class="contenedor_de_flechas">
+						<% if (product.mainImage === product.images[0]) { %>
+>>>>>>> G2O-81-Refactorizar-la-edicion-de-productos-editar-y-actualizar
 						<a href="#contenedor-3">
 							<i class="fa-solid fa-chevron-left"></i>
 						</a>
 						<a href="#contenedor-2">
 							<i class="fa-solid fa-chevron-right"></i>
 						</a>
+<<<<<<< HEAD
 						<% } else if (product.image === product.images[product.images.length - 1]) { %>
 						<a href="#contenedor-1">
 							<i class="fa-solid fa-chevron-left"></i>
 						</a>
 						<a href="#contenedor-<%= product.images%>">
+=======
+						<% } else if (product.mainImage === product.images[product.images.length - 1]) { %>
+						<a href="#contenedor-1">
+							<i class="fa-solid fa-chevron-left"></i>
+						</a>
+						<a href="#contenedor-<%= product.images.length %>">
+>>>>>>> G2O-81-Refactorizar-la-edicion-de-productos-editar-y-actualizar
 							<i class="fa-solid fa-chevron-right"></i>
 						</a>
 						<% } else { %>
@@ -62,7 +90,14 @@
                     <h4><%= product.name %></h4>
                     <p><b><%= product.precio %></b></p>
                 </article>
+<<<<<<< HEAD
                 <hr />
+=======
+
+                <hr />
+                <br>
+
+>>>>>>> G2O-81-Refactorizar-la-edicion-de-productos-editar-y-actualizar
                 <div class="container-info-cuotas">
                     <i class="fa-regular fa-credit-card"></i>
                     <p><b>3</b> CUOTAS SIN INTERESES DE <b>$ <%= product.precio  %></b></p>
@@ -71,6 +106,10 @@
                     <p>VER MEDIOS DE PAGO</p>
                 </div>
                 <hr />
+<<<<<<< HEAD
+=======
+                <br>
+>>>>>>> G2O-81-Refactorizar-la-edicion-de-productos-editar-y-actualizar
                 <article class="articulo__disponible">
                     <p>Color:</p>
                     <div class="div_colores">
@@ -100,8 +139,78 @@
                 </button>
             </div>
         </div>
+<<<<<<< HEAD
 		
 
+=======
+        <br>
+        <div class="clacular_envios">
+            <h4>CALCULAR EL COSTO DEL ENVIO</h4>
+            <input type="text" placeholder="calcular envio">   							
+        </div>
+        <hr/>
+        
+        <ul class="lista__detalles">
+            <%=product.description %>
+        </ul>
+        <h4>ESTE PRODUCTO TIENE UNICAMENTE CAMBIO POR TALLE</h4>
+        <hr/>
+         </div>
+         
+        <div class="compartit_detalles_del_producto">
+        <h4 class="compartir"> COMPARTIR:</h4>
+        <i class="fa-brands fa-square-facebook"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-x-twitter"></i>
+        <i class="fa-brands fa-tiktok"></i>
+        </div>
+        
+        <div class="carrusel-contenedor-padre-info">
+            
+            
+            <div class="home_main-carrusel-info-con" id="contenedorInfo1">
+
+                <div class="home_main-carrusel-info" id="envios">
+                   
+                    <i class="fa-solid fa-truck"></i>
+                    <h3>ENVIOS A TODO EL PAIS</h3>
+                    <h5>Sin cargo a partir de $8000</h5>
+                </div>
+
+            </div>
+             
+            <div class="home_main-carrusel-info-con" id="contenedorInfo2">
+
+                <div class="home_main-carrusel-info" id="pago">
+                   
+                    <i class="fa-regular fa-credit-card"></i> 
+                    <h3>PAGA COMO QUIERAS</h3>
+                    <h5>Aceptamos todos los medios de pago</h5>
+                </div>
+
+                
+
+            </div>
+             
+            <div class="home_main-carrusel-info-con" id="contenedorInfo3">
+
+                <div class="home_main-carrusel-info" id="cambios">
+                   
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    <h3>CAMBIOS Y DEVOLUCIONES</h3>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <div class="carrusel-punto-info">
+            <a href="#contenedorInfo1">•</a>
+            <a href="#contenedorInfo2">•</a>
+            <a href="#contenedorInfo3">•</a>
+        </div>
+>>>>>>> G2O-81-Refactorizar-la-edicion-de-productos-editar-y-actualizar
        
 
     </main>
