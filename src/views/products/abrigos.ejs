@@ -10,13 +10,13 @@
     <div class="container-title">Inicio / Abrigos </div>
     <main class="container__products__views">
         
-        <% products.forEach(({id, name, categoryId, images, description, price, descount}) => { %>
+        <% products.forEach(({id, name, categoryId, images,image, description, price, descount}) => { %>
             
             <% if (categoryId === 3) { %>
                 
                 <article class="container_products_articulos">
                     
-                    <% if (images&& images.length > 0) { %>
+                    <% if (image&& images.length > 0) { %>
                         <div class="imagenes_de_los_productos">
                             <% images.forEach(image => { %>
                                 <img src="/img/<%= image.file %>" alt="<%= name %>">
