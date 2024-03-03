@@ -24,7 +24,7 @@
                 
                 <div class="detalles_main_contendedor_imagenes" id="contenedor-1">
                     <div class="contenedor_detalles_carrusel" id="foto1">
-                        <img src="/img/<%= product.mainImage %>" alt="Imagen ">
+                        <img src="/img/<%= product.image %>" alt="Imagen ">
                     </div>
 					<div class="contenedor_de_flechas">
 						<% if (product.images === product.images[0]) { %>
@@ -38,7 +38,7 @@
 						<a href="#contenedor-1">
 							<i class="fa-solid fa-chevron-left"></i>
 						</a>
-						<a href="#contenedor-<%= product.images.length %>">
+						<a href="#contenedor-<%= product.images%>">
 							<i class="fa-solid fa-chevron-right"></i>
 						</a>
 						<% } else { %>

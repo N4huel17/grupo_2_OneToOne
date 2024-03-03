@@ -1,11 +1,24 @@
-const { leerJSON, escribirJSON } = require("../../data");
+const db = require('../../database/models');
 
-module.exports = (req, res) => {
-    const productId = req.params.id; // Obtén el ID del producto de los parámetros de la URL
-    const products = leerJSON('products');
-    const product = products.find(product => product.id === productId);
-    if (!product) {
-        return res.status(404).send('Producto no encontrado');
+module.exports = async (req, res) => {
+    try {
+        const productId = req.params.id; 
+
+        
+        const product = await db.products.findOne({
+            where: { id: productId },
+            include: [{ model: db.images, as: 'images' }] 
+        });
+
+        if (!product) {
+            return res.status(404).send('Producto no encontrado');
+        }
+
+        
+        return res.render('products/productDetail', { product });
+    } catch (error) {
+        
+        console.error('Error al recuperar el producto:', error);
+        return res.status(500).send('Error interno del servidor');
     }
-    res.render('products/productDetail', { product }); // Renderiza la vista productDetail y pasa el producto encontrado
 };
