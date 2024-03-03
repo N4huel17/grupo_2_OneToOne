@@ -1,11 +1,7 @@
-
-
-
 .footer {
     background-color: #1B1B1B;
     color: #fff;  
     padding: 5px;font-family:'Roboto', sans-serif ;
-
 }
 
 .footer__contacto {
@@ -110,9 +106,8 @@ span{
  @media (min-width:768px) {
     
     .footer{
-        font-size: 24px;
-    }
 
+    }
     .footer_movil{
         display: flex;
         flex-direction: row ;
@@ -123,10 +118,15 @@ span{
         flex-direction: column;
     }
     .contacto_ubicacion{
-        margin-left :65px;
+        margin-left: 45px;
         display: flex;
         flex-direction: column;
      } 
+     .footer__contacto {
+        display: flex;
+        margin-top: 35px;
+        margin-bottom: 25px;
+    }
      .contacto_ubicacion br{
         display: none;
      }
@@ -142,7 +142,7 @@ span{
      .footer__redes{
         position: relative;
         margin-top: 0;
-        left: 18px; ;
+        left: 35px; ;
      }
      .listas_nuevas_del_footer{
          display: none;
@@ -159,7 +159,14 @@ span{
         display: flex;
         margin-inline: 200px;
        }
+       .contacto_ubicacion{
+        position: absolute;
+        left: 22%;
+        flex-direction: column;
+     } 
+     .contacto_ubicacion br{
+        display: none;
+     }
     }
-
 
 
