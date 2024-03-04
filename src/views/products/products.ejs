@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!-- //HEAD PARTIALS-->
+   <%- include('../partials/head') %>
+<body class="vistas_productos">
+
+	<%- include('../partials/header') %>
+    <br>
+    <div class="container-title">Inicio / <%= category %> </div>
+    <main class="container__products__views">
+        
+        <% products.forEach(({id, name, categoryId, image, description, price, descount}) => { %>
+            
+               
+                <article class="container_products_articulos">
+                    
+                        <div class="imagenes_de_los_productos">
+                                <img src="/img/<%= image %>" alt="<%= name %>">
+                        </div>
+                  
+                    
+                    <article class="info__product">
+                        <h2 class="name"><%= name %></h2>
+                        <p class="price"><%= price %></p>
+                        <p class="descuentos"><%= descount %></p>
+                        <!-- Añade más detalles según tus necesidades -->
+                        <div class="btn-vermas">
+                            <button><a href="/productos/detalle/<%= id %>"> Ver Más</a></button>
+                        </div>
+                    </article>
+                </article>
+            <% }) %>
+        
+    </main>
+    <br>
+    <!-- //FOOTER PARTIALS-->
+    <%- include('../partials/footer') %>
+    
+</body>
+</html>

@@ -1,6 +1,7 @@
 const express = require('express');
 const { detail, add, edit, remove, create, update, camisas, abrigos, pantalones, accesorios, remeras, } = require('../controllers/productsController');
 const upload = require('../middlewares/upload');
+const list = require('../controllers/productsController/list');
 
 
 
@@ -20,7 +21,7 @@ router.get('/abrigos',abrigos);
 router.get('/pantalones',pantalones);
 router.get('/accesorios',accesorios);
 router.get('/remeras',remeras);
-
+router.get('/listar',list)
 
 
 
