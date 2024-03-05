@@ -29,12 +29,18 @@
                                 <div class="form-floating ">
                                     <input name="name" type="text" class="form-control" id="name" value="<%= name %>" >
                                     <label for="name">Nombre</label>
+                                    <small class="text-danger ms-2">
+                                      <%= locals.errors && errors.name ? errors.name.msg : null %>
+                                    </small>
                                   </div>
                             </div>
                             <div class="col-12 col-md-6 mb-3">
                               <div class="form-floating">
                                 <input name="price" type="text" class="form-control" id="price" value="<%= price %>" >
                                 <label for="address">Precio</label>
+                                <small class="text-danger ms-2">
+                                  <%= locals.errors && errors.price ? errors.price.msg : null %>
+                                </small>
                               </div>
                             </div>
 
@@ -56,6 +62,9 @@
                                   <% }) %>
                                 </select>
                                 <label for="colors">Color</label>
+                                <small class="text-danger ms-2">
+                                  <%= locals.errors && errors.colors ? errors.colors.msg : null %>
+                                </small>
                               </div>
                             </div>
                             <div class="col-12 col-md-6 mb-3">
@@ -68,6 +77,9 @@
                                     <% }) %>
                                   </select>
                                   <label for="category">Categoría</label>
+                                  <small class="text-danger ms-2">
+                                    <%= locals.errors && errors.categoryId ? errors.categoryId.msg : null %>
+                                  </small>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 mb-3">
@@ -78,6 +90,9 @@
                                     <option value="<%= sizes.id %>" <%= sizesId == sizes.id && 'selected'  %>><%= sizes.name %></option>
                                   <% }) %>
                                 </select>
+                                <small class="text-danger ms-2">
+                                  <%= locals.errors && errors.sizes ? errors.sizes.msg : null %>
+                                </small>
                                 <label for="sizes">Talla</label>
                               </div>
                           </div>
@@ -85,6 +100,9 @@
                               <div class="col-12 col-md-3 mb-3">
                                   <input name="image" type="file" class="form-control" id="image" hidden value="<%= image %>">
                                   <label class="btn btn-lg btn-outline-dark w-100" for="image">Imagen principal</label>
+                                  <small class="text-danger ms-2">
+                                    <%= locals.errors && errors.image ? errors.image.msg : null %>
+                                  </small>
                               </div>
                               <div class="col-12 col-md-3 mb-3">
                                 <input  name="images" type="file" class="form-control" id="images" hidden multiple value="<%= image %>" >
@@ -94,6 +112,9 @@
                                 <div class="form-floating">
                                     <textarea name="description" class="form-control" id="description" style="height: 200px;">"<%= description %>" </textarea>
                                     <label for="description">Descripción</label>
+                                    <small class="text-danger ms-2">
+                                      <%= locals.errors && errors.description ? errors.description.msg : null %>
+                                    </small>
                                   </div>
                                 </div>
                           
