@@ -1,4 +1,4 @@
-const { leerJSON } = require("../data")
+
 const db = require('../database/models')
 const products = require("../database/models/products")
 
@@ -25,7 +25,7 @@ module.exports ={
     },
     admin: (req,res)=> {
         db.products.findAll({
-            include:['category'],
+            include:['category','colors','sizes'],
           
         })
         .then(products => {

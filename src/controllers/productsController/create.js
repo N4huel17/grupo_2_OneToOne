@@ -18,6 +18,8 @@ if (errors.isEmpty()) {
             colors,
             price,
             descount,
+            colorsId,
+            sizesId,
             categoryId,
             setionId,       
          } = req.body
@@ -32,6 +34,8 @@ if (errors.isEmpty()) {
             price ,
             descount,
             image : image ? image[0].filename : null ,
+            colorsId,
+            sizesId,
             categoryId,
             setionId,
             
@@ -85,6 +89,9 @@ if (errors.isEmpty()) {
         });
       })
       .catch(error => console.log(error))
+
+
+    
 }
 
 

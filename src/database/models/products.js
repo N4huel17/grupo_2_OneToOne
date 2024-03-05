@@ -23,6 +23,14 @@ module.exports = (sequelize, DataTypes) => {
         as: 'images',
         foreignKey : 'productsId'
       });
+      products.belongsTo( models.colors, {
+        as: "colors",
+        foreignKey: "colorsId",
+      }); 
+      products.belongsTo( models.sizes, {
+        as: "sizes",
+        foreignKey: "sizesId",
+      }); 
     }
   }
   products.init({
@@ -31,6 +39,8 @@ module.exports = (sequelize, DataTypes) => {
     price: DataTypes.INTEGER,
     descount: DataTypes.INTEGER,
     image: DataTypes.STRING,
+    colorsId: DataTypes.INTEGER,
+    sizesId: DataTypes.INTEGER,
     categoryId: DataTypes.INTEGER,
     setionId: DataTypes.INTEGER
   }, {

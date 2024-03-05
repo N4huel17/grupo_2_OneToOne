@@ -128,17 +128,25 @@ module.exports = (req, res) => {
       
     
         const products = db.products.findByPk(id, {
-            include : ['category','image']
+            include : ['category','image','colors','sizes']
         })
         const categories = db.category.findAll({
             order: [['name']]
         })
-            Promise.all([products, categories])
-            .then(([products, categories]) => {
+        const colors= db.colors.findAll({
+            order: [['name']]
+        })
+        const sizes= db.sizes.findAll({
+            order: [['name']]
+        })
+            Promise.all([products, categories,colors,sizes])
+            .then(([products, categories,colors,sizes]) => {
     
                 return res.render('products/product-edit',{
                     ...products.dataValues,
                     categories,
+                    colors,
+                    sizes,
                     errors : errors.mapped()
                 })
             })
