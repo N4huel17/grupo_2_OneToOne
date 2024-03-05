@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+   <!-- //HEAD PARTIALS-->
+   <%- include('../partials/head',{
+    title:'Nuevo producto'
+})  %>
+<body>
+    <%- include('../partials/header-admin') %>
+
+    <main class="container">
+        <section class="row my-5">
+            <div class="col-12 col-md-10 mx-auto">
+                <div class="card">
+                    <div class="card-header d-flex justify-content-between">
+                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="/admin" class="text-primary">Home</a></li>
+                              <li class="breadcrumb-item active" aria-current="page">Agregar producto </li>
+                            </ol>
+                          </nav>
+                    </div>
+                    <div class="card-body ">
+                        <form action="/productos/crear" method="POST" class="row" enctype="multipart/form-data">
+                            <h3>Nuevo producto</h3>
+                            <hr>
+                            <div class="col-12 col-md-6 mb-3">
+                                <div class="form-floating ">
+                                    <input name="name" type="text" class="form-control" id="name" >
+                                    <label for="name">Nombre</label>
+                                  </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 mb-3">
+                              <div class="form-floating ">
+                                  <input name="colors" type="text" class="form-control" id="colors" >
+                                  <label for="name">Color</label>
+                                </div>
+                          </div>
+
+                          <div class="col-12 col-md-6 mb-3">
+                            <div class="form-floating">
+                              <select name="sizes" class="form-select" id="sizes" aria-label="Floating label select example">
+                                <option value="" selected hidden></option>
+                                <option value="XS">XS</option>
+                                <option value="S">S</option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                <option value="XXL">XXL</option>
+                                <option value="XXXL">XXXL</option>
+                              </select>
+                              <label for="sizes">Talla</label>
+                            </div>
+                        </div>
+
+                            <div class="col-12 col-md-6 mb-3">
+                              <div class="form-floating">
+                                <input name="price" type="text" class="form-control" id="price">
+                                <label for="address">precio</label>
+                              </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 mb-3">
+                              <div class="form-floating">
+                                <input name="descount" type="text" class="form-control" id="descount">
+                                <label for="address">Descuento</label>
+                              </div>
+                            </div>
+
+
+                            <div class="col-12 col-md-6 mb-3">
+                                <div class="form-floating">
+                                    <select name="categoryId" class="form-select" id="category" aria-label="Floating label select example">
+                                      <option value="" selected hidden>Selecione...</option>
+                                     <% categories.forEach(category=> { %>
+                                      <option value="<%= category.id %>" ><%= category.name %></option>
+                                     <% }) %>
+                                        
+                                    </select>
+                                    <label for="category">Categoría</label>
+                                  </div>
+                              </div>
+                              <div class="col-12 col-md-3 mb-3">
+                                  <input name="image" type="file" class="form-control" id="image" hidden>
+                                  <label class="btn btn-lg btn-outline-dark w-100" for="image">Imagen principal</label>
+                              </div>
+                              <div class="col-12 col-md-3 mb-3">
+                                <input  name="images" type="file" class="form-control" id="images" hidden multiple>
+                                <label class="btn btn-lg btn-outline-dark w-100" for="images">Imágenes</label>
+                            </div>
+                            <div class="col-12 mb-3">
+                                <div class="form-floating">
+                                    <textarea name="description" class="form-control" id="description" style="height: 200px;"></textarea>
+                                    <label for="description">Descripción</label>
+                                  </div>
+                            </div>
+                           
+                            <div class="col-12 d-flex justify-content-end">
+                                <button class="btn btn-lg btn-dark">Guardar cambios</button>
+                            </div>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+  <%- include('../partials/scripts') %>
+</body>
+</html>
