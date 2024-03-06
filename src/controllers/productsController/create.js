@@ -1,5 +1,5 @@
 const { validationResult } = require("express-validator");
-const fs = require("fs");
+const fs = require('fs');
 const db = require('../../database/models')
 
 module.exports = (req,res) => {
@@ -75,7 +75,7 @@ if (errors.isEmpty()) {
       }
       if(images){
         images.forEach(image => {
-            existsSync('public/img/' + image) && unlinkSync('public/img/' + image)
+            fs.existsSync('public/img/' + image) && fs.unlinkSync('public/img/' + image)
         });
     } 
     db.category.findAll({

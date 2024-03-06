@@ -1,33 +1,37 @@
-const { check } = require('express-validator');
+const { check, body } = require('express-validator');
 
 module.exports = [
     check('name')
-        .optional()
-        .notEmpty().withMessage('El nombre es obligatorio'),
-    check('colors')
-        .optional()
-        .notEmpty().withMessage('Selecciona al menos un color'),
-    check('sizes')
-        .optional()
-        .notEmpty().withMessage('Selecciona al menos un tamaño'),
+        .notEmpty().withMessage('El nombre del producto es requerido')
+        .isLength({
+            min : 2
+        }).withMessage('El nombre del producto debe tener un mínimo de 5 caracteres'), 
+
     check('price')
-        .notEmpty().withMessage('El precio es obligatorio')
-        .isNumeric().withMessage('El precio debe ser un número válido'),
+        .notEmpty().withMessage('El precio del producto es requerido')
+        .isInt().withMessage('El precio del producto debe ser un número'),
+
+    check('colors')
+        .notEmpty().withMessage('El color es requerido'),
+
+    check('sizes')
+        .notEmpty().withMessage('El talle es requerido'),
+
+
     check('categoryId')
-        .optional()
-        .notEmpty().withMessage('La categoría es requerida'),
-    body('image')
+        .notEmpty().withMessage('La categoría del producto es requerida'),
+        body('image')
         .custom((value, {req}) => {
             if(!req.files.image){
                 return false
             }
             return true
         }).withMessage('Se require una imagen'),
+
     check('description')
-        .optional()
-        .notEmpty().withMessage('La descripción es requerida').bail()
+        .notEmpty().withMessage('La descripción producto es requerida')
         .isLength({
-            min: 2,
+            min : 2,
             max: 500
-        }).withMessage('La descripción debe tener entre 2 y 500 caracteres')
-];
+        }).withMessage('La descripcion del producto debe tener un mínimo de 20 caracteres y un máximo de 500 caracteres.'), 
+]

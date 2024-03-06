@@ -3,184 +3,188 @@
 <!-- //HEAD PARTIALS-->
 <%- include('../partials/head') %>
 
-<body class="detalles_del_producto">
+    <body class="detalles_del_producto">
 
-    <%- include('../partials/header',{ title:'detalle'}) %>
+        <%- include('../partials/header',{ title:'detalle'}) %>
 
-    <main class="main__detalles_del_producto">
-		
+            <main class="main__detalles_del_producto">
 
-        <div class="container-title">Inicio / <%= product.category %> / <b><%= product.name %></b></div>
-        <br>
-        <div class="div_padre_detalle_product">
-
-       
-        <div class="detalle">
-            <div class="imagenes__productos">
-                
-                <img class="img__remera1" src="/img/<%= product.image %>" alt="imagen de la remera">
-                <img class="img__remera2" src="/img/<%= product.image %>" alt="imagen de la remera">
-                <img class="img__remera3" src="/img/<%= product.image %>" alt="imagen de la remera">
-                
-            </div>
-            <div class="container-img">
-                
-                <div class="detalles_main_contendedor_imagenes" id="contenedor-1">
-                    <div class="contenedor_detalles_carrusel" id="foto1">
-                        <img src="/img/<%= product.image %>" alt="Imagen ">
-                    </div>
-					<div class="contenedor_de_flechas">
-						<% if (product.image === product.images[0]) { %>
-						<a href="#contenedor-3">
-							<i class="fa-solid fa-chevron-left"></i>
-						</a>
-						<a href="#contenedor-2">
-							<i class="fa-solid fa-chevron-right"></i>
-						</a>
-						<% } else if (product.image === product.images[product.images.length - 1]) { %>
-						<a href="#contenedor-1">
-							<i class="fa-solid fa-chevron-left"></i>
-						</a>
-						<a href="#contenedor-<%= product.images.length %>">
-							<i class="fa-solid fa-chevron-right"></i>
-						</a>
-						<% } else { %>
-						<a href="#contenedor-<%= product.images.indexOf(product.images) %>">
-							<i class="fa-solid fa-chevron-left"></i>
-						</a>
-						<a href="#contenedor-<%= product.images.indexOf(product.images) + 2 %>">
-							<i class="fa-solid fa-chevron-right"></i>
-						</a>
-						<% } %>
-					</div>
-
-
-                  
-                </div>
-                
-            </div>
-
-            <div class="detalle_2">
-                <article class="articulo__precio_detalle">
-                    <h4><%= product.name %></h4>
-                    <p><b><%= product.precio %></b></p>
-                </article>
-
-                <hr />
+                <div class="container-title"> <b>Inicio </b>/ <%= product.category %> /  <b><%= product.name %></b></div>
                 <br>
+                <div class="div_padre_detalle_product container-producto">
 
-                <div class="container-info-cuotas">
-                    <i class="fa-regular fa-credit-card"></i>
-                    <p><b>3</b> CUOTAS SIN INTERESES DE <b>$ <%= product.precio  %></b></p>
-                </div>
-                <div class="medios_De_pago">
-                    <p>VER MEDIOS DE PAGO</p>
-                </div>
-                <hr />
-                <br>
-                <article class="articulo__disponible">
-                    <p>Color:</p>
-                    <div class="div_colores">
-						<%= product.colors %>
-                        
+                    <div class="detalle">
+                        <div class="imagenes__productos">
+
+                            <img class="img__remera1" src="/img/<%= product.image %>" alt="">
+                            <img class="img__remera2" src="/img/<%= product.image %>" alt="">
+                            <img class="img__remera3" src="/img/<%= product.image %>" alt="">
+
+                        </div>
+                        <div class="container-img">
+
+                            <div class="detalles_main_contendedor_imagenes" id="contenedor-1">
+                                <div class="contenedor_detalles_carrusel" id="foto1">
+                                    <img src="/img/<%= product.image %>" alt="Imagen ">
+                                </div>
+                                <div class="contenedor_de_flechas">
+                                    <% if (product.image===product.images[0]) { %>
+                                        <a href="#contenedor-3">
+                                            <i class="fa-solid fa-chevron-left"></i>
+                                        </a>
+                                        <a href="#contenedor-2">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </a>
+                                        <% } else if (product.image===product.images[product.images.length - 1]) { %>
+                                            <a href="#contenedor-1">
+                                                <i class="fa-solid fa-chevron-left"></i>
+                                            </a>
+                                            <a href="#contenedor-<%= product.images.length %>">
+                                                <i class="fa-solid fa-chevron-right"></i>
+                                            </a>
+                                            <% } else { %>
+                                                <a href="#contenedor-<%= product.images.indexOf(product.images) %>">
+                                                    <i class="fa-solid fa-chevron-left"></i>
+                                                </a>
+                                                <a href="#contenedor-<%= product.images.indexOf(product.images) + 2 %>">
+                                                    <i class="fa-solid fa-chevron-right"></i>
+                                                </a>
+                                                <% } %>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="detalle_2">
+                            <article class="articulo__precio_detalle">
+                                <h3 class="name">
+                                    <%= product.name %>
+                                </h3>
+                                <p class="lista__detalles">
+                                <p class="desc">Descripción del producto :</p>
+                                <p>
+                                    <%=product.description %>
+                                </p>
+                                </p>
+                                <hr>
+                                <p><b>Precio : $ <%= product.price %></b></p>
+
+
+                                <b><p>Color:</p></b>
+                                <div class="div_colores">
+                                    <%= product.colors %>
+                                </div>
+
+                                <b><p>Talle:</p></b>
+                                <div class="div_talle">
+
+                                    <%= product.sizes %>
+
+                                </div>
+
+
+                                <article class="articulo__disponible">
+                                    <div class="guia__talles">
+                                        <i class="fa-solid fa-ruler-horizontal"></i>
+                                        <P class="guia_talles_text">GUIA DE TALLES</P>
+                                        <img src="/img/talles_720.png" alt="Guia de Talles" class="guia_talles_img">
+                                    </div>
+                                </article>
+
+
+
+                                <hr>
+
+
+                            </article>
+
+                            <div class="cart-container">
+                                <div class="counter-box">
+                                    <button class="btn-minus">-</button>
+                                    <span id="item-counter">0</span>
+                                    <button class="btn-plus">+</button>
+                                </div>
+                                <button class="btn-add-to-cart">AGREGAR AL CARRITO</button>
+                            </div>
+
+
+
+                            <article class="articulo__disponible2">
+                                <div class="guia__pago">
+                                    <P class="guia_talles_text">METODOS DE PAGO</P>
+                                    <img src="/img/pago.jpg" alt="Guia de Talles" class="guia_pago_img">
+                                </div>
+                            </article>
+
+                        </div>
                     </div>
-                    <p>Talle:</p>
-                    <div class="div_talle">
-						<%= product.sizes %>
-                        
+                    <br>
+
+
+                </div>
+
+                <div class="compartit_detalles_del_producto">
+                    <h4 class="compartir"> COMPARTIR:</h4>
+
+                    <a href="https://www.facebook.com/Onetoone.consultingok"> <i class="fa-brands fa-square-facebook"></i></a>
+                    <a href="https://www.instagram.com/nahuelmendez17/"> <i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://twitter.com/home"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://www.tiktok.com/"><i class="fa-brands fa-tiktok"></i></a>
+
+
+                </div>
+
+                <div class="carrusel-contenedor-padre-info">
+
+
+                    <div class="home_main-carrusel-info-con" id="contenedorInfo1">
+
+                        <div class="home_main-carrusel-info" id="envios">
+
+                            <i class="fa-solid fa-truck"></i>
+                            <h3>ENVIOS A TODO EL PAIS</h3>
+                            <h5>Sin cargo a partir de $8000</h5>
+                        </div>
+
                     </div>
-                    <div class="guia__talles">
-                        <i class="fa-solid fa-ruler-horizontal"></i>
-                        <P>GUIA DE TALLES</P>
+
+                    <div class="home_main-carrusel-info-con" id="contenedorInfo2">
+
+                        <div class="home_main-carrusel-info" id="pago">
+
+                            <i class="fa-regular fa-credit-card"></i>
+                            <h3>PAGA COMO QUIERAS</h3>
+                            <h5>Aceptamos todos los medios de pago</h5>
+                        </div>
+
                     </div>
-                </article>
-                <hr />
-                <div class="container__cantidad">
-                    <P class="cantidad">CANTIDAD: EN STOCK</P>
-                    <input type="number" placeholder="1" value="1" min="1" class="input-quantity">
-                </div>
-                <hr />
-                <button class="btn-add-to-cart">
-                    <i class="fa-solid fa-plus"></i>
-					
-                    AGREGAR AL CARRITO
-                </button>
-            </div>
-        </div>
-        <br>
-        <div class="clacular_envios">
-            <h4>CALCULAR EL COSTO DEL ENVIO</h4>
-            <input type="text" placeholder="calcular envio">   							
-        </div>
-        <hr/>
-        
-        <ul class="lista__detalles">
-            <%=product.description %>
-        </ul>
-        <h4>ESTE PRODUCTO TIENE UNICAMENTE CAMBIO POR TALLE</h4>
-        <hr/>
-         </div>
-         
-        <div class="compartit_detalles_del_producto">
-        <h4 class="compartir"> COMPARTIR:</h4>
-        <i class="fa-brands fa-square-facebook"></i>
-        <i class="fa-brands fa-square-instagram"></i>
-        <i class="fa-brands fa-x-twitter"></i>
-        <i class="fa-brands fa-tiktok"></i>
-        </div>
-        
-        <div class="carrusel-contenedor-padre-info">
-            
-            
-            <div class="home_main-carrusel-info-con" id="contenedorInfo1">
 
-                <div class="home_main-carrusel-info" id="envios">
-                   
-                    <i class="fa-solid fa-truck"></i>
-                    <h3>ENVIOS A TODO EL PAIS</h3>
-                    <h5>Sin cargo a partir de $8000</h5>
+                    <div class="home_main-carrusel-info-con" id="contenedorInfo3">
+
+                        <div class="home_main-carrusel-info" id="cambios">
+
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                            <h3>CAMBIOS Y DEVOLUCIONES</h3>
+
+                        </div>
+                    </div>
+
+
                 </div>
 
-            </div>
-             
-            <div class="home_main-carrusel-info-con" id="contenedorInfo2">
-
-                <div class="home_main-carrusel-info" id="pago">
-                   
-                    <i class="fa-regular fa-credit-card"></i> 
-                    <h3>PAGA COMO QUIERAS</h3>
-                    <h5>Aceptamos todos los medios de pago</h5>
+                <div class="carrusel-punto-info">
+                    <a href="#contenedorInfo1">•</a>
+                    <a href="#contenedorInfo2">•</a>
+                    <a href="#contenedorInfo3">•</a>
                 </div>
 
-                
 
-            </div>
-             
-            <div class="home_main-carrusel-info-con" id="contenedorInfo3">
-
-                <div class="home_main-carrusel-info" id="cambios">
-                   
-                    <i class="fa-solid fa-arrows-rotate"></i>
-                    <h3>CAMBIOS Y DEVOLUCIONES</h3>
-                    
-                </div>
-            </div>
-            
-            
-        </div>
-
-        <div class="carrusel-punto-info">
-            <a href="#contenedorInfo1">•</a>
-            <a href="#contenedorInfo2">•</a>
-            <a href="#contenedorInfo3">•</a>
-        </div>
-       
-
-    </main>
+            </main>
 
 
-    <!-- //FOOTER PARTIALS-->
-    <%- include('../partials/footer') %>
-</body>
+            <!-- //FOOTER PARTIALS-->
+            <%- include('../partials/footer') %>
+    </body>
 
 </html>
