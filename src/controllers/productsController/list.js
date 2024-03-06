@@ -9,7 +9,12 @@ module.exports = async (req, res) => {
             where : {
                 categoryId : req.query.categoria
             },
-            include: [{ model: db.images, as: 'images' }],// Especifica el alias 'imagenes'
+            
+            include: [
+                { model: db.images, as: 'images' },
+                { model: db.colors, as: 'colors' },
+                { model: db.sizes, as: 'sizes' }
+            ],// Especifica el alias 'imagenes'
             
         });
 
