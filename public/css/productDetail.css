@@ -296,8 +296,20 @@ html, body {
     .container-producto .detalles_main_contendedor_imagenes {
         width: 95%;
     }
+	
 
-    .container-producto .container-img img {
+
+
+
+	.imagenes__productos img {
+        
+        width: 171%; /* Ajustar el ancho al 100% */
+    margin-right: 0px;
+	}
+
+   
+
+     .container-img img {
         height: 360px;
         overflow: hidden;
         margin-left: 0px;
