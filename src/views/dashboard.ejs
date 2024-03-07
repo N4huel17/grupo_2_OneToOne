@@ -4,14 +4,15 @@
    <%- include('./partials/head',{
     title:'Dashboard'
 })  %>
-<body>
+
+  <body style="background-image: url('/img/home/logoHome.png'); background-repeat: repeat;"> 
     <%- include('./partials/header-admin') %>
 
     <main class="container">
         <section class="row my-5">
             <div class="col-12 col-md-10 mx-auto">
-                <div class="card">
-                    <div class="card-header d-flex justify-content-between">
+                <div class="card" style="background-color: #fff; color: #000;">
+                    <div class="card-header d-flex justify-content-between" style="background-color:rgb(82, 82, 82); color: #ffffff;">
                         <h4 class="cart-title">Productos</h4>
                         <a class="btn btn-dark" href="/productos/agregar">Nuevo</a>
                     </div>
@@ -28,7 +29,7 @@
                                 
                               </tr>
                             </thead>
-                            <tbody>
+                            <tbody style="color: #000;">
                                 <% products.forEach(({id,name,category, image,images, description, price,descount,colors,sizes}, index) => { %>
                                     <tr>
                                         <th scope="row">
@@ -63,7 +64,7 @@
                                                     <div class="modal fade" id="warningRemoveModal<%= id %>" tabindex="-1" aria-labelledby="warningRemoveModalLabel" aria-hidden="true">
                                                         <div class="modal-dialog modal-dialog-centered modal-lg">
                                                           <div class="modal-content">
-                                                            <div class="modal-header">
+                                                            <div class="modal-header" style="background-color: #000; color: #fff;">
                                                               <h1 class="modal-title fs-5" id="warningRemoveModalLabel">EL PRODUCTO SE ELIMINARÁ</h1>
                                                               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                                             </div>
@@ -104,13 +105,6 @@
             </div>
         </section>
     </main>
-
-
-
-
-
-
-
 
   <%- include('./partials/scripts') %>
 </body>
