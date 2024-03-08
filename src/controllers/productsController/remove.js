@@ -1,43 +1,46 @@
+const { existsSync, unlinkSync } = require('fs');
+const db = require('../../database/models');
 
-const {existsSync, unlinkSync} = require('fs')
-const db= require('../../database/models')
-
-module.exports = (req,res) => {
-
-    const {id} = req.params;
-db.products.findByPk(id, {
-    include: ['images']
-})
-.then( ({image,images})=> {
-    existsSync("public/images/" + image) &&
-    unlinkSync("public/images/" + image);
-
-  images.forEach((image) => {
-    existsSync("public/images/" + image.file) &&
-      unlinkSync("public/images/" + image.file);
-  });
-   
-
-    db.images.destroy({
-        where : {
-            productsId : id
-        }
-    }) .then(()=> {
-        db.products.destroy({
-            where : {
-                id
-                }
-        })
+module.exports = (req, res) => {
+    const { id } = req.params;
+    db.products.findByPk(id, {
+        include: ['images']
     })
-.then(()=> {
+    .then(product => {
+        if (!product) {
+            return res.status(404).send('Product not found');
+        }
 
-    return res.redirect('/admin')
-})
+        const { image, images } = product;
 
+        existsSync("public/img/" + image) && unlinkSync("public/img/" + image);
 
+        images.forEach((img) => {
+            existsSync("public/img/" + img.file) && unlinkSync("public/img/" + img.file);
+        });
 
-})
-.catch(error => console.log(error))
-
-
-}
+        db.images.destroy({
+            where: {
+                productsId: id
+            }
+        }).then(() => {
+            db.products.destroy({
+                where: {
+                    id
+                }
+            }).then(() => {
+                return res.redirect('/admin');
+            }).catch(error => {
+                console.log(error);
+                return res.status(500).send('Internal Server Error');
+            });
+        }).catch(error => {
+            console.log(error);
+            return res.status(500).send('Internal Server Error');
+        });
+    })
+    .catch(error => {
+        console.log(error);
+        return res.status(500).send('Internal Server Error');
+    });
+};
