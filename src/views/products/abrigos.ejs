@@ -16,9 +16,9 @@
                 
                 <article class="container_products_articulos">
                     
-                    <% if (image&& images.length > 0) { %>
+                    <% if (image&& image.length > 0) { %>
                         <div class="imagenes_de_los_productos">
-                            <% images.forEach(image => { %>
+                            <% image.forEach(image => { %>
                                 <img src="/img/<%= image.file %>" alt="<%= name %>">
                             <% }) %>
                         </div>
@@ -30,7 +30,7 @@
                         <h2 class="name"><%= name %></h2>
                         <p class="price"><%= price %></p>
                         <p class="descuentos"><%= descount %></p>
-                        <!-- Añade más detalles según tus necesidades -->
+                       
                         <div class="btn-vermas">
                             <button><a href="/productos/detalle/<%= id %>"> Ver Más</a></button>
                         </div>

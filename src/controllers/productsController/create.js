@@ -90,6 +90,30 @@ if (errors.isEmpty()) {
       })
       .catch(error => console.log(error))
 
+      db.colors.findAll({
+        order : [['name']]
+    })
+    .then(colors => {
+        return res.render("products/product-add", {
+          errors: errors.mapped(),
+          old: req.body,
+         colors,
+        });
+      })
+      .catch(error => console.log(error))
+      
+      db.sizes.findAll({
+        order : [['name']]
+    })
+    .then(sizes => {
+        return res.render("products/product-add", {
+          errors: errors.mapped(),
+          old: req.body,
+         sizes,
+        });
+      })
+      .catch(error => console.log(error))
+
 
     
 }

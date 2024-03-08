@@ -16,6 +16,7 @@ const remeras= require('./remeras');
 
 
 
+
 module.exports={
     add,
     create,
@@ -27,7 +28,8 @@ module.exports={
     abrigos,
     pantalones,
     accesorios,
-    remeras
-
+    remeras,
+   
+    
     
 }

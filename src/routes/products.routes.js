@@ -1,9 +1,13 @@
 const express = require('express');
-const { detail, add, edit, remove, create, update, camisas, abrigos, pantalones, accesorios, remeras, } = require('../controllers/productsController');
+const { detail, add, edit, remove, create, update, camisas, abrigos, pantalones, accesorios, remeras } = require('../controllers/productsController');
 const upload = require('../middlewares/upload');
 const list = require('../controllers/productsController/list');
 const productAddVali= require('../../validations/product-add-validator')
-const productEditVali= require('../../validations/product-edit-validator')
+const productEditVali= require('../../validations/product-edit-validator');
+
+
+
+
 
 
 
@@ -22,6 +26,7 @@ router.get('/pantalones',pantalones);
 router.get('/accesorios',accesorios);
 router.get('/remeras',remeras);
 router.get('/listar',list)
+
 
 
 
