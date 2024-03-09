@@ -1,36 +1,16 @@
-const db= require('../../database/models');
+const db = require('../../database/models');
 
-module.exports = (req,res)=> {
-    db.category.findAll({
-        order : ['name']
-    })
-        .then(categories => {
-            return res.render('products/product-add',{
-                categories
-            })
-        })
-        .catch(error => console.log(error))
-
-
-        db.colors.findAll({
-            order : ['name']
-        })
-            .then(colors => {
-                return res.render('products/product-add',{
-                    colors
-                })
-            })
-            .catch(error => console.log(error))
-
-
-            db.sizes.findAll({
-                order : ['name']
-            })
-                .then(sizes => {
-                    return res.render('products/product-add',{
-                        sizes
-                    })
-                })
-                .catch(error => console.log(error))
-  
-        }
+module.exports = async (req, res) => {
+    try {
+        const [categories, colors, sizes] = await Promise.all([
+            db.category.findAll({ order: ['name'] }),
+            db.colors.findAll({ order: ['name'] }),
+            db.sizes.findAll({ order: ['name'] })
+        ]);
+        
+        return res.render('products/product-add', { categories, colors, sizes });
+    } catch (error) {
+        console.error('Error al obtener datos:', error);
+        return res.status(500).send('Error interno del servidor');
+    }
+};

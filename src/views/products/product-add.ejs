@@ -37,44 +37,33 @@
 
                             <div class="col-12 col-md-6 mb-3">
                               <div class="form-floating">
-                                <select name="colors" class="form-select <%= locals.errors && errors.colors ? 'is-invalid' : null %>" id="colors" aria-label="Floating label select example" value="<%= locals.old && old.colors ? old.colors : null %>">
-                                  <option value="" selected hidden></option>
-                                  <option value="rojo">rojo</option>
-                                  <option value="celeste">celeste</option>
-                                  <option value="blanco">blanco</option>
-                                  <option value="negro">negro</option>
-                                  <option value="azul">azul</option>
-                                  <option value="gris">gris</option>
-                                  <option value="amarillo">amarillo</option>
-                                  <option value="verde">VERDE</option>
-                                  <option value="violeta">VIOLETA</option>
-                                  <option value="marron">MARRON</option>
-                                </select>
-                                <label for="colors">Color</label>
-                                <small class="text-danger ms-2">
-                                  <%= locals.errors && errors.colors ? errors.colors.msg : null %>
-                                </small>
+                                  <select name="colorsId" class="form-select <%= locals.errors && errors.colorsId ? 'is-invalid' : null %>" id="colorsId" aria-label="Floating label select example" value="<%= locals.old && old.colorsId ? old.colorsId : null %>">
+                                      <option value="" selected hidden></option>
+                                      <% colors.forEach(color => { %>
+                                      <option value="<%= color.id %>"><%= color.name %></option>
+                                      <% }) %>
+                                  </select>
+                                  <label for="colors">Color</label>
+                                  <small class="text-danger ms-2">
+                                      <%= locals.errors && errors.colorsId ? errors.colorsId.msg : null %>
+                                  </small>
                               </div>
-                            </div>
+                          </div>
 
-                            <div class="col-12 col-md-6 mb-3">
-                              <div class="form-floating">
-                                <select name="sizes" class="form-select <%= locals.errors && errors.sizes ? 'is-invalid' : null %>" id="sizes" aria-label="Floating label select example" value="<%= locals.old && old.sizes ? old.sizes : null %>">
-                                  <option value="" selected hidden></option>
-                                  <option value="XS">XS</option>
-                                  <option value="S">S</option>
-                                  <option value="M">M</option>
-                                  <option value="L">L</option>
-                                  <option value="XL">XL</option>
-                                  <option value="XXL">XXL</option>
-                                  <option value="XXXL">XXXL</option>
+                          <div class="col-12 col-md-6 mb-3">
+                            <div class="form-floating">
+                                <select name="sizesId" class="form-select <%= locals.errors && errors.sizesId ? 'is-invalid' : null %>" id="sizes" aria-label="Floating label select example" value="<%= locals.old && old.sizesId ? old.sizesId : null %>">
+                                    <option value="" selected hidden></option>
+                                    <% sizes.forEach(size => { %>
+                                    <option value="<%= size.id %>"><%= size.name %></option>
+                                    <% }) %>
                                 </select>
                                 <label for="sizes">Talla</label>
                                 <small class="text-danger ms-2">
-                                  <%= locals.errors && errors.sizes ? errors.sizes.msg : null %>
+                                    <%= locals.errors && errors.sizesId ? errors.sizesId.msg : null %>
                                 </small>
-                              </div>
                             </div>
+                        </div>
 
                             <div class="col-12 col-md-6 mb-3">
                               <div class="form-floating" <%= locals.errors && errors.price ? 'is-invalid' : null %> value="<%= locals.old && old.price ? old.price : null %>">

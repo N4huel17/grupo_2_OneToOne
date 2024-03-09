@@ -16,9 +16,9 @@
                     <div class="detalle">
                         <div class="imagenes__productos">
 
-                            <img class="img__remera1" src="/img/<%= product.images %>" alt="">
-                            <img class="img__remera2" src="/img/<%= product.images %>" alt="">
-                            <img class="img__remera3" src="/img/<%= product.images %>" alt="">
+                            <img class="img__remera1" src="/img/<%= product.image%>" alt="">
+                            <img class="img__remera2" src="/img/<%= product.image %>" alt="">
+                            <img class="img__remera3" src="/img/<%= product.image %>" alt="">
 
                         </div>
                         <div class="container-img">
@@ -71,16 +71,23 @@
                                 <p><b>Precio : $ <%= product.price %></b></p>
 
 
-                                <b><p>Color:</p></b>
+                                
                                 <div class="div_colores">
-                                    <%= product.colors %>
+                                    <b><p>Color:</p></b> 
+                                    <% if (product.colors) { %>
+                                        <%= product.colors.name %>
+                                    <% } else { %>
+                                        -
+                                    <% } %>
                                 </div>
-
-                                <b><p>Talle:</p></b>
+                                
                                 <div class="div_talle">
-
-                                    <%= product.sizes %>
-
+                                    <b><p>Talle:</p></b>  
+                                    <% if (product.sizes) { %>
+                                        <%= product.sizes.name %>
+                                    <% } else { %>
+                                        -
+                                    <% } %>
                                 </div>
 
 
