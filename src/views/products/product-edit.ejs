@@ -54,7 +54,7 @@
                           <div class="col-12 col-md-6 mb-3">
                             <div class="form-floating ">
   
-                              <select name="colors" class="form-select <%= (locals.errors && errors.colorsId)  && 'is-invalid'%>" id="colors" aria-label="Floating label select example">
+                              <select name="colorsId" class="form-select <%= (locals.errors && errors.colorsId)  && 'is-invalid'%>" id="colors" aria-label="Floating label select example">
                                 <option value="" selected hidden></option>
                                 <% colors.forEach(colors => { %>
                                   <option value="<%= colors.id %>" <%= colorsId == colors.id && 'selected'  %>><%= colors.name %></option>
@@ -62,7 +62,7 @@
                               </select>
                               <label for="colors">Color</label>
                               <small class="text-danger ms-2">
-                                <%= locals.errors && errors.colors ? errors.colors.msg : null %>
+                                <%= locals.errors && errors.colorsId ? errors.colorsId.msg : null %>
                               </small>
                             </div>
                           </div>
@@ -82,14 +82,14 @@
                           </div>
                           <div class="col-12 col-md-6 mb-3">
                             <div class="form-floating">
-                              <select name="sizes" class="form-select <%= (locals.errors && errors.sizesId)  && 'is-invalid'%>" id="sizes" aria-label="Floating label select example">
+                              <select name="sizesId" class="form-select <%= (locals.errors && errors.sizesId)  && 'is-invalid'%>" id="sizes" aria-label="Floating label select example">
                                 <option value="" selected hidden></option>
                                 <% sizes.forEach(sizes => { %>
                                   <option value="<%= sizes.id %>" <%= sizesId == sizes.id && 'selected'  %>><%= sizes.name %></option>
                                 <% }) %>
                               </select>
                               <small class="text-danger ms-2">
-                                <%= locals.errors && errors.sizes ? errors.sizes.msg : null %>
+                                <%= locals.errors && errors.sizesId ? errors.sizesId.msg : null %>
                               </small>
                               <label for="sizes">Talla</label>
                             </div>
