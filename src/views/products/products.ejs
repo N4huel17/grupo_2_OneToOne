@@ -9,7 +9,7 @@
     <div class="container-title">Inicio / <%= category %> </div>
     <main class="container__products__views">
         
-        <% products.forEach(({id, name, categoryId, image, description, price, descount}) => { %>
+        <% products.forEach(({id, name, categoryId, image,images, description, price, descount}) => { %>
             
                
                 <article class="container_products_articulos">
@@ -21,9 +21,14 @@
                     
                     <article class="info__product">
                         <h2 class="name"><%= name %></h2>
-                        <p class="price"><%= price %></p>
-                        <p class="descuentos"><%= descount %></p>
-                        <!-- Añade más detalles según tus necesidades -->
+                        <div>
+                            <p style="display: inline;">$</p>
+                            <p class="price" style="display: inline;"><%= price %></p>
+                        </div>
+                        <% if (descount) { %>
+                            <p class="descuentos"><%= descount %></p>
+                        <% } %>
+                        
                         <div class="btn-vermas">
                             <button><a href="/productos/detalle/<%= id %>"> Ver Más</a></button>
                         </div>

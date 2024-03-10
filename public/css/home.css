@@ -79,6 +79,7 @@
 
 /*---------CATEGORIAS PRINCIPALES-----------------*/
 .home_main-nav {
+    display: none;
     background-color: #e9e8e8;
     padding: 1em;
     text-align: center;
@@ -90,6 +91,7 @@
 }
 
 .home_main-nav h3 {
+    display: none;
     margin-bottom: 10px;
     color: #000000;
 
@@ -400,6 +402,21 @@
     }
 
     /*---CATEGORIAS PRINCIPALES----*/
+
+    .home_main-nav {
+        display:flex;
+        flex-direction: column;
+        background-color: #e9e8e8;
+        padding: 1em;
+        text-align: center;
+        margin: 20px auto;
+        border-radius: 30px;
+        border: 1px solid #bbbbbb;
+        width: 290px;
+        margin-left: 55px;
+    }
+
+
     .home_main-nav {
 
         width: 230px;
@@ -409,6 +426,8 @@
     }
 
     .home_main-nav h3 {
+        display: flex;
+        
         font-size: 20px;
         margin-bottom: 20px;
     }

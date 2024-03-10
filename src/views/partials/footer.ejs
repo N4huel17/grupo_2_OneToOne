@@ -17,12 +17,12 @@
         <div class="footer__links">
             <h4> NAVEGACION </h4><br>
             <ul class="listas__del__footer_navegacion">
-              <li><a href="/productos/abrigos">ABRIGOS</a></li>
-              <li><a href="/productos/pantalones">PANTALONES</a></li>
-              <li><a href="/productos/camisas">CAMISAS</a></li>
+              <li><a href="/productos/listar?categoria=3">ABRIGOS</a></li>
+              <li><a href="/productos/listar?categoria=2">PANTALONES</a></li>
+              <li><a href="/productos/listar?categoria=5">CAMISAS</a></li>
               <div class="links_footer-movil">
-              <li><a href="/productos/remeras">REMERAS</a></li>
-              <li ><a href="/productos/accesorios">ACCESORIOS</a></li>
+              <li><a href="/productos/listar?categoria=1">REMERAS</a></li>
+              <li ><a href="/productos/listar?categoria=4">ACCESORIOS</a></li>
             </div> 
             </ul>
               
@@ -56,11 +56,33 @@
                     <span class="twitter"><a href=""><i class="fa-brands fa-twitter"></i></a></span>
                     <span class="tiktok"><a href=""><i class="fa-brands fa-tiktok"></i></a></span> 
                     <br><br><br>
-                    <h5 class="Envianos">Envianos tus recomendaciones</h5>
-                    <div class="avioncito_recomendaciones">
-                 <i class="fa-solid fa-paper-plane"></i>
-                   <input type="text" placeholder="email@">
-                  </div> 
+                    <form method="POST">
+                      <h5 class="Envianos">Envianos tus recomendaciones</h5>
+                      <div class="avioncito_recomendaciones">
+                          <i class="fa-solid fa-paper-plane"></i>
+                          <input id="emailInput" type="email" name="email" placeholder="email@">
+                          <button id="enviarBtn" type="button">Enviar</button> 
+                      </div>
+                  </form>
+                  <script>
+                    document.addEventListener('DOMContentLoaded', function () {
+                        document.getElementById('enviarBtn').addEventListener('click', function () {
+                            var email = document.getElementById('emailInput').value;
+            
+                            if (validateEmail(email)) {
+                                var nombrePagina = 'One to One '; 
+                                alert('¡Gracias por solicitar recomendaciones! Tu correo electrónico ha sido enviado a ' + nombrePagina + ', nos pondremos en contacto para recibir tus peticiones.');
+                            } else {
+                                alert('Por favor, ingresa un correo electrónico válido.');
+                            }
+                        });
+            
+                        function validateEmail(email) {
+                            var re = /\S+@\S+\.\S+/;
+                            return re.test(email);
+                        }
+                    });
+                </script>
                 </div>              
                 </div> 
                  
