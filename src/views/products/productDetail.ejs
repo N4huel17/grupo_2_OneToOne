@@ -14,18 +14,19 @@
                 <div class="div_padre_detalle_product container-producto">
 
                     <div class="detalle">
-                        <div class="imagenes__productos">
-
-                            <img class="img__remera1" src="/img/<%= product.image%>" alt="">
-                            <img class="img__remera2" src="/img/<%= product.image %>" alt="">
-                            <img class="img__remera3" src="/img/<%= product.image %>" alt="">
-
-                        </div>
+                       
                         <div class="container-img">
+                            <div class="imagenes__productos">
+
+                                <img class="img__remera1" src="/img/<%= product.image%>" alt="">
+                                <img class="img__remera2" src="/img/<%= product.image %>" alt="">
+                                <img class="img__remera3" src="/img/<%= product.image %>" alt="">
+    
+                            </div>
 
                             <div class="detalles_main_contendedor_imagenes" id="contenedor-1">
                                 <div class="contenedor_detalles_carrusel" id="foto1">
-                                    <img src="/img/<%= product.image %>" alt="Imagen ">
+                                    <img src="/img/<%= product.image %>" alt="imagen ">
                                 </div>
                                 <div class="contenedor_de_flechas">
                                     <% if (product.image===product.images[0]) { %>
