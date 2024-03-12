@@ -292,12 +292,11 @@ html, body {
         height: 300%;
         width: 300%;
     }
-
-   
+  
 
     .container-img {
         display: flex;
-        width: 50%; 
+        width: 150%; 
         overflow: hidden;
     }
 
@@ -309,8 +308,6 @@ html, body {
      }
      
    
-
-
     .contenedor_detalles_carrusel img {
         width: 112%;
         height:130%;
@@ -319,8 +316,7 @@ html, body {
         width: 800%;
 		height: 800%; 
     }
-
-    
+ 
 	.detalle_2 {
         display: flex;
         flex-direction: column;
@@ -340,6 +336,9 @@ html, body {
 
 @media (min-width: 1440px) {
     /*-------DETALLES DEL PRODUCTO DESKTOP --------*/
+    .container-img {   
+        width: 200%; 
+    }
     .container-producto {
         margin: 0 280px;
         justify-content: center;

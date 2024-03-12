@@ -42,7 +42,8 @@ module.exports={
     processLogin : (req, res) => {
         const errors = validationResult(req);
         const { email, remember, } = req.body;
-    
+        //return res.send(req.body)
+
         if (errors.isEmpty()) {
             db.users.findOne({
                 where: { email }
