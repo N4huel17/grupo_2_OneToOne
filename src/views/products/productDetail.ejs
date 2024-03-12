@@ -95,10 +95,13 @@
                                 <article class="articulo__disponible">
                                     <div class="guia__talles">
                                         <i class="fa-solid fa-ruler-horizontal"></i>
-                                        <P class="guia_talles_text">GUIA DE TALLES</P>
-                                        <img src="/img/talles_720.png" alt="Guia de Talles" class="guia_talles_img">
+                                        <p class="guia_talles_text"><a href="#img_talles">GUIA DE TALLES</a></p>
                                     </div>
                                 </article>
+                                <div class="img_talles" id="img_talles">
+                                    <img src="/img/talles_720.png" alt="Guia de Talles">
+                                    <a href="#" class="close-btn">&times;</a>
+                                </div>              
 
 
 
@@ -113,18 +116,43 @@
                                     <span id="item-counter">0</span>
                                     <button class="btn-plus">+</button>
                                 </div>
+                                <script>
+                                    document.addEventListener('DOMContentLoaded', function () {
+                                        const counter = document.getElementById('item-counter');
+                                        const btnPlus = document.querySelector('.btn-plus');
+                                        const btnMinus = document.querySelector('.btn-minus');
+                                
+                                        // Función para incrementar el contador
+                                        btnPlus.addEventListener('click', function () {
+                                            let currentValue = parseInt(counter.textContent);
+                                            counter.textContent = currentValue + 1;
+                                        });
+                                
+                                        // Función para decrementar el contador
+                                        btnMinus.addEventListener('click', function () {
+                                            let currentValue = parseInt(counter.textContent);
+                                            if (currentValue > 0) {
+                                                counter.textContent = currentValue - 1;
+                                            }
+                                        });
+                                    });
+                                </script>
+    
                                 <button class="btn-add-to-cart">AGREGAR AL CARRITO</button>
                             </div>
 
 
 
+                            
                             <article class="articulo__disponible2">
                                 <div class="guia__pago">
-                                    <P class="guia_talles_text">METODOS DE PAGO</P>
-                                    <img src="/img/pago.jpg" alt="Guia de Talles" class="guia_pago_img">
+                                    <p class="guia_pago_text"><a href="#img_pago">METODOS DE PAGO</a></p>
                                 </div>
                             </article>
-
+                            <div class="img_pago" id="img_pago">
+                                <img src="/img/pago.jpg" alt="Guía de Métodos de Pago">
+                                <a href="#" class="close-btn">&times;</a>
+                            </div>
                         </div>
                     </div>
                     <br>
