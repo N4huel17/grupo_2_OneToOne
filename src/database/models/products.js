@@ -31,6 +31,8 @@ module.exports = (sequelize, DataTypes) => {
         as: "sizes",
         foreignKey: "sizesId",
       }); 
+
+      
     }
   }
   products.init({

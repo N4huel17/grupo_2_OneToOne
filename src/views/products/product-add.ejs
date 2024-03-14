@@ -37,13 +37,12 @@
 
                             <div class="col-12 col-md-6 mb-3">
                               <div class="form-floating">
-                                  <select name="colorsId" class="form-select <%= locals.errors && errors.colorsId ? 'is-invalid' : null %>" id="colorsId" aria-label="Floating label select example" value="<%= locals.old && old.colorsId ? old.colorsId : null %>">
-                                      <option value="" selected hidden></option>
+                                  <select multiple name="colorsId" class="form-select <%= locals.errors && errors.colorsId ? 'is-invalid' : null %>" id="colorsId" aria-label="Floating label select example" >
                                       <% colors.forEach(color => { %>
-                                      <option value="<%= color.id %>"><%= color.name %></option>
+                                          <option value="<%= color.id %>"><%= color.name %></option>
                                       <% }) %>
                                   </select>
-                                  <label for="colors">Color</label>
+                                  <label for="colors">Colores</label>
                                   <small class="text-danger ms-2">
                                       <%= locals.errors && errors.colorsId ? errors.colorsId.msg : null %>
                                   </small>
@@ -52,7 +51,7 @@
 
                           <div class="col-12 col-md-6 mb-3">
                             <div class="form-floating">
-                                <select name="sizesId" class="form-select <%= locals.errors && errors.sizesId ? 'is-invalid' : null %>" id="sizes" aria-label="Floating label select example" value="<%= locals.old && old.sizesId ? old.sizesId : null %>">
+                                <select multiplename="sizesId" class="form-select <%= locals.errors && errors.sizesId ? 'is-invalid' : null %>" id="sizes" aria-label="Floating label select example" value="<%= locals.old && old.sizesId ? old.sizesId : null %>"  >
                                     <option value="" selected hidden></option>
                                     <% sizes.forEach(size => { %>
                                     <option value="<%= size.id %>"><%= size.name %></option>
