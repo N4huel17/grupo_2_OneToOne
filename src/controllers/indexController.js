@@ -38,7 +38,7 @@ module.exports ={
         
 
        
-    },  searchAdmin : (req,res) => {
+    },searchAdmin : (req,res) => {  
 
         const {keyword} = req.query
 

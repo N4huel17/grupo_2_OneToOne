@@ -28,7 +28,7 @@
                                     <label for="surname" class="form-label">Apellido</label>
                                     <input type="text" name="surname"
                                         class="form-control <%= locals.errors && errors.surname ? 'is-invalid' : null %>"
-                                        id="surname" value="<%= user.surname %>" />
+                                        id="surname" value="<%= user.surname %>"/>
                                     <small class="text-danger ms-2">
                                         <%= locals.errors && errors.surname ? errors.surname.msg : null %>
                                     </small>
