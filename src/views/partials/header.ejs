@@ -31,11 +31,11 @@
     </div>
     <div class="section-right">
       <div class="search-container">
-        <input class="buscadorH" type="text" id="searchInput" placeholder="Buscar Productos . . .">
-        <i id="iconBuscar" class="fa-solid fa-magnifying-glass"></i>
+        <form class="search-bar" action="/productos/buscar" method="GET">
+        <input class="buscadorH" type="text" id="searchInput" placeholder="  Buscar Productos ..." name="keywords"/>
+        <button id="iconBuscar"type="submit"  class="fa-solid fa-magnifying-glass"></button> 
       </div>
     </div>
-
     <div class="element">
        
       <% if ( locals.userLogin ) { %>

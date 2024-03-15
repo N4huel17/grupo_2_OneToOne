@@ -38,7 +38,54 @@ module.exports ={
         
 
        
+    },  searchAdmin : (req,res) => {
+
+        const {keyword} = req.query
+
+        db.Restaurant.findAll({
+            where : {
+                name : {
+                    [Op.substring] : keyword
+                }
+            },
+            include : ['address','category']
+        })
+            .then(result => {
+                return res.render('dashboard', {
+                    products : result,
+                    keyword
+                })
+            })
+            .catch(error => console.log(error))
+
+     
+
+      
     },
+    search : (req,res) => {
+
+        const {keyword} = req.query
+
+        db.Products.findAll({
+            where : {
+                name : {
+                    [Op.substring] : keyword
+                }
+            },
+            include : ['products','category']
+        })
+            .then(result => {
+                return res.render('dashboard', {
+                    products : result,
+                    keyword
+                })
+            })
+            .catch(error => console.log(error))
+
+     
+
+      
+    }
     
     
 }

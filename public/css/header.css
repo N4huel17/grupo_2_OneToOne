@@ -158,8 +158,12 @@ text-decoration: none;
 color: rgb(255, 255, 255)
 }
 /*-----------------------------------*/
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 
-
+}
 /*--------IMAGEN DE HEADER-------------------------*/
 
 

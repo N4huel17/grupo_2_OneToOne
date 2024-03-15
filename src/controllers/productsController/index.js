@@ -10,7 +10,7 @@ const abrigos= require('./abrigos');
 const pantalones= require('./pantalones');
 const accesorios= require('./accesorios');
 const remeras= require('./remeras');
-
+const search = require('./search');
 
 
 
@@ -29,7 +29,7 @@ module.exports={
     pantalones,
     accesorios,
     remeras,
-   
+    search,
     
     
 }
