@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+   <!-- //HEAD PARTIALS-->
+   <%- include('./partials/head',{
+    title:'Dashboard'
+})  %>
+
+  <body style="background-image: url('/img/home/logoHome.png'); background-repeat: repeat;"> 
+    <%- include('./partials/header-admin') %>
+
+    <main class="container">
+        <section class="row my-5">
+            <div class="col-12 col-md-10 mx-auto">
+                <div class="card" style="background-color: #fff; color: #000;">
+                    <div class="card-header d-flex justify-content-between" style="background-color:rgb(82, 82, 82); color: #ffffff;">
+                        <h4 class="cart-title">Productos</h4>
+                        <a class="btn btn-dark" href="/productos/agregar">Nuevo</a>
+                    </div>
+                    <div class="card-body table-responsive">
+                        <table class="table">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Descripcion</th>
+                                <th scope="col">Categoria</th>
+                                <th scope="col">Precio</th>
+                                
+                                
+                              </tr>
+                            </thead>
+                            <tbody style="color: #000;">
+                                <% products.forEach(({id,name,category, image,images, description, price,descount,colors,sizes}, index) => { %>
+                                    <tr>
+                                        <th scope="row">
+                                          <%= index + 1 %>
+                                        </th>
+                                        <td><%= name%></td>
+                                        <td><%= description %></td>
+                                        <td><%= category ? category.name :'-'%></td>
+                                        <td><%= price %></td>
+                                        
+
+                                        
+
+
+                                        <td>
+                                            <div class="d-flex gap-2">
+                                              <button class="btn btn-sm btn-outline-primary border-none"
+                                              data-bs-toggle="modal"
+                                              data-bs-target="#showProductModal<%= id %>">
+                                              <i class="fa-solid fa-eye"></i>
+                                          </button>
+                                                <a class="btn btn-sm btn-outline-success border-none"
+                                                    href="/productos/editar/<%= id %>"><i
+                                                        class="fa-solid fa-pencil"></i></a>
+
+                                                        <button class="btn btn-sm btn-outline-danger border-none"
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#warningRemoveModal<%= id %>">
+                                                        <i class="fa-solid fa-trash"></i>
+                                                    </button>
+
+                                                    <div class="modal fade" id="warningRemoveModal<%= id %>" tabindex="-1" aria-labelledby="warningRemoveModalLabel" aria-hidden="true">
+                                                        <div class="modal-dialog modal-dialog-centered modal-lg">
+                                                          <div class="modal-content">
+                                                            <div class="modal-header" style="background-color: #000; color: #fff;">
+                                                              <h1 class="modal-title fs-5" id="warningRemoveModalLabel">EL PRODUCTO SE ELIMINARÁ</h1>
+                                                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                               <h4><span class="text-danger fs-3"><i class="fa-solid fa-triangle-exclamation"></i></span> ¿Desea eliminar el producto:<%= name %>?</h4>
+                                                              <form action="/productos/eliminar/<%= id %>?_method=DELETE" method="POST">
+                                                                <div class="d-flex justify-content-end gap-3">
+                                                                  <button type="button" class="btn btn-sm btn-outline-secondary" data-bs-dismiss="modal" >Cancelar</button>
+                                                                  <button type="submit" class="btn btn-sm btn-outline-danger">
+                                                                    Sí, eliminar
+                                                                </button>
+                                                                </div> 
+                                                               
+                                                            </form>
+                                                              
+                                                            </div>
+                                                          
+                                                          </div>
+                                                        </div>
+                                                      </div>
+                                                      
+                                                        
+                                               
+                                                
+                                            </div>
+                                        </td>
+                                        
+                                    </tr>
+                                   
+                                      
+                                <% }) %>
+                              
+        
+                            </tbody>
+                          </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+  <%- include('./partials/scripts') %>
+</body>
+</html>
