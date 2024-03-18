@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/header.css">
+  <script src="https://kit.fontawesome.com/6e4ed31c51.js" crossorigin="anonymous"></script>
+  <script src="/js/buscador.js" defer></script>
+ 
+  <title>Header</title>
+</head>
+
+<body class="body-header">
+  <header class="header">
+    <div class="menu">
+      <i class="fas fa-bars menu-icon"></i>
+      <p class="header-parrafo">Menu</p>
+      <ul class="categorias">
+        <a href="/productos/listar?categoria=3">ABRIGOS</a> 
+       <a href="/productos/listar?categoria=1">REMERAS</a> 
+       <a href="/productos/listar?categoria=5">CAMISAS</a> 
+       <a href="/productos/listar?categoria=2">PANTALONES</a> 
+       <a href="/productos/listar?categoria=4">ACCESORIOS</a> 
+       
+      </ul>
+    </div>
+
+    <div class="header-logo">
+      <a href="/"> <img class="header-logo-image" src="/img/home/logoHome.png" class="img-logo" alt="" srcset=""> </a>
+    </div>
+    <div class="section-right">
+      <div class="search-container">
+        <form class="search-bar" action="/productos/buscar" method="GET">
+        <input class="buscadorH" type="text" id="searchInput" placeholder="  Buscar Productos ..." name="keywords"/>
+        <button id="iconBuscar"type="submit"  class="fa-solid fa-magnifying-glass"></button> 
+      </form>
+      </div>
+    </div>
+
+    <div class="element">
+       
+      <% if ( locals.userLogin ) { %>
+       
+
+        <a class="section-right-a" href="/usuarios/perfil"> <i class="fa-solid fa-circle-user header-icon"></i></a>
+        <a class="section-right-a" href="/carrito"> <i class="fa-solid fa-cart-shopping header-icon" ></i></a>
+      
+       
+      
+        <% }else{ %>
+          <a class="section-right-a" href="/usuarios/ingreso"> <i class="fa-solid fa-circle-user header-icon"></i></a>
+          <a class="section-right-a" href="/carrito"> <i class="fa-solid fa-cart-shopping header-icon" ></i></a>
+
+          <%}%>
+
+
+    </div>
+     
+
+
+    
+
+
+    <nav class="header-nav">
+      <% if (locals.userLogin) { %>
+
+        <% if (userLogin.role === 1 ) { %>
+          <ul class="header-nav-ul">
+            <li class="header-nav-ul-li"><a href="/admin">ADMIN</a></li>
+          </ul>
+          <ul class="header-nav-ul">
+            <li class="header-nav-ul-li"><a href="/usuarios/salir">CERRAR SESIÓN</a></li>
+          </ul>
+          <% } else { %>
+            <ul class="header-nav-ul">
+              <li  class="header-nav-ul-li"><a href="/productos/listar?categoria=3">ABRIGOS</a></li>
+            </ul>
+            <ul class="header-nav-ul">
+              <li  class="header-nav-ul-li"><a href="/productos/listar?categoria=2">PANTALONES</a></li>
+            </ul>
+            <ul class="header-nav-ul">
+              <li  class="header-nav-ul-li"><a href="/productos/listar?categoria=5">CAMISAS</a></li>
+            </ul>
+            <ul class="header-nav-ul">
+              <li  class="header-nav-ul-li"><a href="/productos/listar?categoria=1">REMERAS</a></li>
+            </ul>
+            <ul class="header-nav-ul">
+              <li  class="header-nav-ul-li"><a href="/productos/listar?categoria=4">ACCESORIOS</a></li>
+            </ul>
+            <ul class="header-nav-ul">
+              <li class="header-nav-ul-li"><a href="/usuarios/salir">CERRAR SESIÓN</a></li>
+            </ul>
+           
+            <% } %>
+      <% } else { %>
+        <ul class="header-nav-ul">
+          <li  class="header-nav-ul-li"><a href="/productos/listar?categoria=3">ABRIGOS</a></li>
+        </ul>
+        <ul class="header-nav-ul">
+          <li  class="header-nav-ul-li"><a href="/productos/listar?categoria=2">PANTALONES</a></li>
+        </ul>
+        <ul class="header-nav-ul">
+          <li  class="header-nav-ul-li"><a href="/productos/listar?categoria=5">CAMISAS</a></li>
+        </ul>
+        <ul class="header-nav-ul">
+          <li  class="header-nav-ul-li"><a href="/productos/listar?categoria=1">REMERAS</a></li>
+        </ul>
+        <ul class="header-nav-ul">
+          <li  class="header-nav-ul-li"><a href="/productos/listar?categoria=4">ACCESORIOS</a></li>
+        </ul>
+        <% } %>
+
+
+
+      
+    </nav>
+
+
+  </header>
+</body>
+
+</html>

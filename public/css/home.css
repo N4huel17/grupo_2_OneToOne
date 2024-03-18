@@ -28,22 +28,22 @@
 
 
 .seccion_pantalones {
-    width: 70%;
+    width: 75%;
     height: 350px;
-    margin-left: 60px;
+    margin-left: 50px;
 
 }
 
 .seccion_remeras {
-    width: 70%;
+    width: 75%;
     height: 350px;
-    margin-left: 60px;
+    margin-left: 50px;
 }
 
 .seccion_new {
-    width: 70%;
+    width: 75%;
     height: 350px;
-    margin-left: 60px;
+    margin-left: 50px;
 }
 
 .home_main-secciones-article {
@@ -56,7 +56,7 @@
     background-color: rgba(218, 202, 202, 0.534);
     padding: 8px 0;
     text-align: center;
-    width: 70%;
+    width: 75%;
     position: absolute;
     margin: 0;
     top: 50%;
@@ -79,6 +79,7 @@
 
 /*---------CATEGORIAS PRINCIPALES-----------------*/
 .home_main-nav {
+    display: none;
     background-color: #e9e8e8;
     padding: 1em;
     text-align: center;
@@ -90,7 +91,9 @@
 }
 
 .home_main-nav h3 {
+    display: none;
     margin-bottom: 10px;
+    color: #000000;
 
 }
 
@@ -102,7 +105,7 @@
     display: none;
     padding: 0;
     list-style: none;
-
+   
 
 }
 
@@ -157,6 +160,7 @@
     border-radius: 15px;
     border: 2px solid #000000;
     margin-left: 40px;
+    margin-top: 25px;
 
 }
 
@@ -254,8 +258,6 @@
 
 /*---------CARRUSEL INFO----------------*/
 .carrusel-contenedor-padre-info {
-
-
     border-top: 1px solid rgb(34, 34, 34);
     height: 206px;
     width: 80%;
@@ -305,9 +307,6 @@
 }
 
 .carrusel-punto-info {
-
-
-    background-color: #c9c8c8;
     display: flex;
     justify-content: space-around;
     border-radius: 60px;
@@ -339,7 +338,7 @@
 }
 
 /*---------TABLEET-----------------*/
-@media (min-width: 450px) {
+@media (min-width: 768px) {
 
     /*---portada---*/
     .home_mian-portada-pie {
@@ -403,6 +402,21 @@
     }
 
     /*---CATEGORIAS PRINCIPALES----*/
+
+    .home_main-nav {
+        display:flex;
+        flex-direction: column;
+        background-color: #e9e8e8;
+        padding: 1em;
+        text-align: center;
+        margin: 20px auto;
+        border-radius: 30px;
+        border: 1px solid #bbbbbb;
+        width: 290px;
+        margin-left: 55px;
+    }
+
+
     .home_main-nav {
 
         width: 230px;
@@ -412,6 +426,8 @@
     }
 
     .home_main-nav h3 {
+        display: flex;
+        
         font-size: 20px;
         margin-bottom: 20px;
     }
@@ -422,6 +438,7 @@
         display: list-item;
         padding: 0;
         list-style: none;
+        margin-left: 0px;
 
     }
 
@@ -545,10 +562,7 @@
         margin-top: 60px;
         margin-bottom: 10px;
         margin-left: 0;
-
-
     }
-
 
     .home_main-carrusel-info-con {
         position: relative;
@@ -602,10 +616,14 @@
         margin-top: 45px;
 
     }
+    #pago i  {
+        margin-left: 85px;
+        
+    }
 
-
-    #pago {
+    #pago  {
         margin-left: 15px;
+        
     }
 
     #pago h3 {
@@ -642,7 +660,7 @@
     height: 60px;
     display: flex;
     letter-spacing: 15px;
-margin-top: -5px;
+    margin-top: -5px;
 }
 
 .home_mian-portada-pie-tex {

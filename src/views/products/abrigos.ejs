@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!-- //HEAD PARTIALS-->
+   <%- include('../partials/head') %>
+<body class="vistas_productos">
+
+    <!-- HEADER PARTIAL -->
+    <%- include('../partials/header',{ title:'ABRIGOS'}) %>
+    <br>
+    <div class="container-title">Inicio / Abrigos </div>
+    <main class="container__products__views">
+        
+        <% products.forEach(({id, name, categoryId, images,image, description, price, descount}) => { %>
+            
+            <% if (categoryId === 3) { %>
+                
+                <article class="container_products_articulos">
+                    
+                    <% if (image&& image.length > 0) { %>
+                        <div class="imagenes_de_los_productos">
+                            <% image.forEach(image => { %>
+                                <img src="/img/<%= image.file %>" alt="<%= name %>">
+                            <% }) %>
+                        </div>
+                    <% } else { %>
+                        <p>No hay imágenes disponibles</p>
+                    <% } %>
+                    
+                    <article class="info__product">
+                        <h2 class="name"><%= name %></h2>
+                        <p class="price"> <%= price %></p>
+                        <p class="descuentos"><%= descount %></p>
+                       
+                        <div class="btn-vermas">
+                            <button><a href="/productos/detalle/<%= id %>"> Ver Más</a></button>
+                        </div>
+                    </article>
+                </article>
+            <% } %>
+        <% }); %>
+        
+    </main>
+    <br>
+    <!-- //FOOTER PARTIALS-->
+    <%- include('../partials/footer') %>
+    
+</body>
+</html>
