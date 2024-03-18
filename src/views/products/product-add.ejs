@@ -51,7 +51,7 @@
 
                           <div class="col-12 col-md-6 mb-3">
                             <div class="form-floating">
-                                <select multiplename="sizesId" class="form-select <%= locals.errors && errors.sizesId ? 'is-invalid' : null %>" id="sizes" aria-label="Floating label select example" value="<%= locals.old && old.sizesId ? old.sizesId : null %>"  >
+                                <select multiple name="sizesId" class="form-select <%= locals.errors && errors.sizesId ? 'is-invalid' : null %>" id="sizes" aria-label="Floating label select example" value="<%= locals.old && old.sizesId ? old.sizesId : null %>"  >
                                     <option value="" selected hidden></option>
                                     <% sizes.forEach(size => { %>
                                     <option value="<%= size.id %>"><%= size.name %></option>
