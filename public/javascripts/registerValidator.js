@@ -105,6 +105,18 @@ $('password').addEventListener('blur', function () {
     }
 });
 
+$('button-eye').addEventListener('click', function () {
+    this.classList.toggle("fa-eye")
+    this.classList.toggle("fa-eye-slash") 
+ $('password').type = $ ('password').type === "password" ? "text" : "password"
+   
+});
+
+
+
+
+
+
 $('password2').addEventListener('blur', function () {
     switch (true) {
         case !this.value:
