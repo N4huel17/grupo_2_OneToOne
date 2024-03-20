@@ -1,45 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-   <!-- //HEAD PARTIALS-->
-   <%- include('../partials/head') %>
-<body class="vistas_productos">
+<!-- //HEAD PARTIALS-->
+<%- include('../partials/head') %>
 
-	<%- include('../partials/header') %>
-    <br>
-    <div class="container-title">Inicio / <%= category %> </div>
-    <main class="container__products__views">
-        
-        <% products.forEach(({id, name, categoryId, image,images, description, price, descount}) => { %>
-            
-               
-                <article class="container_products_articulos">
-                    
-                        <div class="imagenes_de_los_productos">
-                                <img src="/img/<%= image %>" alt="<%= name %>">
-                        </div>
-                  
-                    
-                    <article class="info__product">
-                        <h2 class="name"><%= name %></h2>
-                        <div>
-                            <p style="display: inline;">$</p>
-                            <p class="price" style="display: inline;"><%= price %></p>
-                        </div>
-                        <% if (descount) { %>
-                            <p class="descuentos"><%= descount %></p>
-                        <% } %>
-                        
-                        <div class="btn-vermas">
-                            <button><a href="/productos/detalle/<%= id %>"> Ver Más</a></button>
-                        </div>
-                    </article>
-                </article>
-            <% }) %>
-        
-    </main>
-    <br>
+    <body class="vistas_productos">
+
+        <%- include('../partials/header') %>
+            <br>
+            <h3 class="search-result">Resultado de la búsqueda: " <%= keywords %> "
+                    <br>
+                    </div>
+                    <main class="container__products__views">
+                        <% if (products.length===0) { %>
+                            <div class="result-info">
+                                <div class="pne">
+                                    <div class="np">Lo siento, no se encontró un producto relacionado con la búsqueda :(
+                                    </div>
+                                    <br>
+                                    <div class="list">
+                                        <ol>
+                                            <li><strong>Verifica la ortografía:</strong> Asegúrate de que estás
+                                                escribiendo correctamente el nombre del producto que buscas.</li>
+                                            <li><strong>Prueba términos alternativos:</strong> Si no encuentras el
+                                                producto
+                                                con el nombre exacto, intenta buscar utilizando términos similares.</li>
+                                            <li><strong>Explora nuestras categorías:</strong> Puede que el producto que
+                                                buscas esté ubicado en una categoría diferente a la que esperas. Explora
+                                                nuestras diferentes secciones para encontrarlo.</li>
+                                            <li><strong>Contacta con nosotros:</strong> Si aún así no encuentras lo que
+                                                buscas, no dudes en ponerte en contacto con nuestro equipo de soporte.
+                                                Estamos aquí para ayudarte a encontrar lo que necesitas.</li>
+                                        </ol>
+
+
+                                        <img src="/img/pne.png" alt="">
+                                    </div>
+
+
+
+                                </div>
+
+                            </div>
+                            <style>
+                                .result-info {
+                                    width: 100%;
+                                    margin: 0 auto;
+                                    font-family: Arial, sans-serif;
+                                }
+
+                                .np {
+                                    margin-top: 10PX;
+                                    background-color: rgb(244, 72, 198);
+                                    border-radius: 10px;
+                                    padding: 10px;
+                                    width: 200%;
+                                    height: auto;
+                                    text-align: center;
+                                }
+
+                                .list {
+                                    opacity: 0.7;
+                                    font-size: 15px;
+                                    display: flex;
+                                    gap: 15px;
+
+                                }
+
+
+                                .pne img {
+
+                                    max-width: 100%;
+                                    height: 100%;
+                                }
+                            </style>
+
+
+
+                            <% } else { %>
+                                <% products.forEach(({id, name, categoryId, image,images, description, price,
+                                    descount})=> { %>
+                                    <article class="container_products_articulos">
+                                        <div class="imagenes_de_los_productos">
+                                            <img src="/img/<%= image %>" alt="<%= name %>">
+                                        </div>
+                                        <article class="info__product">
+                                            <h2 class="name">
+                                                <%= name %>
+                                            </h2>
+                                            <div>
+                                                <p style="display: inline;">$</p>
+                                                <p class="price" style="display: inline;">
+                                                    <%= price %>
+                                                </p>
+                                            </div>
+                                            <% if (descount) { %>
+                                                <p class="descuentos">
+                                                    <%= descount %>
+                                                </p>
+                                                <% } %>
+                                                    <div class="btn-vermas">
+                                                        <button><a href="/productos/detalle/<%= id %>"> Ver
+                                                                Más</a></button>
+                                                    </div>
+                                        </article>
+                                    </article>
+                                    <% }) %>
+                                        <% } %>
+                    </main>
+                    <br>
+
+
+    </body>
     <!-- //FOOTER PARTIALS-->
     <%- include('../partials/footer') %>
-    
-</body>
+
 </html>
