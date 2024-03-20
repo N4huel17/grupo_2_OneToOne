@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
     <!-- //HEAD PARTIALS-->
     <%- include('../partials/head',{
@@ -74,17 +74,21 @@
 
 
 
-                          <div class="col-12 col-md-6 mb-3">
+                          <div class="col-12 mb-3">
                             <label for="password" class="form-label">Contraseña</label>
+                            <div class="input-group">
                             <input type="password" name="password"  class="form-control <%= locals.errors && errors.password ? 'is-invalid' : null %>" id="password">
+                            <span class="input-group-text"><i id="button-eye" class="fa-regular fa-eye"></i></span>
+                            </div>
                             <small id="error-password" class="text-danger ms-2">
                               <%= locals.errors && errors.password ? errors.password.msg : null %>
                             </small>
-                          </div>
-                          <div class="col-12 col-md-6 mb-3">
+                            </div>
+
+                          <div class="col-12 mb-3">
                             <label for="password2" class="form-label">Confirmar contraseña</label>
-                            <input type="password" name="password2" class="form-control <%= locals.errors && errors.password2 ? 'is-invalid' : null %>" id="password2">
-                            <small id="error-password" class="text-danger ms-2">
+                            <input type="password2" name="password2" class="form-control <%= locals.errors && errors.password2 ? 'is-invalid' : null %>" id="password2">
+                            <small id="error-password2" class="text-danger ms-2">
                               <%= locals.errors && errors.password2 ? errors.password2.msg : null %>
                             </small>
                           </div>
@@ -157,6 +161,7 @@
     <!-- //FOOTER PARTIALS-->
     <%- include('../partials/footer') %>
     <script src="/javascripts/registerValidator.js"></script>
+
 </body>
 
 </html>
