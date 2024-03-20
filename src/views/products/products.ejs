@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
 <!-- //HEAD PARTIALS-->
 <%- include('../partials/head') %>
 
     <body class="vistas_productos">
-
+      
         <%- include('../partials/header') %>
+       
             <br>
-            <h3 class="search-result">Resultado de la búsqueda: " <%= keywords %> "
+            <div class="container-title">Inicio / <%= category %>   </div>
                     <br>
                     </div>
                     <main class="container__products__views">
                         <% if (products.length===0) { %>
+                            <h3 class="search-result">Resultado de la búsqueda: " <%= keywords %> "
                             <div class="result-info">
                                 <div class="pne">
                                     <div class="np">Lo siento, no se encontró un producto relacionado con la búsqueda :(
@@ -79,6 +81,7 @@
                             <% } else { %>
                                 <% products.forEach(({id, name, categoryId, image,images, description, price,
                                     descount})=> { %>
+                                        
                                     <article class="container_products_articulos">
                                         <div class="imagenes_de_los_productos">
                                             <img src="/img/<%= image %>" alt="<%= name %>">

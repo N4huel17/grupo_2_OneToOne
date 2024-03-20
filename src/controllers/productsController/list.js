@@ -4,7 +4,7 @@ module.exports = async (req, res) => {
     try {
         // Consulta todos los productos desde la base de datos utilizando el modelo db.products
         const {name} = await db.category.findByPk(req.query.categoria)
-     
+        const { keywords } = req.query;
         const products = await db.products.findAll({
             where : {
                 categoryId : req.query.categoria
@@ -20,6 +20,7 @@ module.exports = async (req, res) => {
 
         // Renderiza la vista con los productos recuperados de la base de datos
         return res.render('products/products', {
+           
             products,
             category : name.toUpperCase()
         });
