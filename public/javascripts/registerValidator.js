@@ -76,6 +76,7 @@ $('email').addEventListener('blur', function () {
                 this.classList.add('is-invalid');
                 $('error-email').innerHTML = "Email con formato invalido"
                 break;
+                
         default:
             this.classList.remove('is-invalid');
                 $('error-email').innerHTML = null
@@ -125,32 +126,20 @@ $('password2').addEventListener('blur', function () {
 
 
 
-
-
-
-
-
 //---------------------------------------------------------------//
 
-
-$('form-register').addEventListener('submit', function (e) {
-    e.preventDefault();
+$('form-register').addEventListener('submit', function (e){
+    e.preventDefault()
     let error = false;
-
     for (let i = 0; i < this.elements.length -2; i++) {
-        if (!this.elements[i].value) { // Verificar si el campo está vacío
-            error = true;
-            this.elements[i].classList.add('is-invalid')
-           
-           
-           
-       
-        }
+       if (!this.elements[i].value) {
+        error= true;
+        this.elements[i].classList.add('is-invalid')
+        
+       }
+        
     }
+    !error ? this.submit() : $('msg-error').hidden = false
+})
 
-    if (!error) {
-        this.submit();
-    } else {
-        alert('Te faltan datos');
-    }
-});
+
