@@ -4,10 +4,6 @@ const exRegEmail= /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i
 
 
 
-
-
-
-
 $('name').addEventListener('focus', function () {
     this.classList.remove('is-invalid')
     
@@ -61,7 +57,7 @@ $('surname').addEventListener('blur', function () {
                 break;
         default:
             this.classList.remove('is-invalid');
-                $('error-name').innerHTML = null
+                $('error-surname').innerHTML = null
             break;
     }
     
@@ -111,9 +107,6 @@ $('button-eye').addEventListener('click', function () {
  $('password').type = $ ('password').type === "password" ? "text" : "password"
    
 });
-
-
-
 
 
 

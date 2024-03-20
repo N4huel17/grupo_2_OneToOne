@@ -54,7 +54,7 @@ module.exports={
                         name,
                         role : +roleId
                     };
-                    remember && res.cookie('kitchening4EV3R_user', req.session.userLogin, {
+                    remember && res.cookie('On3ToOn301_user', req.session.userLogin, {
                         maxAge: 1000 * 60 * 2
                     });
             
