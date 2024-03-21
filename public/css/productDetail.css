@@ -9,13 +9,16 @@ html, body {
       color: black;
 	  margin-top: 10px;
     }
-	.imagenes__productos {
-        display: none;
-    }
 
+    .imagenes__productos {
+        display: flex;
+        flex-wrap: wrap;
+        gap:5px;
+        justify-content: center;
+        
+    }
     .imagenes__productos img {
-        width: 100%; 
-        height: auto; 
+        width: 32%; 
     }
 
 .detalles_main_contendedor_imagenes {
@@ -30,7 +33,6 @@ html, body {
  
  .contenedor_detalles_carrusel img {
 	 width: 100%;
-	 height: auto;
  }
  
  .contenedor_de_flechas {
@@ -289,10 +291,12 @@ html, body {
     .imagenes__productos {
         display: flex;
         flex-direction: column;
-        height: 300%;
-        width: 300%;
+        width: 40%;
+     
     }
-  
+    .imagenes__productos img {
+        width: 70%; 
+    }
 
     .container-img {
         display: flex;

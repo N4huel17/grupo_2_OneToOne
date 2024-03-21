@@ -3,12 +3,12 @@
       "id": "b5a7333b-6024-47b4-a739-10b6313f475a",
       "name": "JEAN THOMI",
       "description": "\"\"Pantalón JEAN THOMI\"\"",
-      "category": "REMERAS",
+      "category": "PANTALONES",
       "sizes": "M",
       "colors": "azul",
       "price": "25000",
       "descount":0,
-      "image": "1708482217996_products.jpg",
+      "image": "pantalon1-a.jpg",
       "images": [
          "1708482217996_products.jpg",
          "1708482217999_products.jpg"
@@ -18,12 +18,12 @@
       "id": "cf2b82e1-9483-4fe3-920c-319218d86fd5",
       "name": "REMERA CLASS",
       "description": "\"Remera color Blanca de algodon, estampado de frente y espalda, apto para lavadoras con agua fria y sin centrifugar\"",
-      "category": "pantalones",
+      "category": "REMERAS",
       "sizes": "M",
       "colors": "Blanco",
       "price": "15999",
       "descount":0,
-      "image": "1706131520548_products.webp",
+      "image": "remera2-A.jpg",
       "images": [
          "1708006410971_products.jpg",
          "1708006410974_products.jpg"
@@ -33,7 +33,7 @@
       "id": "a95bd435-24ec-484b-879a-a1bb665e40e6",
       "name": "JEAN FLOKI",
       "description": "\"Pantalon Jean Floki  con roturas\"",
-      "category": "pantalones",
+      "category": "PANTALONES",
       "sizes": "L",
       "colors": "Azul Nevado",
       "price": "26OOO",

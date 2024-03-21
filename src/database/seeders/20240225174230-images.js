@@ -2,37 +2,37 @@
 
 var images = [
   {
-    file: '1709927714553_products.jpg',
+    file: 'pantalon1-b.jpg',
     productsId: 1,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709927714555_products.jpg',
+    file: 'pantalon1-c.jpg',
     productsId: 1,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709934488122_products.jpg',
+    file: 'pantalon1-d.jpg',
     productsId: 1,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709927710040_products.jpg',
+    file: 'remera2-A.jpg',
     productsId: 2,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709927710041_products.jpg',
+    file: 'remera2-B.jpg',
     productsId: 2,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709927710042_products.jpg',
+    file: 'remera2-C.jpg',
     productsId: 2,
     createdAt: new Date,
     updatedAt: new Date
