@@ -18,17 +18,15 @@
                         <div class="container-img">
                             <div class="imagenes__productos">
 
-                                <img class="img__remera1" src="/img/<%= product.image%>" alt="">
-                                <img class="img__remera2" src="/img/<%= product.image %>" alt="">
-                                <img class="img__remera3" src="/img/<%= product.image %>" alt="">
-    
+                                <% product.images.forEach(image => { %>
+                                    <img class="" src="/img/<%= image.file%>" alt="">
+                                <% }) %>
                             </div>
 
-                            <div class="detalles_main_contendedor_imagenes" id="contenedor-1">
-                                <div class="contenedor_detalles_carrusel" id="foto1">
-                                    <img src="/img/<%= product.image %>" alt="imagen ">
+                                <div class="contenedor_detalles_carrusel" id="foto1" >
+                                    <img src="/img/<%= product.image %>" style="object-fit: cover; width: 100%;" alt="imagen ">
                                 </div>
-                                <div class="contenedor_de_flechas">
+                            <!--     <div class="contenedor_de_flechas">
                                     <% if (product.image===product.images[0]) { %>
                                         <a href="#contenedor-3">
                                             <i class="fa-solid fa-chevron-left"></i>
@@ -51,11 +49,10 @@
                                                     <i class="fa-solid fa-chevron-right"></i>
                                                 </a>
                                                 <% } %>
-                                </div>
+                                </div> -->
 
                             </div>
 
-                        </div>
 
                         <div class="detalle_2">
                             <article class="articulo__precio_detalle">
