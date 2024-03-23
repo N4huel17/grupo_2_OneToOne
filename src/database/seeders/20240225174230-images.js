@@ -38,290 +38,290 @@ var images = [
     updatedAt: new Date
   },
   {
-    file: '1709928177922_products.jpg',
+    file: 'pantalon3-A.jpg',
     productsId: 3,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709928177923_products.jpg',
+    file: 'pantalon3-C.jpg',
     productsId: 3,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709928177923_products.jpg',
+    file: 'pantalon3-B.jpg',
     productsId: 3,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709928354033_products.jpg',
+    file: 'remera4-A.jpg',
     productsId: 4,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709928354034_products.jpg',
+    file: 'remera4-B.jpg',
     productsId: 4,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709928354034_products.jpg',
+    file: 'remera4-C.jpg',
     productsId: 4,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709928585078_products.jpg',
+    file: 'remera5-A.jpg',
     productsId: 5,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709928585078_products.jpg',
+    file: 'remera5-B.jpg',
     productsId: 5,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709928177923_products.jpg',
+    file: 'remera5-C.jpg',
     productsId: 5,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709928774400_products.jpg',
+    file: 'remera6-A.jpg',
     productsId: 6,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709928354033_products.jpg',
+    file: 'remera6-B.jpg',
     productsId: 6,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709928354033_products.jpg',
+    file: 'remera6-C.jpg',
     productsId: 6,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709928921625_products.jpg',
+    file: 'remera7-A.jpg',
     productsId: 7,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709928921626_products.jpg',
+    file: 'remera7-B.jpg',
     productsId: 7,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709928177923_products.jpg',
+    file: 'remera7-C.jpg',
     productsId: 7,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709929045728_products.jpg',
+    file: 'remera8-A.jpg',
     productsId: 8,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709929045729_products.jpg',
+    file: 'remera8-B.jpg',
     productsId: 8,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709928921625_products.jpg',
+    file: 'remera8-C.jpg',
     productsId: 8,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709929212039_products.jpg',
+    file: 'campera9-A.jpg',
     productsId: 9,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: 'noImagen.jpg',
+    file: 'campera9-B.jpg',
     productsId: 9,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: 'noImagen.jpg',
+    file: 'campera9-C.jpg',
     productsId: 9,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709929415103_products.jpg',
+    file: 'Buzo10-A.jpg',
     productsId: 10,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709929415104_products.jpg',
+    file: 'Buzo10-B.jpg',
     productsId: 10,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709928921625_products.jpg',
+    file: 'Buzo10-C.jpg',
     productsId: 10,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709929608724_products.jpg',
+    file: 'Buzo11-A.jpg',
     productsId: 11,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709929608726_products.jpg',
+    file: 'Buzo11-B.jpg',
     productsId: 11,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709929608726_products.jpg',
+    file: 'Buzo11-C.jpg',
     productsId: 11,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709929802175_products.jpg',
+    file: 'camisa12-B.jpg',
     productsId: 12,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709929802176_products.jpg',
+    file: 'camisa12-C.jpg',
     productsId: 12,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709929802177_products.jpg',
+    file: 'camisa12-D.jpg',
     productsId: 12,
     createdAt: new Date,
     updatedAt: new Date
   },
  
   {
-    file: '1709929916710_products.jpg',
+    file: 'camisa13-A.jpg',
     productsId: 13,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709929916713_products.jpg',
+    file: 'camisa13-B.jpg',
     productsId: 13,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709929916712_products.jpg',
+    file: 'camisa13-C.jpg',
     productsId: 13,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709930113103_products.jpg',
+    file: 'camisa14-B.jpg',
     productsId: 14,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709929916713_products.jpg',
+    file: 'camisa14-C.jpg',
     productsId: 14,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709929916713_products.jpg',
+    file: 'camisa14-D.jpg',
     productsId: 14,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709930304279_products.jpg',
+    file: 'GORRA2.jpg',
     productsId: 15,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709930304280_products.jpg',
+    file: 'GORRA3.jpg',
     productsId: 15,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709930304280_products.jpg',
+    file: 'GORRA4.jpg',
     productsId: 15,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709936132033_products.jpg',
+    file: 'CINTO1.JPG',
     productsId: 16,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709936132034_products.jpg',
+    file: 'CINTO2.JPG',
     productsId: 16,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709936132035_products.jpg',
+    file: 'CINTO3.JPG',
     productsId: 16,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709930469725_products.jpg',
+    file: 'pañoleta1.jpg',
     productsId: 17,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709930469726_products.jpg',
+    file: 'pañoleta2.jpg',
     productsId: 17,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709930469727_products.jpg',
+    file: 'pañoleta3.jpg',
     productsId: 17,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709930604310_products.jpg',
+    file: 'pantalon18-A.jpg',
     productsId: 18,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709930604311_products.jpg',
+    file: 'pantalon18-B.jpg',
     productsId: 18,
     createdAt: new Date,
     updatedAt: new Date
   },
   {
-    file: '1709930604311_products.jpg',
+    file: 'pantalon18-C.jpg',
     productsId: 18,
     createdAt: new Date,
     updatedAt: new Date
