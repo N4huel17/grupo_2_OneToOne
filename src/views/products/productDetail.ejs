@@ -17,42 +17,16 @@
                        
                         <div class="container-img">
                             <div class="imagenes__productos">
-
-                                <% product.images.forEach(image => { %>
-                                    <img class="" src="/img/<%= image.file%>" alt="">
+                                <% product.images.forEach((image, index) => { %>
+                                    <img class="imagen-secundaria" src="/img/<%= image.file %>" alt="" data-index="<%= index %>">
                                 <% }) %>
                             </div>
-
-                                <div class="contenedor_detalles_carrusel" id="foto1" >
-                                    <img src="/img/<%= product.image %>" style="object-fit: cover; width: 100%;" alt="imagen ">
-                                </div>
-                            <!--     <div class="contenedor_de_flechas">
-                                    <% if (product.image===product.images[0]) { %>
-                                        <a href="#contenedor-3">
-                                            <i class="fa-solid fa-chevron-left"></i>
-                                        </a>
-                                        <a href="#contenedor-2">
-                                            <i class="fa-solid fa-chevron-right"></i>
-                                        </a>
-                                        <% } else if (product.image===product.images[product.images.length - 1]) { %>
-                                            <a href="#contenedor-1">
-                                                <i class="fa-solid fa-chevron-left"></i>
-                                            </a>
-                                            <a href="#contenedor-<%= product.images.length %>">
-                                                <i class="fa-solid fa-chevron-right"></i>
-                                            </a>
-                                            <% } else { %>
-                                                <a href="#contenedor-<%= product.images.indexOf(product.images) %>">
-                                                    <i class="fa-solid fa-chevron-left"></i>
-                                                </a>
-                                                <a href="#contenedor-<%= product.images.indexOf(product.images) + 2 %>">
-                                                    <i class="fa-solid fa-chevron-right"></i>
-                                                </a>
-                                                <% } %>
-                                </div> -->
-
+                            <div class="contenedor_detalles_carrusel" id="foto1">
+                                <img id="imagen-principal" src="/img/<%= product.image %>" style="object-fit: cover; width: 100%;" alt="imagen">
                             </div>
+                        </div>
 
+                        <script src="/javascripts/detal-scrip.js"></script>
 
                         <div class="detalle_2">
                             <article class="articulo__precio_detalle">

@@ -264,7 +264,14 @@ html, body {
 }
 
 
+.imagen-secundaria {
+    opacity: 0.5; 
+    transition: opacity 0.3s ease; 
+}
 
+.imagen-secundaria:hover {
+    opacity: 1; 
+}
 
 
 .compartit_detalles_del_producto {
