@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="es">
+    <!-- //HEAD PARTIALS-->
+<%- include('./partials/head') %>
+
+<body>
+    <!-- //HEADER PARTIALS-->
+    
+    <%- include('./partials/header') %>
+
+
+
+    <main class="home_main">
+        <div class="home_main-portada">
+            <img src="/img/home/portada4.jpg" alt="portada home " width="100%">
+        </div>
+        <div class="home_mian-portada-pie">
+            <h3 class="home_mian-portada-pie-tex">
+                READY TO LIVE
+            </h3>
+
+        </div>
+        <br>
+
+        <div class="home_main-secciones">
+            <article class="home_main-secciones-article">
+                <div class="home_main-secciones-article-container">
+                    <img class="seccion_pantalones" src="/img/home/home.pantalones.jpg" alt="foto seccion pantalones"
+                        width="100%">
+                    <a class="seccion_pantalones-zoom" href="/productos/listar?categoria=2">PANTALONES</a>
+
+                </div>
+            </article>
+
+            <article class="home_main-secciones-article">
+                <div class="home_main-secciones-article-container">
+                    <img class="seccion_remeras" src="/img/home/home.remeras.jpg" alt="foto seccion remeras"
+                        width="100%">
+                    <a class="seccion_pantalones-zoom" href="/productos/listar?categoria=1">REMERAS</a>
+
+                </div>
+            </article>
+
+            <article class="home_main-secciones-article">
+                <div class="home_main-secciones-article-container">
+                    <img class="seccion_new" src="/img/home/img.home2.jpg" alt="foto seccion remeras" width="100%">
+                    <a class="seccion_pantalones-zoom" href="/productos/listar?categoria=4">accesorios</a>
+
+                </div>
+            </article>
+
+    <div class="home_main-container">
+
+            <div class="home_main--nav-seccion">
+
+                <nav class="home_main-nav">
+                    <h3> CATEGORIAS PRINCIPALES </h3>
+                    <div class="home_main-nav-principal">
+                        <ul>
+                            <li><a href="/productos/listar?categoria=4">ACCESORIOS</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="/productos/listar?categoria=2">PANTALONES</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="/productos/listar?categoria=5">CAMISAS</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="/productos/listar?categoria=1">REMERAS</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="/productos/listar?categoria=3">ABRIGOS</a></li>
+                        </ul>
+                          
+                    </div>
+
+                </nav>
+
+            </div>
+
+        </div>
+        <br>
+
+        <div class="home_main-foto">
+            <img src="/img/home/img-home.jpg" alt=" foto home" width="100%">
+
+        </div>
+        <br>
+
+
+        <div class="home_mian-eslogan">
+            <h1> ONE TO ONE </h1>
+            <br>
+            <h2> "ROPA QUE HABLA POR SI SOLA" </h3>
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+        <br>
+        <div class="carrusel-contenedor-padre">
+
+            <div class="home_main-carrusel-foto-contenedor" id="contenedor1">
+
+                <div class="home_main-carrusel-foto" id="foto1">
+                    <img src="/img/home/home-abajo1.jpg" alt="Imagen 1">
+                </div>
+
+                <div class="carrusel-flechas">
+                    <a href="#contenedor3">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </a>
+                    <a href="#contenedor2">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="home_main-carrusel-foto-contenedor" id="contenedor2">
+
+                <div class="home_main-carrusel-foto" id="foto2">
+                    <img src="/img/home/home.abajo2.jpg" alt="Imagen 1">
+                </div>
+
+                <div class="carrusel-flechas">
+                    <a href="#contenedor1">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </a>
+                    <a href="#contenedor3">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+
+            </div>
+            <div class="home_main-carrusel-foto-contenedor" id="contenedor3">
+
+                <div class="home_main-carrusel-foto" id="foto3">
+                    <img src="/img/home/HomeAbajo.jpg" alt="Imagen 1">
+                </div>
+
+                <div class="carrusel-flechas">
+                    <a href="#contenedor2">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </a>
+                    <a href="#contenedor1">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </a>
+                </div>
+                
+
+            </div>
+        
+           
+            
+        </div>
+
+        <div class="carrusel-punto">
+            <a href="#contenedor1">•</a>
+            <a href="#contenedor2">•</a>
+            <a href="#contenedor3">•</a>
+        </div>
+
+        
+
+
+        <div class="carrusel-contenedor-padre-info">
+            
+            
+            <div class="home_main-carrusel-info-con" id="contenedorInfo1">
+
+                <div class="home_main-carrusel-info" id="envios">
+                   
+                    <i class="fa-solid fa-truck"></i>
+                    <h3>ENVIOS A TODO EL PAIS</h3>
+                    <h5>Sin cargo a partir de $8000</h5>
+                </div>
+
+            </div>
+             
+            <div class="home_main-carrusel-info-con" id="contenedorInfo2">
+
+                <div class="home_main-carrusel-info" id="pago">
+                   
+                    <i class="fa-regular fa-credit-card"></i> 
+                    <h3>PAGA COMO QUIERAS</h3>
+                    <h5>Aceptamos todos los medios de pago</h5>
+                </div>
+
+                
+
+            </div>
+             
+            <div class="home_main-carrusel-info-con" id="contenedorInfo3">
+
+                <div class="home_main-carrusel-info" id="cambios">
+                   
+                    <i class="fa-solid fa-arrows-rotate"></i>
+                    <h3>CAMBIOS Y DEVOLUCIONES</h3>
+                    
+                </div>
+            </div>
+            
+            
+        </div>
+
+        <div class="carrusel-punto-info">
+            <a href="#contenedorInfo1">•</a>
+            <a href="#contenedorInfo2">•</a>
+            <a href="#contenedorInfo3">•</a>
+        </div>
+        
+
+    </main>
+    <!-- //FOOTER PARTIALS-->
+    <%- include('./partials/footer') %>
+
+
+    
+    
+</body>
+
+</html>

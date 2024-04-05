@@ -1,0 +1,488 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swaP');
+
+* .body-header {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+ }
+
+.header {
+width: 100%;
+height: 100px;
+background: black;
+display: flex;
+justify-content: space-evenly;
+padding: 12px;
+position: relative;
+}
+
+.menu {
+position: relative;
+display: flex;
+align-items: center;
+color: white;
+padding: 10px;
+margin-left: -25px;
+}
+
+.menu-icon {
+cursor: pointer;
+}
+
+.header-parrafo {
+margin-bottom: 0px;
+}
+
+.categorias {
+display: none;
+position: absolute;
+top: 100%;
+left: 0;
+background-color: #494747; 
+padding: 10px;
+border-radius: 5px;
+}
+
+.categorias li {
+color: white; 
+list-style: none; 
+margin-bottom: 5px; 
+}
+
+
+.menu:hover .categorias {
+display: block;
+}
+
+.header-logo {
+ width: 25%;
+ margin-right: -65px;
+
+}
+
+.header-logo-image {
+              width: 85%;
+              margin: -5px;
+              margin-left:7px ;       
+     }
+
+.header-parrafo {
+   font-size: 15px;
+   font-family: 'roboto';
+  }
+
+
+
+  .section-right {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 15px;
+      position: relative;
+      left: 70px;
+    }
+    .element{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 15px;
+      position: relative;
+      left: 40px;
+    }
+    
+    .section-right-a {
+      font-size: 18px;
+      display:inline-block;
+      left: 5px;
+      color: aliceblue;
+      margin: 0;
+      height: 5px;
+     
+    }
+    
+  
+    
+    .header-icon {
+      width: 5px;
+      height: 5px;
+      font-weight: 50;
+      color: white;
+      margin-right: 10px;
+      padding: 15px;
+    }
+    
+    .buscadorH {
+      display: none;
+      width: 120px; 
+      padding: 5px;
+      border-color: white;
+      border-radius: 5px;
+      background-color: black;
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      position: absolute; 
+      top: calc(70% + 1px); 
+      left: -10px; 
+    }
+    
+    #iconBuscar {
+      position: relative;
+      color: white;
+      font-size: 18px;
+      margin-right: 10px;
+      margin-top: 18px;
+    }
+    
+    .search-container:hover .buscadorH {
+      display: block;
+    }
+    
+  
+
+.header-nav {           
+display: none;
+}
+
+.header-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+                }
+
+.header-nav li {
+margin: 0 5px;
+}
+
+.header-nav a {
+text-decoration: none;
+color: rgb(255, 255, 255)
+}
+/*-----------------------------------*/
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+}
+/*--------IMAGEN DE HEADER-------------------------*/
+
+
+
+
+.header-logo-image {
+transition: filter 0.3s ease-in-out;
+
+}
+
+.header-logo-image:hover {
+filter: brightness(2.5);
+animation: shine s infinite alternate; 
+
+}
+.header-parrafo:hover {
+color: fuchsia; 
+}
+
+.header-parrafo{
+color: white; /* Establece el color original del texto */
+transition: color 0.3s; 
+}
+/*---------------------------------*/
+
+
+
+
+@media(min-width:768px){
+ 
+  .menu{
+      display: none;
+  }
+  .header{
+      width: 100%;
+      height: 195px;
+      display: block;
+      position: relative;
+      
+  }
+  .header-logo-image{
+      width: 85%;
+      margin: auto;
+      display: block;
+  }
+ 
+  .header-icon{
+      margin: 3px;
+      margin-right: 20px;
+  }
+
+/*-----------------------------*/
+.search-container:hover .buscadorH {
+  display:inline-block;
+}
+
+.section-right {
+  
+  display: inline-block;
+
+  left: 30%;
+  top: -100px;
+  bottom: 200px;
+ 
+}
+
+.element{
+  display: inline-block;
+
+  left: 30%;
+  top: -100px;
+  bottom: 200px;
+}
+.section-right-a  {
+  margin-right: 10px;
+}
+
+.buscadorH {
+  background-color: black;
+  display: inline-flex;
+  width: 190px;
+  height: 25px;
+  border: 1px rgb(172, 6, 184) solid;
+  font-size: 10px;
+  border-radius: 15px;
+  transition: border-color 0.3s ease;
+  position: relative;
+  top: -3px;
+  left: -10px;
+}
+
+#iconBuscar {
+  color: white;
+  position: relative;
+  top: 1px;
+  left: -40px;
+}
+
+
+
+ 
+  /*--------------------------*/
+
+.header-nav-ul-li a {
+  color: white; /* Establece el color original del texto */
+  transition: color 0.3s; /* Agrega una transición suave para el cambio de color */
+}
+
+::placeholder{
+  background-color: black;
+  color:black
+}
+::placeholder {
+  background-color: black;
+  color:fuchsia;
+}
+input::placeholder {
+  background-color: transparent;
+}
+input {
+  color: white; /* Color del texto escrito */
+}
+
+
+
+
+/*---------------------*/
+ 
+ 
+  .header-nav{
+      margin-top: -50px;
+      display: flex;
+      justify-content: center;
+      background: black;
+       
+  }
+  .header-nav-ul{
+     display: flex;
+     justify-content: initial;
+     margin: 15px;
+     margin-left: -35px;
+     font-size: 15px; 
+     position:relative ;
+     left:35px ;
+     top:5px ;
+  }
+
+
+
+
+
+
+
+/*--------IMAGEN DE HEADER-------------------------*/
+
+.header-logo {
+  display: inline-block;
+  overflow: hidden;
+
+}
+
+.header-logo img {
+  transition: filter 0.3s ease-in-out;
+
+}
+
+.header-logo:hover img {
+  filter: brightness(2.5);
+  animation: shine s infinite alternate; 
+
+}
+.header-nav-ul-li a {
+  color: white; /* Establece el color original del texto */
+  transition: color 0.3s; /* Agrega una transición suave para el cambio de color */
+}
+
+.header-nav-ul-li a:hover {
+  color: fuchsia; /* Cambia el color a fucsia cuando el cursor está sobre el enlace */
+}
+/*---------------------------------*/
+
+}
+
+
+/*****DESKTOP*******/
+
+@media(min-width:1024px){
+.header{
+height: 100px; ;
+  height: 230px;
+  
+  
+  }
+.header-logo{
+  display:inline-block;
+  justify-content: start;
+  width: 168px;
+  position: relative;
+  top:-3px;
+   left:35px;
+  }
+
+.header-logo-image{
+  width: 100%;
+  margin: auto;
+  display: block;
+}
+/*--------IMAGEN DE HEADER-------------------------*/
+
+.header-logo {
+  display: inline-block;
+  overflow: hidden;
+  position: relative;
+   top: 5px;
+
+}
+
+.header-logo img {
+  transition: filter 0.3s ease-in-out;
+
+}
+
+.header-logo:hover img {
+  filter: brightness(2.5);
+  animation: shine s infinite alternate; 
+
+}
+/*----------------------------*/
+  
+.element{
+  position: relative;
+                  left:49%;
+                  top: -75px;
+}
+  
+  .section-right{
+                position: relative;
+                  left:39%;
+                  top: -75px;
+  }
+  #iconBuscar{
+  
+      color:white;
+      position: relative;
+      top:-15px;
+      left: 65% ; 
+     }
+    
+/*----------------------------*/
+
+.buscadorH {
+  
+ background-color: black;
+  display: inline-flex;
+  width: 250px;
+  height: 30px;
+  border: 1px rgb(172, 6, 184) solid;
+  font-size: 16px;
+  border-radius: 15px;
+  transition: border-color 0.3s ease; 
+  position: relative;
+  top:-15px;
+  left:75%;
+}
+
+
+
+
+.header-icon{
+
+  color:white;
+  font-size: 20px;
+  position: relative;
+  left:68% ;
+   top:-14px;
+}
+
+
+.header-nav-ul{
+  margin-right:60px ;
+  position: relative;
+  left: 5%;
+  top:5px;
+  font-size: 30px; 
+}
+/*-------CAMBIAN DE COLOR LAS LETRAS--------------------------*/
+
+
+
+.header-nav-ul-li a {
+  color: white; /* Establece el color original del texto */
+  transition: color 0.3s; /* Agrega una transición suave para el cambio de color */
+}
+
+.header-nav-ul-li a:hover {
+  color: fuchsia; /* Cambia el color a fucsia cuando el cursor está sobre el enlace */
+}
+
+
+/* Cambio de color al pasar el ratón ... POR EL BUSCADOR*/
+
+::placeholder{
+  background-color: black;
+  color:black
+}
+
+
+::placeholder {
+  background-color: black;
+  color:fuchsia;
+}
+input::placeholder {
+  background-color: transparent;
+}
+
+input {
+  color: white; /* Color del texto escrito */
+}
+
+
+
+}
