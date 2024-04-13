@@ -273,105 +273,261 @@
             <a href="#contenedorInfo2">•</a>
             <a href="#contenedorInfo3">•</a>
         </div>
-     <div class ="contenerdorchat ">
-            <i class="fas fa-comment-dots" onclick="openChatModal()"></i>
-        </div>
-            <!-- Ventana modal -->
-            <div id="chatModal" class="modal">
-                <div class="modal-content" >
-                    <span class="close" onclick="closeChatModal()">&times;</span>
-                    <!-- Contenido del chat -->
-                    <div class="chat-container ">
-                        <div  class=" logo-chat">
-                        <img src="/img/home/logoHome.png"alt="portadachat" width="14%">
-                        <span class="logo-text">ONE TO ONE</span>
-                    </div>
-                        <div class="chat-box" id="chat-box"></div>
-                       
-                        <textarea id="user-input" placeholder="Escribe un mensaje..."></textarea>
-                        <button onclick="sendMessage()">Enviar</button>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Script para la funcionalidad del chat y la ventana modal -->
-            <script>
-                // Función para abrir la ventana modal
-                function openChatModal() {
-                    document.getElementById('chatModal').style.display = 'block';
-                }
-            
-                // Función para cerrar la ventana modal
-                function closeChatModal() {
-                    document.getElementById('chatModal').style.display = 'none';
-                }
-            
-                // Resto del código para el chat (sendMessage, appendMessage, etc.)
-               
-                const chatBox = document.getElementById('chat-box');
-                const userInput = document.getElementById('user-input');
-            
-                function sendMessage() {
-                    const message = userInput.value.trim();
-                    if (message !== '') {
-                        appendMessage('user', message);
-                        userInput.value = '';
-                        respondToMessage(message);
-                    }
-                }
-            
-                function appendMessage(sender, message) {
-                    const messageElement = document.createElement('div');
-                    messageElement.classList.add('message', sender);
-                    messageElement.textContent = message;
-                    chatBox.appendChild(messageElement);
-                    chatBox.scrollTop = chatBox.scrollHeight;
-                }
-            
-                function respondToMessage(message) {
-                    const response = generateResponse(message);
-                    appendMessage('bot', response);
-                }
-                function generateResponse(message) {
-            const cleanMessage = message.toLowerCase().replace(/[¿?]/g, '').trim();
-            const conocimiento = {
-                'buen dia': '¡Hola! ¿En qué puedo ayudarte hoy?',
-                'qué es esto': 'Este es un chat one to one para brindarte atención personalizada.',
-                'cómo puedo ayudarte': 'Puedo ayudarte en una variedad de temas. ¿En qué necesitas asistencia?',
-                'buenas tardes': '¡Hola! ¿En qué puedo ayudarte hoy?',
-                'qué prendas envían a domicilio': 'Enviamos una amplia variedad de prendas a domicilio. ¿Tienes alguna preferencia en particular?',
-                'cuáles son sus horarios de atención': 'Nuestros horarios de atención son de lunes a viernes de 9am a 6pm.',
-                'quiero varias prendas': 'Bueno, ¿podrías especificar qué tipo de prendas estás buscando?',
-            };
-            console.log('Mensaje limpio:', cleanMessage);
-            
-            const conocimientoKeys = Object.keys(conocimiento);
-            console.log('Claves de conocimiento:', conocimientoKeys);
-            
-            for (const key of conocimientoKeys) {
-               
-                const regex = new RegExp(key, 'i');
-                if (regex.test(cleanMessage)) {
-                    return conocimiento[key];
-                }
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <style>
+            /* Estilos del chat */
+            .custom-chat-container {
+                position: fixed;
+                bottom: 40px;
+                right: 40px;
+                z-index: 1000;
+                font-size: 32px;
+                color: rgb(2, 188, 255);
             }
-        
-            return 'Soy un bot diseñado para ayudarte en lo que necesites.';
-        }
-        
-             
             
+            .custom-chat-modal {
+                display: none;
+                position: fixed;
+                z-index: 999;
+                bottom: 20px;
+                right: 20px;
+                background-color: rgb(185, 184, 184);
+                border-radius: 15px;
+                box-shadow: 0 4px 8px  rgb(2, 188, 255);
+                max-width: 350px;
+                width: 100%;
+                border-top: 40px solid rgb(2, 188, 255);
+                max-height: 500px; /* Nuevo */
+            }
+            #customUserInput::placeholder {
+    color: gray; /* Cambia el color del placeholder a gris */
+}
+            .custom-chat-box {
+                max-height: 400px; /* Nuevo */
+                overflow-y: auto; /* Nuevo */
+                padding: 0px;
+                margin-bottom: 0px;
+                margin: 0;
+                border: none;
+            }
+            
+            .custom-chat-close {
+                color: #000000;
+                position: absolute;
+                top: -45px;
+                right: 10px;
+                font-size: 28px;
+                font-weight: bold;
+                cursor: pointer;
+            }
+            
+            .custom-chat-close:hover,
+            .custom-chat-close:focus {
+                color: black;
+                text-decoration: none;
+            }
+            
+            .custom-chat-box-container {
+                border: none;
+                margin: 0;
+                overflow-y: auto;
+                scrollbar-width: thin;
+                scrollbar-color: #ccc transparent;
+            }
+            
+            .custom-chat-message {
+                margin-bottom: 10px;
+                padding: 10px;
+                border-radius: 10px;
+                overflow-wrap: break-word;
+                color: black;
+                clear: both;
+            }
+            
+            .custom-user-message {
+                background-color: rgb(2, 188, 255);
+                color: rgb(0, 0, 0);
+                float: right;
+                max-width: 70%;
+            }
+            
+            .custom-bot-message {
+                background-color: #ffffff;
+                color: rgb(0, 0, 0);
+                float: left;
+                max-width: 70%;
+            }
+            
+            .custom-chat-input {
+                width: calc(100%);
+                padding: 10px;
+                border: none;
+                border-top: none;
+                border-radius: 0 0 10px 10px;
+                box-sizing: none;
+                outline: none;
+                font-size: 16px;
+                color: black;
+            }
+            
+            .custom-send-button {
+                position: absolute;
+                top: 94%;
+                right: 10px;
+                transform: translateY(-50%);
+                font-size: 25px;
+                cursor: pointer;
+                color: rgb(2, 188, 255);
+            }
+            
+            .custom-preguntas-container {
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .custom-pregunta-btn {
+                margin: 5px;
+                padding: 10px;
+                background-color:  rgb(2, 188, 255);
+                color: rgb(0, 0, 0);
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            
+            .custom-ot {
+                color: #ffffff;
+                position: absolute;
+                top: -45px;
+                left: 10px;
+                font-size: 28px;
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+    
+    <div class="custom-chat-container" id="customChatContainer">
+        <i class="fas fa-comment-dots" onclick="openCustomChatModal()"></i>
+    </div>
+    
+    <!-- Ventana modal -->
+    <div class="custom-chat-modal" id="customChatModal">
+        <p class="custom-ot">One To One </p>
+        <span class="custom-chat-close" onclick="closeCustomChatModal()">&times;</span>
+        <!-- Contenido del chat -->
+        <div class="custom-chat-box-container">
+            <div class="custom-chat-box" id="customChatBox"></div>
+        </div>
+        <input type="text" id="customUserInput" class="custom-chat-input" placeholder="Escribe un mensaje...">
+        <!-- Cambia el botón "Enviar" por el icono -->
+        <i class="fas fa-paper-plane custom-send-button" onclick="sendCustomMessage()"></i>
+    </div>
+    
+    <!-- Script para la funcionalidad del chat y la ventana modal -->
+    <script>
+        const customPreguntasRespuestas = {
+           
+            '¿Por qué tengo que iniciar sesión?': 'No es necesario iniciar sesión para ver el contenido de nuestra tienda.',
+'¿Necesito tener una cuenta para comprar?': 'Sí, en efecto, necesitas tener una cuenta para realizar una compra.',
+'¿Cómo puedo crear una cuenta?': 'Para crear una cuenta, dirígete a la parte superior de la página, haz clic en el icono de usuario y luego selecciona "Crear cuenta" o visita este enlace: http://localhost:3000/usuarios/ingreso.',
+'¿Puedo realizar compras al por mayor?': 'Sí, para realizar compras al por mayor, deja tu correo electrónico en la parte inferior de la página donde dice "Enviamos tus recomendaciones", y un proveedor de One to One se pondrá en contacto contigo.',
+'Quiero eliminar mi cuenta': 'Puedes gestionar la eliminación de tu cuenta iniciando sesión, yendo al perfil de usuario y haciendo clic en el botón que dice "Eliminar cuenta". Una vez hecho esto, tu cuenta se eliminará automáticamente. Saludos.',
+        };
+    
+        const customChatBox = document.getElementById('customChatBox');
+        const customUserInput = document.getElementById('customUserInput');
+        let customPrimerMensajeEnviado = false;
+    
+        function openCustomChatModal() {
+            document.getElementById('customChatModal').style.display = 'block';
+            document.getElementById('customChatContainer').style.display = 'none'; // Oculta el icono
+        }
+    
+        function closeCustomChatModal() {
+            document.getElementById('customChatModal').style.display = 'none';
+            document.getElementById('customChatContainer').style.display = 'block'; // Muestra el icono
+        }
+    
+        function sendCustomMessage() {
+            const message = customUserInput.value.trim();
+            if (message !== '') {
+                appendCustomMessage('user', message);
+                customUserInput.value = '';
+                respondToCustomMessage(message);
+            }
+        }
+    
+        function showCustomQuestionForm() {
+            let formHTML = '<div class="custom-preguntas-container">';
+            for (const pregunta in customPreguntasRespuestas) {
+                formHTML += `<button class="custom-pregunta-btn" onclick="selectCustomQuestion('${pregunta}')">${pregunta}</button>`;
+            }
+            formHTML += '</div>';
+            appendCustomMessage('bot', formHTML);
+        }
+    
+        function selectCustomQuestion(pregunta) {
+            appendCustomMessage('user', pregunta); // Mostrar la pregunta seleccionada por el usuario en el chat
+            respondToCustomMessage(pregunta);
+        }
+    
+        function appendCustomMessage(sender, message) {
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('custom-chat-message', sender === 'user' ? 'custom-user-message' : 'custom-bot-message');
+            messageElement.innerHTML = message;
+            customChatBox.appendChild(messageElement);
+            customChatBox.scrollTop = customChatBox.scrollHeight;
+        }
+    
+        function respondToCustomMessage(message) {
+            setTimeout(() => {
+                if (!customPrimerMensajeEnviado) {
+                    appendCustomMessage('bot', 'Hola, somos One To One'); // Mensaje inicial
+                    customPrimerMensajeEnviado = true;
+                }
+                const cleanMessage = message.toLowerCase().replace(/[¿?]/g, '').trim();
+                if (customPreguntasRespuestas.hasOwnProperty(cleanMessage)) {
+                    appendCustomMessage('bot', customPreguntasRespuestas[cleanMessage]);
+                    setTimeout(() => {
+                        appendCustomMessage('bot', 'Espero haberte ayudado, si necesitas otra cosa no dudes en consultar');
+                        showCustomQuestionForm();
+                    }, 1000);
+                } else if (message in customPreguntasRespuestas) {
+                    appendCustomMessage('bot', customPreguntasRespuestas[message]);
+                    setTimeout(() => {
+                        appendCustomMessage('bot', 'Espero haberte ayudado, si necesitas otra cosa no dudes en consultar');
+                        showCustomQuestionForm();
+                    }, 1000);
+                } else {
+                    appendCustomMessage('bot', 'Soy un bot diseñado para ayudarte en lo que necesites.');
+                    showCustomQuestionForm();
+                }
+            }, 1000);
+        }
+    
+        customUserInput.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                sendCustomMessage();
+            }
+        });
+    
+        window.onload = function() {
+            appendCustomMessage('bot', 'Hola, Me llamo  Ian,soy un bot diseñado para resolver tus dudas de forma rapida y automatica, en que puedo ayudarte?  '); // Mensaje inicial al cargar la página
+            showCustomQuestionForm();
+        };
+    </script>
         
-               
-            </script>
-       
 
     </main>
     <!-- //FOOTER PARTIALS-->
     <%- include('./partials/footer') %>
 
 
-    
+ 
     
 </body>
 
