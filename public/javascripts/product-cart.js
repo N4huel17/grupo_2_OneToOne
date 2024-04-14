@@ -2,6 +2,7 @@ console.log("product-card success!!");
 if (!sessionStorage.getItem("cart")) {
   console.log("no existe!!!");
   sessionStorage.setItem("cart", JSON.stringify([]));
+
 }
 
 var cart = JSON.parse(sessionStorage.getItem("cart"));
@@ -118,9 +119,11 @@ const quantityChosen = (count) => {
 };
 const addItemCart = (id_product, name, price, image) => {
   if (!size.id || !color.id) {
-    alert(
-      "Por favor, seleccione un color y un talle antes de agregar al carrito."
-    );
+    Swal.fire({
+      icon: "error",
+      title: "Error",
+      text: "Por favor, seleccione un color y un talle antes de agregar al carrito."
+    });
     return;
   }
 
@@ -152,28 +155,43 @@ const addItemCart = (id_product, name, price, image) => {
     cartUpdated = [...cart, newItem];
   }
   sessionStorage.setItem("cart", JSON.stringify(cartUpdated));
-  document.getElementById("showTotal").innerHTML = JSON.parse(
-    sessionStorage.getItem("cart")
-  ).length;
-  alert("¡Producto agregado al carrito correctamente!");
+  document.getElementById("showTotal").innerHTML = JSON.parse(sessionStorage.getItem("cart")).length;
+  
+  Swal.fire({
+    icon: "success",
+    title: "¡Producto agregado!",
+    text: "El producto ha sido agregado al carrito.",
+    imageUrl: "/img/" + image,
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: name
+  });
 };
-
 const removeItemCart = (id) => {
-  const cart = JSON.parse(sessionStorage.getItem("cart"));
-  const cartUpdated = cart.filter((item) => item.id !== id);
-  sessionStorage.setItem("cart", JSON.stringify(cartUpdated));
-  showProductsInCart(cartUpdated);
-  document.getElementById("showTotal").innerHTML = JSON.parse(
-    sessionStorage.getItem("cart")
-  ).length;
-  const confirmDelete = confirm(
-    "¿Estás seguro de que quieres eliminar este producto del carrito?"
-  );
-  if (!confirmDelete) {
-    return;
-  }
-};
+  const confirmDelete = () => {
+    Swal.fire({
+      icon: "warning",
+      title: "¿Estás seguro?",
+      text: "¿Estás seguro de que quieres eliminar este producto del carrito?",
+      showCancelButton: true,
+      confirmButtonColor: "#3085d6",
+      cancelButtonColor: "#d33",
+      confirmButtonText: "Sí, eliminar",
+      cancelButtonText: "Cancelar"
+    }).then((result) => {
+      if (result.isConfirmed) {
+        // Si el usuario confirma la eliminación, llamamos a la función removeItemCart
+        const cart = JSON.parse(sessionStorage.getItem("cart"));
+        const cartUpdated = cart.filter((item) => item.id !== id);
+        sessionStorage.setItem("cart", JSON.stringify(cartUpdated));
+        showProductsInCart(cartUpdated);
+        document.getElementById("showTotal").innerHTML = cartUpdated.length;
+      }
+    });
+  };
 
+  confirmDelete(); // Llamamos a la función confirmDelete para mostrar el cuadro de diálogo de confirmación
+};
 const modifyQuantity = (id, quantity) => {
   const cart = JSON.parse(sessionStorage.getItem("cart"));
   const cartUpdated = cart.map((item) => {
@@ -186,9 +204,7 @@ const modifyQuantity = (id, quantity) => {
   document.getElementById("total").innerHTML = cartUpdated
     .map((item) => item.quantity * item.price)
     .reduce((a, b) => a + b, 0);
-};
-
-const emptyCart = async () => {
+};const emptyCart = async () => {
   sessionStorage.setItem("cart", JSON.stringify([]));
   showCart.innerHTML = `
    <div class="col-12 col-md-6">
@@ -196,12 +212,23 @@ const emptyCart = async () => {
       El carrito está vacío
       </div>
       </div>`;
+
   document.getElementById("showTotal").innerHTML = null; // Eliminar el indicador del total a pagar
   document.querySelector(".payment-methods-section").style.display = "none"; // Ocultar la sección de métodos de pago
 };
 
+
+
+  // Eliminar el botón "Finalizar compra" si existe
+  const finalizarComprasBtn = document.getElementById("finalizarComprasBtn");
+  if (finalizarComprasBtn) {
+    finalizarComprasBtn.parentNode.removeChild(finalizarComprasBtn);
+  }
+
 const sendCart = async (user, status = 1) => {
   try {
+    console.log("Usuario:", user); // Verificar el valor de 'user'
+
     if (!user) {
       alert("Debes loguearte para finalizar tu compra");
       throw new Error("No está logueado");
@@ -211,18 +238,23 @@ const sendCart = async (user, status = 1) => {
 
     if (!cart) throw new Error("No hay productos para guardar");
 
-    const products = cart.map(({ id_product, price, quantity }) => {
+    const products = cart.map(({ id_product, price, quantity, name, image, users }) => {
+      console.log("Imagen del producto:", image); // Verificar la ruta de la imagen del producto
       return {
         id: id_product,
         price,
         quantity,
+        name,
+        image,
+        users
       };
     });
+    const total = products.map((p) => p.price * p.quantity).reduce((a, b) => a + b, 0);
 
     const itemsSendCart = {
       user,
       products,
-      total: products.map((p) => p.price).reduce((a, b) => +a + +b, 0),
+      total,
       status,
     };
 
@@ -230,8 +262,8 @@ const sendCart = async (user, status = 1) => {
       method: "POST",
       body: JSON.stringify(itemsSendCart),
       headers: {
-         'Content-Type': 'application/json'
-       },
+        'Content-Type': 'application/json'
+      },
     });
 
     const result = await response.json();
@@ -250,8 +282,15 @@ const sendCart = async (user, status = 1) => {
     // Ocultar la sección de métodos de pago al finalizar la compra
     document.querySelector(".payment-methods-section").style.display = "none";
 
-    alert("Gracias por tu compra!!!");
+    Swal.fire({
+      icon: "success",
+      title: "¡Gracias por tu compra!",
+      html: `¡Has realizado una compra exitosa!`,
+    
+ 
+    });
   } catch (error) {
     console.log(error);
   }
 };
+
