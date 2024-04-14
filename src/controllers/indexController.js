@@ -21,12 +21,71 @@ module.exports = {
             .catch(error => console.log(error));
     },
     admin: (req, res) => {
-        db.products.findAll({
+        let totalProductos;
+        let totalUsuarios;
+        let totalOrdenes;
+        let ultimoProducto;
+        let categorias;
+    
+        const obtenerTotalProductos = db.products.findAll({
                 include: ['category', 'colors', 'sizes'],
             })
             .then(products => {
+                totalProductos = products.length;
+            })
+            .catch(error => {
+                console.log(error);
+                totalProductos = 0; // Si hay un error, establece el total de productos en 0
+            });
+    
+        const obtenerTotalUsuarios = db.users.count()
+            .then(count => {
+                totalUsuarios = count;
+            })
+            .catch(error => {
+                console.log(error);
+                totalUsuarios = 0; // Si hay un error, establece el total de usuarios en 0
+            });
+    
+        const obtenerTotalOrdenes = db.Order.count()
+            .then(count => {
+                totalOrdenes = count;
+            })
+            .catch(error => {
+                console.log(error);
+                totalOrdenes = 0; // Si hay un error, establece el total de órdenes en 0
+            });
+    
+        const obtenerUltimoProducto = db.products.findOne({
+                include: ['category', 'colors', 'sizes'],
+                order: [['createdAt', 'DESC']] // Ordena por fecha de creación en orden descendente
+            })
+            .then(producto => {
+                ultimoProducto = producto;
+            })
+            .catch(error => {
+                console.log(error);
+                ultimoProducto = null; // Si hay un error, establece el último producto en null
+            });
+    
+        const obtenerCategorias = db.category.findAll()
+            .then(cats => {
+                categorias = cats;
+            })
+            .catch(error => {
+                console.log(error);
+                categorias = []; // Si hay un error, establece categorías como un array vacío
+            });
+    
+        // Espera a que todas las promesas se resuelvan antes de renderizar la vista
+        Promise.all([obtenerTotalProductos, obtenerTotalUsuarios, obtenerTotalOrdenes, obtenerUltimoProducto, obtenerCategorias])
+            .then(() => {
                 return res.render('indexDashboard', {
-                    products
+                    totalProductos,
+                    totalUsuarios,
+                    totalOrdenes,
+                    ultimoProducto,
+                    categorias
                 });
             })
             .catch(error => console.log(error));
@@ -109,6 +168,53 @@ module.exports = {
             return res.status(500).send("Error interno del servidor");
           });
       },
+      ordenes: (req, res) => {
+        db.Order.findAll({
+            include: ['status']
+        })
+        .then(ordenes => {
+            // Consulta para obtener todos los estados posibles
+            db.Status.findAll()
+            .then(statuses => {
+                return res.render('order', {
+                    ordenes,
+                    statuses
+                });
+            })
+            .catch(error => {
+                console.log(error);
+                return res.status(500).send("Error interno del servidor");
+            });
+        })
+        .catch(error => {
+            console.log(error);
+            return res.status(500).send("Error interno del servidor");
+        });
+    },
+    updateOrderStatus: (req, res) => {
+        const { id } = req.params;
+        const { status } = req.body;
+    
+        db.Order.findByPk(id)
+            .then(order => {
+                if (!order) {
+                    return res.status(404).send("Orden no encontrada");
+                }
+    
+                order.statusId = status;
+    
+                return order.save();
+            })
+            .then(updatedOrder => {
+                // Enviar una respuesta 200 OK sin contenido
+                return res.sendStatus(200);
+            })
+            .catch(error => {
+                console.error(error);
+                return res.status(500).send("Error interno del servidor");
+            });
+    },
+  
     searchAdmin: (req, res) => {
 
         const { keyword } = req.query
@@ -150,56 +256,6 @@ module.exports = {
             .catch(error => console.log(error));
     },
     
-    updateOrderStatus: async (req, res) => {
-        try {
-            console.log('Datos de la orden recibidos:', req.body);
-          const { id } = req.params;
-          const { statusId } = req.body;
-    
-          
-          const order = await db.Order.findByPk(id);
-    
-       
-          if (!order) {
-            return res.status(404).send("Pedido no encontrado");
-          }
-    
-        
-          order.statusId = statusId;
-          await order.save();
-    
-      
-          res.status(200).send("Estado del pedido actualizado correctamente");
-        } catch (error) {
-          console.error(error);
-          res.status(500).send("Error interno del servidor");
-        }
-      }, createOrder: async (req, res) => {
-        try {
-         
-            const { usersId, total } = req.body;
-    
-           
-            const defaultStatusId = 1;
-    
-        
-            if (!usersId || !total) {
-                return res.status(400).send('Faltan datos requeridos para crear la orden');
-            }
-    
-           
-            const newOrder = await db.Order.create({
-                usersId: usersId,
-                total: total,
-                statusId: defaultStatusId,
-                
-            });
-    
-            res.status(201).json({ orderId: newOrder.id });
-        } catch (error) {
-            console.error(error);
-            res.status(500).send('Error al crear la orden');
-        }
-    }
+
       
 }

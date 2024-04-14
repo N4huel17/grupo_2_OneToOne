@@ -4,6 +4,8 @@ const { getAllUsers, getOneUsers, changeRole } = require('../controllers/product
 const upload = require('../middlewares/upload');
 const { addImageProduct, removeImageProduct, updateImageMainProduct } = require('../controllers/productsController/apis/imagesApiController');
 const { storeCart } = require('../controllers/productsController/apis/cartApiContrroller');
+const { createOrder, updateOrderStatus } = require('../controllers/productsController/apis/ordersApiController');
+
 const router = express.Router();
 
 /* /apis */
@@ -24,6 +26,9 @@ router.post('/images/:id/main',upload.any(),updateImageMainProduct)
 
 //cart
 router.post('/cart', storeCart)
+
+router.post('/orders', createOrder);
+router.put('/orders/:id/status', updateOrderStatus);
 
 
 

@@ -1,17 +1,118 @@
 <!DOCTYPE html>
 <html lang="es">
-   <!-- //HEAD PARTIALS-->
-   <%- include('./partials/head',{
-    title:'Dashboard'
-})  %>
+<!-- //HEAD PARTIALS -->
+<%- include('./partials/head', { title: 'Dashboard' }) %>
 
-  <body style="background-image: url('/img/home/logoHome.png'); background-repeat: repeat;"> 
-    <%- include('./partials/header-admin') %>
+<body style="background-image: url('/img/home/logoHome.png'); background-repeat: repeat;">
+  <%- include('./partials/header-admin') %>
 
-    <main class="container">
-       
-    </main>
+  <main class="container">
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <div class="card border-left-success shadow h-100 py-2">
+          <div class="card-body">
+            <div class="row no-gutters align-items-center">
+              <div class="col mr-2">
+                <div class="text-xs font-weight-bold text-black text-uppercase mb-1">Productos en la base de datos</div>
+                <div class="h5 mb-0 font-weight-bold text-gray-800"> <%= totalProductos %></div>
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-dark" target="_blank" rel="nofollow" href='http://localhost:3000/products'>Ver</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card border-left-success shadow h-100 py-2">
+          <div class="card-body">
+            <div class="row no-gutters align-items-center">
+              <div class="col mr-2">
+                <div class="text-xs font-weight-bold text-black text-uppercase mb-1">Ordenes de compra</div>
+                <div class="h5 mb-0 font-weight-bold text-gray-800"><%= totalOrdenes %></div>
+              </div>
+
+            </div>
+          </div>
+          <a class="btn btn-dark" target="_blank" rel="nofollow" href="http://localhost:3000/admin/ordenes">Ver</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 mb-4">
+        <div class="card border-left-warning shadow h-100 py-2">
+          <div class="card-body">
+            <div class="row no-gutters align-items-center">
+              <div class="col mr-2">
+                <div class="text-xs font-weight-bold text-black text-uppercase mb-1">Usuarios registrados</div>
+                <div class="h5 mb-0 font-weight-bold text-gray-800"><%= totalUsuarios %></div>
+              </div>
+              <div class="col-auto">
+                <i class="fas fa-user fa-2x text-gray-300"></i>
+              </div>
+            </div>
+          </div>
+          <a class="btn btn-dark" target="_blank" rel="nofollow" href="http://localhost:3000/admin/users">Ver</a>
+        </div>
+      </div>
+
+      <% if (ultimoProducto) { %>
+      <div class="col-lg-6 mb-4">
+        <div class="card shadow mb-4">
+          <div class="card-header py-3">
+            <h5 class="m-0 font-weight-bold text-gray-800">Último Producto Agregado</h5>
+            <hr />
+            <p>Fecha de agregado: <%= ultimoProducto.createdAt %></p>
+          </div>
+          <div class="card-body">
+            <div class="text-center">
+              <img class="img-fluid" src="http://localhost:3000/img/<%= ultimoProducto.image %>" style="width: 40rem;" alt="<%= ultimoProducto.name %>" />
+            </div>
+            <h4>Nombre: <%= ultimoProducto.name %></h4>
+            <h4>Categoría: <%= ultimoProducto.category.name %></h4>
+            <h4>Precio: <%= ultimoProducto.price %></h4>
+            <p>Descripción: <%= ultimoProducto.description %></p>
+            <a class="btn btn-danger" target="_blank" rel="nofollow" href="/productos/detalle/<%= ultimoProducto.id %>">Ver detalle del producto</a>
+          </div>
+        </div>
+      </div>
+      <% } %>
+
+
+      <div class="col-lg-6 mb-4">
+        <div class="card shadow mb-4">
+          <div class="card-header py-3">
+            <h5 class="m-0 font-weight-bold text-gray-800">Categorías</h5>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <% categorias.forEach((categoria, index) => { %>
+              <% if (index % 2 === 0) { %>
+              </div>
+              <div class="row">
+                <% } %>
+                <div class="col-md-6 mb-3">
+                  <a href="http://localhost:3000/productos/listar?categoria=<%= categoria.id %>" style="text-decoration: none;">
+                    <div class="card border-left-success shadow h-100 py-2" style="background-color: #000000;">
+                      <div class="card-body">
+                        <div class="row no-gutters align-items-center">
+                          <div class="col mr-2">
+                            <div class="text-xs font-weight-bold text-white text-uppercase mb-1"><%= categoria.name %></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <% }) %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
 
   <%- include('./partials/scripts') %>
 </body>
+
 </html>
