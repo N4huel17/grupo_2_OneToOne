@@ -422,8 +422,18 @@
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #99088d;
+.custom-pregunta-btn {
+    /* Estilos por defecto */
+background-color: transparent;
+border: 1px solid black;
+padding: 5px 10px;
+cursor: pointer;
+}
+
+.custom-pregunta-btn:hover {
+    /* Estilos cuando se pasa el cursor por encima */
+    background-color: rgb(7, 175, 247);
+color: rgb(255, 255, 255); /* Cambia el color del texto si es necesario */
 }
 .contenerdorchat{
     font-size: 5rem;

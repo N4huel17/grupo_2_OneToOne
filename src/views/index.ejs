@@ -1,534 +1,574 @@
 <!DOCTYPE html>
 <html lang="es">
-    <!-- //HEAD PARTIALS-->
+<!-- //HEAD PARTIALS-->
 <%- include('./partials/head') %>
 
-<body>
-    <!-- //HEADER PARTIALS-->
-    
-    <%- include('./partials/header') %>
+    <body>
+        <!-- //HEADER PARTIALS-->
+
+        <%- include('./partials/header') %>
 
 
 
-    <main class="home_main">
-        <div class="home_main-portada">
-            <img src="/img/home/portada4.jpg" alt="portada home " width="100%">
-        </div>
-        <div class="home_mian-portada-pie">
-            <h3 class="home_mian-portada-pie-tex">
-                READY TO LIVE
-            </h3>
-
-        </div>
-
-
-        
-        <div id="container">
-            <marquee behavior="scroll" direction="left" scrollamount="10" style="height: 30px;">
-                <div id="text">
-                    <span style="color: fuchsia; animation: shine 1s infinite;">ONE TO ONE</span>
-                    <img src="/img/icono2-.png" alt="Mastercard" style="display: inline-block; width: 40px; padding: 0;margin-left:5px;margin-right: 20px;">
-                    <p style="display: inline-block; color: white; font-style: italic; font-size: 15px; margin-bottom: 10px; padding: 0;margin-right: 100px;">¡ENVÍO GRATIS A PARTIR DE $80.000!</p>
-                    <span style="color: fuchsia; animation: shine 1s infinite;">ONE TO ONE</span>
-                    <img src="/img/tarjeta1.png" alt="Visa" style="display: inline-block; width: 30px;margin-right: 10px;"> 
-                    <img src="/img/tarjeta2.png" alt="Visa" style="display: inline-block; width: 40px; padding: 0;margin-right: 20px;">
-                    <img src="/img/tarjeta.png" alt="Mastercard" style="display: inline-block; width: 20px; padding: 0;margin-right: 20px;">
-                    
-                    <p style="display: inline-block; color: white; font-style: italic; margin-bottom: 10px; padding: 0;margin-right: 120px;">3 y 6 CUOTAS SIN INTERÉS EN TARJETAS!!!</p>
-                    <span style="color: fuchsia; animation: shine 1s infinite;">ONE TO ONE</span>
-                    <img src="/img/icono1-.png" alt="Mastercard" style="display: inline-block; width: 20px; padding: 0;margin-right: 20px;">
-                    <p style="display: inline-block; color: white; font-style: italic; margin-bottom: 10px; padding: 0;margin-right: 120px;">COMPRÁ ONLINE, RETIRÁ EN TIENDA</p>
-                    <span style="color: fuchsia; animation: shine 1s infinite;">ONE TO ONE</span>
-                    <img src="/img/icono2-.png" alt="Mastercard" style="display: inline-block; width: 40px; padding: 0;margin-left:5px;margin-right: 20px;">
-                   
-                    <p style="display: inline-block; color: white; font-style: italic; font-size: 15px; margin-bottom: 10px; padding: 0;margin-right: 100px;">¡ENVÍO GRATIS A PARTIR DE $80.000!</p>
-                    
-                    <span style="color: fuchsia; animation: shine 1s infinite;">ONE TO ONE</span>
-    
-                    <p style="display: inline-block; color: white; font-style: italic; margin-bottom: 10px; padding: 0;margin-right: 120px;">VENI Y CONOCE NUESTRAS TIENDAS!!!</p>
-                    <span style="color: fuchsia; animation: shine 1s infinite;">ONE TO ONE</span>
-                    <p style="display: inline-block; color: white; font-style: italic; margin-bottom: 10px; padding: 0;margin-right: 150px;">BUSCANOS EN NUESTRAS REDES SOCIALAES!!!</p>
-                  
-                   
+            <main class="home_main">
+                <div class="home_main-portada">
+                    <img src="/img/home/portada4.jpg" alt="portada home " width="100%">
                 </div>
-            </marquee>
-        </div>
-        
-        <style>
-            #container {
-
-                background-color: black;
-                padding: 2px  px; ;
-                text-align: center;
-                margin: auto;
-                white-space: nowrap; /* Evita que el texto se rompa en múltiples líneas */
-                overflow: hidden; /* Oculta el desbordamiento horizontal del texto */
-            }
-        
-            #text {
-                display: inline-block; /* Para que el texto se centre correctamente */
-            }
-            @keyframes shine {
-        0% {
-            text-shadow: 0 0 10px fuchsia, 0 0 20px fuchsia, 0 0 30px fuchsia, 0 0 40px fuchsia, 0 0 50px fuchsia, 0 0 60px fuchsia, 0 0 70px fuchsia, 0 0 80px fuchsia;
-        }
-        50% {
-            text-shadow: none;
-        }
-        100% {
-            text-shadow: 0 0 10px fuchsia, 0 0 20px fuchsia, 0 0 30px fuchsia, 0 0 40px fuchsia, 0 0 50px fuchsia, 0 0 60px fuchsia, 0 0 70px fuchsia, 0 0 80px fuchsia;
-        }
-    }
-      
-        </style>
-        <div class="home_main-secciones">
-            <article class="home_main-secciones-article">
-                <div class="home_main-secciones-article-container">
-                    <img class="seccion_pantalones" src="/img/home/home.pantalones.jpg" alt="foto seccion pantalones"
-                        width="100%">
-                    <a class="seccion_pantalones-zoom" href="/productos/listar?categoria=2">PANTALONES</a>
+                <div class="home_mian-portada-pie">
+                    <h3 class="home_mian-portada-pie-tex">
+                        READY TO LIVE
+                    </h3>
 
                 </div>
-            </article>
 
-            <article class="home_main-secciones-article">
-                <div class="home_main-secciones-article-container">
-                    <img class="seccion_remeras" src="/img/home/home.remeras.jpg" alt="foto seccion remeras"
-                        width="100%">
-                    <a class="seccion_pantalones-zoom" href="/productos/listar?categoria=1">REMERAS</a>
 
+
+                <div id="container">
+                    <marquee behavior="scroll" direction="left" scrollamount="10" style="height: 30px;">
+                        <div id="text">
+                            <span style="color: fuchsia; animation: shine 1s infinite;">ONE TO ONE</span>
+                            <img src="/img/icono2-.png" alt="Mastercard"
+                                style="display: inline-block; width: 40px; padding: 0;margin-left:5px;margin-right: 20px;">
+                            <p
+                                style="display: inline-block; color: white; font-style: italic; font-size: 15px; margin-bottom: 10px; padding: 0;margin-right: 100px;">
+                                ¡ENVÍO GRATIS A PARTIR DE $80.000!</p>
+                            <span style="color: fuchsia; animation: shine 1s infinite;">ONE TO ONE</span>
+                            <img src="/img/tarjeta1.png" alt="Visa"
+                                style="display: inline-block; width: 30px;margin-right: 10px;">
+                            <img src="/img/tarjeta2.png" alt="Visa"
+                                style="display: inline-block; width: 40px; padding: 0;margin-right: 20px;">
+                            <img src="/img/tarjeta.png" alt="Mastercard"
+                                style="display: inline-block; width: 20px; padding: 0;margin-right: 20px;">
+
+                            <p
+                                style="display: inline-block; color: white; font-style: italic; margin-bottom: 10px; padding: 0;margin-right: 120px;">
+                                3 y 6 CUOTAS SIN INTERÉS EN TARJETAS!!!</p>
+                            <span style="color: fuchsia; animation: shine 1s infinite;">ONE TO ONE</span>
+                            <img src="/img/icono1-.png" alt="Mastercard"
+                                style="display: inline-block; width: 20px; padding: 0;margin-right: 20px;">
+                            <p
+                                style="display: inline-block; color: white; font-style: italic; margin-bottom: 10px; padding: 0;margin-right: 120px;">
+                                COMPRÁ ONLINE, RETIRÁ EN TIENDA</p>
+                            <span style="color: fuchsia; animation: shine 1s infinite;">ONE TO ONE</span>
+                            <img src="/img/icono2-.png" alt="Mastercard"
+                                style="display: inline-block; width: 40px; padding: 0;margin-left:5px;margin-right: 20px;">
+
+                            <p
+                                style="display: inline-block; color: white; font-style: italic; font-size: 15px; margin-bottom: 10px; padding: 0;margin-right: 100px;">
+                                ¡ENVÍO GRATIS A PARTIR DE $80.000!</p>
+
+                            <span style="color: fuchsia; animation: shine 1s infinite;">ONE TO ONE</span>
+
+                            <p
+                                style="display: inline-block; color: white; font-style: italic; margin-bottom: 10px; padding: 0;margin-right: 120px;">
+                                VENI Y CONOCE NUESTRAS TIENDAS!!!</p>
+                            <span style="color: fuchsia; animation: shine 1s infinite;">ONE TO ONE</span>
+                            <p
+                                style="display: inline-block; color: white; font-style: italic; margin-bottom: 10px; padding: 0;margin-right: 150px;">
+                                BUSCANOS EN NUESTRAS REDES SOCIALAES!!!</p>
+
+
+                        </div>
+                    </marquee>
                 </div>
-            </article>
 
-            <article class="home_main-secciones-article">
-                <div class="home_main-secciones-article-container">
-                    <img class="seccion_new" src="/img/home/img.home2.jpg" alt="foto seccion remeras" width="100%">
-                    <a class="seccion_pantalones-zoom" href="/productos/listar?categoria=4">accesorios</a>
+                <style>
+                    #container {
 
-                </div>
-            </article>
+                        background-color: black;
+                        padding: 2px px;
+                        ;
+                        text-align: center;
+                        margin: auto;
+                        white-space: nowrap;
+                        /* Evita que el texto se rompa en múltiples líneas */
+                        overflow: hidden;
+                        /* Oculta el desbordamiento horizontal del texto */
+                    }
 
-    <div class="home_main-container">
+                    #text {
+                        display: inline-block;
+                        /* Para que el texto se centre correctamente */
+                    }
 
-            <div class="home_main--nav-seccion">
+                    @keyframes shine {
+                        0% {
+                            text-shadow: 0 0 10px fuchsia, 0 0 20px fuchsia, 0 0 30px fuchsia, 0 0 40px fuchsia, 0 0 50px fuchsia, 0 0 60px fuchsia, 0 0 70px fuchsia, 0 0 80px fuchsia;
+                        }
 
-                <nav class="home_main-nav">
-                    <h3> CATEGORIAS PRINCIPALES </h3>
-                    <div class="home_main-nav-principal">
-                        <ul>
-                            <li><a href="/productos/listar?categoria=4">ACCESORIOS</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="/productos/listar?categoria=2">PANTALONES</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="/productos/listar?categoria=5">CAMISAS</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="/productos/listar?categoria=1">REMERAS</a></li>
-                        </ul>
-                        <ul>
-                            <li><a href="/productos/listar?categoria=3">ABRIGOS</a></li>
-                        </ul>
-                          
+                        50% {
+                            text-shadow: none;
+                        }
+
+                        100% {
+                            text-shadow: 0 0 10px fuchsia, 0 0 20px fuchsia, 0 0 30px fuchsia, 0 0 40px fuchsia, 0 0 50px fuchsia, 0 0 60px fuchsia, 0 0 70px fuchsia, 0 0 80px fuchsia;
+                        }
+                    }
+                </style>
+                <div class="home_main-secciones">
+                    <article class="home_main-secciones-article">
+                        <div class="home_main-secciones-article-container">
+                            <img class="seccion_pantalones" src="/img/home/home.pantalones.jpg"
+                                alt="foto seccion pantalones" width="100%">
+                            <a class="seccion_pantalones-zoom" href="/productos/listar?categoria=2">PANTALONES</a>
+
+                        </div>
+                    </article>
+
+                    <article class="home_main-secciones-article">
+                        <div class="home_main-secciones-article-container">
+                            <img class="seccion_remeras" src="/img/home/home.remeras.jpg" alt="foto seccion remeras"
+                                width="100%">
+                            <a class="seccion_pantalones-zoom" href="/productos/listar?categoria=1">REMERAS</a>
+
+                        </div>
+                    </article>
+
+                    <article class="home_main-secciones-article">
+                        <div class="home_main-secciones-article-container">
+                            <img class="seccion_new" src="/img/home/img.home2.jpg" alt="foto seccion remeras"
+                                width="100%">
+                            <a class="seccion_pantalones-zoom" href="/productos/listar?categoria=4">accesorios</a>
+
+                        </div>
+                    </article>
+
+                    <div class="home_main-container">
+
+                        <div class="home_main--nav-seccion">
+
+                            <nav class="home_main-nav">
+                                <h3> CATEGORIAS PRINCIPALES </h3>
+                                <div class="home_main-nav-principal">
+                                    <ul>
+                                        <li><a href="/productos/listar?categoria=4">ACCESORIOS</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="/productos/listar?categoria=2">PANTALONES</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="/productos/listar?categoria=5">CAMISAS</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="/productos/listar?categoria=1">REMERAS</a></li>
+                                    </ul>
+                                    <ul>
+                                        <li><a href="/productos/listar?categoria=3">ABRIGOS</a></li>
+                                    </ul>
+
+                                </div>
+
+                            </nav>
+
+                        </div>
+
+                    </div>
+                    <br>
+
+                    <div class="home_main-foto">
+                        <img src="/img/home/img-home.jpg" alt=" foto home" width="100%">
+
+                    </div>
+                    <br>
+
+
+                    <div class="home_mian-eslogan">
+                        <h1> ONE TO ONE </h1>
+                        <br>
+                        <h2> "ROPA QUE HABLA POR SI SOLA" </h3>
+
                     </div>
 
-                </nav>
-
-            </div>
-
-        </div>
-        <br>
-
-        <div class="home_main-foto">
-            <img src="/img/home/img-home.jpg" alt=" foto home" width="100%">
-
-        </div>
-        <br>
-
-
-        <div class="home_mian-eslogan">
-            <h1> ONE TO ONE </h1>
-            <br>
-            <h2> "ROPA QUE HABLA POR SI SOLA" </h3>
-
-        </div>
-
-    </div>
-
-
-
-
-
-
-        <br>
-        <div class="carrusel-contenedor-padre">
-
-            <div class="home_main-carrusel-foto-contenedor" id="contenedor1">
-
-                <div class="home_main-carrusel-foto" id="foto1">
-                    <img src="/img/home/home-abajo1.jpg" alt="Imagen 1">
                 </div>
 
-                <div class="carrusel-flechas">
-                    <a href="#contenedor3">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </a>
-                    <a href="#contenedor2">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </a>
+
+
+
+
+
+                <br>
+                <div class="carrusel-contenedor-padre">
+
+                    <div class="home_main-carrusel-foto-contenedor" id="contenedor1">
+
+                        <div class="home_main-carrusel-foto" id="foto1">
+                            <img src="/img/home/home-abajo1.jpg" alt="Imagen 1">
+                        </div>
+
+                        <div class="carrusel-flechas">
+                            <a href="#contenedor3">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </a>
+                            <a href="#contenedor2">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="home_main-carrusel-foto-contenedor" id="contenedor2">
+
+                        <div class="home_main-carrusel-foto" id="foto2">
+                            <img src="/img/home/home.abajo2.jpg" alt="Imagen 1">
+                        </div>
+
+                        <div class="carrusel-flechas">
+                            <a href="#contenedor1">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </a>
+                            <a href="#contenedor3">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="home_main-carrusel-foto-contenedor" id="contenedor3">
+
+                        <div class="home_main-carrusel-foto" id="foto3">
+                            <img src="/img/home/HomeAbajo.jpg" alt="Imagen 1">
+                        </div>
+
+                        <div class="carrusel-flechas">
+                            <a href="#contenedor2">
+                                <i class="fa-solid fa-chevron-left"></i>
+                            </a>
+                            <a href="#contenedor1">
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+
+
+                    </div>
+
+
+
                 </div>
 
-            </div>
-
-            <div class="home_main-carrusel-foto-contenedor" id="contenedor2">
-
-                <div class="home_main-carrusel-foto" id="foto2">
-                    <img src="/img/home/home.abajo2.jpg" alt="Imagen 1">
+                <div class="carrusel-punto">
+                    <a href="#contenedor1">•</a>
+                    <a href="#contenedor2">•</a>
+                    <a href="#contenedor3">•</a>
                 </div>
 
-                <div class="carrusel-flechas">
-                    <a href="#contenedor1">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </a>
-                    <a href="#contenedor3">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </a>
+
+
+
+                <div class="carrusel-contenedor-padre-info">
+
+
+                    <div class="home_main-carrusel-info-con" id="contenedorInfo1">
+
+                        <div class="home_main-carrusel-info" id="envios">
+
+                            <i class="fa-solid fa-truck"></i>
+                            <h3>ENVIOS A TODO EL PAIS</h3>
+                            <h5>Sin cargo a partir de $8000</h5>
+                        </div>
+
+                    </div>
+
+                    <div class="home_main-carrusel-info-con" id="contenedorInfo2">
+
+                        <div class="home_main-carrusel-info" id="pago">
+
+                            <i class="fa-regular fa-credit-card"></i>
+                            <h3>PAGA COMO QUIERAS</h3>
+                            <h5>Aceptamos todos los medios de pago</h5>
+                        </div>
+
+
+
+                    </div>
+
+                    <div class="home_main-carrusel-info-con" id="contenedorInfo3">
+
+                        <div class="home_main-carrusel-info" id="cambios">
+
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                            <h3>CAMBIOS Y DEVOLUCIONES</h3>
+
+                        </div>
+                    </div>
+
+
                 </div>
 
-            </div>
-            <div class="home_main-carrusel-foto-contenedor" id="contenedor3">
-
-                <div class="home_main-carrusel-foto" id="foto3">
-                    <img src="/img/home/HomeAbajo.jpg" alt="Imagen 1">
+                <div class="carrusel-punto-info">
+                    <a href="#contenedorInfo1">•</a>
+                    <a href="#contenedorInfo2">•</a>
+                    <a href="#contenedorInfo3">•</a>
                 </div>
 
-                <div class="carrusel-flechas">
-                    <a href="#contenedor2">
-                        <i class="fa-solid fa-chevron-left"></i>
-                    </a>
-                    <a href="#contenedor1">
-                        <i class="fa-solid fa-chevron-right"></i>
-                    </a>
-                </div>
-                
 
-            </div>
-        
-           
-            
-        </div>
+                <link rel="stylesheet"
+                    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+                <style>
+                    .custom-chat-container {
+                        position: fixed;
+                        bottom: 40px;
+                        right: 40px;
+                        z-index: 1000;
+                        font-size: 32px;
+                        color: rgb(2, 188, 255);
+                    }
 
-        <div class="carrusel-punto">
-            <a href="#contenedor1">•</a>
-            <a href="#contenedor2">•</a>
-            <a href="#contenedor3">•</a>
-        </div>
+                    .custom-chat-modal {
+                        display: none;
+                        position: fixed;
+                        z-index: 999;
+                        bottom: 20px;
+                        right: 20px;
+                        background-color: rgb(185, 184, 184);
+                        border-radius: 15px;
+                        box-shadow: 0 4px 8px rgb(2, 188, 255);
+                        max-width: 350px;
+                        width: 100%;
+                        border-top: 40px solid rgb(2, 188, 255);
+                        max-height: 500px;
+                    }
 
-        
+                    #customUserInput::placeholder {
+                        color: gray;
+                    }
 
+                    .custom-chat-box {
+                        max-height: 400px;
+                        overflow-y: auto;
+                        padding: 0px;
+                        margin-bottom: 0px;
+                        margin: 0;
+                        border: none;
+                    }
 
-        <div class="carrusel-contenedor-padre-info">
-            
-            
-            <div class="home_main-carrusel-info-con" id="contenedorInfo1">
+                    .custom-chat-close {
+                        color: #000000;
+                        position: absolute;
+                        top: -45px;
+                        right: 10px;
+                        font-size: 28px;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
 
-                <div class="home_main-carrusel-info" id="envios">
-                   
-                    <i class="fa-solid fa-truck"></i>
-                    <h3>ENVIOS A TODO EL PAIS</h3>
-                    <h5>Sin cargo a partir de $8000</h5>
-                </div>
+                    .custom-chat-close:hover,
+                    .custom-chat-close:focus {
+                        color: black;
+                        text-decoration: none;
+                    }
 
-            </div>
-             
-            <div class="home_main-carrusel-info-con" id="contenedorInfo2">
+                    .custom-chat-box-container {
+                        border: none;
+                        margin: 0;
+                        overflow-y: auto;
+                        scrollbar-width: thin;
+                        scrollbar-color: #ccc transparent;
+                    }
 
-                <div class="home_main-carrusel-info" id="pago">
-                   
-                    <i class="fa-regular fa-credit-card"></i> 
-                    <h3>PAGA COMO QUIERAS</h3>
-                    <h5>Aceptamos todos los medios de pago</h5>
-                </div>
+                    .custom-chat-message {
+                        margin-bottom: 10px;
+                        padding: 10px;
+                        border-radius: 10px;
+                        overflow-wrap: break-word;
+                        color: black;
+                        clear: both;
+                    }
 
-                
+                    .custom-user-message {
+                        background-color: rgb(2, 188, 255);
+                        color: rgb(0, 0, 0);
+                        float: right;
+                        max-width: 70%;
+                    }
 
-            </div>
-             
-            <div class="home_main-carrusel-info-con" id="contenedorInfo3">
+                    .custom-bot-message {
+                        background-color: #ffffff;
+                        color: rgb(0, 0, 0);
+                        float: left;
+                        max-width: 70%;
+                    }
 
-                <div class="home_main-carrusel-info" id="cambios">
-                   
-                    <i class="fa-solid fa-arrows-rotate"></i>
-                    <h3>CAMBIOS Y DEVOLUCIONES</h3>
-                    
-                </div>
-            </div>
-            
-            
-        </div>
+                    .custom-chat-input {
+                        width: calc(100%);
+                        padding: 10px;
+                        border: none;
+                        border-top: none;
+                        border-radius: 0 0 10px 10px;
+                        box-sizing: none;
+                        outline: none;
+                        font-size: 16px;
+                        color: black;
+                    }
 
-        <div class="carrusel-punto-info">
-            <a href="#contenedorInfo1">•</a>
-            <a href="#contenedorInfo2">•</a>
-            <a href="#contenedorInfo3">•</a>
-        </div>
+                    .custom-send-button {
+                        position: absolute;
+                        top: 94%;
+                        right: 10px;
+                        transform: translateY(-50%);
+                        font-size: 25px;
+                        cursor: pointer;
+                        color: rgb(2, 188, 255);
+                    }
 
+                    .custom-preguntas-container {
+                        display: flex;
+                        flex-direction: column;
+                    }
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-        <style>
-            
-            .custom-chat-container {
-                position: fixed;
-                bottom: 40px;
-                right: 40px;
-                z-index: 1000;
-                font-size: 32px;
-                color: rgb(2, 188, 255);
-            }
-            
-            .custom-chat-modal {
-                display: none;
-                position: fixed;
-                z-index: 999;
-                bottom: 20px;
-                right: 20px;
-                background-color: rgb(185, 184, 184);
-                border-radius: 15px;
-                box-shadow: 0 4px 8px  rgb(2, 188, 255);
-                max-width: 350px;
-                width: 100%;
-                border-top: 40px solid rgb(2, 188, 255);
-                max-height: 500px; 
-            }
-            #customUserInput::placeholder {
-    color: gray; 
-}
-            .custom-chat-box {
-                max-height: 400px; 
-                overflow-y: auto; 
-                padding: 0px;
-                margin-bottom: 0px;
-                margin: 0;
-                border: none;
-            }
-            
-            .custom-chat-close {
-                color: #000000;
-                position: absolute;
-                top: -45px;
-                right: 10px;
-                font-size: 28px;
-                font-weight: bold;
-                cursor: pointer;
-            }
-            
-            .custom-chat-close:hover,
-            .custom-chat-close:focus {
-                color: black;
-                text-decoration: none;
-            }
-            
-            .custom-chat-box-container {
-                border: none;
-                margin: 0;
-                overflow-y: auto;
-                scrollbar-width: thin;
-                scrollbar-color: #ccc transparent;
-            }
-            
-            .custom-chat-message {
-                margin-bottom: 10px;
-                padding: 10px;
-                border-radius: 10px;
-                overflow-wrap: break-word;
-                color: black;
-                clear: both;
-            }
-            
-            .custom-user-message {
-                background-color: rgb(2, 188, 255);
-                color: rgb(0, 0, 0);
-                float: right;
-                max-width: 70%;
-            }
-            
-            .custom-bot-message {
-                background-color: #ffffff;
-                color: rgb(0, 0, 0);
-                float: left;
-                max-width: 70%;
-            }
-            
-            .custom-chat-input {
-                width: calc(100%);
-                padding: 10px;
-                border: none;
-                border-top: none;
-                border-radius: 0 0 10px 10px;
-                box-sizing: none;
-                outline: none;
-                font-size: 16px;
-                color: black;
-            }
-            
-            .custom-send-button {
-                position: absolute;
-                top: 94%;
-                right: 10px;
-                transform: translateY(-50%);
-                font-size: 25px;
-                cursor: pointer;
-                color: rgb(2, 188, 255);
-            }
-            
-            .custom-preguntas-container {
-                display: flex;
-                flex-direction: column;
-            }
-            
-            .custom-pregunta-btn {
-                margin: 5px;
-                padding: 10px;
-                background-color:  rgb(2, 188, 255);
-                color: rgb(0, 0, 0);
-                border: none;
-                border-radius: 5px;
-                cursor: pointer;
-            }
-            
-            .custom-ot {
-                color: #ffffff;
-                position: absolute;
-                top: -45px;
-                left: 10px;
-                font-size: 28px;
-                font-weight: bold;
-            }
-        </style>
-    </head>
-    <body>
-    
-    <div class="custom-chat-container" id="customChatContainer">
-        <i class="fas fa-comment-dots" onclick="openCustomChatModal()"></i>
-    </div>
-    
-    <!-- Ventana modal -->
-    <div class="custom-chat-modal" id="customChatModal">
-        <p class="custom-ot">One To One </p>
-        <span class="custom-chat-close" onclick="closeCustomChatModal()">&times;</span>
-   
-        <div class="custom-chat-box-container">
-            <div class="custom-chat-box" id="customChatBox"></div>
-        </div>
-        <input type="text" id="customUserInput" class="custom-chat-input" placeholder="Escribe un mensaje...">
+                    .custom-pregunta-btn {
+                        margin: 5px;
+                        padding: 10px;
+                        background-color: rgb(2, 188, 255);
+                        color: rgb(0, 0, 0);
+                        border: none;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
 
-        <i class="fas fa-paper-plane custom-send-button" onclick="sendCustomMessage()"></i>
-    </div>
-    
-   
-    <script>
-        const customPreguntasRespuestas = {
-           
-            '¿Por qué tengo que iniciar sesión?': 'No es necesario iniciar sesión para ver el contenido de nuestra tienda.',
-'¿Necesito tener una cuenta para comprar?': 'Sí, en efecto, necesitas tener una cuenta para realizar una compra.',
-'¿Cómo puedo crear una cuenta?': 'Para crear una cuenta, dirígete a la parte superior de la página, haz clic en el icono de usuario y luego selecciona "Crear cuenta" o visita este enlace: http://localhost:3000/usuarios/ingreso.',
-'¿Puedo realizar compras al por mayor?': 'Sí, para realizar compras al por mayor, deja tu correo electrónico en la parte inferior de la página donde dice "Enviamos tus recomendaciones", y un proveedor de One to One se pondrá en contacto contigo.',
-'Quiero eliminar mi cuenta': 'Puedes gestionar la eliminación de tu cuenta iniciando sesión, yendo al perfil de usuario y haciendo clic en el botón que dice "Eliminar cuenta". Una vez hecho esto, tu cuenta se eliminará automáticamente. Saludos.',
-        };
-    
-        const customChatBox = document.getElementById('customChatBox');
-        const customUserInput = document.getElementById('customUserInput');
-        let customPrimerMensajeEnviado = false;
-    
-        function openCustomChatModal() {
-            document.getElementById('customChatModal').style.display = 'block';
-            document.getElementById('customChatContainer').style.display = 'none';
-        }
-    
-        function closeCustomChatModal() {
-            document.getElementById('customChatModal').style.display = 'none';
-            document.getElementById('customChatContainer').style.display = 'block'; 
-        }
-    
-        function sendCustomMessage() {
-            const message = customUserInput.value.trim();
-            if (message !== '') {
-                appendCustomMessage('user', message);
-                customUserInput.value = '';
-                respondToCustomMessage(message);
-            }
-        }
-    
-        function showCustomQuestionForm() {
-            let formHTML = '<div class="custom-preguntas-container">';
-            for (const pregunta in customPreguntasRespuestas) {
-                formHTML += `<button class="custom-pregunta-btn" onclick="selectCustomQuestion('${pregunta}')">${pregunta}</button>`;
-            }
-            formHTML += '</div>';
-            appendCustomMessage('bot', formHTML);
-        }
-    
-        function selectCustomQuestion(pregunta) {
-            appendCustomMessage('user', pregunta);
-            respondToCustomMessage(pregunta);
-        }
-    
-        function appendCustomMessage(sender, message) {
-            const messageElement = document.createElement('div');
-            messageElement.classList.add('custom-chat-message', sender === 'user' ? 'custom-user-message' : 'custom-bot-message');
-            messageElement.innerHTML = message;
-            customChatBox.appendChild(messageElement);
-            customChatBox.scrollTop = customChatBox.scrollHeight;
-        }
-    
-        function respondToCustomMessage(message) {
-            setTimeout(() => {
-                if (!customPrimerMensajeEnviado) {
-                    appendCustomMessage('bot', 'Hola, somos One To One'); 
-                    customPrimerMensajeEnviado = true;
-                }
-                const cleanMessage = message.toLowerCase().replace(/[¿?]/g, '').trim();
-                if (customPreguntasRespuestas.hasOwnProperty(cleanMessage)) {
-                    appendCustomMessage('bot', customPreguntasRespuestas[cleanMessage]);
-                    setTimeout(() => {
-                        appendCustomMessage('bot', 'Espero haberte ayudado, si necesitas otra cosa no dudes en consultar');
-                        showCustomQuestionForm();
-                    }, 1000);
-                } else if (message in customPreguntasRespuestas) {
-                    appendCustomMessage('bot', customPreguntasRespuestas[message]);
-                    setTimeout(() => {
-                        appendCustomMessage('bot', 'Espero haberte ayudado, si necesitas otra cosa no dudes en consultar');
-                        showCustomQuestionForm();
-                    }, 1000);
-                } else {
-                    appendCustomMessage('bot', 'Soy un bot diseñado para ayudarte en lo que necesites.');
-                    showCustomQuestionForm();
-                }
-            }, 1000);
-        }
-    
-        customUserInput.addEventListener("keyup", function(event) {
-            if (event.keyCode === 13) {
-                event.preventDefault();
-                sendCustomMessage();
-            }
-        });
-    
-        window.onload = function() {
-            appendCustomMessage('bot', 'Hola, Me llamo  Ian,soy un bot diseñado para resolver tus dudas de forma rapida y automatica, en que puedo ayudarte?  '); // Mensaje inicial al cargar la página
-            showCustomQuestionForm();
-        };
-    </script>
-        
+                    .custom-ot {
+                        color: #ffffff;
+                        position: absolute;
+                        top: -45px;
+                        left: 10px;
+                        font-size: 28px;
+                        font-weight: bold;
+                    }
+                </style>
+                </head>
 
-    </main>
-    <!-- //FOOTER PARTIALS-->
-    <%- include('./partials/footer') %>
+                <body>
+
+                    <div class="custom-chat-container" id="customChatContainer">
+                        <i class="fas fa-comment-dots" onclick="openCustomChatModal()"></i>
+                    </div>
+
+                    <!-- Ventana modal -->
+                    <div class="custom-chat-modal" id="customChatModal">
+                        <p class="custom-ot">One To One </p>
+                        <span class="custom-chat-close" onclick="closeCustomChatModal()">&times;</span>
+
+                        <div class="custom-chat-box-container">
+                            <div class="custom-chat-box" id="customChatBox"></div>
+                        </div>
+                        <input type="text" id="customUserInput" class="custom-chat-input"
+                            placeholder="Escribe un mensaje...">
+
+                        <i class="fas fa-paper-plane custom-send-button" onclick="sendCustomMessage()"></i>
+                    </div>
 
 
- 
-    
-</body>
+                    <script>
+                        const customPreguntasRespuestas = {
+
+                            '¿Por qué tengo que iniciar sesión?': 'No es necesario iniciar sesión para ver el contenido de nuestra tienda.',
+                            '¿Necesito tener una cuenta para comprar?': 'Sí, en efecto, necesitas tener una cuenta para realizar una compra.',
+                            '¿Cómo puedo crear una cuenta?': 'Para crear una cuenta, dirígete a la parte superior de la página, haz clic en el icono de usuario y luego selecciona "Crear cuenta" o visita este enlace: http://localhost:3000/usuarios/ingreso.',
+                            '¿Puedo realizar compras al por mayor?': 'Sí, para realizar compras al por mayor, deja tu correo electrónico en la parte inferior de la página donde dice "Enviamos tus recomendaciones", y un proveedor de One to One se pondrá en contacto contigo.',
+                            'Quiero eliminar mi cuenta': 'Puedes gestionar la eliminación de tu cuenta iniciando sesión, yendo al perfil de usuario y haciendo clic en el botón que dice "Eliminar cuenta". Una vez hecho esto, tu cuenta se eliminará automáticamente. Saludos.',
+                        };
+
+                        const customChatBox = document.getElementById('customChatBox');
+                        const customUserInput = document.getElementById('customUserInput');
+                        let customPrimerMensajeEnviado = false;
+
+                        function openCustomChatModal() {
+                            document.getElementById('customChatModal').style.display = 'block';
+                            document.getElementById('customChatContainer').style.display = 'none';
+                        }
+
+                        function closeCustomChatModal() {
+                            document.getElementById('customChatModal').style.display = 'none';
+                            document.getElementById('customChatContainer').style.display = 'block';
+                        }
+
+                        function sendCustomMessage() {
+                            const message = customUserInput.value.trim();
+                            if (message !== '') {
+                                appendCustomMessage('user', message);
+                                customUserInput.value = '';
+                                respondToCustomMessage(message);
+                            }
+                        }
+
+                        function showCustomQuestionForm() {
+                            let formHTML = '<div class="custom-preguntas-container">';
+                            for (const pregunta in customPreguntasRespuestas) {
+                                formHTML += `<button class="custom-pregunta-btn" onmouseover="buttonHover(this, true)" onmouseout="buttonHover(this, false)" onclick="selectCustomQuestion('${pregunta}')">${pregunta}</button>`;
+                            }
+                            formHTML += '</div>';
+                            appendCustomMessage('bot', formHTML);
+                        }
+
+                        function buttonHover(button, isHovering) {
+                            if (isHovering) {
+                                button.classList.add('hovered');
+                            } else {
+                                button.classList.remove('hovered');
+                            }
+                        }
+
+                       
+
+
+                        function selectCustomQuestion(pregunta) {
+                            appendCustomMessage('user', pregunta);
+                            respondToCustomMessage(pregunta);
+                        }
+
+                        function appendCustomMessage(sender, message) {
+                            const messageElement = document.createElement('div');
+                            messageElement.classList.add('custom-chat-message', sender === 'user' ? 'custom-user-message' : 'custom-bot-message');
+                            messageElement.innerHTML = message;
+                            customChatBox.appendChild(messageElement);
+                            customChatBox.scrollTop = customChatBox.scrollHeight;
+                        }
+
+                        function respondToCustomMessage(message) {
+                            setTimeout(() => {
+                                if (!customPrimerMensajeEnviado) {
+                                    appendCustomMessage('bot', 'Hola, somos One To One');
+                                    customPrimerMensajeEnviado = true;
+                                }
+                                const cleanMessage = message.toLowerCase().replace(/[¿?]/g, '').trim();
+                                if (customPreguntasRespuestas.hasOwnProperty(cleanMessage)) {
+                                    appendCustomMessage('bot', customPreguntasRespuestas[cleanMessage]);
+                                    setTimeout(() => {
+                                        appendCustomMessage('bot', 'Espero haberte ayudado, si necesitas otra cosa no dudes en consultar');
+                                        showCustomQuestionForm();
+                                    }, 1000);
+                                } else if (message in customPreguntasRespuestas) {
+                                    appendCustomMessage('bot', customPreguntasRespuestas[message]);
+                                    setTimeout(() => {
+                                        appendCustomMessage('bot', 'Espero haberte ayudado, si necesitas otra cosa no dudes en consultar');
+                                        showCustomQuestionForm();
+                                    }, 1000);
+                                } else {
+                                    appendCustomMessage('bot', 'Soy un bot diseñado para ayudarte en lo que necesites.');
+                                    showCustomQuestionForm();
+                                }
+                            }, 1000);
+                        }
+
+                        customUserInput.addEventListener("keyup", function (event) {
+                            if (event.keyCode === 13) {
+                                event.preventDefault();
+                                sendCustomMessage();
+                            }
+                        });
+
+                        window.onload = function () {
+                            appendCustomMessage('bot', 'Hola, Me llamo  Ian,soy un bot diseñado para resolver tus dudas de forma rapida y automatica, en que puedo ayudarte?  '); // Mensaje inicial al cargar la página
+                            showCustomQuestionForm();
+                        };
+                    </script>
+
+
+            </main>
+            <!-- //FOOTER PARTIALS-->
+            <%- include('./partials/footer') %>
+
+
+
+
+    </body>
 
 </html>
