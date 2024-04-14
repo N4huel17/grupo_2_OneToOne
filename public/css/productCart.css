@@ -24,6 +24,9 @@ font-weight:bolder;
   
  
 }
+.buyHidden {
+  display: none;
+}
 .descuento{
   font-size: 10px;
   font-weight: bold;
@@ -164,8 +167,12 @@ cursor: pointer;
 
 
 /* Estilo para cambiar el color del texto de las opciones no seleccionadas */
-input[type="radio"]:not(:checked)+label {
-  color: red;
+
+
+
+
+input[type="radio"]:not(:checked) + label {
+ color: rgb(195, 187, 187);
 }
 
 
