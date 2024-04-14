@@ -196,7 +196,8 @@ const emptyCart = async () => {
       El carrito está vacío
       </div>
       </div>`;
-  document.getElementById("showTotal").innerHTML = null;
+  document.getElementById("showTotal").innerHTML = null; // Eliminar el indicador del total a pagar
+  document.querySelector(".payment-methods-section").style.display = "none"; // Ocultar la sección de métodos de pago
 };
 
 const sendCart = async (user, status = 1) => {
@@ -245,6 +246,9 @@ const sendCart = async (user, status = 1) => {
           </div>
           </div>`;
     document.getElementById("showTotal").innerHTML = null;
+
+    // Ocultar la sección de métodos de pago al finalizar la compra
+    document.querySelector(".payment-methods-section").style.display = "none";
 
     alert("Gracias por tu compra!!!");
   } catch (error) {
