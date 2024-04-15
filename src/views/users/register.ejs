@@ -77,7 +77,7 @@
                           <div class="col-12 mb-3">
                             <label for="password2" class="form-label">Confirmar contraseña</label>
                             <div class="input-group">
-                            <input type="password" name="password2" class="form-control <%= locals.errors && errors.password2 ? 'is-invalid' : null %>" id="password2">
+                            <input type="password2" name="password2" class="form-control <%= locals.errors && errors.password2 ? 'is-invalid' : null %>" id="password2">
                             <span class="input-group-text"><i id="button-eye2" class="fa-regular fa-eye"></i></span>
                           </div>
                             <small id="error-password2" class="text-danger ms-2">
@@ -88,12 +88,13 @@
 
                           <div class="col-12 col-md-6 mb-3">
                             <div class="form-check">
-                              <input class="form-check-input" type="checkbox" value="1" id="acceptTerms" name="acceptTerms" />
-                              <label class="form-check-label" for="acceptTerms">
-                                Acepto los <a href="#" class="link-dark" id="openModalBtn">términos y condiciones</a> </label>
+                              <input class="form-check-input" type="checkbox" value="1" id="remember" name="remember" />
+                              <label class="form-check-label" for="remember">
+                                Acepto <a href="" class="link-dark" data-bs-toggle="modal"
+                                  data-bs-target="#exampleModal"> términos y condiciones</a> </label>
                             </div>
                             <small class="text-danger ms-2">
-                              <%= locals.errors && errors.acceptTerms ? errors.acceptTerms.msg : null %>
+                              <%= locals.errors && errors.remember ? errors.remember.msg : null %>
                             </small>
                           </div>
                           <div class="col-12 col-md-6 mb-3">
@@ -107,43 +108,52 @@
     </section>
      <!-- Modal -->
     
-    <div id="modal" class="modal">
-      <div class="modal-content">
-        <span class="close" id="closeModalBtn">&times;</span>
-        <h2>Términos y condiciones</h2>
-        <ol>
-          <li>
-            Utilizamos cookies propias y de terceros durante la navegación por el sitio web, con la finalidad de permitir el acceso a las funcionalidades de la página web, extraer estadísticas de tráfico y mejorar la experiencia del usuario. Puedes aceptar todas las cookies, así como seleccionar cuáles deseas habilitar o configurar sus preferencias. Para más información, puede consultar nuestra Política de cookies.
-          </li>
-        </ol>
-        <button id="acceptBtn">Aceptar</button>
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Términos y condiciones</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <ol class="small">
+                    <li>
+                      Utilizamos cookies propias y de terceros 
+                      durante la navegación por el sitio web,
+                       con la finalidad de permitir el acceso 
+                       a las funcionalidades de la página web,
+                        extraer estadísticas de tráfico 
+                        y mejorar la experiencia del usuario. 
+                        Puedes aceptar todas las cookies,
+                         así como seleccionar cuáles deseas 
+                         habilitar o configurar sus preferencias.
+                          Para más información, puede consultar nuestra Política de cookies
+                    </li>
+                    
+                  </ol>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+
+
+
+
+          
+
+        </div>
       </div>
     </div>
+
+   
+</main>
 
     <!-- //FOOTER PARTIALS-->
     <%- include('../partials/footer') %>
     <script src="/javascripts/registerValidator.js"></script>
-    <script>
-      // Función para abrir el modal
-      var openModalBtn = document.getElementById("openModalBtn");
-      var modal = document.getElementById("modal");
-      openModalBtn.addEventListener("click", function() {
-        modal.style.display = "block";
-      });
 
-      // Función para cerrar el modal
-      var closeModalBtn = document.getElementById("closeModalBtn");
-      closeModalBtn.addEventListener("click", function() {
-        modal.style.display = "none";
-      });
-
-      // Función para aceptar los términos y condiciones
-      document.getElementById("acceptBtn").addEventListener("click", function() {
-        // Agrega aquí el código que se ejecutará cuando el usuario acepte los términos
-        alert("Términos y condiciones aceptados");
-        modal.style.display = "none"; // Cerrar el modal después de aceptar
-      });
-    </script>
 </body>
 
 </html>

@@ -154,3 +154,4 @@ $('form-register').addEventListener('submit', function (e){
     !error ? this.submit() : $('msg-error').hidden = false
 })
 
+
