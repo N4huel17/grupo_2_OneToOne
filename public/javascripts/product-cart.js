@@ -162,7 +162,7 @@ const addItemCart = (id_product, name, price, image) => {
     title: "¡Producto agregado!",
     text: "El producto ha sido agregado al carrito.",
     imageUrl: "/img/" + image,
-    imageWidth: 400,
+    imageWidth: 150,
     imageHeight: 200,
     imageAlt: name
   });
