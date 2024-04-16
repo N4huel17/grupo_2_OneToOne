@@ -167,6 +167,7 @@ const addItemCart = (id_product, name, price, image) => {
     imageAlt: name
   });
 };
+
 const removeItemCart = (id) => {
   const confirmDelete = () => {
     Swal.fire({
@@ -186,6 +187,14 @@ const removeItemCart = (id) => {
         sessionStorage.setItem("cart", JSON.stringify(cartUpdated));
         showProductsInCart(cartUpdated);
         document.getElementById("showTotal").innerHTML = cartUpdated.length;
+
+        // Mostrar emoticono triste después de eliminar el producto
+        Swal.fire({
+          title: "Producto Eliminado del carrito",
+          html: '<img src="/img/triste.png">', // Ruta a tu emoticono triste
+          showConfirmButton: false, // No se muestra el botón de confirmación
+          timer: 2000 //
+        });
       }
     });
   };
