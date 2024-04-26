@@ -60,37 +60,7 @@
                      </div>             
                      </div>
 
-                     <script>
-                        document.addEventListener('DOMContentLoaded', function () {
-                            document.getElementById('enviarBtn').addEventListener('click', function () {
-                                var email = document.getElementById('emailInput').value;
-                
-                                if (validateEmail(email)) {
-                                    var nombrePagina = 'One to One '; 
-                                    alert('¡Gracias por solicitar recomendaciones! Tu correo electrónico ha sido enviado a ' + nombrePagina + ', nos pondremos en contacto para recibir tus peticiones.');
-                                } else {
-                                    alert('Por favor, ingresa un correo electrónico válido.');
-                                }
-                            });
-                
-                            function validateEmail(email) {
-                                var re = /\S+@\S+\.\S+/;
-                                return re.test(email);
-                            }
-                        });
-                    </script>
-                  
-         <div class="recomendacines">
-         <form method="POST">
-            <h5 class="Envianos">Envianos tus recomendaciones</h5>
-            <div class="avioncito_recomendaciones">
-                <i class="fa-solid fa-paper-plane"></i>
-                <input id="emailInput" type="email" name="email" placeholder="email@">
-                <button id="enviarBtn" type="button">Enviar</button> 
-            </div> 
-        </form> 
-        </div>
-        
+     
          <br>
          <br> 
 </footer>
