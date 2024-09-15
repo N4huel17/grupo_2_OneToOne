@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+   <!-- //HEAD PARTIALS-->
+   <%- include('../partials/head',{
+    title:'EDITAR'
+})  %>
+
+  <body style="background-image: url('/img/home/logoHome.png'); background-repeat: repeat;">
+    <%- include('../partials/header-admin') %>
+
+    <main class="container">
+      <section class="row my-5">
+          <div class="col-12 col-md-10 mx-auto">
+              <div class="card">
+                  <div class="card-header d-flex justify-content-between">
+                      <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                          <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a href="/admin" class="text-primary">Home</a></li>
+                              <li class="breadcrumb-item active " aria-current="page"> Editar Producto </li>
+                          </ol>
+                      </nav>
+                  </div>
+                  <div class="card-body ">
+                      <form action="/productos/actualizar/<%= id %>?_method=PUT" class="row" method="POST" enctype="multipart/form-data">
+                          <h3>Editar: <%= name %> </h3>
+                          <hr>
+                          <div class="col-12 col-md-6 mb-3">
+                              <div class="form-floating ">
+                                  <input name="name" type="text" class="form-control" id="name" value="<%= name %>" >
+                                  <label for="name">Nombre</label>
+                                  <small class="text-danger ms-2">
+                                    <%= locals.errors && errors.name ? errors.name.msg : null %>
+                                  </small>
+                                </div>
+                          </div>
+                          <div class="col-12 col-md-6 mb-3">
+                            <div class="form-floating">
+                              <select name="categoryId" class="form-select <%= (locals.errors && errors.categoryId)  && 'is-invalid'%>" id="categoryId" aria-label="Floating label select example">
+                                <option value="" selected hidden></option>
+                                <% categories.forEach(category => { %>
+                                  <option value="<%= category.id %>" <%= categoryId == category.id && 'selected'  %>><%= category.name %></option>
+                                <% }) %>
+                              </select>
+                              <label for="category">Categoría</label>
+                              <small class="text-danger ms-2">
+                                <%= locals.errors && errors.categoryId ? errors.categoryId.msg : null %>
+                              </small>
+                            </div>
+                        </div>
+                          <div class="col-12 col-md-6 mb-3">
+                            <div class="form-floating">
+                              <input name="price" type="text" class="form-control" id="price" value="<%= price %>" >
+                              <label for="address">Precio</label>
+                              <small class="text-danger ms-2">
+                                <%= locals.errors && errors.price ? errors.price.msg : null %>
+                              </small>
+                            </div>
+                          </div>
+
+                          <div class="col-12 col-md-6 mb-3">
+                            <div class="form-floating">
+                              <input name="descount" type="text" class="form-control" id="descount" value="<%= descount %>">
+                              <label for="address">Descuento</label>
+                            </div>
+                          </div>
+
+                          <div class="col-12 mb-3">
+                            <label for="" class="form-label">Colores</label>
+                            <div class="d-flex flex-column flex-md-row gap-3 flex-wrap">
+                              <% colorsdb.forEach(color=> { %>
+                                <div class="form-check">
+                                  <input class="form-check-input" <%= colors.map(color => color.id).includes(color.id) && 'checked' %> type="checkbox" name="colors" value="<%= color.id %>" id="color<%= color.id %>">
+                                  <label class="form-check-label" for="color<%= color.id %>">
+                                    <%= color.name %>
+                                  </label>
+                                </div>
+                                <% }) %>
+                            </div>
+                            <small class="text-danger ms-2">
+                              <%= locals.errors && errors.colors ? errors.colors.msg : null %>
+                            </small>
+                          </div>
+        
+                          <div class="col-12 mb-3">
+                            <label for="" class="form-label">Talles</label>
+                            <div class="d-flex flex-column flex-md-row gap-3 flex-wrap">
+                              <% sizesdb.forEach(size=> { %>
+                                <div class="form-check">
+                                  <input class="form-check-input"  <%= sizes.map(size => size.id).includes(size.id) && 'checked' %>  type="checkbox" name="sizes" value="<%= size.id %>" id="size<%= size.id %>">
+                                  <label class="form-check-label" for="size<%= size.id %>">
+                                    <%= size.name %>
+                                  </label>
+                                </div>
+                                <% }) %>
+                            </div>
+                            <small class="text-danger ms-2">
+                              <%= locals.errors && errors.sizes ? errors.sizes.msg : null %>
+                            </small>
+                          </div>
+                          <div class="col-12 mb-3">
+                              <div class="form-floating">
+                                  <textarea name="description" class="form-control" id="description" style="height: 200px; resize: none;"><%= description %></textarea>
+                                  <label for="description">Descripción</label>
+                                  <small class="text-danger ms-2">
+                                    <%= locals.errors && errors.description ? errors.description.msg : null %>
+                                  </small>
+                                </div>
+                          </div>
+                          <div class="col-12 p-4">
+                            <div class="row">
+                              <div class="col-12 col-lg-3">
+                                <label class="form-label" >Imagen principal</label>
+                                <small class="text-danger ms-2">
+                                  <%= (locals.errors && errors.image) && errors.image.msg %>
+                                </small>
+            
+                                <div id="box-image" class=" border d-flex justify-content-center gap-2 position-relative">
+                                    <img id="image-prev" class="img-fluid" src="/img/<%= image %>" alt="">
+                                    <input name="image" onchange="onUpdateImageMainProduct(event,'<%=id%>' )" type="file" class="form-control" id="image" hidden>
+                                    <label for="image" class="btn btn-dark position-absolute bottom-0 end-0" style="cursor: pointer;"><i class="fa-solid fa-arrows-rotate"></i></label>
+                                </div>
+                              </div>
+                              
+                              <div class="col-12 col-lg-9">
+                                <label for="images" class="form-label">Imágenes</label>
+        
+                                <div id="box-images" class="row border gap-3 gap-md-0">
+                                  
+                                  <% for( let i = 0; i < 3; i++ ) { %>
+                                    <% if (images[i]) { %>
+                                      <div class="col-12 col-md-4 position-relative" style="height: 350px;">
+                                        <img class="img-fluid" src="/img/<%= images[i].file %>" alt="image" id="image-prev<%= i %>"> 
+                                        <button id="btn-trash<%= i %>" onclick="onRemoveImageProduct('<%=i%>', '<%=id%>','<%=images[i].id%>')" type="button" class="btn btn-danger position-absolute bottom-0 end-0"><i class="fa-solid fa-trash-can"></i></button>
+                                        <input type="file" class="form-control" id="image<%= i %>" hidden onchange="onAddImageProduct(event,  '<%=i%>', '<%=id%>')">
+                                        <label  hidden id="label<%= i %>"  for="image<%= i %>" class="btn btn-dark position-absolute bottom-0 end-0"><i class="fa-solid fa-plus"></i></label>
+                                      </div>
+                                      
+                                    <% } else { %>
+                                      <div class="col-12 col-md-4 position-relative border" style="height: 350px;">
+                                        <input type="file" class="form-control" id="image<%= i %>" hidden onchange="onAddImageProduct(event, '<%=i%>', '<%=id%>')">
+                                        <img class="img-fluid" src="/img/default.jpg" alt="" id="image-prev<%= i %>"> 
+                                        <button id="btn-trash<%= i %>" hidden type="button" class="btn btn-danger position-absolute bottom-0 end-0"><i class="fa-solid fa-trash-can"></i></button>
+                                        <label  for="image<%= i %>" id="label<%= i %>" class="btn btn-dark position-absolute bottom-0 end-0"><i class="fa-solid fa-plus"></i></label>
+                                      </div>
+                                      <% } %>
+                                  <% } %>
+                               
+                                </div>
+                              </div>
+                            </div>
+                            
+                          </div>
+                         
+                          <div class="col-12 d-flex justify-content-end">
+                              <button class="btn btn-lg btn-dark">Guardar cambios</button>
+                          </div>
+                      </form>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </main>
+
+
+
+
+
+
+
+
+
+  <%- include('../partials/scripts') %>
+  <script src="/javascripts/product-edit.js"></script>
+</body>
+</html>

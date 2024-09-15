@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<%- include('./partials/head', { title: 'Dashboard' }) %>
+
+    <body style="background-image: url('/img/home/logoHome.png'); background-repeat: repeat;">
+        <%- include('./partials/header-admin') %>
+
+            <main class="container">
+                <div class="container">
+                    <h1 style="color: white;">Órdenes</h1>
+                    <div class="card border-left-warning shadow h-100 py-2">
+                        <div class="card-body">
+                            <div class="row no-gutters align-items-center">
+                                <div class="col mr-2">
+                                    <div style="color: black;" class="text-uppercase mb-1">Órdenes de compra</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">Total: <%= ordenes.length %>
+                                    </div>
+                                </div>
+                                <div class="col-auto">
+                                    <i class="fas fa-clipboard-list fa-2x text-gray-300"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Usuario</th>
+                                        <th>Fecha de Orden</th>
+                                        <th>Total</th>
+                                        <th>Estado</th>
+                                     
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% ordenes.forEach(orden=> { %>
+                                        <tr>
+                                            <td>
+                                                <%= orden.id %>
+                                            </td>
+                                            <td>
+                                                <%= orden.usersId %>
+                                            </td>
+                                            <td>
+                                                <%= orden.dateOrder %>
+                                            </td>
+                                            <td>$<%= orden.total %>
+                                            </td>
+                                            <td>
+                                                <select onchange="confirmChangeStatus(event, '<%= orden.id %>')"
+                                                    class="form-select" name="status"
+                                                    style="background-color: black; color: white;">
+                                                    <% statuses.forEach(status=> { %>
+                                                        <option value="<%= status.id %>" <%=orden.statusId===status.id
+                                                            ? 'selected' : '' %>>
+                                                            <%= status.name %>
+                                                        </option>
+                                                        <% }) %>
+                                                </select>
+
+                                                <script>
+                                                    function confirmChangeStatus(event, orderId) {
+                                                        if (confirm("¿Estás seguro de cambiar el estado de la orden?")) {
+                                                            onChangeStatus(event, orderId);
+                                                        } else {
+                                                            // No hacer nada
+                                                        }
+                                                    }
+                                                </script>
+                                            </td>
+                                            <td>
+                                                <!-- Otras acciones si es necesario -->
+                                            </td>
+                                        </tr>
+                                        <% }); %>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <%- include('./partials/scripts') %>
+            <script>
+                const onChangeStatus = async (e, id) => {
+                    const statusId = e.target.value;
+                    try {
+                        const response = await fetch(`http://localhost:3000/apis/orders/${id}/status`, {
+                            method: 'PUT',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({ statusId: statusId }) // Cambia la propiedad a 'statusId'
+                        });
+                        const result = await response.json(); // Si deseas manejar la respuesta del servidor
+                        console.log(result); // Imprimir la respuesta en la consola para depuración
+                    } catch (error) {
+                        console.log(error);
+                    }
+                }
+            </script>
+    </body>
+
+</html>

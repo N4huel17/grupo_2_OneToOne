@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<!-- //HEAD PARTIALS-->
+<%- include('./partials/head',{ title:'Carrito' }) %>
+<script src="../controllers/indexController.js"></script>
+
+   <body>
+      <!-- //HEADER PARTIALS-->
+
+      <%- include('./partials/header') %>
+
+
+         <div class="container-title">Inicio / Carrito de compras </div>
+         <main class="row p-4">
+
+            <section class="col-12 col-md-7 col-lg-8 py-4 px-2">
+               <div class="row"  id="showCart">
+
+               </div>
+             
+            </section>
+            <section class="col-12 col-md-5 col-lg-4 py-4 px-2 payment-methods-section">
+              
+              
+                  <div class=" d-flex flex-column  border mb-6 p-3">
+                     <article class="" style="width: 100%; height: 100%;">
+                        <div class="d-flex justify-content-between" >
+                           <a href="#img_pago">METODOS DE PAGO</a>
+                           <button class="btn btn-danger btn-sm buyHidden" onclick="emptyCart()">Vaciar carrito</button>
+                        </div>
+                      
+                        <hr>
+      
+                        <div class="img_pago" id="img_pago">
+                           <img src="/img/pago.jpg" alt="Guía de Métodos de Pago">
+                           <a href="#" class="close-btn">&times;</a>
+                        </div>
+      
+                     </article>
+                     <div class="buyHidden" >
+                        <h5>TOTAL A PAGAR: $<span id="total"></span></h5>
+   
+                     </div>
+                     <button class="btn btn-dark buyHidden" onclick="sendCart('<%=locals.userLogin ? locals.userLogin.id : null%>')">Finalizar compra</button>
+   
+                  </div>
+                  
+   
+              
+            </section>
+           
+
+
+
+
+         </main>
+
+
+         <!-- //FOOTER PARTIALS-->
+         <%- include('./partials/footer') %>
+         <script src="../controllers/indexController.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+   </body>
+
+</html>
